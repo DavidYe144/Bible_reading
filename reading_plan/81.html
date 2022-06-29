@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Titus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="titus-3"><a onclick="open_chapter('top', '56-titus.html')">Titus 3</a></h4>
+  <p><sup><b>1</b></sup> Remind them to be subject to rulers, to authorities, to be obedient, to be ready unto every good work,<br><br>
+     <sup><b>2</b></sup> To slander no one, to be uncontentious, forbearing, showing all meekness toward all men.<br><br>
+     <sup><b>3</b></sup> For we also were once foolish, disobedient, deceived, serving as slaves various lusts and pleasures, spending our lives in malice and envy, hateful, hating one another.<br><br>
+     <sup><b>4</b></sup> But when the kindness and the love to man of our Savior God appeared,<br><br>
+     <sup><b>5</b></sup> Not out of works in righteousness which we did but according to His mercy He saved us, through the washing of regeneration and the renewing of the Holy Spirit,<br><br>
+     <sup><b>6</b></sup> Whom He poured out upon us richly through Jesus Christ our Savior,<br><br>
+     <sup><b>7</b></sup> In order that having been justified by His grace, we might become heirs according to the hope of eternal life.<br><br>
+     <sup><b>8</b></sup> Faithful is the word, and concerning these things I desire you to confidently affirm, so that those who have believed in God may be careful to maintain respectable works. These things are good and profitable to men.<br><br>
+     <sup><b>9</b></sup> But avoid foolish questionings and genealogies and strifes and contentions about the law, for they are unprofitable and vain.<br><br>
+     <sup><b>10</b></sup> A factious man, after a first and second admonition, refuse,<br><br>
+     <sup><b>11</b></sup> Knowing that such a one is perverted and is sinning, though he is condemned by his own self.<br><br>
+     <sup><b>12</b></sup> When I send Artemas to you or Tychicus, be diligent to come to me at Nicopolis, for I have decided to spend the winter there.<br><br>
+     <sup><b>13</b></sup> Zenas the lawyer and Apollos send forward diligently that nothing may be lacking to them.<br><br>
+     <sup><b>14</b></sup> And let those also who are ours learn to maintain respectable works for their necessary needs, that they may not be unfruitful.<br><br>
+     <sup><b>15</b></sup> All who are with me greet you. Greet those who love us in faith. Grace be with you all. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('titus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Thessalonians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1thessalonians-5"><a onclick="open_chapter('top', '52-1thessalonians.html')">1 Thessalonians 5</a></h4>
+  <p><sup><b>1</b></sup> But concerning the times and the seasons, brothers, you have no need for anything to be written to you;<br><br>
+     <sup><b>2</b></sup> For you yourselves know perfectly well that like a thief in the night, so the day of the Lord comes.<br><br>
+     <sup><b>3</b></sup> When they say, Peace and security, then sudden destruction comes upon them, just as birth pangs to a woman with child; and they shall by no means escape.<br><br>
+     <sup><b>4</b></sup> But you, brothers, are not in darkness that the day should overtake you like a thief;<br><br>
+     <sup><b>5</b></sup> For you are all sons of light and sons of the day. We are not of the night nor of darkness.<br><br>
+     <sup><b>6</b></sup> So then let us not sleep, as the rest do, but let us watch and be sober.<br><br>
+     <sup><b>7</b></sup> For those who sleep, sleep during the night, and those who get drunk are drunk during the night;<br><br>
+     <sup><b>8</b></sup> But since we are of the day, let us be sober, putting on the breastplate of faith and love and a helmet, the hope of salvation.<br><br>
+     <sup><b>9</b></sup> For God did not appoint us to wrath but to the obtaining of salvation through our Lord Jesus Christ,<br><br>
+     <sup><b>10</b></sup> Who died for us in order that whether we watch or sleep, we may live together with Him.<br><br>
+     <sup><b>11</b></sup> Therefore comfort one another, and build up each one the other, even as you also do.<br><br>
+     <sup><b>12</b></sup> Furthermore we ask you, brothers, to acknowledge those who labor among you and take the lead among you in the Lord and admonish you,<br><br>
+     <sup><b>13</b></sup> And to regard them most highly in love because of their work. Be at peace among yourselves.<br><br>
+     <sup><b>14</b></sup> And we exhort you, brothers, Admonish the disorderly, console the fainthearted, sustain the weak, be long-suffering toward all.<br><br>
+     <sup><b>15</b></sup> See that no one repays anyone evil for evil, but always pursue what is good both for one another and for all.<br><br>
+     <sup><b>16</b></sup> Always rejoice,<br><br>
+     <sup><b>17</b></sup> Unceasingly pray,<br><br>
+     <sup><b>18</b></sup> In everything give thanks; for this is the will of God in Christ Jesus for you.<br><br>
+     <sup><b>19</b></sup> Do not quench the Spirit;<br><br>
+     <sup><b>20</b></sup> Do not despise prophecies,<br><br>
+     <sup><b>21</b></sup> But prove all things. Hold fast to what is good;<br><br>
+     <sup><b>22</b></sup> Abstain from every kind of evil.<br><br>
+     <sup><b>23</b></sup> And the God of peace Himself sanctify you wholly, and may your spirit and soul and body be preserved complete, without blame, at the coming of our Lord Jesus Christ.<br><br>
+     <sup><b>24</b></sup> Faithful is He who calls you, who also will do it.<br><br>
+     <sup><b>25</b></sup> Brothers, pray also for us.<br><br>
+     <sup><b>26</b></sup> Greet all the brothers with a holy kiss.<br><br>
+     <sup><b>27</b></sup> I adjure you by the Lord to have this letter read to all the brothers.<br><br>
+     <sup><b>28</b></sup> The grace of our Lord Jesus Christ be with you. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1thessalonians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="revelation-1"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 1</a></h4>
+  <p><sup><b>1</b></sup> The revelation of Jesus Christ which God gave to Him to show to His slaves the things that must quickly take place; and He made it known by signs, sending it by His angel to His slave John,<br><br>
+     <sup><b>2</b></sup> Who testified the word of God and the testimony of Jesus Christ, even all that he saw.<br><br>
+     <sup><b>3</b></sup> Blessed is he who reads and those who hear the words of the prophecy and keep the things written in it, for the time is near.<br><br>
+     <sup><b>4</b></sup> John to the seven churches which are in Asia: Grace to you and peace from Him who is and who was and who is coming, and from the seven Spirits who are before His throne,<br><br>
+     <sup><b>5</b></sup> And from Jesus Christ, the faithful Witness, the Firstborn of the dead, and the Ruler of the kings of the earth. To Him who loves us and has released us from our sins by His blood<br><br>
+     <sup><b>6</b></sup> And made us a kingdom, priests to His God and Father, to Him be the glory and the might forever and ever. Amen.<br><br>
+     <sup><b>7</b></sup> Behold, He comes with the clouds, and every eye will see Him, even those who pierced Him; and all the tribes of the land will mourn over Him. Yes, amen.<br><br>
+     <sup><b>8</b></sup> I am the Alpha and the Omega, says the Lord God, He who is and who was and who is coming, the Almighty.<br><br>
+     <sup><b>9</b></sup> I John, your brother and fellow partaker in the tribulation and kingdom and endurance in Jesus, was on the island called Patmos because of the word of God and the testimony of Jesus.<br><br>
+     <sup><b>10</b></sup> I was in spirit on the Lord’s Day and heard behind me a loud voice like a trumpet,<br><br>
+     <sup><b>11</b></sup> Saying, What you see write in a scroll and send it to the seven churches: to Ephesus and to Smyrna and to Pergamos and to Thyatira and to Sardis and to Philadelphia and to Laodicea.<br><br>
+     <sup><b>12</b></sup> And I turned to see the voice that spoke with me; and when I turned, I saw seven golden lampstands,<br><br>
+     <sup><b>13</b></sup> And in the midst of the lampstands One like the Son of Man, clothed with a garment reaching to the feet, and girded about at the breasts with a golden girdle.<br><br>
+     <sup><b>14</b></sup> And His head and hair were as white as white wool, as snow; and His eyes were like a flame of fire;<br><br>
+     <sup><b>15</b></sup> And His feet were like shining bronze, as having been fired in a furnace; and His voice was like the sound of many waters.<br><br>
+     <sup><b>16</b></sup> And He had in His right hand seven stars; and out of His mouth proceeded a sharp two-edged sword; and His face shone as the sun shines in its power.<br><br>
+     <sup><b>17</b></sup> And when I saw Him, I fell at His feet as dead; and He placed His right hand on me, saying, Do not fear; I am the First and the Last<br><br>
+     <sup><b>18</b></sup> And the living One; and I became dead, and behold, I am living forever and ever; and I have the keys of death and of Hades.<br><br>
+     <sup><b>19</b></sup> Write therefore the things which you have seen and the things which are and the things which are about to take place after these things.<br><br>
+     <sup><b>20</b></sup> The mystery of the seven stars which you saw upon My right hand and the seven golden lampstands: The seven stars are the messengers of the seven churches, and the seven lampstands are the seven churches. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

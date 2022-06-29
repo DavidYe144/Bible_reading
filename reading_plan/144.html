@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Genesis</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+
+<div class="bible-text">
+  <h4 id="genesis-3"><a onclick="open_chapter('top', '1-genesis.html')">Genesis 3</a></h4>
+  <p><sup><b>1</b></sup> Now the serpent was more crafty than any <i>other</i> animal of the field that Jehovah God had made. And he said to the woman, Did God really say, You shall not eat of any tree of the garden?<br><br>
+     <sup><b>2</b></sup> And the woman said to the serpent, Of the fruit of the trees of the garden we may eat;<br><br>
+     <sup><b>3</b></sup> But of the fruit of the tree which is in the middle of the garden, God has said, You shall not eat of it, nor shall you touch it, lest you die.<br><br>
+     <sup><b>4</b></sup> And the serpent said to the woman, You shall not surely die!<br><br>
+     <sup><b>5</b></sup> For God knows that in the day you eat of it your eyes will be opened, and you will become like God, knowing good and evil.<br><br>
+     <sup><b>6</b></sup> And when the woman saw that the tree was good for food and that it was a delight to the eyes and <i>that</i> the tree was to be desired to make <i>oneself</i> wise, she took of its fruit and ate; and she also gave <i>some</i> to her husband with her, and he ate.<br><br>
+     <sup><b>7</b></sup> And the eyes of both of them were opened, and they knew that they were naked; and they sewed fig leaves together and made loincloths for themselves.<br><br>
+     <sup><b>8</b></sup> And they heard the sound of Jehovah God walking about in the garden in the cool of the day, and the man and his wife hid themselves from the presence of Jehovah God among the trees of the garden.<br><br>
+     <sup><b>9</b></sup> And Jehovah God called to the man and said to him, Where are you?<br><br>
+     <sup><b>10</b></sup> And he said, I heard the sound of You in the garden, and I was afraid because I am naked; so I hid myself.<br><br>
+     <sup><b>11</b></sup> And He said, Who told you that you are naked? Have you eaten of the tree of which I commanded you not to eat?<br><br>
+     <sup><b>12</b></sup> And the man said, The woman whom You gave <i>to be</i> with me, she gave me <i>fruit</i> from the tree, and I ate.<br><br>
+     <sup><b>13</b></sup> And Jehovah God said to the woman, What is this that you have done? And the woman said, The serpent deceived me, and I ate.<br><br>
+     <sup><b>14</b></sup> And Jehovah God said to the serpent, / Because you have done this, / You are cursed more than all the cattle / And more than all the animals of the field: / Upon your stomach you will go, / And dust you will eat / All the days of your life.<br><br>
+     <sup><b>15</b></sup> And I will put enmity / Between you and the woman / And between your seed and her seed; / He will bruise you on the head, / But you will bruise him on the heel.<br><br>
+     <sup><b>16</b></sup> To the woman He said, / I will greatly multiply / Your pain in your childbearing; / In pain you will bring forth children. / And your desire will be to your husband, / And he will rule over you.<br><br>
+     <sup><b>17</b></sup> And to Adam He said, Because you listened to the voice of your wife and have eaten of the tree concerning which I commanded you, saying, You shall not eat of it;Cursed is the ground because of you; / In toil will you eat of it / All the days of your life.<br><br>
+     <sup><b>18</b></sup> And thorns and thistles will it bring forth for you, / And you will eat the herb of the field;<br><br>
+     <sup><b>19</b></sup> By the sweat of your face / You will eat bread / Until you return to the ground, / Because from it you were taken; / For dust you are, / And to dust you shall return.<br><br>
+     <sup><b>20</b></sup> And the man called his wife’s name Eve, because she was the mother of all living.<br><br>
+     <sup><b>21</b></sup> And Jehovah God made coats of skin for Adam and for his wife and clothed them.<br><br>
+     <sup><b>22</b></sup> And Jehovah God said, Behold, the man has become like one of Us, knowing good and evil; and now, lest he put forth his hand and take also from the tree of life and eat and live forever —<br><br>
+     <sup><b>23</b></sup> Then Jehovah God sent him forth from the garden of Eden, to work the ground from which he was taken.<br><br>
+     <sup><b>24</b></sup> So He drove the man out, and at the east of the garden of Eden He placed the cherubim and a flaming sword which turned in every direction to guard the way to the tree of life.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('genesis-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

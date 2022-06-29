@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Genesis</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="genesis-39"><a onclick="open_chapter(39, '../bible/1-genesis.html')">Genesis 39</a></h4>
+  <p><sup><b>1</b></sup> Now Joseph was brought down to Egypt; and Potiphar, an official of Pharaoh, the captain of the guard, an Egyptian, bought him from the Ishmaelites who had brought him down there.<br><br>
+     <sup><b>2</b></sup> And Jehovah was with Joseph, and he became a prosperous man; and he was in the house of his master, the Egyptian.<br><br>
+     <sup><b>3</b></sup> And his master saw that Jehovah was with him and that Jehovah caused all that he did to prosper in his hand.<br><br>
+     <sup><b>4</b></sup> And Joseph found favor in his sight, and he ministered to him; and he made him overseer of his house and put all that he had in his charge.<br><br>
+     <sup><b>5</b></sup> And from the time he made him overseer in his house and <i>put him</i> over all that he had, Jehovah blessed the Egyptian’s house on account of Joseph; and the blessing of Jehovah was upon all that he had, in the house and in the field.<br><br>
+     <sup><b>6</b></sup> And he left all that he had in Joseph’s charge; and with him <i>there,</i> he was not concerned about anything except the food that he ate. And Joseph was handsome in form and handsome in appearance.<br><br>
+     <sup><b>7</b></sup> Now after these things his master’s wife cast her eyes upon Joseph and said, Lie with me.<br><br>
+     <sup><b>8</b></sup> But he refused and said to his master’s wife, Behold, with me <i>here,</i> my master is not concerned about anything in the house, and he has put everything he has in my charge.<br><br>
+     <sup><b>9</b></sup> There is no one greater in this house than I, and he has withheld nothing from me except you, because you are his wife. How then can I do this great evil, and sin against God?<br><br>
+     <sup><b>10</b></sup> And although she spoke to Joseph day after day, he would not listen to her to lie beside her <i>or</i> be with her.<br><br>
+     <sup><b>11</b></sup> And one such day he went into the house to do his work, and none of the men of the house were there in the house.<br><br>
+     <sup><b>12</b></sup> And she grabbed him by his garment, saying, Lie with me! But he left his garment in her hand, and fled and went outside.<br><br>
+     <sup><b>13</b></sup> And when she saw that he had left his garment in her hand and had fled outside,<br><br>
+     <sup><b>14</b></sup> She called to the men of her house and spoke to them, saying, See, he has brought in a Hebrew man to us to mock us. He came in to me to lie with me, and I called out with a loud voice;<br><br>
+     <sup><b>15</b></sup> And when he heard that I lifted up my voice and called out, he left his garment beside me, and fled and went outside.<br><br>
+     <sup><b>16</b></sup> And she placed his garment beside her until his master came home.<br><br>
+     <sup><b>17</b></sup> And she spoke to him with these words, saying, The Hebrew servant, whom you have brought to us, came in to me to mock me.<br><br>
+     <sup><b>18</b></sup> And when I lifted up my voice and called out, he left his garment beside me and fled outside.<br><br>
+     <sup><b>19</b></sup> And when his master heard the words of his wife that she had spoken to him, saying, This is the way your servant treated me; his anger burned.<br><br>
+     <sup><b>20</b></sup> And Joseph’s master took him and put him into the prison, the place where the king’s prisoners were confined. But while he was there in the prison,<br><br>
+     <sup><b>21</b></sup> Jehovah was with Joseph; and He extended kindness to him and gave him favor in the sight of the chief jailer.<br><br>
+     <sup><b>22</b></sup> And the chief jailer put in Joseph’s charge all the prisoners who were in the prison; and whatever was done there, he was the one to do <i>it.</i><br><br>
+     <sup><b>23</b></sup> The chief jailer did not supervise anything that was in his charge, because Jehovah was with him; and whatever he did, Jehovah caused <i>it</i> to prosper.<br><br>
+  </p>
+</div>
+
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('genesis-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

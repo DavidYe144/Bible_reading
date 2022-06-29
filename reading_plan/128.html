@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-12"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 12</a></h4>
+  <p><sup><b>1</b></sup> And a great sign was seen in heaven: a woman clothed with the sun, and the moon underneath her feet, and on her head a crown of twelve stars;<br><br>
+     <sup><b>2</b></sup> And she was with child, and she cried out, travailing in birth and being in pain to bring forth.<br><br>
+     <sup><b>3</b></sup> And another sign was seen in heaven; and behold, there was a great red dragon, having seven heads and ten horns, and on his heads seven diadems.<br><br>
+     <sup><b>4</b></sup> And his tail drags away the third part of the stars of heaven, and he cast them to the earth. And the dragon stood before the woman who was about to bring forth, so that when she brings forth he might devour her child.<br><br>
+     <sup><b>5</b></sup> And she brought forth a son, a man-child, who is to shepherd all the nations with an iron rod; and her child was caught up to God and to His throne.<br><br>
+     <sup><b>6</b></sup> And the woman fled into the wilderness, where she has a place there prepared by God so that they might nourish her there a thousand two hundred and sixty days.<br><br>
+     <sup><b>7</b></sup> And there was war in heaven: Michael and his angels went to war with the dragon. And the dragon warred and his angels.<br><br>
+     <sup><b>8</b></sup> And they did not prevail, neither was their place found any longer in heaven.<br><br>
+     <sup><b>9</b></sup> And the great dragon was cast down, the ancient serpent, he who is called the Devil and Satan, he who deceives the whole inhabited earth; he was cast to the earth, and his angels were cast down with him.<br><br>
+     <sup><b>10</b></sup> And I heard a loud voice in heaven, saying, Now has come the salvation and the power and the kingdom of our God and the authority of His Christ, for the accuser of our brothers has been cast down, who accuses them before our God day and night.<br><br>
+     <sup><b>11</b></sup> And they overcame him because of the blood of the Lamb and because of the word of their testimony, and they loved not their soul-life even unto death.<br><br>
+     <sup><b>12</b></sup> Therefore be glad, O heavens and those who dwell in them. Woe to the earth and the sea because the devil has come down to you and has great rage, knowing that he has only a short time.<br><br>
+     <sup><b>13</b></sup> And when the dragon saw that he was cast to the earth, he persecuted the woman who brought forth the man-child.<br><br>
+     <sup><b>14</b></sup> And to the woman there were given the two wings of the great eagle that she might fly into the wilderness into her place, where she is nourished for a time and times and half a time from the face of the serpent.<br><br>
+     <sup><b>15</b></sup> And the serpent cast water as a river out of his mouth after the woman that he might cause her to be carried away by its current.<br><br>
+     <sup><b>16</b></sup> And the earth helped the woman, and the earth opened its mouth and swallowed the river which the dragon cast out of his mouth.<br><br>
+     <sup><b>17</b></sup> And the dragon became angry with the woman and went away to make war with the rest of her seed, who keep the commandments of God and have the testimony of Jesus.<br><br>
+     <sup><b>18</b></sup> And he stood on the sand of the sea. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

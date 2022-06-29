@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-8"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 8</a></h4>
+  <p><sup><b>1</b></sup> And when He opened the seventh seal, there was silence in heaven for about half an hour.<br><br>
+     <sup><b>2</b></sup> And I saw the seven angels who stand before God, and seven trumpets were given to them.<br><br>
+     <sup><b>3</b></sup> And another Angel came and stood at the altar, having a golden censer, and much incense was given to Him to offer with the prayers of all the saints upon the golden altar which was before the throne.<br><br>
+     <sup><b>4</b></sup> And the smoke of the incense went up with the prayers of the saints out of the hand of the Angel before God.<br><br>
+     <sup><b>5</b></sup> And the Angel took the censer and filled it with the fire of the altar and cast it to the earth; and there were thunders and voices and lightnings and an earthquake.<br><br>
+     <sup><b>6</b></sup> And the seven angels who had the seven trumpets prepared themselves to trumpet.<br><br>
+     <sup><b>7</b></sup> And the first trumpeted, and there was hail and fire mingled with blood, and it was cast to the earth; and the third part of the earth was burned up, and the third part of the trees were burned up, and all green grass was burned up.<br><br>
+     <sup><b>8</b></sup> And the second angel trumpeted, and as it were a great mountain burning with fire was cast into the sea; and the third part of the sea became blood,<br><br>
+     <sup><b>9</b></sup> And the third part of the creatures which were in the sea and had life died, and the third part of the ships were destroyed.<br><br>
+     <sup><b>10</b></sup> And the third angel trumpeted, and a great star fell out of heaven, burning like a torch, and it fell upon the third part of the rivers and upon the springs of waters.<br><br>
+     <sup><b>11</b></sup> And the name of the star is called Wormwood; and the third part of the waters became wormwood, and many of the men died from the waters because they were made bitter.<br><br>
+     <sup><b>12</b></sup> And the fourth angel trumpeted, and the third part of the sun and the third part of the moon and the third part of the stars were smitten, so that the third part of them would be darkened and the day would not appear for the third part of it, and the night likewise.<br><br>
+     <sup><b>13</b></sup> And I saw, and I heard an eagle flying in mid-heaven, saying with a loud voice, Woe, woe, woe, to those who dwell on the earth because of the remaining trumpet sounds of the three angels who are about to trumpet! <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

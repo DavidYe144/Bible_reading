@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Timothy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1timothy-6"><a onclick="open_chapter('top', '54-1timothy.html')">1 Timothy 6</a></h4>
+  <p><sup><b>1</b></sup> As many as are slaves under the yoke should regard their own masters as worthy of all honor, lest the name of God and our teaching be blasphemed.<br><br>
+     <sup><b>2</b></sup> And those who have believing masters should not despise them, because they are brothers; but rather they should serve them, because those who recompense them for the kindly service received are believers and beloved. These things teach and exhort.<br><br>
+     <sup><b>3</b></sup> If anyone teaches different things and does not consent to healthy words, those of our Lord Jesus Christ, and the teaching which is according to godliness,<br><br>
+     <sup><b>4</b></sup> He is blinded with pride, understanding nothing, but is diseased with questionings and contentions of words, out of which come envy, strife, slanders, evil suspicions,<br><br>
+     <sup><b>5</b></sup> Perpetual wranglings of men corrupted in mind and deprived of the truth, supposing godliness to be a means of gain.<br><br>
+     <sup><b>6</b></sup> But godliness with contentment is great gain;<br><br>
+     <sup><b>7</b></sup> For we have brought nothing into the world, because neither can we carry anything out.<br><br>
+     <sup><b>8</b></sup> But having food and covering, with these we will be content.<br><br>
+     <sup><b>9</b></sup> But those who intend to be rich fall into temptation and a snare and many foolish and harmful desires, which plunge men into destruction and ruin.<br><br>
+     <sup><b>10</b></sup> For the love of money is a root of all evils, because of which some, aspiring after money, have been led away from the faith and pierced themselves through with many pains.<br><br>
+     <sup><b>11</b></sup> But you, O man of God, flee these things, and pursue righteousness, godliness, faith, love, endurance, meekness.<br><br>
+     <sup><b>12</b></sup> Fight the good fight of the faith; lay hold on the eternal life, to which you were called and have confessed the good confession before many witnesses.<br><br>
+     <sup><b>13</b></sup> I charge you before God, who preserves all things in life, and Christ Jesus, who testified the good confession before Pontius Pilate,<br><br>
+     <sup><b>14</b></sup> To keep the commandment spotless, without reproach, until the appearing of our Lord Jesus Christ,<br><br>
+     <sup><b>15</b></sup> Which in its own times the blessed and only Sovereign will show, the King of those who reign as kings and Lord of those who rule as lords,<br><br>
+     <sup><b>16</b></sup> Who alone has immortality, dwelling in unapproachable light, whom no man has seen nor can see, to whom be honor and eternal might. Amen.<br><br>
+     <sup><b>17</b></sup> Charge those who are rich in the present age not to be high-minded, nor to set their hope on the uncertainty of riches but on God, who affords us all things richly for our enjoyment;<br><br>
+     <sup><b>18</b></sup> To do good, to be rich in good works, to be ready to distribute, to be ones willing to share;<br><br>
+     <sup><b>19</b></sup> Laying away for themselves a good foundation as a treasure for the future, that they may lay hold on that which is really life.<br><br>
+     <sup><b>20</b></sup> O Timothy, guard the deposit, turning away from profane, vain babblings and oppositions from what is falsely called knowledge,<br><br>
+     <sup><b>21</b></sup> Because of which some, professing this, have misaimed regarding the faith. Grace be with you. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1timothy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

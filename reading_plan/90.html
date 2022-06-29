@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hebrews-8"><a onclick="open_chapter('top', '58-hebrews.html')">Hebrews 8</a></h4>
+  <p><sup><b>1</b></sup> Now in the things which are being said the chief point is this: We have such a High Priest, who sat down on the right hand of the throne of the Majesty in the heavens,<br><br>
+     <sup><b>2</b></sup> A Minister of the holy places, even of the true tabernacle, which the Lord pitched, not man.<br><br>
+     <sup><b>3</b></sup> For every high priest is established for the offering of both gifts and sacrifices; hence it is necessary that this One also have something which He may offer.<br><br>
+     <sup><b>4</b></sup> Now then if He were on earth, He would not be a Priest at all, there being those who offer the gifts according to the law,<br><br>
+     <sup><b>5</b></sup> Who serve the example and shadow of the heavenly things, even as Moses was divinely instructed when he was about to complete the tabernacle; for, “See,” He said, “that you make all things according to the pattern that was shown to you in the mountain.”<br><br>
+     <sup><b>6</b></sup> But now He has obtained a more excellent ministry inasmuch as He is also the Mediator of a better covenant, which has been enacted upon better promises.<br><br>
+     <sup><b>7</b></sup> For if that first covenant had been faultless, no place would have been sought for a second.<br><br>
+     <sup><b>8</b></sup> For finding fault with them He says, “Behold, the days are coming, says the Lord, and I will consummate a new covenant upon the house of Israel and upon the house of Judah,<br><br>
+     <sup><b>9</b></sup> Not according to the covenant which I made with their fathers in the day when I took them by their hand to lead them out of the land of Egypt, because they did not continue in My covenant, and I disregarded them, says the Lord.<br><br>
+     <sup><b>10</b></sup> For this is the covenant which I will covenant with the house of Israel after those days, says the Lord: I will impart My laws into their mind, and on their hearts I will inscribe them; and I will be God to them, and they will be a people to Me.<br><br>
+     <sup><b>11</b></sup> And they shall by no means each teach his fellow citizen and each his brother, saying, Know the Lord; for all will know Me from the little one to the great one among them.<br><br>
+     <sup><b>12</b></sup> For I will be propitious to their unrighteousnesses, and their sins I shall by no means remember anymore.”<br><br>
+     <sup><b>13</b></sup> In saying, A new covenant, He has made the first old. But that which is becoming old and growing decrepit is near to disappearing. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hebrews-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

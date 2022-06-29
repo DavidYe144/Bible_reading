@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Peter</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="1peter-1"><a onclick="open_chapter('top', '60-1peter.html')">1 Peter 1</a></h4>
+  <p><sup><b>1</b></sup> Peter, an apostle of Jesus Christ, to the sojourners of the dispersion of Pontus, Galatia, Cappadocia, Asia, and Bithynia,<br><br>
+     <sup><b>2</b></sup> Chosen according to the foreknowledge of God the Father in the sanctification of the Spirit unto the obedience and sprinkling of the blood of Jesus Christ: Grace to you and peace be multiplied.<br><br>
+     <sup><b>3</b></sup> Blessed be the God and Father of our Lord Jesus Christ, who according to His great mercy has regenerated us unto a living hope through the resurrection of Jesus Christ from the dead,<br><br>
+     <sup><b>4</b></sup> Unto an inheritance, incorruptible and undefiled and unfading, kept in the heavens for you,<br><br>
+     <sup><b>5</b></sup> Who are being guarded by the power of God through faith unto a salvation ready to be revealed at the last time;<br><br>
+     <sup><b>6</b></sup> In which time you exult, though for a little while at present, if it must be, you have been made sorrowful by various trials,<br><br>
+     <sup><b>7</b></sup> So that the proving of your faith, much more precious than of gold which perishes though it is proved by fire, may be found unto praise and glory and honor at the revelation of Jesus Christ;<br><br>
+     <sup><b>8</b></sup> Whom having not seen, you love; into whom though not seeing Him at present, yet believing, you exult with joy that is unspeakable and full of glory,<br><br>
+     <sup><b>9</b></sup> Receiving the end of your faith, the salvation of your souls.<br><br>
+     <sup><b>10</b></sup> Concerning this salvation the prophets, who prophesied concerning the grace that was to come unto you, sought and searched diligently,<br><br>
+     <sup><b>11</b></sup> Searching into what time or what manner of time the Spirit of Christ in them was making clear, testifying beforehand of the sufferings of Christ and the glories after these.<br><br>
+     <sup><b>12</b></sup> To them it was revealed that not to themselves but to you they ministered these things, which have now been announced to you through those who preached the gospel to you by the Holy Spirit sent from heaven, which things angels long to look into.<br><br>
+     <sup><b>13</b></sup> Therefore girding up the loins of your mind and being sober, set your hope perfectly on the grace being brought to you at the revelation of Jesus Christ.<br><br>
+     <sup><b>14</b></sup> As children of obedience, do not be fashioned according to the former lusts in your ignorance;<br><br>
+     <sup><b>15</b></sup> But according to the Holy One who called you, you yourselves also be holy in all your manner of life;<br><br>
+     <sup><b>16</b></sup> Because it is written, “You shall be holy because I am holy.”<br><br>
+     <sup><b>17</b></sup> And if you call as Father the One who without respect of persons judges according to each one’s work, pass the time of your sojourning in fear,<br><br>
+     <sup><b>18</b></sup> Knowing that it was not with corruptible things, with silver or gold, that you were redeemed from your vain manner of life handed down from your fathers,<br><br>
+     <sup><b>19</b></sup> But with precious blood, as of a Lamb without blemish and without spot, the blood of Christ;<br><br>
+     <sup><b>20</b></sup> Who was foreknown before the foundation of the world but has been manifested in the last of times for your sake,<br><br>
+     <sup><b>21</b></sup> Who through Him believe into God, who raised Him from the dead and gave Him glory, so that your faith and hope are in God.<br><br>
+     <sup><b>22</b></sup> Since you have purified your souls by your obedience to the truth unto unfeigned brotherly love, love one another from a pure heart fervently,<br><br>
+     <sup><b>23</b></sup> Having been regenerated not of corruptible seed but of incorruptible, through the living and abiding word of God.<br><br>
+     <sup><b>24</b></sup> For “all flesh is like grass, and all its glory like the flower of grass. The grass has withered, and the flower has fallen off,<br><br>
+     <sup><b>25</b></sup> But the word of the Lord abides forever.” And this is the word which has been announced to you as the gospel. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1peter-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

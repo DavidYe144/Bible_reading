@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Timothy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1timothy-5"><a onclick="open_chapter('top', '54-1timothy.html')">1 Timothy 5</a></h4>
+  <p><sup><b>1</b></sup> Do not upbraid an elderly man, but exhort him as a father, younger men as brothers,<br><br>
+     <sup><b>2</b></sup> Elderly women as mothers, younger women as sisters, in all purity.<br><br>
+     <sup><b>3</b></sup> Honor widows who are really widows.<br><br>
+     <sup><b>4</b></sup> But if any widow has children or grandchildren, let them first learn to show respect toward their own household and to render a return to their parents; for this is acceptable in the sight of God.<br><br>
+     <sup><b>5</b></sup> Now she who is really a widow and is left alone has set her hope on God and continues in petitions and prayers night and day.<br><br>
+     <sup><b>6</b></sup> But she who gives herself to pleasure is dead while living.<br><br>
+     <sup><b>7</b></sup> These things also charge, that they may be without reproach.<br><br>
+     <sup><b>8</b></sup> But if anyone does not provide for his own, and especially for those of his household, he has denied the faith and is worse than an unbeliever.<br><br>
+     <sup><b>9</b></sup> Let a widow be enrolled, not under sixty years old, having been the wife of one man,<br><br>
+     <sup><b>10</b></sup> Well attested for good works, if she has brought up children, if she has shown hospitality to strangers, if she has washed the saints’ feet, if she has assisted the afflicted, if she has diligently followed every good work.<br><br>
+     <sup><b>11</b></sup> But younger widows refuse; for when they follow their passions in disregard of Christ, they desire to marry,<br><br>
+     <sup><b>12</b></sup> And thus have condemnation because they have set aside their first pledge.<br><br>
+     <sup><b>13</b></sup> And at the same time they also learn to be idle, going around from house to house; and they are not only idle but also gossips and busybodies, speaking things which they ought not.<br><br>
+     <sup><b>14</b></sup> I will therefore that younger widows marry, bear children, keep house, give no opportunity to the opposer for reproach;<br><br>
+     <sup><b>15</b></sup> For already some have turned aside after Satan.<br><br>
+     <sup><b>16</b></sup> If any believing woman has widows in her family, let her assist them, and let not the church be burdened, that it may assist those who are really widows.<br><br>
+     <sup><b>17</b></sup> Let the elders who take the lead well be counted worthy of double honor, especially those who labor in word and teaching.<br><br>
+     <sup><b>18</b></sup> For the Scripture says, “You shall not muzzle an ox that is treading out the grain,” and, “The workman is worthy of his pay.”<br><br>
+     <sup><b>19</b></sup> Against an elder do not receive an accusation, except based upon two or three witnesses.<br><br>
+     <sup><b>20</b></sup> The ones who sin reprove before all that the rest also may have fear.<br><br>
+     <sup><b>21</b></sup> I solemnly charge you before God and Christ Jesus and the chosen angels that you keep these things without prejudice, doing nothing by way of partiality.<br><br>
+     <sup><b>22</b></sup> Lay hands quickly on no man, nor participate in others’ sins; keep yourself pure.<br><br>
+     <sup><b>23</b></sup> No longer drink water only, but use a little wine for the sake of your stomach and your frequent illnesses.<br><br>
+     <sup><b>24</b></sup> The sins of some men are openly manifest, going before to judgment; and for others, they also follow after.<br><br>
+     <sup><b>25</b></sup> Likewise also the good works are openly manifest, and those that are otherwise cannot be hidden. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1timothy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

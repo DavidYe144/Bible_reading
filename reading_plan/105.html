@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Peter</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1peter-5"><a onclick="open_chapter('top', '60-1peter.html')">1 Peter 5</a></h4>
+  <p><sup><b>1</b></sup> Therefore the elders among you I exhort, who am a fellow elder and witness of the sufferings of Christ, who am also a partaker of the glory to be revealed:<br><br>
+     <sup><b>2</b></sup> Shepherd the flock of God among you, overseeing not under compulsion but willingly, according to God; not by seeking gain through base means but eagerly;<br><br>
+     <sup><b>3</b></sup> Nor as lording it over your allotments but by becoming patterns of the flock.<br><br>
+     <sup><b>4</b></sup> And when the Chief Shepherd is manifested, you will receive the unfading crown of glory.<br><br>
+     <sup><b>5</b></sup> In like manner, younger men, be subject to elders; and all of you gird yourselves with humility toward one another, because God resists the proud but gives grace to the humble.<br><br>
+     <sup><b>6</b></sup> Therefore be humbled under the mighty hand of God that He may exalt you in due time,<br><br>
+     <sup><b>7</b></sup> Casting all your anxiety on Him because it matters to Him concerning you.<br><br>
+     <sup><b>8</b></sup> Be sober; watch. Your adversary, the devil, as a roaring lion, walks about, seeking someone to devour.<br><br>
+     <sup><b>9</b></sup> Him withstand, being firm in your faith, knowing that the same sufferings are being accomplished among your brotherhood in the world.<br><br>
+     <sup><b>10</b></sup> But the God of all grace, He who has called you into His eternal glory in Christ Jesus, after you have suffered a little while, will Himself perfect, establish, strengthen, and ground you.<br><br>
+     <sup><b>11</b></sup> To Him be the glory and the might forever and ever. Amen.<br><br>
+     <sup><b>12</b></sup> Through Silvanus, the faithful brother, as I account him, I have written to you briefly, exhorting and testifying fully that this is the true grace of God; enter into this grace and stand in it.<br><br>
+     <sup><b>13</b></sup> The co-chosen in Babylon and Mark my son greet you.<br><br>
+     <sup><b>14</b></sup> Greet one another with a kiss of love. Peace to you all who are in Christ. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1peter-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Peter</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1peter-4"><a onclick="open_chapter('top', '60-1peter.html')">1 Peter 4</a></h4>
+  <p><sup><b>1</b></sup> Since Christ therefore has suffered in the flesh, you also arm yourselves with the same mind (because he who has suffered in the flesh has ceased from sin),<br><br>
+     <sup><b>2</b></sup> No longer to live the rest of the time in the flesh in the lusts of men, but in the will of God.<br><br>
+     <sup><b>3</b></sup> For the time which has passed is sufficient for you to have carried out the desire of the Gentiles, having gone on in licentiousness, lusts, debaucheries, carousings, drinking bouts, and lawless idolatries.<br><br>
+     <sup><b>4</b></sup> In this they think it strange that you are not running together with them into the same flood of dissoluteness, slandering you;<br><br>
+     <sup><b>5</b></sup> Who will render an account to Him who is ready to judge the living and the dead.<br><br>
+     <sup><b>6</b></sup> For unto this end the gospel was announced also to those who are now dead, that they might be judged in the flesh according to men but live in the spirit according to God.<br><br>
+     <sup><b>7</b></sup> But the end of all things has drawn near. Therefore be sober-minded and be sober unto prayers.<br><br>
+     <sup><b>8</b></sup> Above all, have fervent love among yourselves, because love covers a multitude of sins.<br><br>
+     <sup><b>9</b></sup> Be hospitable to one another without murmuring,<br><br>
+     <sup><b>10</b></sup> Each one, as he has received a gift, ministering it among yourselves as good stewards of the varied grace of God.<br><br>
+     <sup><b>11</b></sup> If anyone speaks, as speaking oracles of God; if anyone ministers, as ministering out of the strength which God supplies; that in all things God may be glorified through Jesus Christ, to whom is the glory and the might forever and ever. Amen.<br><br>
+     <sup><b>12</b></sup> Beloved, do not think that the fiery ordeal among you, coming to you for a trial, is strange, as if it were a strange thing happening to you;<br><br>
+     <sup><b>13</b></sup> But inasmuch as you share in the sufferings of Christ, rejoice, so that also at the revelation of His glory you may rejoice exultingly.<br><br>
+     <sup><b>14</b></sup> If you are reproached in the name of Christ, you are blessed, because the Spirit of glory and of God rests upon you.<br><br>
+     <sup><b>15</b></sup> For let none of you suffer as a murderer or a thief or an evildoer or as a meddler into others’ affairs;<br><br>
+     <sup><b>16</b></sup> But if as a Christian, let him not be ashamed, but let him glorify God in this name.<br><br>
+     <sup><b>17</b></sup> For it is time for the judgment to begin from the house of God; and if first from us, what will be the end of those who disobey the gospel of God?<br><br>
+     <sup><b>18</b></sup> And if the righteous man is saved only with difficulty, where will the ungodly and the sinner appear?<br><br>
+     <sup><b>19</b></sup> So then let those also who suffer according to the will of God commit their souls in well-doing to a faithful Creator. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1peter-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

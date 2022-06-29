@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">James</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="james-2"><a onclick="open_chapter('top', '59-james.html')">James 2</a></h4>
+  <p><sup><b>1</b></sup> My brothers, do not hold the faith of our Lord Jesus Christ of glory with respect of persons.<br><br>
+     <sup><b>2</b></sup> For if there comes into your synagogue a man with gold rings in splendid clothing, and there also comes in a poor man in filthy clothing,<br><br>
+     <sup><b>3</b></sup> And you look upon the one wearing the splendid clothing and say, You sit here in a good place, and to the poor man you say, You stand there, or sit under my footstool;<br><br>
+     <sup><b>4</b></sup> Have you not made distinctions among yourselves and become judges with evil reasonings?<br><br>
+     <sup><b>5</b></sup> Listen, my beloved brothers: Did not God choose the poor in the world to be rich in faith and heirs of the kingdom, which He promised to those who love Him?<br><br>
+     <sup><b>6</b></sup> But you have dishonored the poor. Is it not the rich who oppress you and is it not they who drag you to the courts?<br><br>
+     <sup><b>7</b></sup> Is it not they who blaspheme the honorable name by which you are called?<br><br>
+     <sup><b>8</b></sup> If indeed you are fulfilling the royal law according to the Scripture, “You shall love your neighbor as yourself,” you do well;<br><br>
+     <sup><b>9</b></sup> But if you respect persons, you commit sin, being convicted by the law as transgressors.<br><br>
+     <sup><b>10</b></sup> For whoever keeps the whole law yet stumbles in one point has become guilty of all.<br><br>
+     <sup><b>11</b></sup> For He who said, Do not commit adultery, also said, Do not murder. Now if you do not commit adultery, but you murder, you have become a transgressor of the law.<br><br>
+     <sup><b>12</b></sup> So speak and so do as those who are to be judged by the law of freedom.<br><br>
+     <sup><b>13</b></sup> For the judgment is without mercy to him who has shown no mercy; mercy triumphs over judgment.<br><br>
+     <sup><b>14</b></sup> What is the profit, my brothers, if anyone says he has faith but does not have works? Can that faith save him?<br><br>
+     <sup><b>15</b></sup> If a brother or sister is without clothing and lacks daily food,<br><br>
+     <sup><b>16</b></sup> And any one of you says to them, Go in peace, be warmed and filled, yet you do not give them the necessities of the body, what is the profit?<br><br>
+     <sup><b>17</b></sup> So also faith, if it does not have works, is dead in itself.<br><br>
+     <sup><b>18</b></sup> But someone will say, You have faith, and I have works; show me your faith without the works, and I will show you my faith by my works.<br><br>
+     <sup><b>19</b></sup> You believe that God is one. You do well; the demons also believe and shudder.<br><br>
+     <sup><b>20</b></sup> But are you willing to know, O vain man, that faith without its works is useless?<br><br>
+     <sup><b>21</b></sup> Was not Abraham our father justified by works in that he offered up Isaac his son upon the altar?<br><br>
+     <sup><b>22</b></sup> You see that faith worked together with his works, and by these works faith was perfected.<br><br>
+     <sup><b>23</b></sup> And the Scripture was fulfilled which says, “And Abraham believed God, and it was accounted to him as righteousness”; and he was called the friend of God.<br><br>
+     <sup><b>24</b></sup> You see that a man is justified by works and not by faith only.<br><br>
+     <sup><b>25</b></sup> And in like manner was not also Rahab the harlot justified by works in that she received the messengers and sent them out by a different way?<br><br>
+     <sup><b>26</b></sup> For just as the body without the spirit is dead, so also faith without works is dead. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('james-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

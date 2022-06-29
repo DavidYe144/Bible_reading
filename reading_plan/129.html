@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-13"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 13</a></h4>
+  <p><sup><b>1</b></sup> And I saw a beast coming up out of the sea, having ten horns and seven heads, and on his horns ten diadems, and on his heads names of blasphemy.<br><br>
+     <sup><b>2</b></sup> And the beast which I saw was like a leopard, and his feet like those of a bear, and his mouth like the mouth of a lion. And the dragon gave him his power and his throne and great authority.<br><br>
+     <sup><b>3</b></sup> And one of his heads was as it were slain to death, and his death stroke was healed. And the whole earth marveled after the beast.<br><br>
+     <sup><b>4</b></sup> And they worshipped the dragon because he gave his authority to the beast; and they worshipped the beast, saying, Who is like the beast? And who can make war with him?<br><br>
+     <sup><b>5</b></sup> And there was given to him a mouth speaking great things and blasphemies, and authority was given to him to act for forty-two months.<br><br>
+     <sup><b>6</b></sup> And he opened his mouth for blasphemies against God, to blaspheme His name and His tabernacle, which tabernacle in heaven.<br><br>
+     <sup><b>7</b></sup> And permission was given to him to make war with the saints and to overcome them; and authority was given to him over every tribe and people and tongue and nation.<br><br>
+     <sup><b>8</b></sup> And all those dwelling on the earth will worship him, everyone whose name is not written in the book of life of the Lamb who was slain from the foundation of the world.<br><br>
+     <sup><b>9</b></sup> If anyone has an ear, let him hear.<br><br>
+     <sup><b>10</b></sup> If anyone is for captivity, into captivity he goes; if anyone kills with the sword, with the sword he is to be killed. Here is the endurance and the faith of the saints.<br><br>
+     <sup><b>11</b></sup> And I saw another beast coming up out of the earth, and he had two horns like a lamb, and he spoke like a dragon.<br><br>
+     <sup><b>12</b></sup> And he exercises all the authority of the first beast in his sight, and he causes the earth and those who dwell in it to worship the first beast, whose death stroke was healed.<br><br>
+     <sup><b>13</b></sup> And he does great signs, so that he even makes fire come down out of heaven to the earth before men.<br><br>
+     <sup><b>14</b></sup> And he deceives those who dwell on the earth on account of the signs which he was given power to do before the beast, commanding those who dwell on the earth to make an image to the beast, who had the stroke of the sword and revived.<br><br>
+     <sup><b>15</b></sup> And power was given to him to give breath to the image of the beast that the image of the beast might even speak and cause whoever would not worship the image of the beast to be killed.<br><br>
+     <sup><b>16</b></sup> And he causes all, the small and the great, and the rich and the poor, and the freemen and the slaves, to be given a mark on their right hand or on their forehead,<br><br>
+     <sup><b>17</b></sup> And that no one may be able to buy or sell except him who has the mark, that is, the name of the beast or the number of his name.<br><br>
+     <sup><b>18</b></sup> Here is wisdom. Let him who has understanding calculate the number of the beast, for it is the number of a man; and his number is six hundred sixty-six. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

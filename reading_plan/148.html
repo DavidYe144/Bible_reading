@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Genesis</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+
+<div class="bible-text">
+  <h4 id="genesis-7"><a onclick="open_chapter('top', '1-genesis.html')">Genesis 7</a></h4>
+  <p><sup><b>1</b></sup> Then Jehovah said to Noah, Come into the ark, you and all your household, for you <i>alone</i> I have seen <i>to be</i> righteous before Me in this generation.<br><br>
+     <sup><b>2</b></sup> Of every clean animal you shall take with you seven pairs, a male and its female; and of the animals that are not clean two, a male and its female;<br><br>
+     <sup><b>3</b></sup> Also of the birds of heaven, seven pairs, male and female; to preserve <i>their</i> offspring alive on the surface of all the earth.<br><br>
+     <sup><b>4</b></sup> For in seven more days I will cause it to rain on the earth forty days and forty nights, and every living being that I have made I will blot out from the surface of the ground.<br><br>
+     <sup><b>5</b></sup> And Noah did according to all that Jehovah commanded him.<br><br>
+     <sup><b>6</b></sup> And Noah was six hundred years old when the flood of waters came upon the earth.<br><br>
+     <sup><b>7</b></sup> And Noah and his sons and his wife and his sons’ wives with him went into the ark because of the waters of the flood.<br><br>
+     <sup><b>8</b></sup> Of clean animals and of animals that are not clean and of birds and of everything that creeps upon the ground,<br><br>
+     <sup><b>9</b></sup> Two by two they came into the ark to Noah, male and female, as God had commanded Noah.<br><br>
+     <sup><b>10</b></sup> And after the seven days the waters of the flood came upon the earth.<br><br>
+     <sup><b>11</b></sup> In the six hundredth year of Noah’s life, in the second month, on the seventeenth day of the month, on that very day all the springs of the great deep burst open, and the windows of heaven were opened.<br><br>
+     <sup><b>12</b></sup> And the rain fell upon the earth forty days and forty nights.<br><br>
+     <sup><b>13</b></sup> On that very same day Noah and Shem and Ham and Japheth, the sons of Noah, and Noah’s wife and the three wives of his sons with them entered the ark,<br><br>
+     <sup><b>14</b></sup> They and every animal according to its kind and all the cattle according to their kind and every creeping thing that creeps upon the earth according to its kind and every bird according to its kind — every bird, every winged creature.<br><br>
+     <sup><b>15</b></sup> And they went into the ark to Noah, two by two of all flesh in which was the breath of life.<br><br>
+     <sup><b>16</b></sup> And those who went in, male and female of all flesh, went in as God had commanded him; and Jehovah shut <i>the door</i> behind him.<br><br>
+     <sup><b>17</b></sup> And the flood was on the earth forty days; and the waters increased and lifted up the ark, and it rose high above the earth.<br><br>
+     <sup><b>18</b></sup> And the waters prevailed and increased greatly upon the earth, and the ark went about on the surface of the waters.<br><br>
+     <sup><b>19</b></sup> And when the waters had prevailed exceedingly upon the earth, all the high mountains that were under the entire heaven were covered.<br><br>
+     <sup><b>20</b></sup> The waters prevailed fifteen cubits higher, once the mountains were covered.<br><br>
+     <sup><b>21</b></sup> And all flesh that moved upon the earth expired: birds and cattle and animals and every swarming thing that swarms upon the earth and all mankind.<br><br>
+     <sup><b>22</b></sup> Everything in whose nostrils was the breath of the spirit of life, of all that was on the dry land, died.<br><br>
+     <sup><b>23</b></sup> Thus He blotted out every living being that was upon the surface of the ground, from man to beast to creeping things to the birds of heaven; and they were blotted out from the earth. And only Noah was left, and those who were with him in the ark.<br><br>
+     <sup><b>24</b></sup> And the waters prevailed upon the earth one hundred fifty days.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('genesis-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

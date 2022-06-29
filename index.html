@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- UIkit & Custom CSS -->
+      <link rel="stylesheet" type="text/css" href="styles/style.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+      <!-- UIkit & Custom JS -->
+      <script type="text/javascript" src="scripts/script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+      <!-- Google JQuery -->
+      <script type="text/javascript" src="scripts/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="scripts/papaparse.min.js"></script>
+
+      <title>Bible</title>
+  </head>
+
+  <body>
+
+    <!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+
+        <div class="uk-width-1-2">
+          <button type="button" class="top_button active">Bible</button>
+        </div>
+        <div class="uk-width-1-2">
+          <button type="button" class="top_button" onclick="location.href='schedule.html'">Reading Plan</button>
+        </div>
+			</nav>
+		</div>
+
+    <!-- Display Type -->
+    <!--
+    <div style="text-align:center; padding:5%;">
+        <p>View</p>
+        <button type="button" class="display active" >compact</button>
+        <button type="button" class="display" onclick="location.href='bible_long.html'">expanded</a></button>
+    </div>
+    -->
+
+    <style>
+      /* Split the screen in half */
+  .split {
+      height: 100%;
+      width: 50%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      overflow-x: hidden;
+      padding-top: 20px;
+      }
+      
+      /* Control the left side */
+      .left {
+      left: 0;
+      }
+      
+      /* Control the right side */
+      .right {
+      right: 0;
+      }
+
+      /* If you want the content centered horizontally and vertically */
+      
+      .centered {
+      position: absolute;
+      top: 10%;
+      bottom: 0%;
+      transform: None;
+      text-align: match-parent;
+      position: absolute;
+      left: 0;
+      right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+      overflow-y: scroll;
+      }
+
+      /* Style the image inside the centered container, if needed */
+      .centered img {
+      width: 150px;
+      border-radius: 50%;
+      }
+    
+      div.sticky {
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+      }
+  </style>
+  </head>
+  
+    <!-- Book Selection -->
+    
+      <div style="text-align:center; padding:3%;">
+        <div class="split left">
+          <div class="centered">
+            <div class="sticky" style="background-color:white">
+              <p style="color: #7d9eb2;">Old Testament</p>
+            </div>
+          <button type="button" class="book1_button" onclick="open_chapter('top', 'bible/1-genesis.html')">Genesis</button><br>
+          <button type="button" class="book1_button" onclick="open_chapter('top', 'bible/2-exodus.html')">Exodus</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/3-leviticus.html')">Leviticus</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/4-numbers.html')">Numbers</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/5-deuteronomy.html')">Deuteronomy</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/6-joshua.html')">Joshua</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/7-judges.html')">Judges</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/8-ruth.html')">Ruth</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/9-1samuel.html')">1 Samuel</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/10-2samuel.html')">2 Samuel</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/11-1kings.html')">1 Kings</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/12-2kings.html')">2 Kings</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/13-1chronicles.html')">1 Chronicles</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/14-2chronicles.html')">2 Chronicles</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/15-ezra.html')">Ezra</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/16-nehemiah.html')">Nehemiah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/17-esther.html')">Esther</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/18-job.html')">Job</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/19-psalms.html')">Psalms</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/20-proverbs.html')">Proverbs</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/21-ecclesiastes.html')">Ecclesiastes</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/22-song_of_songs.html')">Song of Songs</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/23-isaiah.html')">Isaiah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/24-jeremiah.html')">Jeremiah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/25-lamentations.html')">Lamentations</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/26-ezekiel.html')">Ezekiel</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/27-daniel.html')">Daniel</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/28-hosea.html')">Hosea</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/29-joel.html')">Joel</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/30-amos.html')">Amos</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/31-obadiah.html')">Obadiah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/32-jonah.html')">Jonah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/33-micah.html')">Micah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/34-nahum.html')">Nahum</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/35-habakkuk.html')">Habakkuk</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/36-zephaniah.html')">Zephaniah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/37-haggai.html')">Haggai</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/38-zechariah.html')">Zechariah</button><br>
+          <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/39-malachi.html')">Malachi</button><br>
+          </div>
+        </div>
+      </div>
+    
+    
+      
+      <!-- New Testament -->
+        <div style="text-align:center; padding-left:3%; padding-right:3%; padding-bottom:5%; padding-top:3%;">
+          <div class="split right">
+            <div class="centered">
+              <div class="sticky" style="background-color:white">
+                <p style="color: #7d9eb2;">New Testament</p>
+              </div>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/40-matthew.html')">Matthew</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/41-mark.html')">Mark</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/42-luke.html')">Luke</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/43-john.html')">John</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/44-acts.html')">Acts</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/45-romans.html')">Romans</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/46-1corinthians.html')">1 Corinthians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/47-2corinthians.html')">2 Corinthians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/48-galatians.html')">Galatians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/49-ephesians.html')">Ephesians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/50-philippians.html')">Philippians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/51-colossians.html')">Colossians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/52-1thessalonians.html')">1 Thessalonians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/53-2thessalonians.html')">2 Thessalonians</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/54-1timothy.html')">1 Timothy</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/55-2timothy.html')">2 Timothy</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/56-titus.html')">Titus</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/57-philemon.html')">Philem</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/58-hebrews.html')">Hebrews</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/59-james.html')">James</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/60-1peter.html')">1 Peter</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/61-2peter.html')">2 Peter</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/62-1john.html')">1 John</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/63-2john.html')">2 John</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/64-3john.html')">3 John</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/65-jude.html')">Jude</button><br>
+            <button type="button" class=" book1_button" onclick="open_chapter('top', 'bible/66-revelation.html')">Revelation</button><br>
+            </div>
+          </div>
+        </div>
+    
+
+
+    <!-- <script>
+      var coll = document.getElementsByClassName(" book_button");
+      for (var i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          // Animate from "block" -> "none" and vice versa
+          if (content.style.display === "block") {
+            content.style.opacity = 0;
+            window.setTimeout(function(){
+              content.style.display = 'none';
+            },250);
+          } else {
+            content.style.display = "block";
+            window.setTimeout(function(){
+              content.style.opacity = 1;
+            },0);
+          }
+
+        });
+      }
+    </script> -->
+  </body>
+</html>

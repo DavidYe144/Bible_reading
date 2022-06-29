@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Peter</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="2peter-1"><a onclick="open_chapter('top', '61-2peter.html')">2 Peter 1</a></h4>
+  <p><sup><b>1</b></sup> Simon Peter, a slave and apostle of Jesus Christ, to those who have been allotted faith equally precious as ours in the righteousness of our God and Savior, Jesus Christ:<br><br>
+     <sup><b>2</b></sup> Grace to you and peace be multiplied in the full knowledge of God and of Jesus our Lord;<br><br>
+     <sup><b>3</b></sup> Seeing that His divine power has granted to us all things which relate to life and godliness, through the full knowledge of Him who has called us by His own glory and virtue,<br><br>
+     <sup><b>4</b></sup> Through which He has granted to us precious and exceedingly great promises that through these you might become partakers of the divine nature, having escaped the corruption which is in the world by lust.<br><br>
+     <sup><b>5</b></sup> And for this very reason also, adding all diligence, supply bountifully in your faith virtue; and in virtue, knowledge;<br><br>
+     <sup><b>6</b></sup> And in knowledge, self-control; and in self-control, endurance; and in endurance, godliness;<br><br>
+     <sup><b>7</b></sup> And in godliness, brotherly love; and in brotherly love, love.<br><br>
+     <sup><b>8</b></sup> For these things, existing in you and abounding, constitute you neither idle nor unfruitful unto the full knowledge of our Lord Jesus Christ.<br><br>
+     <sup><b>9</b></sup> For he in whom these things are not present is blind, being shortsighted, having forgotten the cleansing of his past sins.<br><br>
+     <sup><b>10</b></sup> Therefore, brothers, be the more diligent to make your calling and selection firm, for doing these things you shall by no means ever stumble.<br><br>
+     <sup><b>11</b></sup> For in this way the entrance into the eternal kingdom of our Lord and Savior Jesus Christ will be richly and bountifully supplied to you.<br><br>
+     <sup><b>12</b></sup> Therefore I will be ready always to remind you concerning these things, even though you know them and have been established in the present truth.<br><br>
+     <sup><b>13</b></sup> And I consider it right, as long as I am in this tabernacle, to stir you up by a reminder,<br><br>
+     <sup><b>14</b></sup> Knowing that the putting off of my tabernacle is imminent, even as also our Lord Jesus Christ has made clear to me.<br><br>
+     <sup><b>15</b></sup> Moreover I will also be diligent that you may be able, after my exodus, to bring these things to mind at all times.<br><br>
+     <sup><b>16</b></sup> For we did not follow cleverly devised myths when we made known to you the power and coming of our Lord Jesus Christ, but we became eyewitnesses of that One’s majesty.<br><br>
+     <sup><b>17</b></sup> For He received from God the Father honor and glory, a voice such as this being borne to Him by the magnificent glory: This is My Son, My Beloved, in whom I delight.<br><br>
+     <sup><b>18</b></sup> And this voice we heard being borne out of heaven while we were with Him in the holy mountain.<br><br>
+     <sup><b>19</b></sup> And we have the prophetic word made more firm, to which you do well to give heed as to a lamp shining in a dark place, until the day dawns and the morning star rises in your hearts;<br><br>
+     <sup><b>20</b></sup> Knowing this first, that no prophecy of Scripture is of one’s own interpretation;<br><br>
+     <sup><b>21</b></sup> For no prophecy was ever borne by the will of man, but men spoke from God while being borne by the Holy Spirit. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2peter-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Timothy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2timothy-4"><a onclick="open_chapter('top', '55-2timothy.html')">2 Timothy 4</a></h4>
+  <p><sup><b>1</b></sup> I solemnly charge you before God and Christ Jesus, who is to judge the living and the dead, and by His appearing and His kingdom:<br><br>
+     <sup><b>2</b></sup> Proclaim the word; be ready in season and out of season; convict, rebuke, exhort with all long-suffering and teaching.<br><br>
+     <sup><b>3</b></sup> For the time will come when they will not tolerate the healthy teaching; but according to their own lusts they will heap up to themselves teachers, having itching ears,<br><br>
+     <sup><b>4</b></sup> And they will turn away their ear from the truth and will be turned aside to myths.<br><br>
+     <sup><b>5</b></sup> But you, be sober in all things, suffer evil, do the work of an evangelist, fully accomplish your ministry.<br><br>
+     <sup><b>6</b></sup> For I am already being poured out, and the time of my departure is at hand.<br><br>
+     <sup><b>7</b></sup> I have fought the good fight; I have finished the course; I have kept the faith.<br><br>
+     <sup><b>8</b></sup> Henceforth there is laid up for me the crown of righteousness, with which the Lord, the righteous Judge, will recompense me in that day, and not only me but also all those who have loved His appearing.<br><br>
+     <sup><b>9</b></sup> Be diligent to come to me quickly;<br><br>
+     <sup><b>10</b></sup> For Demas has abandoned me, having loved the present age, and has gone to Thessalonica; Crescens to Galatia; Titus to Dalmatia.<br><br>
+     <sup><b>11</b></sup> Luke alone is with me. Take Mark and bring him with you, for he is useful to me for the ministry.<br><br>
+     <sup><b>12</b></sup> But Tychicus I have sent to Ephesus.<br><br>
+     <sup><b>13</b></sup> The cloak which I left in Troas with Carpus, bring when you come, and the scrolls, especially the parchments.<br><br>
+     <sup><b>14</b></sup> Alexander the coppersmith did many evil things to me; the Lord will recompense him according to his works.<br><br>
+     <sup><b>15</b></sup> You also guard against him, for he greatly opposed our words.<br><br>
+     <sup><b>16</b></sup> At my first defense no one was with me to support me, but all abandoned me. May it not be counted against them.<br><br>
+     <sup><b>17</b></sup> But the Lord stood with me and empowered me that through me the proclamation of the gospel might be fully accomplished and all the Gentiles might hear; and I was delivered out of the lion’s mouth.<br><br>
+     <sup><b>18</b></sup> The Lord will deliver me from every evil work and will save me into His heavenly kingdom, to whom be the glory forever and ever. Amen.<br><br>
+     <sup><b>19</b></sup> Greet Prisca and Aquila and the house of Onesiphorus.<br><br>
+     <sup><b>20</b></sup> Erastus remained in Corinth, and Trophimus I left at Miletus sick.<br><br>
+     <sup><b>21</b></sup> Be diligent to come before winter. Eubulus greets you, as well as Pudens and Linus and Claudia and all the brothers.<br><br>
+     <sup><b>22</b></sup> The Lord be with your spirit. Grace be with you. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2timothy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

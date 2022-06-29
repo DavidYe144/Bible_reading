@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Timothy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2timothy-3"><a onclick="open_chapter('top', '55-2timothy.html')">2 Timothy 3</a></h4>
+  <p><sup><b>1</b></sup> But know this, that in the last days difficult times will come.<br><br>
+     <sup><b>2</b></sup> For men will be lovers of self, lovers of money, boasters, arrogant, revilers, disobedient to parents, unthankful, unholy,<br><br>
+     <sup><b>3</b></sup> Without natural affection, implacable, slanderers, without self-control, savage, not lovers of good,<br><br>
+     <sup><b>4</b></sup> Traitors, reckless, blinded with pride, lovers of pleasure rather than lovers of God,<br><br>
+     <sup><b>5</b></sup> Having an outward form of godliness, though denying its power; from these also turn away.<br><br>
+     <sup><b>6</b></sup> For of these are those who creep into houses and take captive silly women heaped with sins, who are led by various desires<br><br>
+     <sup><b>7</b></sup> And are always learning yet never able to come to the full knowledge of the truth.<br><br>
+     <sup><b>8</b></sup> And in the manner that Jannes and Jambres opposed Moses, so these also oppose the truth; men corrupted in mind, disapproved concerning the faith.<br><br>
+     <sup><b>9</b></sup> But they will not advance farther, for their folly will be completely manifest to all, as also the folly of those became.<br><br>
+     <sup><b>10</b></sup> But you have closely followed my teaching, conduct, purpose, faith, long-suffering, love, endurance,<br><br>
+     <sup><b>11</b></sup> Persecutions, sufferings, such as befell me in Antioch, in Iconium, in Lystra. Such persecutions I bore, and out of them all the Lord delivered me.<br><br>
+     <sup><b>12</b></sup> And indeed all who desire to live godly in Christ Jesus will be persecuted.<br><br>
+     <sup><b>13</b></sup> But evil men and impostors will grow worse and worse, deceiving and being deceived.<br><br>
+     <sup><b>14</b></sup> But you, continue in the things which you have learned and have been assured of, knowing from which ones you have learned them<br><br>
+     <sup><b>15</b></sup> And that from a babe you have known the sacred writings, which are able to make you wise unto salvation through the faith which is in Christ Jesus.<br><br>
+     <sup><b>16</b></sup> All Scripture is God-breathed and profitable for teaching, for conviction, for correction, for instruction in righteousness,<br><br>
+     <sup><b>17</b></sup> That the man of God may be complete, fully equipped for every good work. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2timothy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

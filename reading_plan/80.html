@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Titus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="titus-2"><a onclick="open_chapter('top', '56-titus.html')">Titus 2</a></h4>
+  <p><sup><b>1</b></sup> But you, speak the things which are fitting to the healthy teaching.<br><br>
+     <sup><b>2</b></sup> Exhort older men to be temperate, grave, of a sober mind, healthy in faith, in love, in endurance;<br><br>
+     <sup><b>3</b></sup> Older women likewise to be in demeanor as befits those who engage in sacred things, not slanderers, nor enslaved by much wine, teachers of what is good,<br><br>
+     <sup><b>4</b></sup> That they may train the young women to love their husbands, to love their children,<br><br>
+     <sup><b>5</b></sup> To be of a sober mind, pure, workers at home, good, subject to their own husbands, that the word of God would not be blasphemed.<br><br>
+     <sup><b>6</b></sup> The younger men likewise exhort to be of a sober mind,<br><br>
+     <sup><b>7</b></sup> Concerning all things presenting yourself as a pattern of good works: in your teaching showing incorruption, gravity,<br><br>
+     <sup><b>8</b></sup> Healthy speech that cannot be condemned, that he who opposes may be put to shame, having nothing evil to say about us.<br><br>
+     <sup><b>9</b></sup> Exhort slaves to be subject to their own masters in all things, to be well pleasing, not contradicting,<br><br>
+     <sup><b>10</b></sup> Not pilfering, but showing all good faithfulness that they may adorn the teaching of our Savior God in all things.<br><br>
+     <sup><b>11</b></sup> For the grace of God, bringing salvation to all men, has appeared,<br><br>
+     <sup><b>12</b></sup> Training us that, denying ungodliness and worldly lusts, we should live soberly and righteously and godly in the present age,<br><br>
+     <sup><b>13</b></sup> Awaiting the blessed hope, even the appearing of the glory of our great God and Savior, Jesus Christ,<br><br>
+     <sup><b>14</b></sup> Who gave Himself for us that He might redeem us from all lawlessness and purify to Himself a particular people as His unique possession, zealous of good works.<br><br>
+     <sup><b>15</b></sup> These things speak, and exhort and convict with all authority. Let no one despise you. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('titus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

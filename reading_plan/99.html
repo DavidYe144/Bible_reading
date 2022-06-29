@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">James</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="james-4"><a onclick="open_chapter('top', '59-james.html')">James 4</a></h4>
+  <p><sup><b>1</b></sup> Where do wars and fightings among you come from? Are they not from this, from your pleasures that war in your members?<br><br>
+     <sup><b>2</b></sup> You lust and do not have; you murder and are jealous and are not able to obtain; you fight and make war. You do not have because you do not ask;<br><br>
+     <sup><b>3</b></sup> You ask and do not receive because you ask evilly that you may spend it on your pleasures.<br><br>
+     <sup><b>4</b></sup> Adulteresses, do you not know that the friendship of the world is enmity with God? Therefore whoever determines to be a friend of the world is constituted an enemy of God.<br><br>
+     <sup><b>5</b></sup> Or do you think that the Scripture says in vain: The Spirit, whom He has caused to dwell in us, longs unto envy?<br><br>
+     <sup><b>6</b></sup> But He gives greater grace; therefore it says, “God resists the proud but gives grace to the humble.”<br><br>
+     <sup><b>7</b></sup> Be subject therefore to God; but withstand the devil, and he will flee from you.<br><br>
+     <sup><b>8</b></sup> Draw near to God, and He will draw near to you. Cleanse your hands, sinners, and purify your hearts, you double-souled!<br><br>
+     <sup><b>9</b></sup> Endure misery and mourn and weep. Let your laughter be turned into mourning, and your joy into dejection.<br><br>
+     <sup><b>10</b></sup> Be humbled before the Lord, and He will exalt you.<br><br>
+     <sup><b>11</b></sup> Do not speak against one another, brothers. He who speaks against a brother or judges his brother speaks against the law and judges the law. But if you judge the law, you are not a doer of the law but a judge.<br><br>
+     <sup><b>12</b></sup> One is Lawgiver and Judge, who is able to save and destroy. But who are you who judge your neighbor?<br><br>
+     <sup><b>13</b></sup> Come now, you who say, Today or tomorrow we will go into this or that city and spend a year there and do business and make a profit;<br><br>
+     <sup><b>14</b></sup> Whereas you do not know the matter of tomorrow, what your life will be; for you are a vapor, which appears for a little while and then disappears.<br><br>
+     <sup><b>15</b></sup> Instead you ought to say, If the Lord wills, we will both live and do this or that.<br><br>
+     <sup><b>16</b></sup> But now you boast in your arrogance; all such boasting is evil.<br><br>
+     <sup><b>17</b></sup> Therefore to him who knows to do good and does not do it, to him it is sin. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('james-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

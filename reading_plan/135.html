@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-19"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 19</a></h4>
+  <p><sup><b>1</b></sup> After these things I heard as it were a loud voice of a great multitude in heaven, saying, Hallelujah! The salvation and the glory and the power are of our God.<br><br>
+     <sup><b>2</b></sup> For true and righteous are His judgments; for He has judged the great harlot who corrupted the earth with her fornication, and He avenged the blood of His slaves at her hand.<br><br>
+     <sup><b>3</b></sup> And a second time they said, Hallelujah! And her smoke goes up forever and ever.<br><br>
+     <sup><b>4</b></sup> And the twenty-four elders and the four living creatures fell down and worshipped God, who sits upon the throne, saying, Amen, Hallelujah!<br><br>
+     <sup><b>5</b></sup> And a voice came out from the throne, saying, Praise our God, all His slaves and those who fear Him, the small and the great.<br><br>
+     <sup><b>6</b></sup> And I heard as it were the voice of a great multitude and like the sound of many waters and like the sound of mighty thunders, saying, Hallelujah! For the Lord our God the Almighty reigns.<br><br>
+     <sup><b>7</b></sup> Let us rejoice and exult, and let us give the glory to Him, for the marriage of the Lamb has come, and His wife has made herself ready.<br><br>
+     <sup><b>8</b></sup> And it was given to her that she should be clothed in fine linen, bright and clean; for the fine linen is the righteousnesses of the saints.<br><br>
+     <sup><b>9</b></sup> And he said to me, Write, Blessed are they who are called to the marriage dinner of the Lamb. And he said to me, These are the true words of God.<br><br>
+     <sup><b>10</b></sup> And I fell before his feet to worship him. And he said to me, Do not do this. I am your fellow slave and a fellow slave of your brothers who have the testimony of Jesus. Worship God. For the testimony of Jesus is the spirit of the prophecy.<br><br>
+     <sup><b>11</b></sup> And I saw heaven opened, and behold, a white horse, and He who sits on it called Faithful and True, and in righteousness He judges and makes war.<br><br>
+     <sup><b>12</b></sup> And His eyes are a flame of fire, and on His head are many diadems, and He has a name written which no one knows but Himself.<br><br>
+     <sup><b>13</b></sup> And He is clothed with a garment dipped in blood; and His name is called the Word of God.<br><br>
+     <sup><b>14</b></sup> And the armies which are in heaven followed Him on white horses, dressed in fine linen, white and clean.<br><br>
+     <sup><b>15</b></sup> And out of His mouth proceeds a sharp sword, that with it He might smite the nations; and He will shepherd them with an iron rod; and He treads the winepress of the fury of the wrath of God the Almighty.<br><br>
+     <sup><b>16</b></sup> And He has on His garment and on His thigh a name written, KING OF KINGS AND LORD OF LORDS.<br><br>
+     <sup><b>17</b></sup> And I saw an angel standing in the sun, and he cried out with a loud voice, saying to all the birds that fly in mid-heaven, Come here; gather yourselves to the great dinner of God,<br><br>
+     <sup><b>18</b></sup> That you may eat the flesh of kings and the flesh of generals and the flesh of mighty men and the flesh of horses and of those who sit on them and the flesh of all men, both free and slave and small and great.<br><br>
+     <sup><b>19</b></sup> And I saw the beast and the kings of the earth and their armies gathered together to make war with Him who sits on the horse and with His army.<br><br>
+     <sup><b>20</b></sup> And the beast was seized, and with him the false prophet, who in his presence had done the signs by which he deceived those who received the mark of the beast and those who worshipped his image. These two were cast alive into the lake of fire, which burns with brimstone.<br><br>
+     <sup><b>21</b></sup> And the rest were killed with the sword which proceeds out of the mouth of Him who sits on the horse, and all the birds were filled with their flesh. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
