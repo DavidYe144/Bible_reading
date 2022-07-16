@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-11"><a onclick="open_chapter(1, '../bible/2-exodus.html')">Exodus 11</a></h4>
+  <p><sup><b>1</b></sup> Then Jehovah said to Moses, One more plague will I bring upon Pharaoh and upon Egypt; after that he will let you go from here. When he lets <i>you</i> go, he will surely drive you out from here completely.<br><br>
+    <sup><b>2</b></sup> Speak now in the hearing of the people that each man is to ask of his neighbor and each woman of her neighbor for articles of silver and articles of gold.<br><br>
+    <sup><b>3</b></sup> And Jehovah gave the people favor in the sight of the Egyptians. Moreover the man Moses was very great in the land of Egypt, in the sight of Pharaoh’s servants and in the sight of the people.<br><br>
+    <sup><b>4</b></sup> And Moses said, Thus says Jehovah, About midnight I will go out into the midst of Egypt,<br><br>
+    <sup><b>5</b></sup> And all the firstborn in the land of Egypt shall die, from the firstborn of Pharaoh who sits upon his throne to the firstborn of the female slave who is behind the millstones, and all the firstborn of cattle.<br><br>
+    <sup><b>6</b></sup> And there shall be a great cry throughout all the land of Egypt, such as has not been or ever will be again.<br><br>
+    <sup><b>7</b></sup> But a dog shall not bark at any of the children of Israel, at man or beast, that you may know that Jehovah makes a distinction between the Egyptians and Israel.<br><br>
+    <sup><b>8</b></sup> And all these servants of yours shall come down to me and bow down to me, saying, Get out, you and all the people who follow you; and after that I will go out. And he went out from Pharaoh in hot anger.<br><br>
+    <sup><b>9</b></sup> Then Jehovah said to Moses, Pharaoh will not listen to you, in order that My wonders may be multiplied in the land of Egypt.<br><br>
+    <sup><b>10</b></sup> Thus Moses and Aaron did all these wonders before Pharaoh, but Jehovah hardened Pharaoh’s heart, and he did not let the children of Israel go out of his land.<br><br>
+ </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
