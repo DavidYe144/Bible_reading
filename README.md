@@ -1,2 +1,3 @@
 # readingplan
-CoC @Berkeley Bible reading plan
+Southern California Christians Students 
+Bible & Bible reading plan
