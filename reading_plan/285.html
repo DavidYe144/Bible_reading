@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Numbers</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="numbers-27"><a onclick="open_chapter(1, '../bible/4-numbers.html')">Numbers 27</a></h4>
+	<p><sup><b>1</b></sup> Then the daughters of Zelophehad the son of Hepher, the son of Gilead, the son of Machir, the son of Manasseh, of the families of Manasseh the son of Joseph came near. And these are the names of his daughters: Mahlah, Noah, and Hoglah, and Milcah and Tirzah.<br><br>
+		<sup><b>2</b></sup> And they stood before Moses and before Eleazar the priest and before the leaders and the whole assembly at the entrance of the Tent of Meeting, saying,<br><br>
+		<sup><b>3</b></sup> Our father died in the wilderness, and he was not among the company of those who gathered themselves together against Jehovah in the company of Korah; but he died in his own sin, and he had no sons.<br><br>
+		<sup><b>4</b></sup> Why should our father’s name be taken away from among his family because he had no son? Give us a possession among our father’s brothers.<br><br>
+		<sup><b>5</b></sup> And Moses brought their case before Jehovah.<br><br>
+		<sup><b>6</b></sup> Then Jehovah spoke to Moses, saying,<br><br>
+		<sup><b>7</b></sup> The daughters of Zelophehad speak rightly. You shall surely give them the possession of an inheritance among their father’s brothers; and you shall cause the inheritance of their father to pass to them.<br><br>
+		<sup><b>8</b></sup> And you shall speak to the children of Israel, saying, If a man dies and has no son, then you shall cause his inheritance to pass to his daughter.<br><br>
+		<sup><b>9</b></sup> And if he does not have a daughter, then you shall give his inheritance to his brothers.<br><br>
+		<sup><b>10</b></sup> And if he has no brothers, then you shall give his inheritance to his father’s brothers.<br><br>
+		<sup><b>11</b></sup> And if his father has no brothers, then you shall give his inheritance to his relative nearest to him among his family, and he shall possess it. And it shall be a statute of judgment for the children of Israel, as Jehovah commanded Moses.<br><br>
+		<sup><b>12</b></sup> And Jehovah said to Moses, Go up to this mountain of the Abarim and see the land which I have given to the children of Israel.<br><br>
+		<sup><b>13</b></sup> And when you have seen it, you also shall be gathered to your people, just as Aaron your brother was gathered,<br><br>
+		<sup><b>14</b></sup> Because you rebelled against My word in the wilderness of Zin, in the strife of the assembly, <i>and failed</i> to sanctify Me at the waters before their eyes. (These are the waters of Meribah-kadesh, in the wilderness of Zin.)<br><br>
+		<sup><b>15</b></sup> And Moses spoke to Jehovah, saying,<br><br>
+		<sup><b>16</b></sup> Let Jehovah, the God of the spirits of all flesh, appoint a man over the assembly,<br><br>
+		<sup><b>17</b></sup> Who will go out before them and who will come in before them, and who will lead them out and who will bring them in; so that the assembly of Jehovah will not be like sheep which have no shepherd.<br><br>
+		<sup><b>18</b></sup> And Jehovah said to Moses, Take Joshua the son of Nun, a man in whom is the Spirit, and lay your hand upon him;<br><br>
+		<sup><b>19</b></sup> And set him before Eleazar the priest and before the whole assembly, and give him a charge in their sight.<br><br>
+		<sup><b>20</b></sup> And you shall put some of your honor upon him, so that the whole assembly of the children of Israel may obey <i>him.</i><br><br>
+		<sup><b>21</b></sup> And he shall stand before Eleazar the priest, and he shall inquire for him by the judgment of the Urim before Jehovah. At his word shall they go out and at his word they shall come in, both he and all the children of Israel with him, even the whole assembly.<br><br>
+		<sup><b>22</b></sup> And Moses did as Jehovah commanded him, and he took Joshua and set him before Eleazar the priest and before the whole assembly.<br><br>
+		<sup><b>23</b></sup> And he laid his hands upon him and gave him a charge just as Jehovah had spoken through Moses.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

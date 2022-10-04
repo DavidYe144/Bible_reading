@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Numbers</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="numbers-30"><a onclick="open_chapter(1, '../bible/4-numbers.html')">Numbers 30</a></h4>
+	<p><sup><b>1</b></sup> And Moses spoke to the heads of the tribes of the children of Israel, saying, This is what Jehovah has commanded:<br><br>
+		<sup><b>2</b></sup> When a man vows a vow to Jehovah or swears an oath to bind himself by pledge, he shall not break his word; he shall do according to all that proceeds out of his mouth.<br><br>
+		<sup><b>3</b></sup> But when a woman vows a vow to Jehovah or binds <i>herself</i> by pledge in her father’s house in her youth,<br><br>
+		<sup><b>4</b></sup> And her father hears of her vow or her pledge by which she has bound herself, and her father is silent with respect to her; then all her vows will stand, and any pledge by which she has bound herself will stand.<br><br>
+		<sup><b>5</b></sup> But if her father disallows her on the day he hears, none of her vows or of her pledges by which she has bound herself will stand; and Jehovah will forgive her because her father disallowed her.<br><br>
+		<sup><b>6</b></sup> And if she gets married, while her vows are upon her or the rash utterance of her lips by which she has bound herself,<br><br>
+		<sup><b>7</b></sup> And her husband hears <i>of it</i> and is silent with respect to her on the day he hears it, then her vows will stand and her pledges by which she has bound herself will stand.<br><br>
+		<sup><b>8</b></sup> But if, on the day her husband hears <i>of it,</i> he disallows her, then he makes void her vow which is upon her and the rash utterance of her lips by which she has bound herself; and Jehovah will forgive her.<br><br>
+		<sup><b>9</b></sup> But the vow of a widow or of a divorced woman, everything by which she has bound herself, will stand against her.<br><br>
+		<sup><b>10</b></sup> And if she vowed in her husband’s house or bound herself by a pledge with an oath,<br><br>
+		<sup><b>11</b></sup> And her husband heard <i>of it</i> and was silent with respect to her and did not disallow her, then all her vows will stand and any pledge by which she has bound herself will stand.<br><br>
+		<sup><b>12</b></sup> But if her husband made them null and void on the day he heard of it, then whatever proceeded out of her lips concerning her vows or concerning the pledging of herself will not stand; her husband has made them void, and Jehovah will forgive her.<br><br>
+		<sup><b>13</b></sup> As for every vow and every binding oath to afflict herself, her husband may establish it or her husband may make it void.<br><br>
+		<sup><b>14</b></sup> But if her husband is completely silent with respect to her from day to day, then he establishes all her vows or all her pledges which are upon her; he has established them because he was silent with respect to her on the day he heard it.<br><br>
+		<sup><b>15</b></sup> But if he makes them null and void <i>some time</i> after he has heard of it, then he shall bear her iniquity.<br><br>
+		<sup><b>16</b></sup> These are the statutes which Jehovah commanded Moses, between a man and his wife, <i>and</i> between a father and his daughter <i>while</i> in her youth in her father’s house.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
