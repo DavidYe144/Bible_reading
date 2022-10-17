@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Numbers</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="numbers-36"><a onclick="open_chapter('top', '../bible/4-numbers.html')">Numbers 36</a></h4>
+			<p><sup><b>1</b></sup> And the heads of the fathers’ <i>households</i> of the family of the sons of Gilead, the son of Machir, the son of Manasseh, of the families of the sons of Joseph, came near and spoke before Moses and before the leaders, the heads of the fathers’ <i>households</i> of the children of Israel;<br><br>
+				 <sup><b>2</b></sup> And they said, Jehovah commanded my lord to give the land for inheritance by lot to the children of Israel, and my lord was commanded by Jehovah to give the inheritance of Zelophehad our brother to his daughters.<br><br>
+				 <sup><b>3</b></sup> But if they are married to one of the sons of the <i>other</i> tribes of the children of Israel, then their inheritance will be taken away from the inheritance of our fathers and will be added to the inheritance of the tribe to which they belong; so it will be taken away from the lot of our inheritance.<br><br>
+				 <sup><b>4</b></sup> And when the jubilee of the children of Israel takes place, then their inheritance will be added to the inheritance of the tribe to which they belong; so their inheritance will be taken away from the inheritance of the tribe of our fathers.<br><br>
+				 <sup><b>5</b></sup> Then Moses commanded the children of Israel according to the word of Jehovah, saying, The tribe of the sons of Joseph speaks correctly.<br><br>
+				 <sup><b>6</b></sup> This is what Jehovah commands concerning the daughters of Zelophehad, saying, Let them be married to whom they think best; only into the family of the tribe of their father they shall marry.<br><br>
+				 <sup><b>7</b></sup> So an inheritance of the children of Israel shall not go around from tribe to tribe, for each one of the children of Israel shall cling to the inheritance of the tribe of his fathers.<br><br>
+				 <sup><b>8</b></sup> And every daughter who possesses an inheritance in any tribe of the children of Israel shall marry into one of the family of the tribe of her father, so that each one of the children of Israel may possess the inheritance of his fathers.<br><br>
+				 <sup><b>9</b></sup> So an inheritance shall not go around from one tribe to another tribe, for each one of the tribes of the children of Israel shall cling to his own inheritance.<br><br>
+				 <sup><b>10</b></sup> Just as Jehovah had commanded Moses, so the daughters of Zelophehad did;<br><br>
+				 <sup><b>11</b></sup> That is, Mahlah, Tirzah, and Hoglah, and Milcah and Noah, the daughters of Zelophehad, were married to their uncles’ sons.<br><br>
+				 <sup><b>12</b></sup> They married into the families of the sons of Manasseh the son of Joseph, and their inheritance remained in the tribe of the family of their father.<br><br>
+				 <sup><b>13</b></sup> These are the commandments and the ordinances which Jehovah commanded through Moses to the children of Israel in the plains of Moab by the Jordan at Jericho.<br><br>
+			</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
