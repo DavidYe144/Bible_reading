@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-16"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 16</a></h4>
+	<p><sup><b>1</b></sup> And the lot for the children of Joseph went from the Jordan at Jericho, east of the waters of Jericho, to the wilderness, going up from Jericho into the hill country to Bethel,<br><br>
+		<sup><b>2</b></sup> And went from Bethel to Luz, and passed on to the border of the Archites at Ataroth,<br><br>
+		<sup><b>3</b></sup> And went down westward to the border of the Japhletites, to the border of Lower Beth-horon and to Gezer; and its end was the sea.<br><br>
+		<sup><b>4</b></sup> And the children of Joseph, Manasseh and Ephraim, received their inheritance.<br><br>
+		<sup><b>5</b></sup> And the border of the children of Ephraim according to their families was <i>thus:</i> The border for their inheritance on the east was <i>from</i> Ataroth-addar to Upper Beth-horon;<br><br>
+		<sup><b>6</b></sup> And the border went to the sea. On the north was Michmethath, and the border went around eastward to Taanath-shiloh, and passed by it to the east of Janoah,<br><br>
+		<sup><b>7</b></sup> And went down from Janoah to Ataroth, then to Naarah, and reached Jericho, and went to the Jordan.<br><br>
+		<sup><b>8</b></sup> From Tappuah the border went westward to the brook of Kanah; and its end was the sea. This is the inheritance of the tribe of the children of Ephraim according to their families,<br><br>
+		<sup><b>9</b></sup> Together with the cities that were set apart for the children of Ephraim in the midst of the inheritance of the children of Manasseh, all the cities with their villages.<br><br>
+		<sup><b>10</b></sup> Yet they did not dispossess the Canaanites who dwelt in Gezer, but the Canaanites dwell in the midst of Ephraim to this day and have become forced labor.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

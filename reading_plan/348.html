@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-20"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 20</a></h4>
+	<p><sup><b>1</b></sup> Then Jehovah spoke to Joshua, saying,<br><br>
+		<sup><b>2</b></sup> Speak to the children of Israel, saying, Designate the cities of refuge, concerning which I spoke to you through Moses,<br><br>
+		<sup><b>3</b></sup> So that the manslayer who kills a person by mistake <i>and</i> unwittingly may flee there. And they will be to you as a refuge from the avenger of blood.<br><br>
+		<sup><b>4</b></sup> And he shall flee to one of these cities and stand at the entrance of the gate of the city and declare his cause in the ears of the elders of that city. And they shall take him into the city to themselves and give him a place; and he shall dwell among them.<br><br>
+		<sup><b>5</b></sup> And if the avenger of blood pursues after him, they shall not deliver the manslayer into his hand, for he struck his neighbor unwittingly and had not hated him previously.<br><br>
+		<sup><b>6</b></sup> And he shall dwell in that city until he can stand before the assembly for a judgment, until the death of the high priest who is at that time; then the manslayer shall return and enter into his own city and into his own house, into the city from which he fled.<br><br>
+		<sup><b>7</b></sup> And they set apart Kedesh in Galilee in the hill country of Naphtali and Shechem in the hill country of Ephraim and Kiriath-arba (this is Hebron) in the hill country of Judah.<br><br>
+		<sup><b>8</b></sup> And across the Jordan at Jericho, to the east, they designated Bezer in the wilderness on the plain out of the tribe of Reuben and Ramoth in Gilead out of the tribe of Gad and Golan in Bashan out of the tribe of Manasseh.<br><br>
+		<sup><b>9</b></sup> These were the appointed cities for all the children of Israel and for the sojourner who sojourned among them, so that anyone who killed a person by mistake might flee there and not die at the hand of the avenger of blood until he stood before the assembly.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
