@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-4"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 4</a></h4>
+	<p><sup><b>1</b></sup> And when all the nation had completely crossed over the Jordan, Jehovah spoke to Joshua, saying,<br><br>
+		<sup><b>2</b></sup> Take for yourselves twelve men from among the people, one man from each tribe;<br><br>
+		<sup><b>3</b></sup> And command them, saying, Take up for yourselves from here out of the middle of the Jordan, from the place where the priests’ feet stood firm, twelve stones; and bring them over with you, and lay them down in the place where you lodge tonight.<br><br>
+		<sup><b>4</b></sup> So Joshua called the twelve men whom he had appointed from among the children of Israel, one man from each tribe.<br><br>
+		<sup><b>5</b></sup> And Joshua said to them, Pass on before the Ark of Jehovah your God into the middle of the Jordan, and every one of you lift up one stone upon his shoulder, according to the number of the tribes of the children of Israel,<br><br>
+		<sup><b>6</b></sup> That this may be a sign among you. When your children ask in time to come, saying, What do these stones <i>mean</i> to you?<br><br>
+		<sup><b>7</b></sup> You shall tell them that the waters of the Jordan were cut off before the Ark of the Covenant of Jehovah; when it crossed over the Jordan, the waters of the Jordan were cut off. Thus these stones will be for a memorial to the children of Israel forever.<br><br>
+		<sup><b>8</b></sup> And the children of Israel did as Joshua commanded and took up twelve stones from the middle of the Jordan, as Jehovah told Joshua <i>to do,</i> according to the number of the tribes of the children of Israel. And they brought them over with them to the place where they were to lodge, and they laid them down there.<br><br>
+		<sup><b>9</b></sup> Then Joshua erected twelve stones in the middle of the Jordan, in the place where the feet of the priests who carried the Ark of the Covenant had stood; and they are there to this day.<br><br>
+		<sup><b>10</b></sup> And the priests who carried the Ark stood in the middle of the Jordan until everything was completed that Jehovah had commanded Joshua to speak to the people, according to all that Moses had commanded Joshua. And the people hurried and crossed over.<br><br>
+		<sup><b>11</b></sup> And when all the people had completely crossed over, the Ark of Jehovah with the priests crossed over before the people.<br><br>
+		<sup><b>12</b></sup> And the sons of Reuben and the sons of Gad and the half-tribe of Manasseh crossed over in battle array before the children of Israel, as Moses had told them <i>to do;</i><br><br>
+		<sup><b>13</b></sup> About forty thousand equipped for war crossed over before Jehovah into the plains of Jericho for battle.<br><br>
+		<sup><b>14</b></sup> On that day Jehovah magnified Joshua in the sight of all Israel, and they revered him as they had revered Moses all the days of his life.<br><br>
+		<sup><b>15</b></sup> Then Jehovah spoke to Joshua, saying,<br><br>
+		<sup><b>16</b></sup> Command the priests who carry the Ark of the Testimony to come up out of the Jordan.<br><br>
+		<sup><b>17</b></sup> And Joshua commanded the priests, saying, Come up out of the Jordan.<br><br>
+		<sup><b>18</b></sup> And when the priests who carried the Ark of the Covenant of Jehovah came up out from the middle of the Jordan, <i>when</i> the soles of the priests’ feet were lifted up onto the dry land, the waters of the Jordan returned to their place and went over all its banks as before.<br><br>
+		<sup><b>19</b></sup> And the people came up from the Jordan on the tenth day of the first month, and they camped in Gilgal, at the eastern edge of Jericho.<br><br>
+		<sup><b>20</b></sup> And those twelve stones, which they had taken from the Jordan, Joshua erected in Gilgal.<br><br>
+		<sup><b>21</b></sup> And he spoke to the children of Israel, saying, When your children ask their fathers in time to come, saying, What do these stones <i>mean?</i><br><br>
+		<sup><b>22</b></sup> You shall let your children know, saying, On dry ground Israel crossed over this Jordan.<br><br>
+		<sup><b>23</b></sup> For Jehovah your God dried up the waters of the Jordan before you until you crossed over, as Jehovah your God did to the Red Sea, which He dried up before us until we crossed over;<br><br>
+		<sup><b>24</b></sup> That all the peoples of the earth may know the hand of Jehovah, that it is mighty; that you may fear Jehovah your God always.<br><br>
+   </p>
+
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

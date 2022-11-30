@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-1"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 1</a></h4>
+	<p><sup><b>1</b></sup> After the death of Moses the servant of Jehovah, Jehovah spoke to Joshua the son of Nun, Moses’ attendant, saying,<br><br>
+		<sup><b>2</b></sup> Moses My servant is dead; now then arise, <i>and</i> cross over this Jordan, you and all this people, into the land which I am giving to them, to the children of Israel.<br><br>
+		<sup><b>3</b></sup> Every place on which the sole of your foot treads I have given to you, as I promised Moses.<br><br>
+		<sup><b>4</b></sup> From the wilderness and this Lebanon even to the great river, the river Euphrates, all the land of the Hittites, and to the Great Sea toward the setting of the sun will be your territory.<br><br>
+		<sup><b>5</b></sup> No man will be able to stand before you all the days of your life. As I was with Moses, I will be with you; I will not fail you nor forsake you.<br><br>
+		<sup><b>6</b></sup> Be strong and take courage, for you will cause this people to inherit the land which I swore to their fathers to give to them.<br><br>
+		<sup><b>7</b></sup> Only be strong and very courageous, being certain to do according to all the law which Moses My servant commanded you. Do not turn away from it to the right or to the left, that you may have success wherever you go.<br><br>
+		<sup><b>8</b></sup> This book of the law shall not depart from your mouth, but you shall muse upon it day and night so that you may be certain to do according to all that is written in it. For then you will make your way prosperous and then you will have success.<br><br>
+		<sup><b>9</b></sup> Have I not commanded you? Be strong and take courage; do not be afraid or dismayed. For Jehovah your God is with you wherever you go.<br><br>
+		<sup><b>10</b></sup> Then Joshua commanded the officers of the people, saying,<br><br>
+		<sup><b>11</b></sup> Go through the midst of the camp, and command the people, saying, Prepare provisions for yourselves, for in three days you are to cross this Jordan to enter <i>and</i> possess the land which Jehovah your God is giving you to possess.<br><br>
+		<sup><b>12</b></sup> And to the Reubenites and the Gadites and the half-tribe of Manasseh Joshua spoke, saying,<br><br>
+		<sup><b>13</b></sup> Remember the word which Moses the servant of Jehovah commanded you, saying, Jehovah your God has given you rest and will give you this land.<br><br>
+		<sup><b>14</b></sup> Your wives, your little ones, and your livestock shall remain in the land which Moses has given you beyond the Jordan; but you yourselves shall cross over in battle array before your brothers, all the mighty men of valor; and you shall help them,<br><br>
+		<sup><b>15</b></sup> Until Jehovah gives rest to your brothers as <i>He has</i> to you, and they also possess the land which Jehovah your God is giving them. Then you shall return to the land of your possession, and you will possess that which Moses the servant of Jehovah has given you beyond the Jordan toward the rising of the sun.<br><br>
+		<sup><b>16</b></sup> And they answered Joshua, saying, All that you have commanded us we will do, and wherever you send us we will go.<br><br>
+		<sup><b>17</b></sup> As in all things we listened to Moses, so we will listen to you. Only may Jehovah your God be with you, as He was with Moses.<br><br>
+		<sup><b>18</b></sup> Any man who rebels against your command or does not listen to your words in all that you command him, let him be put to death. Only be strong and take courage.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
