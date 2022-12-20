@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Judges</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="judges-1"><a onclick="open_chapter('top', '../bible/7-judges.html')">Judges 12</a></h4>
+	<p><sup><b>1</b></sup> Then the men of Ephraim were gathered together, and they crossed over to Zaphon and said to Jephthah, Why did you cross over to fight against the children of Ammon and not call us to go with you? We will burn your house down over you.<br><br>
+		<sup><b>2</b></sup> And Jephthah said to them, I and my people were in great strife with the children of Ammon; but when I called out to you, you did not save me from their hand.<br><br>
+		<sup><b>3</b></sup> So when I saw that there would be no help from you, I put my life in my own hand and crossed over to the children of Ammon; and Jehovah delivered them into my hand. So why have you come up against me this day to fight against me?<br><br>
+		<sup><b>4</b></sup> And Jephthah gathered all the men of Gilead together and fought with Ephraim. And the men of Gilead struck Ephraim because they said, You are fugitives from Ephraim, O Gilead, in the midst of Ephraim <i>and</i> Manasseh.<br><br>
+		<sup><b>5</b></sup> And the Gileadites took the fords of the Jordan against the Ephraimites. And when a fugitive of Ephraim said, Let me cross over, the men of Gilead would say to him, Are you an Ephraimite? And if he said, No,<br><br>
+		<sup><b>6</b></sup> They would say to him, Then say, Shibboleth. And he would say, Sibboleth; for he could not say <i>it</i> correctly. Then they would seize him and slay him at the fords of the Jordan. And at that time forty-two thousand of Ephraim fell.<br><br>
+		<sup><b>7</b></sup> And Jephthah judged Israel six years. And Jephthah the Gileadite died and was buried in <i>one of</i> the cities of Gilead.<br><br>
+		<sup><b>8</b></sup> Then after him Ibzan of Bethlehem judged Israel.<br><br>
+		<sup><b>9</b></sup> And he had thirty sons; and he sent out thirty daughters abroad and brought in thirty <i>foreign</i> daughters from abroad for his sons. And he judged Israel seven years.<br><br>
+		<sup><b>10</b></sup> And Ibzan died and was buried in Bethlehem.<br><br>
+		<sup><b>11</b></sup> Then after him Elon the Zebulunite judged Israel. And he judged Israel ten years.<br><br>
+		<sup><b>12</b></sup> And Elon the Zebulunite died and was buried in Aijalon in the land of Zebulun.<br><br>
+		<sup><b>13</b></sup> Then after him Abdon the son of Hillel the Pirathonite judged Israel.<br><br>
+		<sup><b>14</b></sup> And he had forty sons and thirty grandsons, who rode upon seventy donkeys. And he judged Israel eight years.<br><br>
+		<sup><b>15</b></sup> And Abdon the son of Hillel the Pirathonite died and was buried in Pirathon in the land of Ephraim, in the hill country of the Amalekites.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

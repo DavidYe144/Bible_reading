@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Judges</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="judges-1"><a onclick="open_chapter('top', '../bible/7-judges.html')">Judges 10</a></h4>
+	<p><sup><b>1</b></sup> And after Abimelech Tola the son of Puah, the son of Dodo, a man of Issachar, rose up to save Israel; and he dwelt in Shamir in the hill country of Ephraim.<br><br>
+		<sup><b>2</b></sup> And he judged Israel twenty-three years, and he died and was buried in Shamir.<br><br>
+		<sup><b>3</b></sup> And after him Jair the Gileadite rose up and judged Israel twenty-two years.<br><br>
+		<sup><b>4</b></sup> And he had thirty sons, who rode on thirty donkeys; and they had thirty cities (they are called Havvoth-jair to this day), which were in the land of Gilead.<br><br>
+		<sup><b>5</b></sup> And Jair died and was buried in Kamon.<br><br>
+		<sup><b>6</b></sup> Then the children of Israel again did that which was evil in the sight of Jehovah. And they served the Baals and the Ashtaroth and the gods of Aram and the gods of Sidon and the gods of Moab and the gods of the children of Ammon and the gods of the Philistines, and they forsook Jehovah and did not serve Him.<br><br>
+		<sup><b>7</b></sup> And the anger of Jehovah burned against Israel, and He sold them into the hand of the Philistines and into the hand of the children of Ammon.<br><br>
+		<sup><b>8</b></sup> And they oppressed and crushed the children of Israel that year. For eighteen years <i>they oppressed</i> all the children of Israel who were across the Jordan in the land of the Amorites, which is in Gilead.<br><br>
+		<sup><b>9</b></sup> And the children of Ammon crossed over the Jordan to fight also against Judah and Benjamin and the house of Ephraim; and Israel was greatly distressed.<br><br>
+		<sup><b>10</b></sup> Then the children of Israel cried out to Jehovah, saying, We have sinned against You, for we have forsaken our God and have served the Baals.<br><br>
+		<sup><b>11</b></sup> And Jehovah said to the children of Israel, <i>Did I</i> not <i>save you</i> from the Egyptians and from the Amorites and from the children of Ammon and from the Philistines?<br><br>
+		<sup><b>12</b></sup> And the Sidonians and Amalek and Maon oppressed you; and you cried out to Me, and I saved you from their hand.<br><br>
+		<sup><b>13</b></sup> But you forsook Me and served other gods; therefore I will not save you again.<br><br>
+		<sup><b>14</b></sup> Go and cry out to the gods that you have chosen. Let them save you in the time of your distress.<br><br>
+		<sup><b>15</b></sup> But the children of Israel said to Jehovah, We have sinned. You do with us according to all that is good in Your sight. Only deliver us this day, we pray.<br><br>
+		<sup><b>16</b></sup> And they removed the foreign gods from their midst and served Jehovah. And His soul could no longer bear Israel’s misery.<br><br>
+		<sup><b>17</b></sup> Then the children of Ammon gathered together and encamped in Gilead, and the children of Israel assembled together and encamped in Mizpah.<br><br>
+		<sup><b>18</b></sup> And the people, <i>that is,</i> the princes of Gilead, said each to his companion, Who is the man who will begin to fight against the children of Ammon? He shall be head over all the inhabitants of Gilead.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
