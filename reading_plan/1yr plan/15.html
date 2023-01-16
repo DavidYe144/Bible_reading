@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-1"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 12</a></h4>
+	<p>
+		<sup><b>21</b></sup> And in His name will the Gentiles hope.”<br><br>
+		<sup><b>22</b></sup> Then there was brought to Him one possessed by a demon, blind and dumb, and He healed him, so that the dumb man spoke and saw.<br><br>
+		<sup><b>23</b></sup> And all the crowds were amazed and said, Is this not the Son of David?<br><br>
+		<sup><b>24</b></sup> But the Pharisees, hearing this, said, This man does not cast out the demons except by Beelzebul, ruler of the demons.<br><br>
+		<sup><b>25</b></sup> But knowing their thoughts, He said to them, Every kingdom divided against itself becomes desolate, and every city or house divided against itself will not stand.<br><br>
+		<sup><b>26</b></sup> And if Satan casts out Satan, he is divided against himself. How then will his kingdom stand?<br><br>
+		<sup><b>27</b></sup> And if I, by Beelzebul, cast out the demons, by whom do your sons cast them out? Therefore they shall be your judges.<br><br>
+		<sup><b>28</b></sup> But if I, by the Spirit of God, cast out the demons, then the kingdom of God has come upon you.<br><br>
+		<sup><b>29</b></sup> Or how can anyone enter into the house of the strong man and plunder his goods unless he first binds the strong man? And then he will thoroughly plunder his house.<br><br>
+		<sup><b>30</b></sup> He who is not with Me is against Me, and he who does not gather with Me scatters.<br><br>
+		<sup><b>31</b></sup> Therefore I say to you, Every sin and blasphemy will be forgiven men, but blasphemy against the Spirit will not be forgiven.<br><br>
+		<sup><b>32</b></sup> And whoever speaks a word against the Son of Man, it will be forgiven him; but whoever speaks against the Holy Spirit, it will not be forgiven him, neither in this age nor in the one to come.<br><br>
+		<sup><b>33</b></sup> Either make the tree good and its fruit good, or make the tree corrupt and its fruit corrupt; for by the fruit the tree is known.<br><br>
+		<sup><b>34</b></sup> Offspring of vipers, how can you, being evil, speak good things? For out of the abundance of the heart the mouth speaks.<br><br>
+		<sup><b>35</b></sup> The good man, out of his good treasure, brings forth good things, and the evil man, out of his evil treasure, brings forth evil things.<br><br>
+		<sup><b>36</b></sup> And I say to you that every idle word which men shall speak, they will render an account concerning it in the day of judgment.<br><br>
+		<sup><b>37</b></sup> For by your words you shall be justified, and by your words you shall be condemned.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
