@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-1"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 26</a></h4>
+	<p>
+		<sup><b>26</b></sup> And as they were eating, Jesus took bread and blessed it, and He broke it and gave it to the disciples and said, Take, eat; this is My body.<br><br>
+		<sup><b>27</b></sup> And He took a cup and gave thanks, and He gave it to them, saying, Drink of it, all of you,<br><br>
+		<sup><b>28</b></sup> For this is My blood of the covenant, which is being poured out for many for forgiveness of sins.<br><br>
+		<sup><b>29</b></sup> But I say to you, I shall by no means drink of this product of the vine from now on until that day when I drink it new with you in the kingdom of My Father.<br><br>
+		<sup><b>30</b></sup> And after singing a hymn, they went out to the Mount of Olives.<br><br>
+		<sup><b>31</b></sup> Then Jesus said to them, You will all be stumbled because of Me this night, for it is written, “I will smite the Shepherd, and the sheep of the flock will be scattered.”<br><br>
+		<sup><b>32</b></sup> But after I have been raised, I will go before you into Galilee.<br><br>
+		<sup><b>33</b></sup> Then Peter answered and said to Him, If all will be stumbled because of You, I will never be stumbled.<br><br>
+		<sup><b>34</b></sup> Jesus said to him, Truly I say to you that in this night, before a rooster crows, you will deny Me three times.<br><br>
+		<sup><b>35</b></sup> Peter said to Him, Even if I must die with You, I will by no means deny You. And all the disciples said likewise.<br><br>
+		<sup><b>36</b></sup> Then Jesus came with them to a place called Gethsemane, and He said to the disciples, Sit here while I go over there and pray.<br><br>
+		<sup><b>37</b></sup> And taking Peter and the two sons of Zebedee aside, He began to be sorrowful and deeply distressed.<br><br>
+		<sup><b>38</b></sup> Then He said to them, My soul is exceedingly sorrowful, even to death. Remain here and watch with Me.<br><br>
+		<sup><b>39</b></sup> And going forward a little, He fell on His face and prayed, saying, My Father, if it is possible, let this cup pass from Me; yet not as I will, but as You will.<br><br>
+		<sup><b>40</b></sup> And He came to the disciples and found them sleeping. And He said to Peter, So were you not able to watch with Me for one hour?<br><br>
+		<sup><b>41</b></sup> Watch and pray that you may not enter into temptation. The spirit is willing, but the flesh is weak.<br><br>
+		<sup><b>42</b></sup> Again, going away a second time, He prayed, saying, My Father, if this cannot pass away unless I drink it, Your will be done.<br><br>
+		<sup><b>43</b></sup> And coming again, He found them sleeping, for their eyes were heavy.<br><br>
+		<sup><b>44</b></sup> And leaving them, He went away again and prayed a third time, saying the same word again.<br><br>
+		<sup><b>45</b></sup> Then He came to the disciples and said to them, Are you still sleeping and resting? Behold, the hour has drawn near, and the Son of Man is being delivered up into the hands of sinners.<br><br>
+		<sup><b>46</b></sup> Arise, let us be going. Behold, the one who is betraying Me has drawn near.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

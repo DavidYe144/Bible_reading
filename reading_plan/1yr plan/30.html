@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-1"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 21</a></h4>
+	<p><sup><b>23</b></sup> And when He came into the temple, the chief priests and elders of the people came to Him as He was teaching and said, By what authority do You do these things? And who gave You this authority?<br><br>
+		<sup><b>24</b></sup> And Jesus answered and said to them, I also will ask you one thing, which if you tell Me, I also will tell you by what authority I do these things.<br><br>
+		<sup><b>25</b></sup> The baptism of John, from where did it come, from heaven or from men? And they reasoned among themselves, saying, If we say, From heaven, He will say to us, Why then did you not believe him?<br><br>
+		<sup><b>26</b></sup> But if we say, From men, we fear the crowd, for all hold John as a prophet.<br><br>
+		<sup><b>27</b></sup> And they answered Jesus and said, We do not know. He too said to them, Neither do I tell you by what authority I do these things.<br><br>
+		<sup><b>28</b></sup> But what do you think? A man had two children. And he came to his first son and said, Child, go today and work in the vineyard.<br><br>
+		<sup><b>29</b></sup> And he answered and said, I do not want to; yet later he regretted and went.<br><br>
+		<sup><b>30</b></sup> And he came to the other and said likewise. And he answered and said, I will, sir; yet he did not go.<br><br>
+		<sup><b>31</b></sup> Which of the two did the will of the father? They said, The first. Jesus said to them, Truly I say to you that the tax collectors and the harlots are going into the kingdom of God before you.<br><br>
+		<sup><b>32</b></sup> For John came to you in the way of righteousness, and you did not believe him, but the tax collectors and the harlots believed him. And you, when you saw it, did not later regret it to believe him.<br><br>
+		<sup><b>33</b></sup> Hear another parable. There was a man, a householder, who planted a vineyard and put a hedge around it, and dug a winepress in it, and built a tower; and he leased it out to vinedressers and went abroad.<br><br>
+		<sup><b>34</b></sup> And when the time to harvest the fruit drew near, he sent his slaves to the vinedressers to get his fruit.<br><br>
+		<sup><b>35</b></sup> And the vinedressers took his slaves and beat one, and killed another, and stoned another.<br><br>
+		<sup><b>36</b></sup> Again, he sent some other slaves, more than the first, and they did likewise to them.<br><br>
+		<sup><b>37</b></sup> Then later he sent to them his son, saying, They will respect my son.<br><br>
+		<sup><b>38</b></sup> But the vinedressers, when they saw the son, said among themselves, This is the heir. Come, let us kill him and take possession of his inheritance.<br><br>
+		<sup><b>39</b></sup> And they took him and cast him out of the vineyard and killed him.<br><br>
+		<sup><b>40</b></sup> Therefore when the master of the vineyard comes, what will he do to those vinedressers?<br><br>
+		<sup><b>41</b></sup> They said to Him, He will miserably destroy those evil men and will lease the vineyard to other vinedressers, who will give the fruit to him in their seasons.<br><br>
+		<sup><b>42</b></sup> Jesus said to them, Have you never read in the Scriptures, “The stone which the builders rejected, this has become the head of the corner. This was from the Lord, and it is marvelous in our eyes”?<br><br>
+		<sup><b>43</b></sup> Therefore I say to you that the kingdom of God shall be taken from you and shall be given to a nation producing its fruit.<br><br>
+		<sup><b>44</b></sup> And he who falls on this stone shall be broken to pieces; but on whomever it falls, it shall crush him to powder and scatter him like chaff.<br><br>
+		<sup><b>45</b></sup> And when the chief priests and the Pharisees heard His parables, they perceived that He was speaking concerning them.<br><br>
+		<sup><b>46</b></sup> And though they sought to seize Him, they feared the crowds because they held Him as a prophet.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

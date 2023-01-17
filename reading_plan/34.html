@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-1"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 23</a></h4>
+	<p>				 
+		<sup><b>23</b></sup> Woe to you, scribes and Pharisees, hypocrites! For you give a tenth of the mint and the anise and the cummin, and have neglected the weightier matters of the law — justice and mercy and faithfulness. But these you should have done and not neglected the others.<br><br>
+		<sup><b>24</b></sup> Blind guides, who strain out the gnat but swallow the camel!<br><br>
+		<sup><b>25</b></sup> Woe to you, scribes and Pharisees, hypocrites! For you cleanse the outside of the cup and the dish, but inwardly they are full of extortion and self-indulgence.<br><br>
+		<sup><b>26</b></sup> Blind Pharisee, cleanse first the inside of the cup and the dish so that their outside also may become clean.<br><br>
+		<sup><b>27</b></sup> Woe to you, scribes and Pharisees, hypocrites! For you resemble whitewashed graves, which outwardly appear beautiful but inwardly are full of dead men’s bones and all uncleanness.<br><br>
+		<sup><b>28</b></sup> So you also outwardly appear righteous to men, but inwardly you are full of hypocrisy and lawlessness.<br><br>
+		<sup><b>29</b></sup> Woe to you, scribes and Pharisees, hypocrites! For you build up the graves of the prophets and adorn the tombs of the righteous,<br><br>
+		<sup><b>30</b></sup> And say, If we had been there in the days of our fathers, we would not have been partakers with them in the blood of the prophets.<br><br>
+		<sup><b>31</b></sup> So then you testify against yourselves that you are the sons of those who murdered the prophets.<br><br>
+		<sup><b>32</b></sup> And you, fill up the measure of your fathers!<br><br>
+		<sup><b>33</b></sup> Serpents! Brood of vipers! How shall you escape the judgment of Gehenna?<br><br>
+		<sup><b>34</b></sup> Therefore, behold, I send to you prophets and wise men and scribes. Some of them you will kill and crucify, and some of them you will scourge in your synagogues and persecute from city to city,<br><br>
+		<sup><b>35</b></sup> So that upon you may come all the righteous blood shed on the earth, from the blood of righteous Abel to the blood of Zachariah, son of Barachiah, whom you murdered between the temple and the altar.<br><br>
+		<sup><b>36</b></sup> Truly I say to you, All these things shall come upon this generation.<br><br>
+		<sup><b>37</b></sup> Jerusalem, Jerusalem, who kills the prophets and stones those who are sent to her! How often I desired to gather your children together, the way a hen gathers her brood under her wings, and you would not!<br><br>
+		<sup><b>38</b></sup> Behold, your house is left to you desolate.<br><br>
+		<sup><b>39</b></sup> For I say to you, You shall by no means see Me from now on until you say, Blessed is He who comes in the name of the Lord.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
