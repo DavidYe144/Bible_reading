@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-7"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Mark 7</a></h4>
+	<p>				 
+		<sup><b>24</b></sup> And He rose up from there and went away into the borders of Tyre and Sidon. And entering into a house, He wanted no one to know about it; yet He could not escape notice.<br><br>
+		<sup><b>25</b></sup> But a woman whose little daughter had an unclean spirit heard about Him, and immediately she came and fell at His feet.<br><br>
+		<sup><b>26</b></sup> Now the woman was a Greek, Syrophoenician by race. And she asked Him to cast the demon out of her daughter.<br><br>
+		<sup><b>27</b></sup> And He said to her, First let the children be satisfied, for it is not good to take the children’s bread and throw it to the little dogs.<br><br>
+		<sup><b>28</b></sup> And she answered and said to Him, Yes, Lord, but even the little dogs under the table eat of the little children’s crumbs.<br><br>
+		<sup><b>29</b></sup> And He said to her, Because of this word, go. The demon has gone out of your daughter.<br><br>
+		<sup><b>30</b></sup> And she went away to her house and found the little child lying on the couch and the demon gone out.<br><br>
+		<sup><b>31</b></sup> And again He came out of the borders of Tyre and came through Sidon to the Sea of Galilee in the midst of the borders of Decapolis.<br><br>
+		<sup><b>32</b></sup> And they brought to Him one who was deaf and who spoke with difficulty, and they entreated Him to lay His hand on him.<br><br>
+		<sup><b>33</b></sup> And He took him aside from the crowd privately and put His fingers into his ears, and He spat and touched his tongue.<br><br>
+		<sup><b>34</b></sup> And looking up to heaven, He groaned and said to him, Ephphatha! that is, Be opened!<br><br>
+		<sup><b>35</b></sup> And immediately his ears were opened, and the bond on his tongue was released and he spoke clearly.<br><br>
+		<sup><b>36</b></sup> And He charged them not to tell anyone. But the more He charged them, so much the more they proclaimed it.<br><br>
+		<sup><b>37</b></sup> And they were utterly astounded, saying, He has done all things well; He makes both the deaf hear and the dumb speak. <br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

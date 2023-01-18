@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-14"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Mark 14</a></h4>
+	<p>				 
+		<sup><b>66</b></sup> And while Peter was below in the courtyard, one of the servant girls of the high priest came,<br><br>
+		<sup><b>67</b></sup> And seeing Peter warming himself, she looked at him and said, You also were with the Nazarene, Jesus.<br><br>
+		<sup><b>68</b></sup> But he denied it, saying, I neither know nor understand what you are talking about. And he went outside into the forecourt, and a rooster crowed.<br><br>
+		<sup><b>69</b></sup> And the servant girl, seeing him, began again to say to those standing by, This man is one of them!<br><br>
+		<sup><b>70</b></sup> But again he denied it. And after a little while, those standing by again said to Peter, Surely you are one of them, for you are a Galilean as well.<br><br>
+		<sup><b>71</b></sup> But he began to curse and to swear, I do not know this man of whom you speak!<br><br>
+		<sup><b>72</b></sup> And immediately a rooster crowed a second time. And Peter remembered the word, how Jesus had said to him, Before a rooster crows twice, you will deny Me three times. And thinking upon it, he wept. <br><br>
+    </p>
+</div>
+<div class="bible-text">
+   <h4 id="mark-15"><a onclick="open_chapter('top', '../bible/41-mark.html')">Mark 15</a></h4>
+    <p><sup><b>1</b></sup> And immediately in the morning the chief priests held a consultation with the elders and scribes and the whole Sanhedrin, and having bound Jesus, they led Him away and delivered Him to Pilate.<br><br>
+		<sup><b>2</b></sup> And Pilate questioned Him, Are You the King of the Jews? And answering him, He said, It is as you say.<br><br>
+		<sup><b>3</b></sup> And the chief priests accused Him of many things.<br><br>
+		<sup><b>4</b></sup> And Pilate again questioned Him, saying, Do You answer nothing? See how many things they are accusing You of.<br><br>
+		<sup><b>5</b></sup> But Jesus made no further answer, so that Pilate marveled.<br><br>
+		<sup><b>6</b></sup> Now at the feasts he released to them one prisoner whom they requested.<br><br>
+		<sup><b>7</b></sup> And there was one named Barabbas, bound with the insurrectionists who had committed murder in the insurrection.<br><br>
+		<sup><b>8</b></sup> And the crowd came up and began to ask him to do even as he had been accustomed to do for them.<br><br>
+		<sup><b>9</b></sup> But Pilate answered them, saying, Do you want me to release to you the King of the Jews?<br><br>
+		<sup><b>10</b></sup> For he knew that it was because of envy that the chief priests had delivered Him up.<br><br>
+		<sup><b>11</b></sup> But the chief priests stirred up the crowd that instead he should release Barabbas to them.<br><br>
+		<sup><b>12</b></sup> And Pilate again answered and said to them, What then do you want me to do with Him whom you call the King of the Jews?<br><br>
+		<sup><b>13</b></sup> And again they cried out, Crucify Him!<br><br>
+		<sup><b>14</b></sup> But Pilate said to them, Why, what evil has He done? But they cried out the more, Crucify Him!<br><br>
+		<sup><b>15</b></sup> And Pilate, wishing to satisfy the crowd, released to them Barabbas and scourged Jesus and delivered Him up to be crucified.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-10"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Mark 10</a></h4>
+	<p>
+		<sup><b>45</b></sup> For even the Son of Man did not come to be served, but to serve and to give His life as a ransom for many.<br><br>
+		<sup><b>46</b></sup> And they came to Jericho. And as He was going out from Jericho, as well as His disciples and a large crowd, the son of Timaeus, Bartimaeus, a blind beggar, sat by the road.<br><br>
+		<sup><b>47</b></sup> And when he heard that it was Jesus the Nazarene, he began to cry out and say, Jesus, Son of David, have mercy on me!<br><br>
+		<sup><b>48</b></sup> And many rebuked him so that he would be silent, but he cried out much more, Son of David, have mercy on me!<br><br>
+		<sup><b>49</b></sup> And Jesus, standing still, said, Call him here. And they called the blind man, saying to him, Take courage. Rise. He is calling you.<br><br>
+		<sup><b>50</b></sup> And throwing his garment aside, he leaped up and came to Jesus.<br><br>
+		<sup><b>51</b></sup> And Jesus answered him and said, What do you want Me to do for you? And the blind man said to Him, Rabboni, that I may receive my sight!<br><br>
+		<sup><b>52</b></sup> And Jesus said to him, Go; your faith has healed you. And immediately he received his sight and followed Him on the road. <br><br>
+	</p>
+	<h4 id="mark-11"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Mark 11</a></h4>
+	<p><sup><b>1</b></sup> And when they drew near to Jerusalem, at Bethphage and Bethany, at the Mount of Olives, He sent two of His disciples,<br><br>
+		<sup><b>2</b></sup> And said to them, Go into the village opposite you, and immediately upon entering into it, you will find a colt tied, on which no man has yet sat; untie it and bring it.<br><br>
+		<sup><b>3</b></sup> And if anyone says to you, Why are you doing this? say, The Lord has need of it and will immediately send it here again.<br><br>
+		<sup><b>4</b></sup> And they went away and found a colt tied by a door, outside on the street, and they untied it.<br><br>
+		<sup><b>5</b></sup> And some of the ones standing there said to them, What are you doing untying the colt?<br><br>
+		<sup><b>6</b></sup> And they spoke to them even as Jesus had said. And they let them do it.<br><br>
+		<sup><b>7</b></sup> And they brought the colt to Jesus and threw their garments on it, and He sat on it.<br><br>
+		<sup><b>8</b></sup> And many spread their garments in the road, and others spread layers of branches full of tender leaves, having cut them out of the fields.<br><br>
+		<sup><b>9</b></sup> And those who went before and those who followed cried out, Hosanna! Blessed is He who comes in the name of the Lord!<br><br>
+		<sup><b>10</b></sup> Blessed is the coming kingdom of our father David! Hosanna in the highest!<br><br>
+		<sup><b>11</b></sup> And He entered into Jerusalem, into the temple; and when He had looked around at all things, since the hour was already late, He went out to Bethany with the twelve.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

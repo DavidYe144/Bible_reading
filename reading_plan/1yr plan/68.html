@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-14"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Mark 14</a></h4>
+	<p>
+	<sup><b>27</b></sup> And Jesus said to them, You will all be stumbled, because it is written, “I will smite the Shepherd, and the sheep will be scattered.”<br><br>
+	<sup><b>28</b></sup> But after I have been raised, I will go before you into Galilee.<br><br>
+	<sup><b>29</b></sup> But Peter said to Him, Even if all will be stumbled, yet I will not!<br><br>
+	<sup><b>30</b></sup> And Jesus said to him, Truly I say to you that today in this night, before a rooster crows twice, you will deny Me three times.<br><br>
+	<sup><b>31</b></sup> But he went on speaking more intensely, Even if I must die with You, I will by no means deny You! And they all said similarly.<br><br>
+	<sup><b>32</b></sup> And they came to a place named Gethsemane, and He said to His disciples, Sit here while I pray.<br><br>
+	<sup><b>33</b></sup> And He took Peter and James and John with Him and began to be awestruck and deeply distressed.<br><br>
+	<sup><b>34</b></sup> And He said to them, My soul is exceedingly sorrowful, even to death. Remain here and watch.<br><br>
+	<sup><b>35</b></sup> And going forward a little, He fell on the ground and prayed that, if it were possible, the hour would pass from Him.<br><br>
+	<sup><b>36</b></sup> And He said, Abba Father, all things are possible to You; remove this cup from Me; yet not what I will, but what You will.<br><br>
+	<sup><b>37</b></sup> And He came and found them sleeping. And He said to Peter, Simon, are you sleeping? Were you not able to watch for one hour?<br><br>
+	<sup><b>38</b></sup> Watch and pray that you may not come into temptation. The spirit is willing, but the flesh is weak.<br><br>
+	<sup><b>39</b></sup> And going away again, He prayed, saying the same thing.<br><br>
+	<sup><b>40</b></sup> And coming again, He found them sleeping, for their eyes were very heavy. And they did not know what to answer Him.<br><br>
+	<sup><b>41</b></sup> And He came the third time and said to them, Are you still sleeping and resting? It is enough. The hour has come; behold, the Son of Man is being delivered into the hands of sinners.<br><br>
+	<sup><b>42</b></sup> Arise, let us be going. Behold, the one betraying Me has drawn near.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
