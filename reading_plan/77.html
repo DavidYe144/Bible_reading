@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-2"><a onclick="open_chapter('2', '../bible/42-luke.html')">Luke 2:22-39</a></h4>
+	<p><sup><b>22</b></sup> And when the days for their purification according to the law of Moses were fulfilled, they brought Him up to Jerusalem to present Him to the Lord<br><br>
+		<sup><b>23</b></sup> (Even as it is written in the law of the Lord, “Every male who opens the womb shall be called holy to the Lord”),<br><br>
+		<sup><b>24</b></sup> And to give a sacrifice according to what is said in the law of the Lord: A pair of turtledoves or two young doves.<br><br>
+		<sup><b>25</b></sup> And behold, there was a man in Jerusalem whose name was Simeon. And this man was righteous and devout, waiting for the consolation of Israel, and the Holy Spirit was upon him.<br><br>
+		<sup><b>26</b></sup> And it had been divinely communicated to him by the Holy Spirit that he would not see death before he had seen the Lord’s Christ.<br><br>
+		<sup><b>27</b></sup> And he came in the Spirit into the temple; and when the parents brought in the little child Jesus for them to do according to the custom of the law concerning Him,<br><br>
+		<sup><b>28</b></sup> He received Him into his arms and blessed God and said,<br><br>
+		<sup><b>29</b></sup> Now You release Your slave, Master, according to Your word, in peace;<br><br>
+		<sup><b>30</b></sup> For my eyes have seen Your salvation,<br><br>
+		<sup><b>31</b></sup> Which You have prepared before the face of all the peoples,<br><br>
+		<sup><b>32</b></sup> A light for revelation to the Gentiles and the glory of Your people Israel.<br><br>
+		<sup><b>33</b></sup> And His father and mother marveled at the things being spoken about Him.<br><br>
+		<sup><b>34</b></sup> And Simeon blessed them and said to Mary His mother, Behold, this One is appointed for the falling and rising up of many in Israel and for a sign spoken against —<br><br>
+		<sup><b>35</b></sup> And a sword will pierce through your own soul also — so that the reasonings of many hearts may be revealed.<br><br>
+		<sup><b>36</b></sup> And there was one Anna, a prophetess, a daughter of Phanuel, of the tribe of Asher. She was well advanced in years, having lived with her husband seven years from her virginity,<br><br>
+		<sup><b>37</b></sup> And she was a widow up to the age of eighty-four, who did not depart from the temple, serving God with fastings and petitions night and day.<br><br>
+		<sup><b>38</b></sup> And at that very hour she came up and returned thanks to God, and spoke concerning Him to all those waiting for the redemption of Jerusalem.<br><br>
+		<sup><b>39</b></sup> And when they had finished all things according to the law of the Lord, they returned into Galilee, to their own city, Nazareth.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

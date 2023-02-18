@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-6"><a onclick="open_chapter('6', '../bible/42-luke.html')">Luke 6</a></h4>
+	<p><sup><b>1</b></sup> And one Sabbath He was going through the grainfields, and His disciples were picking and eating the ears of grain, rubbing them in their hands.<br><br>
+		<sup><b>2</b></sup> And some of the Pharisees said, Why are you doing what is not lawful to do on the Sabbath?<br><br>
+		<sup><b>3</b></sup> And Jesus answered them and said, Have you not even read this that David did when he became hungry, he and those who were with him;<br><br>
+		<sup><b>4</b></sup> How he entered into the house of God, and taking the bread of the Presence, he ate it and gave some to those with him, which is not lawful for anyone to eat except the priests alone?<br><br>
+		<sup><b>5</b></sup> And He said to them, The Son of Man is Lord of the Sabbath.<br><br>
+		<sup><b>6</b></sup> And on another Sabbath He entered into the synagogue and taught. And there was a man there, and his right hand was withered.<br><br>
+		<sup><b>7</b></sup> And the scribes and the Pharisees were watching Him closely to see if He would heal on the Sabbath, so that they might find reason to accuse Him.<br><br>
+		<sup><b>8</b></sup> But He knew their reasonings and said to the man who had the withered hand, Rise and stand in the midst. And he rose up and stood.<br><br>
+		<sup><b>9</b></sup> And Jesus said to them, I ask you, Is it lawful on the Sabbath to do good or to do evil, to save a life or to destroy it?<br><br>
+		<sup><b>10</b></sup> And looking around at all of them, He said to him, Stretch out your hand. And he did, and his hand was restored.<br><br>
+		<sup><b>11</b></sup> But they were filled with rage and discussed with one another what they might do to Jesus.<br><br>
+		<sup><b>12</b></sup> And in these days He went out to the mountain to pray, and He spent the whole night in prayer to God.<br><br>
+		<sup><b>13</b></sup> And when it became day, He called His disciples to Him, and He chose from them twelve, whom He also named apostles:<br><br>
+		<sup><b>14</b></sup> Simon, whom He also named Peter, and Andrew his brother and James and John and Philip and Bartholomew<br><br>
+		<sup><b>15</b></sup> And Matthew and Thomas and James the son of Alphaeus and Simon, who was called Zealot,<br><br>
+		<sup><b>16</b></sup> And Judas the brother of James, and Judas Iscariot, who became the traitor.<br><br>
+		<sup><b>17</b></sup> And He came down with them and stood on a level place; and there was a great crowd of His disciples, and a great multitude of people from all Judea and Jerusalem and the seacoast of Tyre and Sidon, who had come to hear Him and to be healed of their diseases.<br><br>
+		<sup><b>18</b></sup> And those who were troubled by unclean spirits were healed.<br><br>
+		<sup><b>19</b></sup> And all the crowd sought to touch Him, because power was going out from Him and healing all.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

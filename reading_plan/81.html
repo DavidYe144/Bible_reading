@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-4"><a onclick="open_chapter('4', '../bible/42-luke.html')">Luke 4:23-44</a></h4>
+	<p>
+	<sup><b>23</b></sup> And He said to them, Surely you will say this proverb to Me, Physician, heal yourself! What we heard happening in Capernaum, do here also in Your own country.<br><br>
+	<sup><b>24</b></sup> And He said, Truly I say to you that no prophet is acceptable in his own country.<br><br>
+	<sup><b>25</b></sup> But in truth I say to you, There were many widows in Israel in the days of Elijah, when the sky was shut up for three years and six months, when a great famine came over all the land;<br><br>
+	<sup><b>26</b></sup> And to none of them was Elijah sent, except to the city of Sarepta of Sidon, to a woman who was a widow.<br><br>
+	<sup><b>27</b></sup> And there were many lepers in Israel during the time of Elisha the prophet, and none of them were cleansed, except Naaman the Syrian.<br><br>
+	<sup><b>28</b></sup> And all in the synagogue were filled with anger when they heard these things,<br><br>
+	<sup><b>29</b></sup> And they rose up and cast Him out of the city and led Him to the brow of the hill on which their city was built so that they might throw Him down the cliff.<br><br>
+	<sup><b>30</b></sup> But He, passing through their midst, went away.<br><br>
+	<sup><b>31</b></sup> And He came down to Capernaum, a city of Galilee. And He taught them on the Sabbath.<br><br>
+	<sup><b>32</b></sup> And they were astounded at His teaching, because His word was with authority.<br><br>
+	<sup><b>33</b></sup> And in the synagogue there was a man who had a spirit of an unclean demon, and he cried out with a loud voice,<br><br>
+	<sup><b>34</b></sup> Ah! What do we have to do with You, Jesus, Nazarene? Have You come to destroy us? I know who You are — the Holy One of God.<br><br>
+	<sup><b>35</b></sup> And Jesus rebuked him, saying, Be quiet and come out from him. And throwing him down in the midst, the demon came out from him without harming him at all.<br><br>
+	<sup><b>36</b></sup> And amazement came upon all, and they spoke to one another, saying, What is this word? For with authority and power He orders the unclean spirits, and they come out.<br><br>
+	<sup><b>37</b></sup> And reports went out concerning Him into every place of the surrounding region.<br><br>
+	<sup><b>38</b></sup> And He rose up and went from the synagogue and entered into the house of Simon. And Simon’s mother-in-law was suffering with a high fever, and they asked Him concerning her.<br><br>
+	<sup><b>39</b></sup> And standing over her, He rebuked the fever, and it left her. And she instantly rose up and served them.<br><br>
+	<sup><b>40</b></sup> And when the sun was setting, all those who had any that were sick with various diseases brought them to Him; and He laid His hands on each one of them and healed them.<br><br>
+	<sup><b>41</b></sup> And demons also came out from many, crying out and saying, You are the Son of God! And He rebuked them and would not allow them to speak, because they knew that He was the Christ.<br><br>
+	<sup><b>42</b></sup> And when day came, He departed and went into a deserted place. And the crowds sought Him, and they came up to Him and tried to hold on to Him so that He would not go away from them.<br><br>
+	<sup><b>43</b></sup> But He said to them, I must announce the gospel of the kingdom of God to the other cities also, because for this I was sent.<br><br>
+	<sup><b>44</b></sup> And He preached in the synagogues of Judea. <br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

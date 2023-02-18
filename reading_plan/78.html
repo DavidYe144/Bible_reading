@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-2"><a onclick="open_chapter('2', '../bible/42-luke.html')">Luke 2</a></h4>
+	<p><sup><b>40</b></sup> And the little child grew and became strong, being filled with wisdom, and the grace of God was upon Him.<br><br>
+		<sup><b>41</b></sup> And His parents went year by year to Jerusalem at the Feast of the Passover.<br><br>
+		<sup><b>42</b></sup> And when He became twelve years old, they went up according to the custom of the feast.<br><br>
+		<sup><b>43</b></sup> And when they had completed the days, while they were returning, the boy Jesus remained behind in Jerusalem, and His parents did not know it.<br><br>
+		<sup><b>44</b></sup> But supposing that He was in the company, they went a day’s journey and sought Him among their relatives and acquaintances.<br><br>
+		<sup><b>45</b></sup> And when they did not find Him, they returned to Jerusalem searching for Him.<br><br>
+		<sup><b>46</b></sup> And after three days they found Him in the temple, sitting in the midst of the teachers, both hearing them and questioning them.<br><br>
+		<sup><b>47</b></sup> And all those who heard Him were amazed at His understanding and His answers.<br><br>
+		<sup><b>48</b></sup> And when they saw Him, they were astounded; and His mother said to Him, Child, why have You treated us like this? Behold, Your father and I, being greatly distressed, have been seeking You.<br><br>
+		<sup><b>49</b></sup> And He said to them, Why is it that you were seeking Me? Did you not know that I must be in the things of My Father?<br><br>
+		<sup><b>50</b></sup> And they did not understand the word which He spoke to them.<br><br>
+		<sup><b>51</b></sup> And He went down with them and came to Nazareth, and was subject to them. And His mother carefully kept all these things in her heart.<br><br>
+		<sup><b>52</b></sup> And Jesus advanced in wisdom and stature and in the grace manifested in Him before God and men. <br><br>
+    </p>
+	<br>
+    <h4 id="luke-3"><a onclick="open_chapter('3', '../bible/42-luke.html')">Luke 3</a></h4>
+	<p><sup><b>1</b></sup> Now in the fifteenth year of the government of Tiberius Caesar, while Pontius Pilate was governor of Judea, and Herod was tetrarch of Galilee, and his brother Philip was tetrarch of the region of Ituraea and Trachonitis, and Lysanias was tetrarch of Abilene,<br><br>
+		<sup><b>2</b></sup> During the high priesthood of Annas and Caiaphas, the word of God came to John the son of Zachariah in the wilderness.<br><br>
+		<sup><b>3</b></sup> And he came into all the region surrounding the Jordan, proclaiming a baptism of repentance for forgiveness of sins,<br><br>
+		<sup><b>4</b></sup> As it is written in the book of the words of Isaiah the prophet, “A voice of one crying in the wilderness, Prepare the way of the Lord; make straight His paths.<br><br>
+		<sup><b>5</b></sup> Every ravine shall be filled up, and every mountain and hill shall be leveled; and the crooked places shall become a straight way, and the rough ways smooth.<br><br>
+		<sup><b>6</b></sup> And all flesh shall see the salvation of God.”<br><br>
+		<sup><b>7</b></sup> He said therefore to the crowds going out to be baptized by him, Offspring of vipers, who prompted you to flee from the coming wrath?<br><br>
+		<sup><b>8</b></sup> Produce then fruits worthy of your repentance, and do not begin to say within yourselves, We have Abraham as our father; for I tell you that God is able out of these stones to raise up children to Abraham.<br><br>
+		<sup><b>9</b></sup> And already also the axe is laid at the root of the trees. Every tree therefore that does not produce good fruit is cut down and cast into the fire.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-2"><a onclick="open_chapter('2', '../bible/42-luke.html')">Luke 2</a></h4>
+	<p><sup><b>1</b></sup> And in those days a decree went out from Caesar Augustus for a census to be taken of all the inhabited earth.<br><br>
+		<sup><b>2</b></sup> This was the first census that took place when Quirinius governed Syria.<br><br>
+		<sup><b>3</b></sup> And all went to be registered, each to his own city.<br><br>
+		<sup><b>4</b></sup> And Joseph also went up from Galilee out of the city of Nazareth into Judea, to David’s city, which is called Bethlehem, because he was of the house and family of David,<br><br>
+		<sup><b>5</b></sup> To be registered with Mary, who was engaged to him and was pregnant.<br><br>
+		<sup><b>6</b></sup> And while they were there, the days were fulfilled for her to bear,<br><br>
+		<sup><b>7</b></sup> And she bore her firstborn son; and she wrapped Him in swaddling clothes and laid Him in a manger because there was no place for them in the inn.<br><br>
+		<sup><b>8</b></sup> And there were shepherds in the same region, spending their nights in the fields and keeping watch over their flock by night.<br><br>
+		<sup><b>9</b></sup> And an angel of the Lord stood by them, and the glory of the Lord shone around them; and they feared greatly.<br><br>
+		<sup><b>10</b></sup> And the angel said to them, Do not be afraid; for behold, I announce to you good news of great joy, which will be for all the people,<br><br>
+		<sup><b>11</b></sup> Because today a Savior has been born to you in David’s city, who is Christ the Lord.<br><br>
+		<sup><b>12</b></sup> And this will be the sign to you: you will find a baby wrapped in swaddling clothes and lying in a manger.<br><br>
+		<sup><b>13</b></sup> And suddenly there was with the angel a multitude of the heavenly army, praising God and saying,<br><br>
+		<sup><b>14</b></sup> Glory in the highest places to God, and on earth peace among men of His good pleasure.<br><br>
+		<sup><b>15</b></sup> And when the angels departed from them into heaven, the shepherds spoke to one another, Let us go then to Bethlehem and see this thing that has happened, which the Lord has made known to us.<br><br>
+		<sup><b>16</b></sup> And they came in haste and found both Mary and Joseph, and the baby lying in the manger.<br><br>
+		<sup><b>17</b></sup> And when they had seen this, they made known the word which was spoken to them concerning this little child.<br><br>
+		<sup><b>18</b></sup> And all those who heard marveled at the things spoken to them by the shepherds.<br><br>
+		<sup><b>19</b></sup> But Mary kept all these things and pondered them in her heart.<br><br>
+		<sup><b>20</b></sup> And the shepherds returned, glorifying and praising God for all the things which they had heard and seen, even as it was spoken to them.<br><br>
+		<sup><b>21</b></sup> And when eight days were fulfilled to circumcise Him, His name was called Jesus, the name given by the angel before He was conceived in the womb.<br><br>
+    <br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

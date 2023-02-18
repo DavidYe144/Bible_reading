@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-10"><a onclick="open_chapter('10', '../bible/42-luke.html')">Luke 10:24-42</a></h4>
+	<p><sup><b>25</b></sup> And behold, a certain lawyer stood up and put Him to the test, saying, Teacher, what should I do to inherit eternal life?<br><br>
+		<sup><b>26</b></sup> And He said to him, What is written in the law? How do you read it?<br><br>
+		<sup><b>27</b></sup> And he answered and said, “You shall love the Lord your God from your whole heart and with your whole soul and with your whole strength and with your whole mind, and your neighbor as yourself.”<br><br>
+		<sup><b>28</b></sup> And He said to him, You have answered correctly; do this, and you shall have life.<br><br>
+		<sup><b>29</b></sup> But he, wanting to justify himself, said to Jesus, And who is my neighbor?<br><br>
+		<sup><b>30</b></sup> Jesus, taking up the question, said, A certain man was going down from Jerusalem to Jericho, and he fell among robbers, who having both stripped him and beaten him, went away, leaving him half dead.<br><br>
+		<sup><b>31</b></sup> And by coincidence a certain priest was going down on that road; and when he saw him, he passed by on the opposite side.<br><br>
+		<sup><b>32</b></sup> And likewise also a Levite, when he came to the place and saw him, passed by on the opposite side.<br><br>
+		<sup><b>33</b></sup> But a certain Samaritan, who was journeying, came upon him; and when he saw him, he was moved with compassion;<br><br>
+		<sup><b>34</b></sup> And he came to him and bound up his wounds and poured oil and wine on them. And placing him on his own beast, he brought him to an inn and took care of him.<br><br>
+		<sup><b>35</b></sup> And on the next day he took out two denarii and gave them to the innkeeper and said, Take care of him; and whatever you spend in addition to this, when I return, I will repay you.<br><br>
+		<sup><b>36</b></sup> Which of these three, does it seem to you, has become a neighbor to him who fell into the hands of the robbers?<br><br>
+		<sup><b>37</b></sup> And he said, The one who showed mercy to him. And Jesus said to him, Go, and you do likewise.<br><br>
+		<sup><b>38</b></sup> Now as they went, He entered into a certain village, and a certain woman named Martha received Him into her home.<br><br>
+		<sup><b>39</b></sup> And she had a sister called Mary, who also sat at the Lord’s feet and was listening to His word.<br><br>
+		<sup><b>40</b></sup> But Martha was being drawn about with much serving, and she came up to Him and said, Lord, does it not matter to You that my sister has left me to serve alone? Tell her then to do her part with me.<br><br>
+		<sup><b>41</b></sup> But the Lord answered and said to her, Martha, Martha, you are anxious and troubled about many things;<br><br>
+		<sup><b>42</b></sup> But there is need of one thing, for Mary has chosen the good part, which shall not be taken away from her. <br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
