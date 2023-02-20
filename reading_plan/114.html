@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('20', '../bible/42-luke.html')">Luke 20</a></h4>
+	<p>
+		<sup><b>1</b></sup> And on one of the days, as He was teaching the people in the temple and announcing the good news, the chief priests and the scribes with the elders came upon Him,<br><br>
+		<sup><b>2</b></sup> And spoke, saying to Him, Tell us by what authority You do these things, or who is the one who gave You this authority?<br><br>
+		<sup><b>3</b></sup> And He answered and said to them, I also will ask you one thing, and you tell Me:<br><br>
+		<sup><b>4</b></sup> The baptism of John, was it from heaven or from men?<br><br>
+		<sup><b>5</b></sup> And they reasoned together among themselves, saying, If we say, From heaven, He will say, Why did you not believe him?<br><br>
+		<sup><b>6</b></sup> But if we say, From men, all the people will stone us to death, for they are persuaded that John was a prophet.<br><br>
+		<sup><b>7</b></sup> And they answered that they did not know where it was from.<br><br>
+		<sup><b>8</b></sup> And Jesus said to them, Neither do I tell you by what authority I do these things.<br><br>
+		<sup><b>9</b></sup> And He began to speak to the people this parable: A certain man planted a vineyard and leased it out to vinedressers and went abroad for a considerable time.<br><br>
+		<sup><b>10</b></sup> And at the proper time he sent a slave to the vinedressers so that they might give him some of the fruit of the vineyard; but the vinedressers beat him and sent him away empty-handed.<br><br>
+		<sup><b>11</b></sup> And he went on to send another slave, but they beat that one also, and dishonored him, and sent him away empty-handed.<br><br>
+		<sup><b>12</b></sup> And he went on to send a third, but that one also they wounded and threw out.<br><br>
+		<sup><b>13</b></sup> And the master of the vineyard said, What shall I do? I will send my son, the beloved; they will probably respect this one.<br><br>
+		<sup><b>14</b></sup> But when the vinedressers saw him, they reasoned with one another, saying, This is the heir; let us kill him that the inheritance may become ours.<br><br>
+		<sup><b>15</b></sup> And they threw him out of the vineyard and killed him. What then will the master of the vineyard do to them?<br><br>
+		<sup><b>16</b></sup> He will come and destroy these vinedressers and will give the vineyard to others. And when they heard this, they said, May it never happen!<br><br>
+		<sup><b>17</b></sup> But He looked at them, and said, What then is this that is written, “The stone which the builders rejected, this has become the head of the corner”?<br><br>
+		<sup><b>18</b></sup> Everyone who falls on that stone shall be broken to pieces; but on whomever it falls, it shall crush him to powder and scatter him like chaff.<br><br>
+		<sup><b>19</b></sup> And the scribes and the chief priests sought to lay hands on Him in that hour; yet they feared the people, for they perceived that it was with them in view that He spoke this parable.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

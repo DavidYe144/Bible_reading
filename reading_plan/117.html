@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/25-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('21', '../bible/42-luke.html')">Luke 21:37-38</a></h4>
+	<p><sup><b>37</b></sup> Now during the day He was in the temple teaching, but during the night He went out and stayed on the mountain called Olivet.<br><br>
+		<sup><b>38</b></sup> And all the people would come early in the morning to Him in the temple to hear Him. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="luke-22"><a onclick="open_chapter('22', '../bible/42-luke.html')">Luke 22</a></h4>
+   <p><sup><b>1</b></sup> Now the Feast of Unleavened Bread, which is called the Passover, was drawing near.<br><br>
+		<sup><b>2</b></sup> And the chief priests and the scribes were seeking a way to do away with Him, for they feared the people.<br><br>
+		<sup><b>3</b></sup> And Satan entered into Judas who was called Iscariot and was of the number of the twelve.<br><br>
+		<sup><b>4</b></sup> And he went away and conferred with the chief priests and officers as to how he might deliver Him up to them.<br><br>
+		<sup><b>5</b></sup> And they rejoiced and promised to give him money.<br><br>
+		<sup><b>6</b></sup> And he consented and sought opportunity to deliver Him up to them apart from the crowd.<br><br>
+		<sup><b>7</b></sup> And the day of Unleavened Bread came, on which the passover had to be sacrificed.<br><br>
+		<sup><b>8</b></sup> And He sent Peter and John, saying, Go and prepare the passover for us, so that we may eat it.<br><br>
+		<sup><b>9</b></sup> And they said to Him, Where do You want us to prepare it?<br><br>
+		<sup><b>10</b></sup> And He told them, Behold, as you are entering into the city, a man carrying an earthen jar of water will meet you. Follow him into the house which he enters.<br><br>
+		<sup><b>11</b></sup> And you shall say to the master of the house, The Teacher says to you, Where is the guest room where I may eat the passover with My disciples?<br><br>
+		<sup><b>12</b></sup> And that one will show you a large upper room furnished; prepare there.<br><br>
+		<sup><b>13</b></sup> And they left and found it even as He had told them, and they prepared the passover.<br><br>
+		<sup><b>14</b></sup> And when the hour came, He reclined at table, and the apostles with Him.<br><br>
+		<sup><b>15</b></sup> And He said to them, With desire I have desired to eat this passover with you before I suffer,<br><br>
+		<sup><b>16</b></sup> For I tell you that I shall by no means eat it until it is fulfilled in the kingdom of God.<br><br>
+		<sup><b>17</b></sup> And He received a cup and gave thanks and said, Take this and divide it among yourselves;<br><br>
+		<sup><b>18</b></sup> For I tell you, I shall by no means drink from now on of the product of the vine until the kingdom of God comes.<br><br>
+		<sup><b>19</b></sup> And He took a loaf and gave thanks, and He broke it and gave it to them, saying, This is My body which is being given for you; do this in remembrance of Me.<br><br>
+		<sup><b>20</b></sup> And similarly the cup after they had dined, saying, This cup is the new covenant established in My blood, which is being poured out for you.<br><br>
+		<sup><b>21</b></sup> But behold, the hand of the one betraying Me is with Me at the table.<br><br>
+		<sup><b>22</b></sup> For the Son of Man is going according to what has been determined, but woe to that man through whom He is betrayed!<br><br>
+		<sup><b>23</b></sup> And they began to discuss among themselves who then of them it was who was about to do this.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

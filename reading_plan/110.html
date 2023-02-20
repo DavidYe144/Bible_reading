@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('18', '../bible/42-luke.html')">Luke 18</a></h4>
+	<p><sup><b>1</b></sup> And He told them a parable to the end that they ought always to pray and not lose heart,<br><br>
+		<sup><b>2</b></sup> Saying, There was a certain judge in a certain city who did not fear God and did not regard man.<br><br>
+		<sup><b>3</b></sup> And there was a widow in that city, and she kept coming to him, saying, Avenge me of my opponent.<br><br>
+		<sup><b>4</b></sup> And for a time he would not; but afterward he said within himself, Even though I do not fear God nor regard man,<br><br>
+		<sup><b>5</b></sup> Yet because this widow causes me trouble, I will avenge her, lest by continually coming she wear me out.<br><br>
+		<sup><b>6</b></sup> And the Lord said, Hear what the unrighteous judge says.<br><br>
+		<sup><b>7</b></sup> And will not God by all means carry out the avenging of His chosen ones, who cry to Him day and night, though He is long-suffering over them?<br><br>
+		<sup><b>8</b></sup> I tell you that He will carry out their avenging quickly. Nevertheless, when the Son of Man comes, will He find faith on the earth?<br><br>
+		<sup><b>9</b></sup> And He told this parable also to certain ones who trusted in themselves that they were righteous and despised the rest:<br><br>
+		<sup><b>10</b></sup> Two men went up to the temple to pray, the one a Pharisee and the other a tax collector.<br><br>
+		<sup><b>11</b></sup> The Pharisee stood and prayed these things to himself: God, I thank You that I am not like the rest of men — extortioners, unjust, adulterers, or even like this tax collector.<br><br>
+		<sup><b>12</b></sup> I fast twice a week; I give a tenth of all that I get.<br><br>
+		<sup><b>13</b></sup> But the tax collector, standing at a distance, would not even lift up his eyes to heaven, but beat his breast, saying, God, be propitiated to me, the sinner!<br><br>
+		<sup><b>14</b></sup> I tell you, This man went down to his house justified rather than that one; for everyone who exalts himself shall be humbled, but he who humbles himself shall be exalted.<br><br>
+		<sup><b>15</b></sup> And they were bringing to Him also their babies that He might touch them. But when the disciples saw this they rebuked them.<br><br>
+		<sup><b>16</b></sup> But Jesus called them to Him, saying, Allow the little children to come to Me, and do not forbid them, for of such is the kingdom of God.<br><br>
+		<sup><b>17</b></sup> Truly I say to you, Whoever does not receive the kingdom of God like a little child shall by no means enter into it.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

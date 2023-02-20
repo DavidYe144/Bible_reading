@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('13', '../bible/42-luke.html')">Luke 13:23-35</a></h4>
+	<p>				 
+		<sup><b>22</b></sup> And He journeyed throughout the cities and villages, teaching and making His way toward Jerusalem.<br><br>
+		<sup><b>23</b></sup> And someone said to Him, Lord, are there only a few who are being saved?<br><br>
+		<sup><b>24</b></sup> And He said to them, Struggle to enter through the narrow door, because many, I tell you, will seek to enter, yet will not be able.<br><br>
+		<sup><b>25</b></sup> Once the Master of the house has risen and shuts the door, and you begin to stand outside and knock on the door, saying, Lord, open to us, then He will answer and say to you, I do not know you, nor where you are from.<br><br>
+		<sup><b>26</b></sup> Then you will begin to say, We ate in Your presence and drank, and You taught in our streets.<br><br>
+		<sup><b>27</b></sup> And He will say, I tell you, I do not know where you are from. Go away from Me, all you workers of unrighteousness.<br><br>
+		<sup><b>28</b></sup> There will be weeping and gnashing of teeth there when you see Abraham and Isaac and Jacob and all the prophets in the kingdom of God, but you being cast outside.<br><br>
+		<sup><b>29</b></sup> And they will come from the east and the west, and from the north and the south, and will recline at table in the kingdom of God.<br><br>
+		<sup><b>30</b></sup> And behold, there are some last who will be first, and there are some first who will be last.<br><br>
+		<sup><b>31</b></sup> In the same hour some Pharisees came up, saying to Him, Get out and go from here, for Herod wants to kill you.<br><br>
+		<sup><b>32</b></sup> And He said to them, Go and tell that fox, Behold, I cast out demons and accomplish healings today and tomorrow, and on the third day I am perfected.<br><br>
+		<sup><b>33</b></sup> However, I must journey today and tomorrow and on the following day because it is not acceptable for a prophet to perish outside of Jerusalem.<br><br>
+		<sup><b>34</b></sup> Jerusalem, Jerusalem, who kills the prophets and stones those who are sent to her! How often I desired to gather your children together, the way a hen gathers her own brood under her wings, and you would not!<br><br>
+		<sup><b>35</b></sup> Behold, your house is left to you. And I say to you, You shall by no means see Me until the time comes when you say, Blessed is He who comes in the name of the Lord! <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="luke-14"><a onclick="open_chapter('42', '../bible/42-luke.html')">Luke 14</a></h4>
+   <p><sup><b>1</b></sup> And as He went into the house of one of the rulers of the Pharisees on a Sabbath to eat bread, they were watching Him closely.<br><br>
+		<sup><b>2</b></sup> And behold, there was before Him a certain man suffering from dropsy.<br><br>
+		<sup><b>3</b></sup> And Jesus answered and spoke to the lawyers and Pharisees, saying, Is it lawful to heal on the Sabbath or not?<br><br>
+		<sup><b>4</b></sup> But they were quiet. And He took hold of him and healed him and sent him away.<br><br>
+		<sup><b>5</b></sup> And He said to them, Which of you having a donkey or an ox that falls into a well will not immediately pull it out on the Sabbath day?<br><br>
+		<sup><b>6</b></sup> And they were not able to reply to these things.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

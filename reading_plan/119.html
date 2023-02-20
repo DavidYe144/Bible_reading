@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('22', '../bible/42-luke.html')">Luke 22:55-71</a></h4>
+	<p>				 
+		<sup><b>55</b></sup> And when they had lit a fire in the middle of the courtyard and sat down together, Peter sat among them.<br><br>
+		<sup><b>56</b></sup> And a certain servant girl, seeing him seated in the light of the fire, looked intently at him and said, This man was with Him too.<br><br>
+		<sup><b>57</b></sup> But he denied it, saying, I do not know Him, woman.<br><br>
+		<sup><b>58</b></sup> And after a short time, another person, seeing him, said, You also are one of them. But Peter said, Man, I am not!<br><br>
+		<sup><b>59</b></sup> And after about one hour had passed, another one insisted, saying, Surely this man was also with Him, for he is also a Galilean.<br><br>
+		<sup><b>60</b></sup> But Peter said, Man, I do not know what you are saying. And instantly, while he was still speaking, a rooster crowed.<br><br>
+		<sup><b>61</b></sup> And the Lord turned and looked at Peter, and Peter remembered the word of the Lord, how He had said to him, Before a rooster crows today, you will deny Me three times.<br><br>
+		<sup><b>62</b></sup> And he went outside and wept bitterly.<br><br>
+		<sup><b>63</b></sup> And the men who were holding Him mocked Him and beat Him.<br><br>
+		<sup><b>64</b></sup> And they blindfolded Him and questioned Him, saying, Prophesy! Who is the one who hit You?<br><br>
+		<sup><b>65</b></sup> And they said many other things against Him, blaspheming.<br><br>
+		<sup><b>66</b></sup> And when it became day, the assembly of the elders of the people, both chief priests and scribes, were gathered together, and they led Him away to their Sanhedrin, saying,<br><br>
+		<sup><b>67</b></sup> If You are the Christ, tell us. But He said to them, If I tell you, you shall by no means believe;<br><br>
+		<sup><b>68</b></sup> And if I ask you, you shall by no means answer.<br><br>
+		<sup><b>69</b></sup> But from now on the Son of Man will be seated at the right hand of the power of God.<br><br>
+		<sup><b>70</b></sup> And they all said, Are You then the Son of God? And He said to them, You say rightly that I am.<br><br>
+		<sup><b>71</b></sup> And they said, What further need do we have of testimony? For we have heard it ourselves from His mouth. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="luke-23"><a onclick="open_chapter('23', '../bible/42-luke.html')">Luke 23</a></h4>
+   <p><sup><b>1</b></sup> And the entire multitude of them rose up and led Him before Pilate.<br><br>
+		<sup><b>2</b></sup> And they began to accuse Him, saying, We found this man perverting our nation and forbidding people to pay taxes to Caesar, and saying that He Himself is Christ, a King.<br><br>
+		<sup><b>3</b></sup> And Pilate asked Him, saying, Are You the King of the Jews? And answering him, He said, It is as you say.<br><br>
+		<sup><b>4</b></sup> And Pilate said to the chief priests and the crowds, I find no fault in this man.<br><br>
+		<sup><b>5</b></sup> But they were vehement, saying, He stirs up the people, teaching throughout the whole of Judea, beginning from Galilee even to this place.<br><br>
+		<sup><b>6</b></sup> And when Pilate heard this, he asked whether the man was a Galilean.<br><br>
+		<sup><b>7</b></sup> And when he realized that He was of Herod’s jurisdiction, he sent Him up to Herod, who also himself was in Jerusalem in those days.<br><br>
+		<sup><b>8</b></sup> And when Herod saw Jesus, he rejoiced greatly, for he had wanted to see Him for a considerable time, because he had heard about Him, and was hoping to see some sign done by Him.<br><br>
+		<sup><b>9</b></sup> And he questioned Him with many words, but He answered him nothing.<br><br>
+		<sup><b>10</b></sup> And the chief priests and the scribes stood by, vehemently accusing Him.<br><br>
+		<sup><b>11</b></sup> And Herod with his soldiers, having despised Him and mocked Him, threw around Him splendid clothing and sent Him back to Pilate.<br><br>
+		<sup><b>12</b></sup> And both Herod and Pilate became friends with one another on that very day, for they had previously been at enmity toward each other.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
