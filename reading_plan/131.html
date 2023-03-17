@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('5', '../bible/43-John.html')">John 5:31</a></h4>
+	<p>				 
+		<sup><b>31</b></sup> If I testify concerning Myself, My testimony is not true.<br><br>
+		<sup><b>32</b></sup> There is another who testifies concerning Me, and I know that the testimony which he testifies concerning Me is true.<br><br>
+		<sup><b>33</b></sup> You have sent people to John, and he has testified to the truth.<br><br>
+		<sup><b>34</b></sup> But it is not from man that I receive My testimony, but I say these things that you may be saved.<br><br>
+		<sup><b>35</b></sup> He was the lamp that was burning and shining, and you were willing to exult for a while in his light.<br><br>
+		<sup><b>36</b></sup> But I have the testimony which is greater than that of John, for the works which the Father has given Me to finish, the works themselves which I do, testify concerning Me that the Father has sent Me.<br><br>
+		<sup><b>37</b></sup> And the Father who sent Me, He has testified concerning Me. You have neither heard His voice at any time, nor have you seen His form,<br><br>
+		<sup><b>38</b></sup> And you do not have His word abiding in you, for Him whom He sent, this One you do not believe.<br><br>
+		<sup><b>39</b></sup> You search the Scriptures, because you think that in them you have eternal life; and it is these that testify concerning Me.<br><br>
+		<sup><b>40</b></sup> Yet you are not willing to come to Me that you may have life.<br><br>
+		<sup><b>41</b></sup> I do not receive glory from men.<br><br>
+		<sup><b>42</b></sup> But I know you, that you do not have the love of God in yourselves.<br><br>
+		<sup><b>43</b></sup> I have come in the name of My Father, and you do not receive Me; if another comes in his own name, you will receive him.<br><br>
+		<sup><b>44</b></sup> How can you believe when you receive glory from one another and do not seek the glory that is from the only God?<br><br>
+		<sup><b>45</b></sup> Do not think that I will accuse you before the Father; there is one who accuses you: Moses, in whom you have set your hope.<br><br>
+		<sup><b>46</b></sup> For if you believed Moses, you would believe Me; for he wrote concerning Me.<br><br>
+		<sup><b>47</b></sup> But if you do not believe his writings, how will you believe My words?<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

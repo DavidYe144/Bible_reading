@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('top', '../bible/43-John.html')">John 7:53</a></h4>
+	<p>
+	<sup><b>53</b></sup> And everyone went to his own house.<br><br>
+	</p>
+</div>
+<div class="bible-text">
+	<h4 id="john-8"><a onclick="open_chapter('8', '43-john.html')">John 8</a></h4>
+	<p><sup><b>1</b></sup> But Jesus went to the Mount of Olives.<br><br>
+		<sup><b>2</b></sup> And early in the morning He came again into the temple, and all the people came to Him, and He sat down and taught them.<br><br>
+		<sup><b>3</b></sup> And the scribes and Pharisees brought a woman caught in adultery, and having set her in the midst,<br><br>
+		<sup><b>4</b></sup> They said to Him, Teacher, this woman has been caught committing adultery, in the very act.<br><br>
+		<sup><b>5</b></sup> Now in the law, Moses commanded us to stone such women. What then do You say?<br><br>
+		<sup><b>6</b></sup> But they said this to tempt Him, so that they might have reason to accuse Him. But Jesus stooped down and wrote with His finger on the ground.<br><br>
+		<sup><b>7</b></sup> But when they persisted in questioning Him, He stood up and said to them, He who is without sin among you, let him be the first to throw a stone at her.<br><br>
+		<sup><b>8</b></sup> And again He stooped down and wrote on the ground.<br><br>
+		<sup><b>9</b></sup> And when they heard that, they went out one by one, beginning with the older ones. And Jesus was left alone, and the woman stood where she was, in the midst.<br><br>
+		<sup><b>10</b></sup> And Jesus stood up and said to her, Woman, where are they? Has no one condemned you?<br><br>
+		<sup><b>11</b></sup> And she said, No one, Lord. And Jesus said, Neither do I condemn you; go, and from now on sin no more.<br><br>
+		<sup><b>12</b></sup> Again therefore Jesus spoke to them, saying, I am the light of the world; he who follows Me shall by no means walk in darkness, but shall have the light of life.<br><br>
+		<sup><b>13</b></sup> The Pharisees then said to Him, You are testifying concerning Yourself; Your testimony is not true.<br><br>
+		<sup><b>14</b></sup> Jesus answered and said to them, Even if I testify concerning Myself, My testimony is true, for I know where I came from and where I am going; but you do not know where I come from or where I am going.<br><br>
+		<sup><b>15</b></sup> You judge according to the flesh; I judge no one.<br><br>
+		<sup><b>16</b></sup> But even if I do judge, My judgment is true, for I am not alone, but I and the Father who sent Me.<br><br>
+		<sup><b>17</b></sup> And in your law also it has been written that the testimony of two men is true:<br><br>
+		<sup><b>18</b></sup> I am One who testifies concerning Myself, and the Father who sent Me testifies concerning Me.<br><br>
+		<sup><b>19</b></sup> They said then to Him, Where is Your Father? Jesus answered, You know neither Me nor My Father; if you knew Me, you would know My Father also.<br><br>
+		<sup><b>20</b></sup> These words He spoke in the treasury as He taught in the temple; and no one seized Him, because His hour had not yet come.<br><br>
+		
+		</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

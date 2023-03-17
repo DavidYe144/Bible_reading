@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('3', '../bible/43-John.html')">John 3:22</a></h4>
+	<p>				 
+		<sup><b>22</b></sup> After these things, Jesus and His disciples came into the land of Judea, and there He spent some time with them and baptized.<br><br>
+		<sup><b>23</b></sup> And John also was baptizing in Aenon near Salim, because there was much water there; and people came and were baptized;<br><br>
+		<sup><b>24</b></sup> For John had not yet been thrown into prison.<br><br>
+		<sup><b>25</b></sup> There arose therefore a questioning on the part of John’s disciples with a Jew about purification.<br><br>
+		<sup><b>26</b></sup> And they came to John and said to him, Rabbi, He who was with you across the Jordan, of whom you have testified, behold, He is baptizing and all are coming to Him.<br><br>
+		<sup><b>27</b></sup> John answered and said, A man cannot receive anything unless it has been given to him from heaven.<br><br>
+		<sup><b>28</b></sup> You yourselves testify of me that I said, I am not the Christ, but I have been sent before Him.<br><br>
+		<sup><b>29</b></sup> He who has the bride is the bridegroom; but the friend of the bridegroom, who stands and hears him, rejoices with joy because of the bridegroom’s voice. This joy of mine therefore is made full.<br><br>
+		<sup><b>30</b></sup> He must increase, but I must decrease.<br><br>
+		<sup><b>31</b></sup> He who comes from above is above all; he who is from the earth is of the earth and speaks out of the earth. He who comes from heaven is above all.<br><br>
+		<sup><b>32</b></sup> What He has seen and heard, of this He testifies, and no one receives His testimony.<br><br>
+		<sup><b>33</b></sup> He who receives His testimony has sealed that God is true.<br><br>
+		<sup><b>34</b></sup> For He whom God has sent speaks the words of God, for He gives the Spirit not by measure.<br><br>
+		<sup><b>35</b></sup> The Father loves the Son and has given all into His hand.<br><br>
+		<sup><b>36</b></sup> He who believes into the Son has eternal life; but he who disobeys the Son shall not see life, but the wrath of God abides upon him.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
