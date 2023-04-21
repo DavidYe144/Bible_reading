@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('19', '../bible/43-John.html')">John 19</a></h4>
+	<p>				 
+		<sup><b>12</b></sup> From then on, Pilate sought to release Him, but the Jews cried out, saying, If you release this man, you are not a friend of Caesar; everyone who makes himself a king opposes Caesar.<br><br>
+		<sup><b>13</b></sup> Pilate therefore, when he heard these words, brought Jesus outside and sat down on the judgment seat in a place called the Pavement, but in Hebrew, Gabbatha.<br><br>
+		<sup><b>14</b></sup> Now it was the day of preparation for the Passover; it was about the sixth hour. And he said to the Jews, Behold, your King!<br><br>
+		<sup><b>15</b></sup> They cried out then, Take Him away! Take Him away! Crucify Him! Pilate said to them, Shall I crucify your King? The chief priests answered, We have no king except Caesar.<br><br>
+		<sup><b>16</b></sup> Therefore at that time he delivered Him to them that He might be crucified. Therefore they took Jesus.<br><br>
+		<sup><b>17</b></sup> And bearing the cross for Himself, He went out to the place called the Place of a Skull, which is called in Hebrew, Golgotha,<br><br>
+		<sup><b>18</b></sup> Where they crucified Him, and with Him two others, on this side and that, and Jesus in the middle.<br><br>
+		<sup><b>19</b></sup> And Pilate wrote a notice also and put it on the cross; and it was written, JESUS THE NAZARENE, THE KING OF THE JEWS.<br><br>
+		<sup><b>20</b></sup> This notice therefore many of the Jews read, for the place where Jesus was crucified was near the city, and it was written in Hebrew, in Latin, and in Greek.<br><br>
+		<sup><b>21</b></sup> The chief priests of the Jews therefore said to Pilate, Do not write, The King of the Jews, but that He said, I am the King of the Jews.<br><br>
+		<sup><b>22</b></sup> Pilate answered, What I have written, I have written.<br><br>
+		<sup><b>23</b></sup> The soldiers then, when they had crucified Jesus, took His garments and made four parts, a part for each soldier, and they took the tunic as well. But the tunic was seamless, woven from the top throughout.<br><br>
+		<sup><b>24</b></sup> They said therefore to one another, Let us not tear it, but let us cast lots for it to see whose it shall be, that the Scripture might be fulfilled which says, “They divided My garments among themselves, and for My clothing they cast lots.” So then the soldiers did these things.<br><br>
+		<sup><b>25</b></sup> And there were standing by the cross of Jesus His mother and His mother’s sister and Mary the wife of Clopas and Mary the Magdalene.<br><br>
+		<sup><b>26</b></sup> Then Jesus, seeing His mother and the disciple whom He loved standing by, said to His mother, Woman, behold, your son.<br><br>
+		<sup><b>27</b></sup> Then He said to the disciple, Behold, your mother. And from that hour the disciple took her into his own home.<br><br>
+		<sup><b>28</b></sup> After this, Jesus, knowing that all things had now been finished and so that the Scripture might be fulfilled, said, I thirst.<br><br>
+		<sup><b>29</b></sup> There was lying there a vessel full of vinegar; therefore, they put a sponge full of vinegar on hyssop and brought it to His mouth.<br><br>
+		<sup><b>30</b></sup> Then when Jesus had taken the vinegar, He said, It is finished! And He bowed His head and delivered up His spirit.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
