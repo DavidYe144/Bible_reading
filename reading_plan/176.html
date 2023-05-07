@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('13', '../bible/44-Acts.html')">Acts 13</a></h4>
+	<p><sup><b>1</b></sup> Now there were in Antioch, in the local church, prophets and teachers: Barnabas and Simeon, who was called Niger, and Lucius the Cyrenian, and Manaen, the foster brother of Herod the tetrarch, and Saul.<br><br>
+		<sup><b>2</b></sup> And as they were ministering to the Lord and fasting, the Holy Spirit said, Set apart for Me now Barnabas and Saul for the work to which I have called them.<br><br>
+		<sup><b>3</b></sup> Then, when they had fasted and prayed and laid their hands on them, they sent them away.<br><br>
+		<sup><b>4</b></sup> They then, having been sent out by the Holy Spirit, went down to Seleucia; and from there they sailed away to Cyprus.<br><br>
+		<sup><b>5</b></sup> And when they were in Salamis, they announced the word of God in the synagogues of the Jews. And they also had John as their attendant.<br><br>
+		<sup><b>6</b></sup> And when they had passed through the whole island as far as Paphos, they found a certain man, a magician and Jewish false prophet, whose name was Bar-jesus,<br><br>
+		<sup><b>7</b></sup> Who was with the proconsul, Sergius Paulus, an intelligent man; the latter called Barnabas and Saul to him and sought to hear the word of God.<br><br>
+		<sup><b>8</b></sup> But Elymas the magician (for so his name is translated) opposed them, seeking to turn the proconsul away from the faith.<br><br>
+		<sup><b>9</b></sup> But Saul, who is also Paul, filled with the Holy Spirit, looked intently at him<br><br>
+		<sup><b>10</b></sup> And said, O you who are full of all deceit and all unscrupulousness, son of the devil, enemy of all righteousness, will you not cease perverting the straight ways of the Lord?<br><br>
+		<sup><b>11</b></sup> And now, behold, the hand of the Lord is upon you, and you will be blind, not seeing the sun for a time. And instantly a mist and a darkness fell upon him; and he went about and sought some to lead him by the hand.<br><br>
+		<sup><b>12</b></sup> Then the proconsul, seeing what had happened, believed, being astonished at the teaching of the Lord.<br><br>
+		<sup><b>13</b></sup> And putting out to sea from Paphos, Paul and his companions came to Perga of Pamphylia; and John departed from them and returned to Jerusalem.<br><br>
+		<sup><b>14</b></sup> And they passed through from Perga and arrived at Pisidian Antioch. And they went into the synagogue on the Sabbath day and sat down.<br><br>
+		<sup><b>15</b></sup> And after the reading of the Law and the Prophets, the synagogue rulers sent word to them, saying, Men, brothers, if you have any word of exhortation for the people, say it.<br><br>
+		<sup><b>16</b></sup> And Paul, rising up and motioning with his hand, said, Men of Israel and those who fear God, listen.<br><br>
+		<sup><b>17</b></sup> The God of this people Israel chose our fathers and exalted the people during their sojourn in the land of Egypt, and with a high arm He led them out of it.<br><br>
+		<sup><b>18</b></sup> And for a time of about forty years He carried them as a nurse in the wilderness.<br><br>
+		<sup><b>19</b></sup> And when He had overthrown seven nations in the land of Canaan, He distributed their land as an inheritance.<br><br>
+		<sup><b>20</b></sup> And after these things, for about four hundred and fifty years, He gave them judges until Samuel the prophet.<br><br>
+		<sup><b>21</b></sup> And afterward they asked for a king; and God gave them Saul, the son of Kish, a man of the tribe of Benjamin, for forty years.<br><br>
+		<sup><b>22</b></sup> And when He had deposed him, He raised up David for them as king, to whom also He testified and said, I have found David, the son of Jesse, a man according to My heart, who will do all My will.<br><br>
+		<sup><b>23</b></sup> From this man’s seed, God, according to promise, brought to Israel a Savior, Jesus,<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

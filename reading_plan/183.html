@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('16', '../bible/44-Acts.html')">Acts 16</a></h4>
+	<p><sup><b>25</b></sup> And about midnight Paul and Silas, while praying, sang hymns of praise to God; and the prisoners were listening to them.<br><br>
+		<sup><b>26</b></sup> And suddenly there was a great earthquake, so that the foundations of the prison house were shaken. And instantly all the doors were opened and everyone’s bonds were unfastened.<br><br>
+		<sup><b>27</b></sup> And the jailer, waking up out of his sleep and seeing the doors of the prison opened, drew his sword and was about to do away with himself, supposing that the prisoners had escaped.<br><br>
+		<sup><b>28</b></sup> But Paul called out with a loud voice, saying, Do no harm to yourself, for we are all here.<br><br>
+		<sup><b>29</b></sup> And the jailer asked for lights and rushed in; and trembling, he fell down before Paul and Silas.<br><br>
+		<sup><b>30</b></sup> And leading them outside, he said, Sirs, what must I do to be saved?<br><br>
+		<sup><b>31</b></sup> And they said, Believe on the Lord Jesus, and you shall be saved, you and your household.<br><br>
+		<sup><b>32</b></sup> And they spoke the word of God to him together with all those in his house.<br><br>
+		<sup><b>33</b></sup> And he took them with him in that very hour of the night and washed their wounds. And he was baptized immediately, he and all his household.<br><br>
+		<sup><b>34</b></sup> And he brought them up into his house and set a table before them; and he exulted because he had believed in God with all his household.<br><br>
+		<sup><b>35</b></sup> Now when day came, the magistrates sent the lictors, saying, Release those men.<br><br>
+		<sup><b>36</b></sup> And the jailer reported these words to Paul: The magistrates have sent that you may be released. Now therefore come out and go in peace.<br><br>
+		<sup><b>37</b></sup> But Paul said to them, They have beaten us publicly, uncondemned, men who are Romans, and have thrown us into prison; and now secretly they are thrusting us out? No indeed! But let them come themselves and bring us out.<br><br>
+		<sup><b>38</b></sup> And the lictors reported these words to the magistrates. And they became frightened when they heard that they were Romans.<br><br>
+		<sup><b>39</b></sup> And they came and entreated them. And when they had brought them out, they asked them to depart from the city.<br><br>
+		<sup><b>40</b></sup> And they went out from the prison and entered the house of Lydia; and when they saw the brothers, they exhorted them and went forth. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="acts-17"><a onclick="open_chapter('17', '../bible/44-acts.html')">Acts 17</a></h4>
+   <p><sup><b>1</b></sup> And they traveled through Amphipolis and Apollonia and came to Thessalonica, where there was a synagogue of the Jews.<br><br>
+		<sup><b>2</b></sup> And according to his custom Paul went in to them, and on three Sabbaths he reasoned with them from the Scriptures,<br><br>
+		<sup><b>3</b></sup> Opening and setting before them that the Christ had to suffer and rise from the dead, and saying, This is the Christ, the Jesus whom I announce to you.<br><br>
+		<sup><b>4</b></sup> And some of them were persuaded and were joined to Paul and Silas, as well as a great multitude of the devout Greeks, and of the chief women not a few.<br><br>
+		<sup><b>5</b></sup> But the Jews, becoming jealous and taking along some evil men from among the loafers in the marketplace, gathered a crowd and set the city in an uproar; and coming upon the house of Jason, they sought to bring them to the populace.<br><br>
+		<sup><b>6</b></sup> But when they did not find them, they dragged Jason and some brothers before the city officials, shouting, These men who have upset the world have come here also,<br><br>
+		<sup><b>7</b></sup> Whom Jason has welcomed; and these all act contrary to the decrees of Caesar, saying that there is another king, Jesus.<br><br>
+		<sup><b>8</b></sup> And they stirred up the crowd and the city officials, who listened to these things.<br><br>
+		<sup><b>9</b></sup> And when they had taken bail from Jason and the rest, they released them.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

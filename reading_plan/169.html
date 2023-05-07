@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('7', '../bible/44-Acts.html')">Acts 7:23</a></h4>
+	<p><sup><b>23</b></sup> But when he was approaching forty years of age, it came into his heart to visit his brothers, the sons of Israel.<br><br>
+		<sup><b>24</b></sup> And when he saw one of them being wronged, he defended him, and he avenged him who was being oppressed by striking the Egyptian dead.<br><br>
+		<sup><b>25</b></sup> And he supposed that his brothers understood that God through his hand was giving salvation to them; but they did not understand.<br><br>
+		<sup><b>26</b></sup> And on the following day he appeared to them as they were fighting and tried to reconcile them in peace, saying, Men, you are brothers. Why are you wronging one another?<br><br>
+		<sup><b>27</b></sup> But the one who was wronging his neighbor pushed him away, saying, “Who appointed you a ruler and a judge over us?<br><br>
+		<sup><b>28</b></sup> Do you want to do away with me the same way you did away with the Egyptian yesterday?”<br><br>
+		<sup><b>29</b></sup> And Moses fled at this word and became a sojourner in the land of Midian, where he begot two sons.<br><br>
+		<sup><b>30</b></sup> And when forty years had been fulfilled, an Angel appeared to him in the wilderness of Mount Sinai in the flame of a thornbush fire.<br><br>
+		<sup><b>31</b></sup> And when Moses saw it, he marveled at the vision; and as he approached to examine it, there came the voice of the Lord:<br><br>
+		<sup><b>32</b></sup> “I am the God of your fathers, the God of Abraham and Isaac and Jacob.” And Moses trembled and dared not examine it.<br><br>
+		<sup><b>33</b></sup> And the Lord said to him, “Untie the sandals from your feet, for the place on which you stand is holy ground.<br><br>
+		<sup><b>34</b></sup> I have surely seen the ill-treatment of My people who are in Egypt and have heard their groaning, and I have come down to rescue them. And now, come, I will send you into Egypt.”<br><br>
+		<sup><b>35</b></sup> This Moses, whom they refused, saying, Who appointed you a ruler and a judge? this one God has sent as both a ruler and a redeemer, along with the hand of the Angel who appeared to him in the thornbush.<br><br>
+		<sup><b>36</b></sup> This man led them out, doing wonders and signs in the land of Egypt and in the Red Sea and in the wilderness for forty years.<br><br>
+		<sup><b>37</b></sup> This is the Moses who said to the sons of Israel, “A Prophet will God raise up unto you from your brothers, like me.”<br><br>
+		<sup><b>38</b></sup> This is the one who was in the assembly in the wilderness with the Angel who spoke to him in Mount Sinai and with our fathers, and who received living oracles to give to us.<br><br>
+		<sup><b>39</b></sup> To him our fathers were not willing to become obedient, but thrust him away and turned in their hearts to Egypt,<br><br>
+		<sup><b>40</b></sup> Saying to Aaron, “Make gods for us who will go before us; for this Moses, who has led us out of the land of Egypt, we do not know what has happened to him.”<br><br>
+		<sup><b>41</b></sup> And they made a calf in those days and brought up a sacrifice to the idol and were glad with the works of their hands.<br><br>
+		<sup><b>42</b></sup> But God turned and delivered them up to serve the host of heaven, even as it is written in the book of the prophets, “Did you offer slain beasts and sacrifices to Me for forty years in the wilderness, O house of Israel?<br><br>
+		<sup><b>43</b></sup> And you took up the tabernacle of Moloch and the star of your god Rompha, the images which you made to worship. And I will carry you away beyond Babylon.”<br><br>
+		<sup><b>44</b></sup> The Tabernacle of the Testimony was with our fathers in the wilderness, even as He who spoke to Moses instructed him to make it, according to the pattern which he had seen.<br><br>
+		<sup><b>45</b></sup> This tabernacle our fathers, having in their turn received, also brought in with Joshua when they took possession of the nations, whom God drove out before the face of our fathers until the days of David,<br><br>
+		<sup><b>46</b></sup> Who found favor before God and asked to find a habitation for the God of Jacob.<br><br>
+		<sup><b>47</b></sup> But Solomon built Him a house.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

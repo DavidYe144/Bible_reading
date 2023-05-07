@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('top', '../bible/44-Acts.html')">Acts 18:24</a></h4>
+	<p><sup><b>24</b></sup> And a certain Jew named Apollos, a native of Alexandria, an eloquent man, arrived at Ephesus, and he was powerful in the Scriptures.<br><br>
+		<sup><b>25</b></sup> This man was instructed in the way of the Lord, and being fervent in spirit, he spoke and taught accurately the things concerning Jesus, though he knew only the baptism of John.<br><br>
+		<sup><b>26</b></sup> And this man began to speak boldly in the synagogue. And when Priscilla and Aquila heard him, they took him to themselves and expounded the way of God to him more accurately.<br><br>
+		<sup><b>27</b></sup> And when he intended to pass through into Achaia, the brothers encouraged him and wrote to the disciples to welcome him; and when he arrived there, he helped much through grace those who had believed;<br><br>
+		<sup><b>28</b></sup> For he vigorously confuted the Jews publicly, showing by the Scriptures that Jesus was the Christ. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="acts-19"><a onclick="open_chapter('19', '../bible/44-acts.html')">Acts 19</a></h4>
+   <p><sup><b>1</b></sup> Now while Apollos was in Corinth, Paul, having passed through the upper districts, came down to Ephesus and found some disciples,<br><br>
+		<sup><b>2</b></sup> And he said to them, Did you receive the Holy Spirit when you believed? And they said to him, On the contrary, we did not even hear whether there is a Holy Spirit.<br><br>
+		<sup><b>3</b></sup> And he said, Into what then were you baptized? And they said, Into John’s baptism.<br><br>
+		<sup><b>4</b></sup> And Paul said, John baptized with a baptism of repentance, telling the people that they should believe into the One coming after him, that is, into Jesus.<br><br>
+		<sup><b>5</b></sup> And when they heard this, they were baptized into the name of the Lord Jesus.<br><br>
+		<sup><b>6</b></sup> And when Paul laid his hands on them, the Holy Spirit came upon them, and they spoke in tongues and prophesied.<br><br>
+		<sup><b>7</b></sup> And there were in all about twelve men.<br><br>
+		<sup><b>8</b></sup> And he entered into the synagogue and spoke boldly for three months, reasoning and persuading them in the things concerning the kingdom of God.<br><br>
+		<sup><b>9</b></sup> But when some were hardened and would not be persuaded, speaking evil of the Way before the multitude, he withdrew from them and separated the disciples, reasoning daily in the school of Tyrannus.<br><br>
+		<sup><b>10</b></sup> And this took place for two years, so that all those dwelling in Asia heard the word of the Lord, both Jews and Greeks.<br><br>
+		<sup><b>11</b></sup> And God did works of power of no ordinary kind through the hands of Paul,<br><br>
+		<sup><b>12</b></sup> So that even handkerchiefs or aprons were carried away from his body to the sick, and their diseases left them, and the evil spirits went out.<br><br>
+		<sup><b>13</b></sup> But some of the Jewish exorcists who also went about took it upon themselves to name over those who had evil spirits the name of the Lord Jesus, saying, I adjure you by the Jesus whom Paul preaches.<br><br>
+		<sup><b>14</b></sup> And there were seven sons of a certain Sceva, a Jewish chief priest, doing this.<br><br>
+		<sup><b>15</b></sup> And the evil spirit answered and said to them, Jesus I know of, and with Paul I am acquainted; but who are you?<br><br>
+		<sup><b>16</b></sup> And the man in whom the evil spirit was leaped upon them, subdued both of them, and overpowered them, so that they escaped out of that house naked and wounded.<br><br>
+		<sup><b>17</b></sup> And this became known to all, both Jews and Greeks, dwelling in Ephesus; and fear fell upon them all, and the name of the Lord Jesus was magnified.<br><br>
+		<sup><b>18</b></sup> And many of those who had believed came, confessing and making known their practices.<br><br>
+		<sup><b>19</b></sup> And a considerable number of those who practiced magic brought their books together and burned them before all; and they counted up the price of them and found it to be fifty thousand pieces of silver.<br><br>
+		<sup><b>20</b></sup> Thus, the word of the Lord grew mightily and prevailed.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

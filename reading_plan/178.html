@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('13', '../bible/44-Acts.html')">Acts 13</a></h4>
+	<p><sup><b>44</b></sup> And on the following Sabbath almost all the city gathered together to hear the word of God.<br><br>
+		<sup><b>45</b></sup> But when the Jews saw the crowds, they were filled with jealousy and contradicted the things being spoken by Paul and blasphemed.<br><br>
+		<sup><b>46</b></sup> And Paul and Barnabas spoke boldly and said, It was necessary for the word of God to be spoken to you first. Since you thrust it away and do not judge yourselves worthy of eternal life, behold, we turn to the Gentiles.<br><br>
+		<sup><b>47</b></sup> For so the Lord has commanded us, “I have set you as a light of the Gentiles, that you would be for salvation unto the uttermost part of the earth.”<br><br>
+		<sup><b>48</b></sup> And the Gentiles, hearing this, rejoiced and glorified the word of the Lord; and as many as were appointed to eternal life believed.<br><br>
+		<sup><b>49</b></sup> And the word of the Lord was carried through the whole region.<br><br>
+		<sup><b>50</b></sup> But the Jews incited the women of high standing who worshipped God, and the chief men of the city, and raised up a persecution against Paul and Barnabas and cast them out from their borders.<br><br>
+		<sup><b>51</b></sup> But they shook off the dust of their feet against them and came to Iconium.<br><br>
+		<sup><b>52</b></sup> And the disciples were filled with joy and with the Holy Spirit. <br><br>
+    </p>
+</div>
+<div class="bible-text">
+   <h4 id="acts-14"><a onclick="open_chapter('14', '../bible/44-acts.html')">Acts 14</a></h4>
+   <p><sup><b>1</b></sup> And in Iconium they entered together into the synagogue of the Jews and spoke in such a way that a great multitude of both Jews and Greeks believed.<br><br>
+		<sup><b>2</b></sup> But the Jews who were disobedient stirred up and ill-affected the minds of the Gentiles against the brothers.<br><br>
+		<sup><b>3</b></sup> Therefore they spent a considerable amount of time speaking with boldness in the Lord, who testified to the word of His grace by granting signs and wonders to be done through their hands.<br><br>
+		<sup><b>4</b></sup> But the multitude of the city was divided, and some were with the Jews and some with the apostles.<br><br>
+		<sup><b>5</b></sup> And when a hostile attempt was made by both the Gentiles and Jews with their rulers to treat the apostles outrageously and to stone them,<br><br>
+		<sup><b>6</b></sup> They became aware of it and fled to the cities of Lycaonia, Lystra and Derbe, and the surrounding region.<br><br>
+		<sup><b>7</b></sup> And there they announced the gospel.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
