@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('3', '../bible/45-romans.html')">Romans 3:21</a></h4>
+	<p>				 
+		<sup><b>21</b></sup> But now, apart from the law, the righteousness of God has been manifested, witness being borne to it by the Law and the Prophets;<br><br>
+		<sup><b>22</b></sup> Even the righteousness of God through the faith of Jesus Christ to all those who believe, for there is no distinction;<br><br>
+		<sup><b>23</b></sup> For all have sinned and fall short of the glory of God,<br><br>
+		<sup><b>24</b></sup> Being justified freely by His grace through the redemption which is in Christ Jesus;<br><br>
+		<sup><b>25</b></sup> Whom God set forth as a propitiation place through faith in His blood, for the demonstrating of His righteousness, in that in His forbearance God passed over the sins that had previously occurred,<br><br>
+		<sup><b>26</b></sup> With a view to the demonstrating of His righteousness in the present time, so that He might be righteous and the One who justifies him who is of the faith of Jesus.<br><br>
+		<sup><b>27</b></sup> Where then is boasting? It is excluded. Through what kind of law? That of works? No, but through the law of faith.<br><br>
+		<sup><b>28</b></sup> For we account that a man is justified by faith apart from the works of the law.<br><br>
+		<sup><b>29</b></sup> Or is He the God of the Jews only? Is He not of the Gentiles also? Yes, of the Gentiles also,<br><br>
+		<sup><b>30</b></sup> If indeed God is one, who will justify the circumcision out of faith and the uncircumcision through faith.<br><br>
+		<sup><b>31</b></sup> Do we then make the law of no effect through faith? Absolutely not! Rather, we establish the law. <br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

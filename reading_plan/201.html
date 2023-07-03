@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('27', '../bible/44-Acts.html')">Acts 27:37</a></h4>
+	<p><sup><b>37</b></sup> Now we were in all two hundred and seventy-six souls in the ship.<br><br>
+		<sup><b>38</b></sup> And when they were satisfied with food, they began to lighten the ship, throwing out the wheat into the sea.<br><br>
+		<sup><b>39</b></sup> And when day came, they could not recognize the land, but they noticed a certain bay, which had a beach, into which they took counsel to drive the ship, if they were able.<br><br>
+		<sup><b>40</b></sup> And casting off the anchors, they left them in the sea, at the same time loosening the bands of the rudders; and hoisting the foresail to the blowing of the wind, they held course for the beach.<br><br>
+		<sup><b>41</b></sup> But striking a sandbar with the sea on both sides, they ran the vessel aground; and the bow stuck fast and remained immovable, but the stern was broken up by the violence of the waves.<br><br>
+		<sup><b>42</b></sup> And the counsel of the soldiers was that they should kill the prisoners, lest anyone swim away and escape;<br><br>
+		<sup><b>43</b></sup> But the centurion, intending to bring Paul safely through, prevented them from their intention and ordered those who were able to swim to throw themselves overboard first and get to the land,<br><br>
+		<sup><b>44</b></sup> And the rest to follow, some on planks, and others on some of the things from the ship. And so it happened that all were brought safely through onto the land. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="acts-28"><a onclick="open_chapter('28', '44-acts.html')">Acts 28</a></h4>
+    <p><sup><b>1</b></sup> And having been brought safely through, we recognized then that the island was called Malta.<br><br>
+		<sup><b>2</b></sup> And the natives showed us uncommon kindness, for they kindled a fire and took us all in because of the rain coming on and because of the cold.<br><br>
+		<sup><b>3</b></sup> But when Paul had collected a bundle of sticks and put them on the fire, a viper came out because of the heat and fastened onto his hand.<br><br>
+		<sup><b>4</b></sup> And when the natives saw the snake hanging from his hand, they said to one another, Undoubtedly this man is a murderer, whom, though he has been brought safely out of the sea, Justice has not allowed to live.<br><br>
+		<sup><b>5</b></sup> However he shook off the snake into the fire and suffered no harm;<br><br>
+		<sup><b>6</b></sup> And they expected that he would swell up or suddenly fall down dead. But when they had waited for a long time and beheld nothing unusual happening to him, they changed their minds and said that he was a god.<br><br>
+		<sup><b>7</b></sup> Now in the vicinity of that place were the lands of the leading man of the island, named Publius, who welcomed us and gave us hospitality three days in a friendly way.<br><br>
+		<sup><b>8</b></sup> And the father of Publius was lying down sick with fever and dysentery. Paul went in to him, and having prayed and laid his hands on him, healed him.<br><br>
+		<sup><b>9</b></sup> And when this happened, the rest also in the island who had sicknesses came to him and were healed.<br><br>
+		<sup><b>10</b></sup> They also honored us with many honors; and as we put out to sea, they put on board the things for our needs.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
