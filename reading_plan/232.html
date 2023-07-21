@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('7', '../bible/46-1corinthians.html')">1 Corinthians 7</a></h4>
+	<p><sup><b>1</b></sup> Now concerning the things of which you wrote: It is good for a man not to touch a woman.<br><br>
+		<sup><b>2</b></sup> But because of fornication, let each man have his own wife, and let each woman have her own husband.<br><br>
+		<sup><b>3</b></sup> Let the husband render to his wife that which is due, and likewise also the wife to the husband.<br><br>
+		<sup><b>4</b></sup> The wife does not have authority over her own body, but the husband does; and likewise the husband also does not have authority over his own body, but the wife does.<br><br>
+		<sup><b>5</b></sup> Do not deprive each other, except by agreement for a time that you may devote yourselves to prayer, and then be together again, that Satan may not tempt you because of your lack of self-control.<br><br>
+		<sup><b>6</b></sup> But this I say by way of concession, not by way of command.<br><br>
+		<sup><b>7</b></sup> Yet I wish all men to be even as I am myself; but each has his own gift from God, one in this way, the other in that.<br><br>
+		<sup><b>8</b></sup> But I say to the unmarried and to the widows, It is good for them if they remain even as I am.<br><br>
+		<sup><b>9</b></sup> But if they do not have self-control, let them marry; for it is better to marry than to burn with desire.<br><br>
+		<sup><b>10</b></sup> But to the married I charge, not I but the Lord, A wife must not be separated from her husband<br><br>
+		<sup><b>11</b></sup> (But if indeed she is separated, let her remain unmarried or be reconciled to her husband), and a husband must not leave his wife.<br><br>
+		<sup><b>12</b></sup> But to the rest I say, I, not the Lord, If any brother has an unbelieving wife and she consents to dwell with him, he must not leave her;<br><br>
+		<sup><b>13</b></sup> And a wife who has an unbelieving husband, and if he consents to dwell with her, must not leave her husband.<br><br>
+		<sup><b>14</b></sup> For the unbelieving husband is sanctified by the wife, and the unbelieving wife is sanctified by the brother; otherwise your children are unclean, but now they are holy.<br><br>
+		<sup><b>15</b></sup> But if the unbelieving one separates, let him separate; the brother or the sister is not enslaved in such cases, but God has called us in peace.<br><br>
+		<sup><b>16</b></sup> For how do you know, O wife, whether you will save your husband? Or how do you know, O husband, whether you will save your wife?<br><br>
+		<sup><b>17</b></sup> However as the Lord has apportioned to each one, as God has called each one, so let him walk. And so I direct in all the churches.<br><br>
+		<sup><b>18</b></sup> Was anyone called having been circumcised? He need not efface it. Has anyone been called in uncircumcision? He need not be circumcised.<br><br>
+		<sup><b>19</b></sup> Circumcision is nothing, and uncircumcision is nothing, but the keeping of God’s commandments is what counts.<br><br>
+		<sup><b>20</b></sup> Each one, in the calling in which he was called, in this let him remain.<br><br>
+		<sup><b>21</b></sup> Were you called as a slave? Let it not concern you; but even if you are able to become free, use your status as a slave rather.<br><br>
+		<sup><b>22</b></sup> For the slave who has been called in the Lord is the Lord’s freedman; likewise the free man who has been called is Christ’s slave.<br><br>
+		<sup><b>23</b></sup> You were bought with a price; do not be slaves of men.<br><br>
+		<sup><b>24</b></sup> Each one, brothers, in what status he was called, in this let him remain with God.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

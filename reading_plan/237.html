@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('10', '../bible/46-1corinthians.html')">1 Corinthians 10:23</a></h4>
+	<p><sup><b>23</b></sup> All things are lawful, but not all things are profitable; all things are lawful, but not all things build up.<br><br>
+		<sup><b>24</b></sup> Let no one seek his own profit, but that of the other.<br><br>
+		<sup><b>25</b></sup> Everything sold in a meat market eat, asking no question for conscience’ sake;<br><br>
+		<sup><b>26</b></sup> For the earth is the Lord’s and the fullness thereof.<br><br>
+		<sup><b>27</b></sup> If any of the unbelievers invites you and you wish to go, eat everything that is set before you, asking no question for conscience’ sake.<br><br>
+		<sup><b>28</b></sup> But if anyone says to you, This has been offered in sacrifice, do not eat, for his sake who pointed it out and for conscience’ sake.<br><br>
+		<sup><b>29</b></sup> Conscience, I say, not your own, but the other’s. For why is my freedom judged by some other conscience?<br><br>
+		<sup><b>30</b></sup> If I partake with thankfulness, why am I spoken evil of concerning that for which I give thanks?<br><br>
+		<sup><b>31</b></sup> Therefore whether you eat or drink, or whatever you do, do all to the glory of God.<br><br>
+		<sup><b>32</b></sup> Do not become a stumbling block, both to Jews and to Greeks and to the church of God;<br><br>
+		<sup><b>33</b></sup> Even as I also please all men in all things, not seeking my own advantage but that of the many, that they may be saved. <br><br>
+ 	</p>
+</div>
+<div class="bible-text">
+   <h4 id="1corinthians-11"><a onclick="open_chapter('11', '46-1corinthians.html')">1 Corinthians 11</a></h4>
+   <p><sup><b>1</b></sup> Be imitators of me, as I also am of Christ.<br><br>
+		<sup><b>2</b></sup> But I praise you because in all things you have remembered me and hold fast the things that I have handed down even as I handed them down to you.<br><br>
+		<sup><b>3</b></sup> But I want you to know that Christ is the head of every man, and the man is the head of the woman, and God is the head of Christ.<br><br>
+		<sup><b>4</b></sup> Every man praying or prophesying with his head covered disgraces his head.<br><br>
+		<sup><b>5</b></sup> But every woman praying or prophesying with her head uncovered disgraces her head; for it is one and the same as she who is shaved.<br><br>
+		<sup><b>6</b></sup> For if a woman is not covered, let her hair also be cut off; but if it is shameful for a woman to have her hair cut off or to be shaved, let her be covered.<br><br>
+		<sup><b>7</b></sup> For a man ought not to have his head covered, since he is God’s image and glory; but the woman is the glory of the man.<br><br>
+		<sup><b>8</b></sup> For man is not out of woman, but woman out of man;<br><br>
+		<sup><b>9</b></sup> For also man was not created for the sake of the woman, but woman for the sake of the man.<br><br>
+		<sup><b>10</b></sup> Therefore the woman ought to have a sign of submission to authority on her head for the sake of the angels.<br><br>
+		<sup><b>11</b></sup> However neither is woman without man, nor man without woman, in the Lord.<br><br>
+		<sup><b>12</b></sup> For just as the woman is out from the man, so also is the man through the woman; but all things are out from God.<br><br>
+		<sup><b>13</b></sup> Judge this in your own selves: Is it fitting for a woman to pray uncovered to God?<br><br>
+		<sup><b>14</b></sup> Does not even nature itself teach you that if a man has long hair, it is a dishonor to him,<br><br>
+		<sup><b>15</b></sup> But if a woman has long hair, it is a glory to her, because her long hair has been given to her for a covering.<br><br>
+		<sup><b>16</b></sup> But if anyone seems to be contentious, we do not have such a custom of being so, neither the churches of God.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
