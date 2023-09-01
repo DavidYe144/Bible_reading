@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Ephesians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="galatians-1"><a onclick="open_chapter('6', '../bible/49-Ephesians.html')">Ephesians 6:9</a></h4>
+			<p>
+				<sup><b>9</b></sup> And masters, do the same things toward them, giving up your threatening, knowing that both their Master and yours is in the heavens, and there is no respect of persons with Him.<br><br>
+				 <sup><b>10</b></sup> Finally, be empowered in the Lord and in the might of His strength.<br><br>
+				 <sup><b>11</b></sup> Put on the whole armor of God that you may be able to stand against the stratagems of the devil,<br><br>
+				 <sup><b>12</b></sup> For our wrestling is not against blood and flesh but against the rulers, against the authorities, against the world-rulers of this darkness, against the spiritual forces of evil in the heavenlies.<br><br>
+				 <sup><b>13</b></sup> Therefore take up the whole armor of God that you may be able to withstand in the evil day, and having done all, to stand.<br><br>
+				 <sup><b>14</b></sup> Stand therefore, having girded your loins with truth and having put on the breastplate of righteousness<br><br>
+				 <sup><b>15</b></sup> And having shod your feet with the firm foundation of the gospel of peace;<br><br>
+				 <sup><b>16</b></sup> Besides all these, having taken up the shield of faith, with which you will be able to quench all the flaming darts of the evil one.<br><br>
+				 <sup><b>17</b></sup> And receive the helmet of salvation and the sword of the Spirit, which Spirit is the word of God,<br><br>
+				 <sup><b>18</b></sup> By means of all prayer and petition, praying at every time in spirit and watching unto this in all perseverance and petition concerning all the saints,<br><br>
+				 <sup><b>19</b></sup> And for me, that utterance may be given to me in the opening of my mouth, to make known in boldness the mystery of the gospel,<br><br>
+				 <sup><b>20</b></sup> For which I am an ambassador in a chain, that in it I would speak boldly, as I ought to speak.<br><br>
+				 <sup><b>21</b></sup> But that you also may know the things concerning me, how I am doing, Tychicus, the beloved brother and faithful minister in the Lord, will make all things known to you.<br><br>
+				 <sup><b>22</b></sup> Him I have sent to you for this very thing, that you may know the things concerning us and that he may comfort your hearts.<br><br>
+				 <sup><b>23</b></sup> Peace to the brothers and love with faith from God the Father and the Lord Jesus Christ.<br><br>
+				 <sup><b>24</b></sup> Grace be with all those who love our Lord Jesus Christ in incorruptibility. <br><br>
+			</p>
+		</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

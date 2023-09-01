@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Philippians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="philippians-1"><a onclick="open_chapter('3', '../bible/50-philippians.html')">Philippians 3</a></h4>
+	<p><sup><b>1</b></sup> Finally, my brothers, rejoice in the Lord. To write the same things to you, for me it is not irksome, but for you it is safe.<br><br>
+		<sup><b>2</b></sup> Beware of the dogs, beware of the evil workers, beware of the concision.<br><br>
+		<sup><b>3</b></sup> For we are the circumcision, the ones who serve by the Spirit of God and boast in Christ Jesus and have no confidence in the flesh,<br><br>
+		<sup><b>4</b></sup> Though I myself have something to be confident of in the flesh as well. If any other man thinks that he has confidence in the flesh, I more:<br><br>
+		<sup><b>5</b></sup> Circumcised the eighth day; of the race of Israel, of the tribe of Benjamin, a Hebrew born of Hebrews; as to the law, a Pharisee;<br><br>
+		<sup><b>6</b></sup> As to zeal, persecuting the church; as to the righteousness which is in the law, become blameless.<br><br>
+		<sup><b>7</b></sup> But what things were gains to me, these I have counted as loss on account of Christ.<br><br>
+		<sup><b>8</b></sup> But moreover I also count all things to be loss on account of the excellency of the knowledge of Christ Jesus my Lord, on account of whom I have suffered the loss of all things and count them as refuse that I may gain Christ<br><br>
+		<sup><b>9</b></sup> And be found in Him, not having my own righteousness which is out of the law, but that which is through faith in Christ, the righteousness which is out of God and based on faith,<br><br>
+		<sup><b>10</b></sup> To know Him and the power of His resurrection and the fellowship of His sufferings, being conformed to His death,<br><br>
+		<sup><b>11</b></sup> If perhaps I may attain to the out-resurrection from the dead.<br><br>
+		<sup><b>12</b></sup> Not that I have already obtained or am already perfected, but I pursue, if even I may lay hold of that for which I also have been laid hold of by Christ Jesus.<br><br>
+		<sup><b>13</b></sup> Brothers, I do not account of myself to have laid hold; but one thing I do: Forgetting the things which are behind and stretching forward to the things which are before,<br><br>
+		<sup><b>14</b></sup> I pursue toward the goal for the prize to which God in Christ Jesus has called me upward.<br><br>
+		<sup><b>15</b></sup> Let us therefore, as many as are full-grown, have this mind; and if in anything you are otherwise minded, this also God will reveal to you.<br><br>
+		<sup><b>16</b></sup> Nevertheless whereunto we have attained, by the same rule let us walk.<br><br>
+		<sup><b>17</b></sup> Be imitators together of me, brothers, and observe those who thus walk even as you have us as a pattern.<br><br>
+		<sup><b>18</b></sup> For many walk, of whom I have told you often and now tell you even weeping, that they are the enemies of the cross of Christ,<br><br>
+		<sup><b>19</b></sup> Whose end is destruction, whose god is their stomach, and whose glory is in their shame, who set their minds on earthly things.<br><br>
+		<sup><b>20</b></sup> For our commonwealth exists in the heavens, from which also we eagerly await a Savior, the Lord Jesus Christ,<br><br>
+		<sup><b>21</b></sup> Who will transfigure the body of our humiliation to be conformed to the body of His glory, according to His operation by which He is able even to subject all things to Himself. <br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

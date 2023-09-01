@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/22-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Ephesians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="galatians-1"><a onclick="open_chapter('2', '../bible/49-Ephesians.html')">Ephesians 2</a></h4>
+	<p><sup><b>1</b></sup> And you, though dead in your offenses and sins,<br><br>
+		<sup><b>2</b></sup> In which you once walked according to the age of this world, according to the ruler of the authority of the air, of the spirit which is now operating in the sons of disobedience;<br><br>
+		<sup><b>3</b></sup> Among whom we also all conducted ourselves once in the lusts of our flesh, doing the desires of the flesh and of the thoughts, and were by nature children of wrath, even as the rest;<br><br>
+		<sup><b>4</b></sup> But God, being rich in mercy, because of His great love with which He loved us,<br><br>
+		<sup><b>5</b></sup> Even when we were dead in offenses, made us alive together with Christ (by grace you have been saved)<br><br>
+		<sup><b>6</b></sup> And raised us up together with Him and seated us together with Him in the heavenlies in Christ Jesus,<br><br>
+		<sup><b>7</b></sup> That He might display in the ages to come the surpassing riches of His grace in kindness toward us in Christ Jesus.<br><br>
+		<sup><b>8</b></sup> For by grace you have been saved through faith, and this not of yourselves; it is the gift of God;<br><br>
+		<sup><b>9</b></sup> Not of works that no one should boast.<br><br>
+		<sup><b>10</b></sup> For we are His masterpiece, created in Christ Jesus for good works, which God prepared beforehand in order that we would walk in them.<br><br>
+		<sup><b>11</b></sup> Therefore remember that once you, the Gentiles in the flesh, those who are called uncircumcision by that which is called circumcision in the flesh made by hands,<br><br>
+		<sup><b>12</b></sup> That you were at that time apart from Christ, alienated from the commonwealth of Israel, and strangers to the covenants of the promise, having no hope and without God in the world.<br><br>
+		<sup><b>13</b></sup> But now in Christ Jesus you who were once far off have become near in the blood of Christ.<br><br>
+		<sup><b>14</b></sup> For He Himself is our peace, He who has made both one and has broken down the middle wall of partition, the enmity,<br><br>
+		<sup><b>15</b></sup> Abolishing in His flesh the law of the commandments in ordinances, that He might create the two in Himself into one new man, so making peace,<br><br>
+		<sup><b>16</b></sup> And might reconcile both in one Body to God through the cross, having slain the enmity by it.<br><br>
+		<sup><b>17</b></sup> And coming, He announced peace as the gospel to you who were far off, and peace to those who were near,<br><br>
+		<sup><b>18</b></sup> For through Him we both have access in one Spirit unto the Father.<br><br>
+		<sup><b>19</b></sup> So then you are no longer strangers and sojourners, but you are fellow citizens with the saints and members of the household of God,<br><br>
+		<sup><b>20</b></sup> Being built upon the foundation of the apostles and prophets, Christ Jesus Himself being the cornerstone;<br><br>
+		<sup><b>21</b></sup> In whom all the building, being fitted together, is growing into a holy temple in the Lord;<br><br>
+		<sup><b>22</b></sup> In whom you also are being built together into a dwelling place of God in spirit. <br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

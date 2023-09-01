@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Colossians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="colossians-1"><a onclick="open_chapter('top', '../bible/51-Colossians.html')">Colossians 1</a></h4>
+	<sup><b>24</b></sup> I now rejoice in my sufferings on your behalf and fill up on my part that which is lacking of the afflictions of Christ in my flesh for His Body, which is the church;<br><br>
+	<sup><b>25</b></sup> Of which I became a minister according to the stewardship of God, which was given to me for you, to complete the word of God,<br><br>
+	<sup><b>26</b></sup> The mystery which has been hidden from the ages and from the generations but now has been manifested to His saints;<br><br>
+	<sup><b>27</b></sup> To whom God willed to make known what are the riches of the glory of this mystery among the Gentiles, which is Christ in you, the hope of glory,<br><br>
+	<sup><b>28</b></sup> Whom we announce, admonishing every man and teaching every man in all wisdom that we may present every man full-grown in Christ;<br><br>
+	<sup><b>29</b></sup> For which also I labor, struggling according to His operation which operates in me in power. <br><br>
+</p>
+</div>
+<div class="bible-text">
+<h4 id="colossians-2"><a onclick="open_chapter('2', '../bible/51-colossians.html')">Colossians 2</a></h4>
+<p><sup><b>1</b></sup> For I want you to know how great a struggle I have for you and for those in Laodicea, even all who have not seen my face in the flesh,<br><br>
+	<sup><b>2</b></sup> That their hearts may be comforted, they being knit together in love and unto all the riches of the full assurance of understanding, unto the full knowledge of the mystery of God, Christ,<br><br>
+	<sup><b>3</b></sup> In whom all the treasures of wisdom and knowledge are hidden.<br><br>
+	<sup><b>4</b></sup> This I say that no one may delude you with persuasive speech.<br><br>
+	<sup><b>5</b></sup> For even though I am absent in the flesh, yet in the spirit I am with you, rejoicing and seeing your order and the solid basis of your faith in Christ.<br><br>
+	<sup><b>6</b></sup> As therefore you have received the Christ, Jesus the Lord, walk in Him,<br><br>
+	<sup><b>7</b></sup> Having been rooted and being built up in Him, and being established in the faith even as you were taught, abounding in thanksgiving.<br><br>
+</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

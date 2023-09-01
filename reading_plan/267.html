@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Ephesians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="galatians-1"><a onclick="open_chapter('3', '../bible/49-Ephesians.html')">Ephesians 3</a></h4>
+	<p><sup><b>1</b></sup> For this cause I Paul, the prisoner of Christ Jesus on behalf of you, the Gentiles —<br><br>
+		<sup><b>2</b></sup> If indeed you have heard of the stewardship of the grace of God which was given to me for you,<br><br>
+		<sup><b>3</b></sup> That by revelation the mystery was made known to me, as I have written previously in brief,<br><br>
+		<sup><b>4</b></sup> By which, in reading it, you can perceive my understanding in the mystery of Christ,<br><br>
+		<sup><b>5</b></sup> Which in other generations was not made known to the sons of men, as it has now been revealed to His holy apostles and prophets in spirit,<br><br>
+		<sup><b>6</b></sup> That in Christ Jesus the Gentiles are fellow heirs and fellow members of the Body and fellow partakers of the promise through the gospel,<br><br>
+		<sup><b>7</b></sup> Of which I became a minister according to the gift of the grace of God which was given to me according to the operation of His power.<br><br>
+		<sup><b>8</b></sup> To me, less than the least of all saints, was this grace given to announce to the Gentiles the unsearchable riches of Christ as the gospel<br><br>
+		<sup><b>9</b></sup> And to enlighten all that they may see what the economy of the mystery is, which throughout the ages has been hidden in God, who created all things,<br><br>
+		<sup><b>10</b></sup> In order that now to the rulers and the authorities in the heavenlies the multifarious wisdom of God might be made known through the church,<br><br>
+		<sup><b>11</b></sup> According to the eternal purpose which He made in Christ Jesus our Lord,<br><br>
+		<sup><b>12</b></sup> In whom we have boldness and access in confidence through faith in Him.<br><br>
+		<sup><b>13</b></sup> Therefore I ask you not to faint at my afflictions for your sake, since they are your glory.<br><br>
+		<sup><b>14</b></sup> For this cause I bow my knees unto the Father,<br><br>
+		<sup><b>15</b></sup> Of whom every family in the heavens and on earth is named,<br><br>
+		<sup><b>16</b></sup> That He would grant you, according to the riches of His glory, to be strengthened with power through His Spirit into the inner man,<br><br>
+		<sup><b>17</b></sup> That Christ may make His home in your hearts through faith, that you, being rooted and grounded in love,<br><br>
+		<sup><b>18</b></sup> May be full of strength to apprehend with all the saints what the breadth and length and height and depth are<br><br>
+		<sup><b>19</b></sup> And to know the knowledge-surpassing love of Christ, that you may be filled unto all the fullness of God.<br><br>
+		<sup><b>20</b></sup> But to Him who is able to do superabundantly above all that we ask or think, according to the power which operates in us,<br><br>
+		<sup><b>21</b></sup> To Him be the glory in the church and in Christ Jesus unto all the generations forever and ever. Amen. <br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

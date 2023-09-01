@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/26-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Ephesians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="galatians-1"><a onclick="open_chapter('5', '../bible/49-Ephesians.html')">Ephesians 5:22</a></h4>
+	<p><sup><b>22</b></sup> Wives, be subject to your own husbands as to the Lord;<br><br>
+		<sup><b>23</b></sup> For a husband is head of the wife as also Christ is Head of the church, He Himself being the Savior of the Body.<br><br>
+		<sup><b>24</b></sup> But as the church is subject to Christ, so also let the wives be subject to their husbands in everything.<br><br>
+		<sup><b>25</b></sup> Husbands, love your wives even as Christ also loved the church and gave Himself up for her<br><br>
+		<sup><b>26</b></sup> That He might sanctify her, cleansing her by the washing of the water in the word,<br><br>
+		<sup><b>27</b></sup> That He might present the church to Himself glorious, not having spot or wrinkle or any such things, but that she would be holy and without blemish.<br><br>
+		<sup><b>28</b></sup> In the same way the husbands also ought to love their own wives as their own bodies; he who loves his own wife loves himself.<br><br>
+		<sup><b>29</b></sup> For no one ever hated his own flesh, but nourishes and cherishes it, even as Christ also the church,<br><br>
+		<sup><b>30</b></sup> Because we are members of His Body.<br><br>
+		<sup><b>31</b></sup> For this cause a man shall leave his father and mother and shall be joined to his wife, and the two shall be one flesh.<br><br>
+		<sup><b>32</b></sup> This mystery is great, but I speak with regard to Christ and the church.<br><br>
+		<sup><b>33</b></sup> Nevertheless you also, each one of you, in the same way love your own wife as yourself; and the wife should fear her husband. <br><br>
+    </p>
+</div>
+<div class="bible-text">
+   <h4 id="ephesians-6"><a onclick="open_chapter('6', '49-ephesians.html')">Ephesians 6</a></h4>
+   <p><sup><b>1</b></sup> Children, obey your parents in the Lord, for this is right.<br><br>
+		<sup><b>2</b></sup> “Honor your father and mother,” which is the first commandment with a promise,<br><br>
+		<sup><b>3</b></sup> “That it may be well with you and that you may live long on the earth.”<br><br>
+		<sup><b>4</b></sup> And fathers, do not provoke your children to anger, but nurture them in the discipline and admonition of the Lord.<br><br>
+		<sup><b>5</b></sup> Slaves, be obedient to those who are your masters according to the flesh with fear and trembling, in singleness of your heart, as to Christ;<br><br>
+		<sup><b>6</b></sup> Not with eye-service as men-pleasers but as slaves of Christ, doing the will of God from the soul;<br><br>
+		<sup><b>7</b></sup> With good will serving as slaves, as serving the Lord and not men;<br><br>
+		<sup><b>8</b></sup> Knowing that whatever good thing each one does, this he will receive back from the Lord, whether he is a slave or a free man.<br><br>
+   </p>	
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

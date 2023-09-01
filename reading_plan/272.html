@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Philippians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="philippians-1"><a onclick="open_chapter('top', '../bible/50-philippians.html')">Philippians 1</a></h4>
+	<p><sup><b>1</b></sup> Paul and Timothy, slaves of Christ Jesus, to all the saints in Christ Jesus who are in Philippi, with the overseers and deacons:<br><br>
+		<sup><b>2</b></sup> Grace to you and peace from God our Father and the Lord Jesus Christ.<br><br>
+		<sup><b>3</b></sup> I thank my God upon all my remembrance of you,<br><br>
+		<sup><b>4</b></sup> Always in my every petition on behalf of you all, making my petition with joy,<br><br>
+		<sup><b>5</b></sup> For your fellowship unto the furtherance of the gospel from the first day until now,<br><br>
+		<sup><b>6</b></sup> Being confident of this very thing, that He who has begun in you a good work will complete it until the day of Christ Jesus;<br><br>
+		<sup><b>7</b></sup> Even as it is right for me to think this concerning you all because you have me in your heart, since both in my bonds and in the defense and confirmation of the gospel you are all fellow partakers with me of grace.<br><br>
+		<sup><b>8</b></sup> For God is my witness how I long after you all in the inward parts of Christ Jesus.<br><br>
+		<sup><b>9</b></sup> And this I pray, that your love may abound yet more and more in full knowledge and all discernment,<br><br>
+		<sup><b>10</b></sup> So that you may approve by testing the things which differ and are more excellent, that you may be pure and without offense unto the day of Christ,<br><br>
+		<sup><b>11</b></sup> Being filled with the fruit of righteousness, which is through Jesus Christ, to the glory and praise of God.<br><br>
+		<sup><b>12</b></sup> Now I want you to know, brothers, that the things concerning me have turned out rather to the advancement of the gospel,<br><br>
+		<sup><b>13</b></sup> So that my bonds have become manifest as being in Christ among the whole Praetorian guard and to all the rest.<br><br>
+		<sup><b>14</b></sup> And most of the brothers, being confident in the Lord because of my bonds, are more exceedingly bold to speak the word of God without fear.<br><br>
+		<sup><b>15</b></sup> Some preach Christ even because of envy and strife, and some also because of good will,<br><br>
+		<sup><b>16</b></sup> These out of love, knowing that I am set for the defense of the gospel.<br><br>
+		<sup><b>17</b></sup> But the others announce Christ out of selfish ambition, not purely, thinking to raise up affliction in my bonds.<br><br>
+		<sup><b>18</b></sup> What then? Only that in every way, whether in pretense or in truthfulness, Christ is announced; and in this I rejoice; yes, and I will rejoice;<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

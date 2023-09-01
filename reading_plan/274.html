@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Philippians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="philippians-1"><a onclick="open_chapter('2', '../bible/50-philippians.html')">Philippians 2:12</a></h4>
+	<p>				 
+		<sup><b>12</b></sup> So then, my beloved, even as you have always obeyed, not as in my presence only but now much rather in my absence, work out your own salvation with fear and trembling;<br><br>
+		<sup><b>13</b></sup> For it is God who operates in you both the willing and the working for His good pleasure.<br><br>
+		<sup><b>14</b></sup> Do all things without murmurings and reasonings<br><br>
+		<sup><b>15</b></sup> That you may be blameless and guileless, children of God without blemish in the midst of a crooked and perverted generation, among whom you shine as luminaries in the world,<br><br>
+		<sup><b>16</b></sup> Holding forth the word of life, so that I may have a boast in the day of Christ that I did not run in vain nor labor in vain.<br><br>
+		<sup><b>17</b></sup> But even if I am being poured out as a drink offering upon the sacrifice and service of your faith, I rejoice, and I rejoice together with you all.<br><br>
+		<sup><b>18</b></sup> And in like manner you also rejoice, and you rejoice together with me.<br><br>
+		<sup><b>19</b></sup> But I hope in the Lord Jesus to send Timothy to you shortly, that I also may be encouraged by knowing the things concerning you.<br><br>
+		<sup><b>20</b></sup> For I have no one like-souled who will genuinely care for what concerns you;<br><br>
+		<sup><b>21</b></sup> For all seek their own things, not the things of Christ Jesus.<br><br>
+		<sup><b>22</b></sup> But you know his approvedness, that as a child with a father he has served with me unto the gospel.<br><br>
+		<sup><b>23</b></sup> Him therefore I hope to send immediately, as soon as I see how things go with me.<br><br>
+		<sup><b>24</b></sup> But I trust in the Lord that I myself also will come shortly.<br><br>
+		<sup><b>25</b></sup> But I considered it necessary to send to you Epaphroditus, my brother and fellow worker and fellow soldier, and your apostle and minister to my need,<br><br>
+		<sup><b>26</b></sup> Since he longed after you all and was greatly distressed because you heard that he had become sick;<br><br>
+		<sup><b>27</b></sup> For indeed he had become sick, near to death, but God had mercy on him, and not on him only but also on me that I might not have sorrow upon sorrow.<br><br>
+		<sup><b>28</b></sup> I have sent him therefore the more eagerly, so that when you see him again, you may rejoice and I may be less sorrowful.<br><br>
+		<sup><b>29</b></sup> Receive him therefore in the Lord with all joy, and hold such in honor,<br><br>
+		<sup><b>30</b></sup> Because for the work of Christ he drew near unto death, risking his life, that he might fill up your lack of service toward me. <br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

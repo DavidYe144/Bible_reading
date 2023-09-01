@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Colossians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="colossians-1"><a onclick="open_chapter('3', '../bible/51-Colossians.html')">Colossians 3</a></h4>
+	<p><sup><b>1</b></sup> If therefore you were raised together with Christ, seek the things which are above, where Christ is, sitting at the right hand of God.<br><br>
+		<sup><b>2</b></sup> Set your mind on the things which are above, not on the things which are on the earth.<br><br>
+		<sup><b>3</b></sup> For you died, and your life is hidden with Christ in God.<br><br>
+		<sup><b>4</b></sup> When Christ our life is manifested, then you also will be manifested with Him in glory.<br><br>
+		<sup><b>5</b></sup> Put to death therefore your members which are on the earth: fornication, uncleanness, passion, evil desire, and greediness, which is idolatry;<br><br>
+		<sup><b>6</b></sup> Because of which things the wrath of God is coming upon the sons of disobedience;<br><br>
+		<sup><b>7</b></sup> In which you also once walked, when you lived in these things.<br><br>
+		<sup><b>8</b></sup> But now, you also, put away all these things: wrath, anger, malice, blasphemy, foul abusive language out of your mouth.<br><br>
+		<sup><b>9</b></sup> Do not lie to one another, since you have put off the old man with his practices<br><br>
+		<sup><b>10</b></sup> And have put on the new man, which is being renewed unto full knowledge according to the image of Him who created him,<br><br>
+		<sup><b>11</b></sup> Where there cannot be Greek and Jew, circumcision and uncircumcision, barbarian, Scythian, slave, free man, but Christ is all and in all.<br><br>
+		<sup><b>12</b></sup> Put on therefore, as God’s chosen ones, holy and beloved, inward parts of compassion, kindness, lowliness, meekness, long-suffering;<br><br>
+		<sup><b>13</b></sup> Bearing one another and forgiving one another, if anyone should have a complaint against anyone; even as the Lord forgave you, so also should you forgive.<br><br>
+		<sup><b>14</b></sup> And over all these things put on love, which is the uniting bond of perfectness.<br><br>
+		<sup><b>15</b></sup> And let the peace of Christ arbitrate in your hearts, to which also you were called in one Body; and be thankful.<br><br>
+		<sup><b>16</b></sup> Let the word of Christ dwell in you richly in all wisdom, teaching and admonishing one another with psalms and hymns and spiritual songs, singing with grace in your hearts to God.<br><br>
+		<sup><b>17</b></sup> And whatever you do in word or in deed, do all things in the name of the Lord Jesus, giving thanks to God the Father through Him.<br><br>
+		<sup><b>18</b></sup> Wives, be subject to your husbands, as is fitting in the Lord.<br><br>
+		<sup><b>19</b></sup> Husbands, love your wives and do not be bitter against them.<br><br>
+		<sup><b>20</b></sup> Children, obey your parents in all things, for this is well pleasing in the Lord.<br><br>
+		<sup><b>21</b></sup> Fathers, do not vex your children, that they may not be disheartened.<br><br>
+		<sup><b>22</b></sup> Slaves, obey in all things those who are your masters according to the flesh, not with eye-service as men-pleasers, but in singleness of heart fearing the Lord.<br><br>
+		<sup><b>23</b></sup> Whatever you do, work from the soul as to the Lord and not to men,<br><br>
+		<sup><b>24</b></sup> Knowing that from the Lord you will receive the inheritance as recompense. You serve the Lord Christ.<br><br>
+		<sup><b>25</b></sup> For he who does unrighteously will receive what he unrighteously did, and there is no respect of persons. <br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
