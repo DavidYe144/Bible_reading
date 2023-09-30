@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('7', '../bible/44-Acts.html')">Acts 7</a></h4>
+	<p><sup><b>1</b></sup> And the high priest said, Are these things so?<br><br>
+		<sup><b>2</b></sup> And he said, Men, brothers and fathers, listen. The God of glory appeared to our father Abraham while he was in Mesopotamia, before he dwelt in Haran,<br><br>
+		<sup><b>3</b></sup> And said to him, “Come out from your land and from your relatives, and come into the land which I will show you.”<br><br>
+		<sup><b>4</b></sup> Then he came forth from the land of the Chaldeans and dwelt in Haran. And from there, after his father died, He removed him into this land, in which you now dwell.<br><br>
+		<sup><b>5</b></sup> Yet He did not give him an inheritance in it, not even a place to set his foot on; and He promised to give it to him for a possession and to his seed after him, while he had no child.<br><br>
+		<sup><b>6</b></sup> And God spoke in this way, that his seed would be a sojourner in a foreign land, and they would enslave them and mistreat them four hundred years.<br><br>
+		<sup><b>7</b></sup> “And whatever nation they will serve as slaves I will judge,” said God, “and after these things they will come forth and serve Me as priests in this place.”<br><br>
+		<sup><b>8</b></sup> And He gave to him a covenant of circumcision; and thus Abraham begot Isaac and circumcised him on the eighth day; and Isaac, Jacob; and Jacob, the twelve patriarchs.<br><br>
+		<sup><b>9</b></sup> And the patriarchs became jealous of Joseph and sold him into Egypt; yet God was with him<br><br>
+		<sup><b>10</b></sup> And rescued him out of all his afflictions and granted him favor and wisdom before Pharaoh, king of Egypt; and he appointed him governor over Egypt and over all his house.<br><br>
+		<sup><b>11</b></sup> And a famine came over all Egypt and Canaan as well as great affliction; and our fathers could find no sustenance.<br><br>
+		<sup><b>12</b></sup> But when Jacob heard that there was grain in Egypt, he sent our fathers out the first time.<br><br>
+		<sup><b>13</b></sup> And during the second time Joseph was made known to his brothers, and Joseph’s race became manifest to Pharaoh.<br><br>
+		<sup><b>14</b></sup> And Joseph sent word and called for Jacob his father and all his family, seventy-five souls in all.<br><br>
+		<sup><b>15</b></sup> And Jacob went down into Egypt; and he ended his days, he and our fathers.<br><br>
+		<sup><b>16</b></sup> And they were carried over to Shechem and placed in the tomb which Abraham had bought for a sum of silver from the sons of Hamor in Shechem.<br><br>
+		<sup><b>17</b></sup> But as the time of the promise which God had assured to Abraham drew near, the people grew and were multiplied in Egypt,<br><br>
+		<sup><b>18</b></sup> Until another king rose up over Egypt who did not know of Joseph.<br><br>
+		<sup><b>19</b></sup> This one dealt craftily with our race and mistreated our fathers, so that they threw out their babies in order that they would not be kept alive.<br><br>
+		<sup><b>20</b></sup> At this time Moses was born and was lovely to God. And he was nurtured three months in his father’s house.<br><br>
+		<sup><b>21</b></sup> And when he was thrown out, Pharaoh’s daughter took him up and nurtured him as a son for herself.<br><br>
+		<sup><b>22</b></sup> And Moses was educated in all the wisdom of the Egyptians, and he was powerful in his words and works.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

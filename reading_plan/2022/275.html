@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Numbers</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="numbers-17"><a onclick="open_chapter(1, '../bible/4-numbers.html')">Numbers 17</a></h4>
+	<p><sup><b>1</b></sup> Then Jehovah spoke to Moses, saying,<br><br>
+		<sup><b>2</b></sup> Speak to the children of Israel, and take from them rods, one for each father’s house, twelve rods from all their leaders according to their fathers’ houses; you shall write everyone’s name upon his rod.<br><br>
+		<sup><b>3</b></sup> And you shall write Aaron’s name upon the rod of Levi, for there shall be one rod for the head <i>of each</i> of their fathers’ houses.<br><br>
+		<sup><b>4</b></sup> And you shall place them in the Tent of Meeting before the Testimony, where I meet with you.<br><br>
+		<sup><b>5</b></sup> And the rod of the man whom I choose shall bud, and I will put a stop to the murmurings of the children of Israel against Me, which they murmur against you.<br><br>
+		<sup><b>6</b></sup> So Moses spoke to the children of Israel. And every one of their leaders gave him a rod, one rod for each leader according to their fathers’ houses, twelve rods, with the rod of Aaron among their rods.<br><br>
+		<sup><b>7</b></sup> And Moses placed the rods before Jehovah in the Tent of the Testimony.<br><br>
+		<sup><b>8</b></sup> And on the next day Moses went into the Tent of the Testimony, and there was the rod of Aaron for the house of Levi: it had budded; it even put forth buds and produced blossoms and bore ripe almonds.<br><br>
+		<sup><b>9</b></sup> And Moses brought out all the rods from before Jehovah to all the children of Israel, and they looked; and each one took his rod.<br><br>
+		<sup><b>10</b></sup> Then Jehovah said to Moses, Put back the rod of Aaron before the Testimony to be kept as a sign against the rebels, so that you may put an end to their murmurings against Me, and they not die.<br><br>
+		<sup><b>11</b></sup> And Moses did <i>so;</i> just as Jehovah commanded him, so he did.<br><br>
+		<sup><b>12</b></sup> And the children of Israel spoke to Moses, saying, Alas, we die out; we perish; all of us perish.<br><br>
+		<sup><b>13</b></sup> Everyone who comes near, who comes near to the tabernacle of Jehovah, dies. Are we to completely die out?<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-18"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 18</a></h4>
+	<p><sup><b>1</b></sup> In that hour the disciples came to Jesus, saying, Who then is greatest in the kingdom of the heavens?<br><br>
+		<sup><b>2</b></sup> And He called a little child to Him and stood him in their midst<br><br>
+		<sup><b>3</b></sup> And said, Truly I say to you, Unless you turn and become like little children, you shall by no means enter into the kingdom of the heavens.<br><br>
+		<sup><b>4</b></sup> He therefore who will humble himself like this little child, he is the greatest in the kingdom of the heavens.<br><br>
+		<sup><b>5</b></sup> And whoever receives one such little child because of My name, receives Me;<br><br>
+		<sup><b>6</b></sup> And whoever stumbles one of these little ones who believe into Me, it is more profitable for him that a great millstone be hung around his neck and he be drowned in the open sea.<br><br>
+		<sup><b>7</b></sup> Woe to the world because of stumbling blocks! For it is necessary for stumbling blocks to come, but woe to that man through whom the stumbling block comes.<br><br>
+		<sup><b>8</b></sup> If your hand or your foot stumbles you, cut it off and cast it from you; it is better for you to enter into life maimed or lame than to have two hands or two feet and be cast into the eternal fire.<br><br>
+		<sup><b>9</b></sup> And if your eye stumbles you, pluck it out and cast it from you; it is better for you to enter into life with one eye than to have two eyes and be cast into the Gehenna of fire.<br><br>
+		<sup><b>10</b></sup> See that you do not despise one of these little ones, for I say to you that their angels in the heavens continually behold the face of My Father who is in the heavens.<br><br>
+		<sup><b>11</b></sup> For the Son of Man has come to save that which is lost.<br><br>
+		<sup><b>12</b></sup> What do you think? If any man has a hundred sheep and one of them goes astray, will he not leave the ninety-nine on the mountains and go and seek the one that has gone astray?<br><br>
+		<sup><b>13</b></sup> And if it so happens that he finds it, truly I say to you that he rejoices over it more than over the ninety-nine which have not gone astray.<br><br>
+		<sup><b>14</b></sup> In the same way, it is not the will of your Father who is in the heavens that one of these little ones perish.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

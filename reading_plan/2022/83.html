@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/24-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="hebrews-1"><a onclick="open_chapter('top', '58-hebrews.html')">Hebrews 1</a></h4>
+  <p><sup><b>1</b></sup> God, having spoken of old in many portions and in many ways to the fathers in the prophets,<br><br>
+     <sup><b>2</b></sup> Has at the last of these days spoken to us in the Son, whom He appointed Heir of all things, through whom also He made the universe;<br><br>
+     <sup><b>3</b></sup> Who, being the effulgence of His glory and the impress of His substance and upholding and bearing all things by the word of His power, having made purification of sins, sat down on the right hand of the Majesty on high;<br><br>
+     <sup><b>4</b></sup> Having become as much better than the angels as to have inherited a more distinguished name than they.<br><br>
+     <sup><b>5</b></sup> For to which of the angels has He ever said, “You are My Son; this day have I begotten You”? And again, “I will be a Father to Him, and He will be a Son to Me”?<br><br>
+     <sup><b>6</b></sup> And when He brings again the Firstborn into the inhabited earth, He says, “And let all the angels of God worship Him.”<br><br>
+     <sup><b>7</b></sup> And of the angels He says, “Who makes His angels winds and His ministers a flame of fire”;<br><br>
+     <sup><b>8</b></sup> But of the Son, “Your throne, O God, is forever and ever, and the scepter of uprightness is the scepter of Your kingdom.<br><br>
+     <sup><b>9</b></sup> You have loved righteousness and hated lawlessness; therefore God, Your God, has anointed You with the oil of exultant joy above Your partners”;<br><br>
+     <sup><b>10</b></sup> And, “You in the beginning, Lord, laid the foundation of the earth, and the heavens are the works of Your hands;<br><br>
+     <sup><b>11</b></sup> They will perish, but You remain perpetually; and they all will become old like a garment,<br><br>
+     <sup><b>12</b></sup> And like a mantle You will roll them up; like a garment they will also be changed; but You are the same, and Your years will not fail.”<br><br>
+     <sup><b>13</b></sup> But to which of the angels has He ever said, “Sit at My right hand until I set Your enemies as a footstool for Your feet”?<br><br>
+     <sup><b>14</b></sup> Are they not all ministering spirits, sent forth for service for the sake of those who are to inherit salvation? <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hebrews-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

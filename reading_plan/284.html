@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Thessalonians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="1thessalonians-1"><a onclick="open_chapter('top', '../bible/52-1thessalonians.html')">1 Thessalonians 3</a></h4>
+	<p><sup><b>1</b></sup> Therefore when we could bear it no longer, we thought it good to be left in Athens alone,<br><br>
+		<sup><b>2</b></sup> And we sent Timothy, our brother and God’s fellow worker in the gospel of Christ, to establish and encourage you for the sake of your faith,<br><br>
+		<sup><b>3</b></sup> That no one would be shaken by these afflictions; for you yourselves know that we are appointed for this.<br><br>
+		<sup><b>4</b></sup> For even when we were with you, we told you beforehand that we are to be afflicted, even as it also came to pass and you know.<br><br>
+		<sup><b>5</b></sup> Because of this, when I also could bear it no longer, I sent to find out concerning your faith, lest perhaps the tempter had tempted you and our labor would be in vain.<br><br>
+		<sup><b>6</b></sup> But Timothy, having just come to us from you and announcing the good news to us of your faith and love and that you have kind remembrance of us always and long to see us, just as we also you,<br><br>
+		<sup><b>7</b></sup> Because of this we were comforted because of you, brothers, in all our necessity and affliction, through your faith;<br><br>
+		<sup><b>8</b></sup> Because now we live if you stand firm in the Lord.<br><br>
+		<sup><b>9</b></sup> For what thanks can we return to God concerning you for all the joy with which we rejoice because of you before our God,<br><br>
+		<sup><b>10</b></sup> Night and day petitioning exceedingly so that we may see your face and complete the things that are lacking in your faith?<br><br>
+		<sup><b>11</b></sup> Now may our God and Father Himself and our Lord Jesus make straight our path to you;<br><br>
+		<sup><b>12</b></sup> And the Lord cause you to increase and abound in love to one another and to all, just as we also to you,<br><br>
+		<sup><b>13</b></sup> So that He may establish your hearts blameless in holiness before our God and Father at the coming of our Lord Jesus with all His saints. <br><br>
+    </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

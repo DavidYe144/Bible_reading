@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-14"><a onclick="open_chapter('14', '../bible/41-mark.html')">Mark 14</a></h4>
+	<p>
+		<sup><b>43</b></sup> And immediately, while He was still speaking, Judas, one of the twelve, appeared, and with him a crowd with swords and clubs, from the chief priests and the scribes and the elders.<br><br>
+		<sup><b>44</b></sup> Now the one who was betraying Him had given them a signal, saying, Whomever I kiss, He is the one. Seize Him and lead Him away securely.<br><br>
+		<sup><b>45</b></sup> And when he came, he immediately approached Him and said, Rabbi! and kissed Him affectionately.<br><br>
+		<sup><b>46</b></sup> And they laid hands on Him and seized Him.<br><br>
+		<sup><b>47</b></sup> But a certain one of those standing by drew his sword and struck the slave of the high priest, and took off his ear.<br><br>
+		<sup><b>48</b></sup> And Jesus answered and said to them, Have you come out as against a robber with swords and clubs to arrest Me?<br><br>
+		<sup><b>49</b></sup> Day after day I was with you in the temple teaching and you did not seize Me. But may the Scriptures be fulfilled.<br><br>
+		<sup><b>50</b></sup> And they all left Him and fled.<br><br>
+		<sup><b>51</b></sup> And a certain young man was accompanying Him, clothed with a linen cloth over his naked body; and they seized him.<br><br>
+		<sup><b>52</b></sup> But he left the linen cloth behind and fled naked.<br><br>
+		<sup><b>53</b></sup> And they led Jesus away to the high priest, and all the chief priests and the elders and the scribes came together.<br><br>
+		<sup><b>54</b></sup> And Peter followed Him at a distance until he was within the courtyard of the high priest. And he was there sitting with the attendants and warming himself in the light of the fire.<br><br>
+		<sup><b>55</b></sup> Now the chief priests and the whole Sanhedrin were seeking testimony against Jesus in order to put Him to death, and they could not find it.<br><br>
+		<sup><b>56</b></sup> For many gave false testimony against Him, yet the testimonies were not consistent.<br><br>
+		<sup><b>57</b></sup> And some stood up and testified falsely against Him, saying,<br><br>
+		<sup><b>58</b></sup> We heard Him say, I will destroy this temple made with hands, and in three days I will build another made without hands.<br><br>
+		<sup><b>59</b></sup> And neither in this regard was their testimony consistent.<br><br>
+		<sup><b>60</b></sup> And the high priest stood up in the midst and questioned Jesus, saying, Do You not answer anything? What is this that these testify against You?<br><br>
+		<sup><b>61</b></sup> But He was silent and did not answer anything. Again the high priest questioned Him and said to Him, Are You the Christ, the Son of the Blessed?<br><br>
+		<sup><b>62</b></sup> And Jesus said, I am. And you shall see the Son of Man sitting at the right hand of Power and coming with the clouds of heaven.<br><br>
+		<sup><b>63</b></sup> And the high priest, tearing his garments, said, What further need do we have of witnesses?<br><br>
+		<sup><b>64</b></sup> You heard the blasphemy! How does it appear to you? And they all condemned Him as being worthy of death.<br><br>
+		<sup><b>65</b></sup> And some began to spit at Him and to blindfold His face and to beat Him with their fists and to say to Him, Prophesy! And the attendants, slapping Him about, took Him.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

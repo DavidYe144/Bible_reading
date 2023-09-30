@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('7', '../bible/46-1corinthians.html')">1 Corinthians 7:25</a></h4>
+	<p><sup><b>25</b></sup> Now concerning virgins I have no commandment of the Lord, but I give my opinion as one who has been shown mercy by the Lord to be faithful.<br><br>
+		<sup><b>26</b></sup> I consider then that this is good because of the present necessity, that it is good for a man to be as he is.<br><br>
+		<sup><b>27</b></sup> Have you been bound to a wife? Do not seek a release. Have you been released from a wife? Do not seek a wife.<br><br>
+		<sup><b>28</b></sup> But even if you do marry, you have not sinned; and if the virgin marries, she has not sinned; but such ones will have affliction in the flesh, and I am trying to spare you.<br><br>
+		<sup><b>29</b></sup> But this I say, brothers, the time is shortened. Henceforth both those who have wives should be as though they had none,<br><br>
+		<sup><b>30</b></sup> And those who weep as though they did not weep, and those who rejoice as though they did not rejoice, and those who buy as though they did not possess,<br><br>
+		<sup><b>31</b></sup> And those who use the world as though they did not abuse it; for the fashion of this world is passing away.<br><br>
+		<sup><b>32</b></sup> But I desire you to be without care. The unmarried cares for the things of the Lord, how he may please the Lord;<br><br>
+		<sup><b>33</b></sup> But he who has married cares for the things of the world, how he may please his wife,<br><br>
+		<sup><b>34</b></sup> And is distracted. Both the unmarried woman and the virgin care for the things of the Lord, that she may be holy both in body and in spirit; but she who has married cares for the things of the world, how she may please her husband.<br><br>
+		<sup><b>35</b></sup> But this I say for your own profit, not that I may put a noose upon you but that you may be comely and may wait on the Lord without distraction.<br><br>
+		<sup><b>36</b></sup> But if anyone thinks that he is behaving unbecomingly to his virgin daughter, if she is past the bloom of youth and thus it must be so, let him do what he wishes, he does not sin; let them marry.<br><br>
+		<sup><b>37</b></sup> But he who stands firm in his heart, being under no constraint, and has authority with respect to his own will and has decided this in his own heart, to keep his own virgin daughter, he will do well.<br><br>
+		<sup><b>38</b></sup> So then both he who gives his own virgin daughter in marriage does well, and he who does not give her in marriage will do better.<br><br>
+		<sup><b>39</b></sup> A wife is bound for so long a time as her husband lives; but should the husband fall asleep, she is free to be married to whom she wishes, only to one in the Lord.<br><br>
+		<sup><b>40</b></sup> But she is more blessed if she so remains, according to my opinion; but I think that I also have the Spirit of God. <br><br>
+   	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

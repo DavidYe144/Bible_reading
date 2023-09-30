@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('4', '../bible/43-John.html')">John 4:27</a></h4>
+	<p>				 
+		<sup><b>27</b></sup> And at this point His disciples came, and they marveled that He was speaking with a woman; yet no one said, What are You seeking? or, Why are You speaking with her?<br><br>
+		<sup><b>28</b></sup> Then the woman left her waterpot and went away into the city, and said to the people,<br><br>
+		<sup><b>29</b></sup> Come, see a man who told me all that I have done. Is this not the Christ?<br><br>
+		<sup><b>30</b></sup> They went out of the city and came to Him.<br><br>
+		<sup><b>31</b></sup> In the meantime, the disciples urged Him, saying, Rabbi, eat.<br><br>
+		<sup><b>32</b></sup> But He said to them, I have food to eat that you do not know about.<br><br>
+		<sup><b>33</b></sup> The disciples therefore said to one another, Has anyone brought Him anything to eat?<br><br>
+		<sup><b>34</b></sup> Jesus said to them, My food is to do the will of Him who sent Me and to finish His work.<br><br>
+		<sup><b>35</b></sup> Do you not say that there are yet four months and then the harvest comes? Behold, I tell you, Lift up your eyes and look on the fields, for they are already white for harvest.<br><br>
+		<sup><b>36</b></sup> He who reaps receives wages and gathers fruit unto eternal life, in order that he who sows and he who reaps may rejoice together.<br><br>
+		<sup><b>37</b></sup> For in this the saying is true, One sows and another reaps.<br><br>
+		<sup><b>38</b></sup> I sent you to reap that for which you have not labored; others have labored, and you have entered into their labor.<br><br>
+		<sup><b>39</b></sup> And many of the Samaritans from that city believed into Him because of the word of the woman who testified, He told me all that I have done.<br><br>
+		<sup><b>40</b></sup> So when the Samaritans came to Him, they asked Him to remain with them, and He remained there two days.<br><br>
+		<sup><b>41</b></sup> And many more believed because of His word.<br><br>
+		<sup><b>42</b></sup> And they said to the woman, It is no longer because of your speaking that we believe, for we ourselves have heard and know that this One is truly the Savior of the world.<br><br>
+		<sup><b>43</b></sup> And after the two days He went forth from there into Galilee,<br><br>
+		<sup><b>44</b></sup> For Jesus Himself testified that a prophet has no honor in his own country.<br><br>
+		<sup><b>45</b></sup> Then when He came into Galilee, the Galileans received Him, having seen all that He did in Jerusalem at the feast, for they also went to the feast.<br><br>
+		<sup><b>46</b></sup> He then came again to Cana of Galilee, where He had made the water wine.        And there was a certain royal official, whose son was sick in Capernaum.<br><br>
+		<sup><b>47</b></sup> When he heard that Jesus had come out of Judea into Galilee, he went to Him and asked Him to come down and heal his son, for he was about to die.<br><br>
+		<sup><b>48</b></sup> Jesus therefore said to him, Unless you see signs and wonders, you will by no means believe.<br><br>
+		<sup><b>49</b></sup> The royal official said to Him, Sir, come down before my little child dies.<br><br>
+		<sup><b>50</b></sup> Jesus said to him, Go, your son lives. The man believed the word which Jesus said to him and went his way.<br><br>
+		<sup><b>51</b></sup> And as he was now going down, his slaves met him and said that his child was living.<br><br>
+		<sup><b>52</b></sup> So he asked them the hour in which he got better. They said then to him, Yesterday at the seventh hour the fever left him.<br><br>
+		<sup><b>53</b></sup> Then the father knew that it was in that hour in which Jesus said to him, Your son lives; and he believed, he and his whole house.<br><br>
+		<sup><b>54</b></sup> Again, this second sign Jesus performed when He came out of Judea into Galilee.<br><br>
+   </p>
+
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

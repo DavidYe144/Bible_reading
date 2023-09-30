@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-4"><a onclick="open_chapter('4', '../bible/41-mark.html')">Mark 4</a></h4>
+	<p><sup><b>1</b></sup> And again He began to teach beside the sea, and a very great crowd was gathered unto Him, so that He stepped into a boat in the sea and sat down, and all the crowd was on the land, facing the sea.<br><br>
+		<sup><b>2</b></sup> And He taught them many things in parables and said to them in His teaching:<br><br>
+		<sup><b>3</b></sup> Listen! Behold, the sower went out to sow.<br><br>
+		<sup><b>4</b></sup> And as he sowed, some seed fell beside the way, and the birds came and devoured it.<br><br>
+		<sup><b>5</b></sup> And other seed fell on the rocky place, where it did not have much earth, and immediately it sprang up because it had no depth of earth.<br><br>
+		<sup><b>6</b></sup> And when the sun rose, it was scorched; and because it had no root, it withered.<br><br>
+		<sup><b>7</b></sup> And other seed fell into the thorns, and the thorns came up and utterly choked it, and it yielded no fruit.<br><br>
+		<sup><b>8</b></sup> And others fell into the good earth and yielded fruit, coming up and growing; and one bore thirtyfold, and one sixtyfold, and one a hundredfold.<br><br>
+		<sup><b>9</b></sup> And He said, He who has ears to hear, let him hear.<br><br>
+		<sup><b>10</b></sup> And when He was alone, those around Him, with the twelve, asked Him about the parables.<br><br>
+		<sup><b>11</b></sup> And He said to them, To you it has been given to know the mystery of the kingdom of God, but to those outside, all things are in parables,<br><br>
+		<sup><b>12</b></sup> In order that seeing they may see and not perceive, and hearing they may hear and not understand, lest they turn and it be forgiven them.<br><br>
+		<sup><b>13</b></sup> And He said to them, Do you not know this parable? And how will you know all the parables?<br><br>
+		<sup><b>14</b></sup> The sower sows the word.<br><br>
+		<sup><b>15</b></sup> And these are the ones beside the way, where the word is sown; and when they hear, immediately Satan comes and takes away the word which has been sown into them.<br><br>
+		<sup><b>16</b></sup> And likewise, these are the ones being sown on the rocky places, who, when they hear the word, immediately receive it with joy.<br><br>
+		<sup><b>17</b></sup> Yet they have no root in themselves, but last only for a time; then when affliction or persecution occurs because of the word, immediately they are stumbled.<br><br>
+		<sup><b>18</b></sup> And others are the ones being sown into the thorns; these are the ones who have heard the word,<br><br>
+		<sup><b>19</b></sup> And the anxieties of the age and the deceitfulness of riches and the lusts for other things enter in and utterly choke the word, and it becomes unfruitful.<br><br>
+		<sup><b>20</b></sup> And these are the ones sown on the good earth: those who hear the word and receive it and bear fruit, one thirtyfold, and one sixtyfold, and one a hundredfold.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

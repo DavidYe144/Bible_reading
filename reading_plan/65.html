@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-12"><a onclick="open_chapter('12', '../bible/41-mark.html')">Mark 12</a></h4>
+	<p>				 
+		<sup><b>28</b></sup> And one of the scribes approached and heard them disputing; and perceiving that He answered them well, he questioned Him, Which is the first commandment of all?<br><br>
+		<sup><b>29</b></sup> Jesus answered, The first is: “Hear, Israel: the Lord our God is one Lord;<br><br>
+		<sup><b>30</b></sup> And you shall love the Lord your God from your whole heart and from your whole soul and from your whole mind and from your whole strength.”<br><br>
+		<sup><b>31</b></sup> The second is this: “You shall love your neighbor as yourself.” There is no other commandment greater than these.<br><br>
+		<sup><b>32</b></sup> And the scribe said to Him, Well said, Teacher; in truth You have said that He is one and there is not another besides Him;<br><br>
+		<sup><b>33</b></sup> And to love Him from the whole heart and from the whole understanding and from the whole strength and to love one’s neighbor as himself is much more than all the burnt offerings and sacrifices.<br><br>
+		<sup><b>34</b></sup> And Jesus, seeing that he answered intelligently, said to him, You are not far from the kingdom of God. And no one dared to question Him anymore.<br><br>
+		<sup><b>35</b></sup> And Jesus, while He was teaching in the temple, answered and said, How is it that the scribes say that the Christ is the son of David?<br><br>
+		<sup><b>36</b></sup> David himself said in the Holy Spirit, “The Lord said to my Lord, Sit at My right hand until I put Your enemies underneath Your feet.”<br><br>
+		<sup><b>37</b></sup> David himself calls Him Lord, and how is He his son? And the great crowd heard Him gladly.<br><br>
+		<sup><b>38</b></sup> And in His teaching He said, Beware of the scribes, who like to walk around in long robes, and like greetings in the marketplaces<br><br>
+		<sup><b>39</b></sup> And chief seats in the synagogues and places of honor at the dinners,<br><br>
+		<sup><b>40</b></sup> Who devour the widows’ houses, and for a pretense make long prayers. These shall receive greater judgment.<br><br>
+		<sup><b>41</b></sup> And He sat down opposite the treasury and watched how the crowd cast money into the treasury. And many rich people cast in much.<br><br>
+		<sup><b>42</b></sup> And one poor widow came and cast in two lepta, which is a quadrans.<br><br>
+		<sup><b>43</b></sup> And He called His disciples to Him and said to them, Truly I say to you that this poor widow has cast in more than all those who were casting into the treasury,<br><br>
+		<sup><b>44</b></sup> For they all cast in out of their surplus, but she, out of her lack, has cast in all that she had, her whole living. <br><br>
+    </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

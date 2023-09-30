@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-22"><a onclick="open_chapter('22', '../bible/40-matthew.html')">Matthew 22</a></h4>
+	<p>				 
+		<sup><b>23</b></sup> On that day some Sadducees, who say that there is no resurrection, came to Him and questioned Him,<br><br>
+		<sup><b>24</b></sup> Saying, Teacher, Moses said, If anyone dies and does not have children, his brother as next of kin shall marry his wife and raise up seed to his brother.<br><br>
+		<sup><b>25</b></sup> Now there were seven brothers with us. And the first married and died, and having no seed, he left his wife to his brother;<br><br>
+		<sup><b>26</b></sup> Likewise also the second and the third until the seventh.<br><br>
+		<sup><b>27</b></sup> And last of all the woman died.<br><br>
+		<sup><b>28</b></sup> In the resurrection, then, whose wife will she be of the seven? For they all had her.<br><br>
+		<sup><b>29</b></sup> And Jesus answered and said to them, You err, not knowing the Scriptures nor the power of God.<br><br>
+		<sup><b>30</b></sup> For in the resurrection they neither marry nor are given in marriage, but are like angels in heaven.<br><br>
+		<sup><b>31</b></sup> But concerning the resurrection of the dead, have you not read that which was spoken to you by God, saying,<br><br>
+		<sup><b>32</b></sup> “I am the God of Abraham and the God of Isaac and the God of Jacob”? He is not the God of the dead, but of the living.<br><br>
+		<sup><b>33</b></sup> And when the crowds heard this, they were astounded at His teaching.<br><br>
+		<sup><b>34</b></sup> But the Pharisees, when they heard that He had muzzled the Sadducees, gathered themselves together.<br><br>
+		<sup><b>35</b></sup> And one of them, a lawyer, asked Him a question, testing Him,<br><br>
+		<sup><b>36</b></sup> Teacher, which is the great commandment in the law?<br><br>
+		<sup><b>37</b></sup> And He said to him, “You shall love the Lord your God with all your heart and with all your soul and with all your mind.”<br><br>
+		<sup><b>38</b></sup> This is the great and first commandment.<br><br>
+		<sup><b>39</b></sup> And the second is like it: “You shall love your neighbor as yourself.”<br><br>
+		<sup><b>40</b></sup> On these two commandments hang all the Law and the Prophets.<br><br>
+		<sup><b>41</b></sup> Now while the Pharisees were gathered together, Jesus questioned them,<br><br>
+		<sup><b>42</b></sup> Saying, What do you think concerning the Christ? Whose son is He? They said to Him, David’s.<br><br>
+		<sup><b>43</b></sup> He said to them, How then does David in spirit call Him Lord, saying,<br><br>
+		<sup><b>44</b></sup> “The Lord said to my Lord, Sit at My right hand until I put Your enemies underneath Your feet”?<br><br>
+		<sup><b>45</b></sup> If then David calls Him Lord, how is He his son?<br><br>
+		<sup><b>46</b></sup> And no one was able to answer Him a word, nor did anyone from that day dare to question Him anymore.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-25"><a onclick="open_chapter('25', '../bible/40-matthew.html')">Matthew 25</a></h4>
+	<p>
+		<sup><b>31</b></sup> But when the Son of Man comes in His glory and all the angels with Him, at that time He will sit on the throne of His glory.<br><br>
+		<sup><b>32</b></sup> And all the nations will be gathered before Him, and He will separate them from one another, just as the shepherd separates the sheep from the goats.<br><br>
+		<sup><b>33</b></sup> And He will set the sheep on His right hand and the goats on the left.<br><br>
+		<sup><b>34</b></sup> Then the King will say to those on His right hand, Come, you who are blessed of My Father, inherit the kingdom prepared for you from the foundation of the world.<br><br>
+		<sup><b>35</b></sup> For I was hungry and you gave Me something to eat; I was thirsty and you gave Me a drink; I was a stranger and you took Me in,<br><br>
+		<sup><b>36</b></sup> Naked and you clothed Me; I was sick and you visited Me; I was in prison and you came to Me.<br><br>
+		<sup><b>37</b></sup> Then the righteous will answer Him, saying, Lord, when have we seen You hungry and have fed You, or thirsty and have given You a drink?<br><br>
+		<sup><b>38</b></sup> And when have we seen You a stranger and have taken You in, or naked and have clothed You?<br><br>
+		<sup><b>39</b></sup> And when have we seen You sick or in prison and have come to You?<br><br>
+		<sup><b>40</b></sup> And the King will answer and say to them, Truly I say to you, Inasmuch as you have done it to one of these, the least of My brothers, you have done it to Me.<br><br>
+		<sup><b>41</b></sup> Then He will say also to those on the left, Go away from Me, you who are cursed, into the eternal fire prepared for the devil and his angels.<br><br>
+		<sup><b>42</b></sup> For I was hungry and you did not give Me anything to eat; I was thirsty and you did not give Me a drink;<br><br>
+		<sup><b>43</b></sup> I was a stranger and you did not take Me in; naked and you did not clothe Me; sick and in prison, and you did not visit Me.<br><br>
+		<sup><b>44</b></sup> Then they also will answer, saying, Lord, when have we seen You hungry or thirsty or a stranger or naked or sick or in prison and did not minister to You?<br><br>
+		<sup><b>45</b></sup> Then He will answer them, saying, Truly I say to you, Inasmuch as you did not do it to one of the least of these, neither have you done it to Me.<br><br>
+		<sup><b>46</b></sup> And these shall go away into eternal punishment, but the righteous into eternal life.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

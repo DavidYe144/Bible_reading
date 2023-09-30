@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('8', '../bible/45-romans.html')">Romans 8</a></h4>
+	<p><sup><b>1</b></sup> There is now then no condemnation to those who are in Christ Jesus.<br><br>
+		<sup><b>2</b></sup> For the law of the Spirit of life has freed me in Christ Jesus from the law of sin and of death.<br><br>
+		<sup><b>3</b></sup> For that which the law could not do, in that it was weak through the flesh, God, sending His own Son in the likeness of the flesh of sin and concerning sin, condemned sin in the flesh,<br><br>
+		<sup><b>4</b></sup> That the righteous requirement of the law might be fulfilled in us, who do not walk according to the flesh but according to the spirit.<br><br>
+		<sup><b>5</b></sup> For those who are according to the flesh mind the things of the flesh; but those who are according to the spirit, the things of the Spirit.<br><br>
+		<sup><b>6</b></sup> For the mind set on the flesh is death, but the mind set on the spirit is life and peace.<br><br>
+		<sup><b>7</b></sup> Because the mind set on the flesh is enmity against God; for it is not subject to the law of God, for neither can it be.<br><br>
+		<sup><b>8</b></sup> And those who are in the flesh cannot please God.<br><br>
+		<sup><b>9</b></sup> But you are not in the flesh, but in the spirit, if indeed the Spirit of God dwells in you. Yet if anyone does not have the Spirit of Christ, he is not of Him.<br><br>
+		<sup><b>10</b></sup> But if Christ is in you, though the body is dead because of sin, the spirit is life because of righteousness.<br><br>
+		<sup><b>11</b></sup> And if the Spirit of the One who raised Jesus from the dead dwells in you, He who raised Christ from the dead will also give life to your mortal bodies through His Spirit who indwells you.<br><br>
+		<sup><b>12</b></sup> So then, brothers, we are debtors not to the flesh to live according to the flesh;<br><br>
+		<sup><b>13</b></sup> For if you live according to the flesh, you must die, but if by the Spirit you put to death the practices of the body, you will live.<br><br>
+</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

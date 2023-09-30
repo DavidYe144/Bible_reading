@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Deuteronomy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="deuteronomy-14"><a onclick="open_chapter('top', '../bible/5-deuteronomy.html')">Deuteronomy 30</a></h4>
+	<p><sup><b>1</b></sup> And when all these things come upon you, the blessing and the curse, which I have set before you; and you bring <i>them</i> to heart <i>while</i> among all the nations to whom Jehovah your God will drive you;<br><br>
+		<sup><b>2</b></sup> And you and your children return to Jehovah your God and listen to His voice, according to all that I am commanding you today, with all your heart and with all your soul;<br><br>
+		<sup><b>3</b></sup> Then Jehovah your God will turn your captivity and be compassionate to you, and He will turn and gather you from all the peoples among whom Jehovah your God has scattered you.<br><br>
+		<sup><b>4</b></sup> If any of you have been driven out to the ends of heaven, from there will Jehovah your God gather you and from there will He take you.<br><br>
+		<sup><b>5</b></sup> And Jehovah your God will bring you into the land which your fathers possessed, and you will possess it; and He will do good for you and will multiply you more than <i>He did</i> your fathers.<br><br>
+		<sup><b>6</b></sup> And Jehovah your God will circumcise your heart and the heart of your seed, so that you will love Jehovah your God with all your heart and with all your soul, that you may live.<br><br>
+		<sup><b>7</b></sup> And Jehovah your God will put all these oaths upon your enemies and upon them who hate you <i>and</i> who have persecuted you.<br><br>
+		<sup><b>8</b></sup> And you will turn and listen to the voice of Jehovah, and you will do all His commandments, which I am commanding you today.<br><br>
+		<sup><b>9</b></sup> And Jehovah your God will give you an excess of prosperity in all your undertakings, in the fruit of your womb and in the fruit of your animals and in the fruit of your ground, for Jehovah will again exult over you for good as He exulted over your fathers;<br><br>
+		<sup><b>10</b></sup> If you listen to the voice of Jehovah your God, to keep His commandments and His statutes written in this book of the law; if you turn back to Jehovah your God with all your heart and with all your soul.<br><br>
+		<sup><b>11</b></sup> For this commandment which I am commanding you today, it is not too difficult for you, nor is it distant.<br><br>
+		<sup><b>12</b></sup> It is not in heaven that you should say, Who will ascend to heaven for us and bring it to us to make us hear it and do it?<br><br>
+		<sup><b>13</b></sup> Nor is it across the sea that you should say, Who will go across the sea for us and bring it to us to make us hear it and do it?<br><br>
+		<sup><b>14</b></sup> But the word is very near to you, <i>even</i> in your mouth and in your heart, that you may do it.<br><br>
+		<sup><b>15</b></sup> See, I have put before you today life and good, and death and evil.<br><br>
+		<sup><b>16</b></sup> <i>If you obey the commandments of Jehovah your God</i>, which I am commanding you today, to love Jehovah your God and walk in His ways and keep His commandments and His statutes and His ordinances, then you will live and multiply, and Jehovah your God will bless you in the land which you are entering to possess.<br><br>
+		<sup><b>17</b></sup> But if your heart turns and you do not listen, but rather you are drawn away in worship to other gods and serve them,<br><br>
+		<sup><b>18</b></sup> I declare to you today that you shall surely perish; your days will not be extended upon the land into which you are crossing over the Jordan to go and possess.<br><br>
+		<sup><b>19</b></sup> I call heaven and earth to witness against you today: I have set before you life and death, blessing and curse; therefore choose life that you and your seed may live,<br><br>
+		<sup><b>20</b></sup> In loving Jehovah your God by listening to His voice and holding fast to Him; for He is your life and the length of your days, that you may dwell upon the land which Jehovah swore to your fathers, to Abraham, to Isaac, and to Jacob, to give them.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

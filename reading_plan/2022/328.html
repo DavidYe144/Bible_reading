@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Deuteronomy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="deuteronomy-34"><a onclick="open_chapter('top', '../bible/5-deuteronomy.html')">Deuteronomy 34</a></h4>
+	<p><sup><b>1</b></sup> Then Moses went up from the plains of Moab to Mount Nebo, to the top of Pisgah, which faces Jericho. And Jehovah showed him all the land: Gilead as far as Dan;<br><br>
+		<sup><b>2</b></sup> And all of Naphtali; and the land of Ephraim and Manasseh; and all the land of Judah as far as the sea beyond <i>it;</i><br><br>
+		<sup><b>3</b></sup> And the Negev; and the Plain, <i>that is,</i> the valley of Jericho, the city of palm trees, as far as Zoar.<br><br>
+		<sup><b>4</b></sup> And Jehovah said to him, This is the land which I swore to Abraham, to Isaac, and to Jacob, saying, To your seed I will give it. I have let you see it with your <i>own</i> eyes, but you will not go over there.<br><br>
+		<sup><b>5</b></sup> So Moses the servant of Jehovah died there in the land of Moab according to the word of Jehovah.<br><br>
+		<sup><b>6</b></sup> And He buried him in the valley in the land of Moab opposite Beth-peor; but no man knows his burial site to this day.<br><br>
+		<sup><b>7</b></sup> And Moses was a hundred and twenty years old when he died; his eye was not dim, nor had his freshness left <i>him.</i><br><br>
+		<sup><b>8</b></sup> And the children of Israel wept for Moses in the plains of Moab for thirty days; thus, the days of weeping <i>and</i> mourning for Moses were completed.<br><br>
+		<sup><b>9</b></sup> And Joshua the son of Nun was filled with the spirit of wisdom, for Moses had laid his hands upon him; and the children of Israel listened to him and did as Jehovah had commanded Moses.<br><br>
+		<sup><b>10</b></sup> And there has not arisen a prophet since then in Israel like Moses, whom Jehovah knew face to face,<br><br>
+		<sup><b>11</b></sup> For all the signs and the wonders which Jehovah sent him to do in the land of Egypt, to Pharaoh, to all his servants, and to all his land,<br><br>
+		<sup><b>12</b></sup> And for all the mighty power and for all the great terror which Moses did in the sight of all Israel.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/17-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-13"><a onclick="open_chapter('13', '../bible/40-matthew.html')">Matthew 13</a></h4>
+	<p><sup><b>1</b></sup> On that day Jesus went out of the house and sat beside the sea.<br><br>
+		<sup><b>2</b></sup> And great crowds were gathered to Him, so that He stepped into a boat and sat, and all the crowd stood on the shore.<br><br>
+		<sup><b>3</b></sup> And He spoke many things to them in parables, saying, Behold, the sower went out to sow.<br><br>
+		<sup><b>4</b></sup> And as he sowed, some seeds fell beside the way, and the birds came and devoured them.<br><br>
+		<sup><b>5</b></sup> And others fell on the rocky places, where they did not have much earth, and immediately they sprang up because they had no depth of earth.<br><br>
+		<sup><b>6</b></sup> But when the sun rose, they were scorched; and because they had no root, they withered.<br><br>
+		<sup><b>7</b></sup> And others fell on the thorns, and the thorns came up and choked them.<br><br>
+		<sup><b>8</b></sup> But others fell on the good earth and yielded fruit, one a hundredfold, and one sixtyfold, and one thirtyfold.<br><br>
+		<sup><b>9</b></sup> He who has ears to hear, let him hear.<br><br>
+		<sup><b>10</b></sup> And the disciples came and said to Him, Why do You speak in parables to them?<br><br>
+		<sup><b>11</b></sup> And He answered and said to them, Because to you it has been given to know the mysteries of the kingdom of the heavens, but to them it has not been given.<br><br>
+		<sup><b>12</b></sup> For whoever has, it shall be given to him, and he will abound; but whoever does not have, even that which he has shall be taken away from him.<br><br>
+		<sup><b>13</b></sup> For this reason I speak to them in parables, because seeing they do not see, and hearing they do not hear, nor do they understand.<br><br>
+		<sup><b>14</b></sup> And in them the prophecy of Isaiah is being fulfilled, which says, “In hearing you shall hear and by no means understand, and seeing you shall see and by no means perceive.<br><br>
+		<sup><b>15</b></sup> For the heart of this people has become fat, and with their ears they have heard heavily, and their eyes they have closed, lest they perceive with their eyes and hear with their ears and understand with their heart, and they turn around, and I will heal them.”<br><br>
+		<sup><b>16</b></sup> But blessed are your eyes because they see, and your ears because they hear.<br><br>
+		<sup><b>17</b></sup> For truly I say to you that many prophets and righteous men have desired to perceive the things that you see, and have not perceived them, and to hear the things that you hear, and have not heard them.<br><br>
+		<sup><b>18</b></sup> You therefore hear the parable of the one who sowed.<br><br>
+		<sup><b>19</b></sup> When anyone hears the word of the kingdom and does not understand, the evil one comes and snatches away that which has been sown in his heart. This is the one sown beside the way.<br><br>
+		<sup><b>20</b></sup> And the one sown on the rocky places, this is he who hears the word and immediately receives it with joy;<br><br>
+		<sup><b>21</b></sup> Yet he does not have root in himself but lasts only for a time, and when affliction or persecution occurs because of the word, immediately he is stumbled.<br><br>
+		<sup><b>22</b></sup> And the one sown in the thorns, this is he who hears the word, and the anxiety of the age and the deceitfulness of riches utterly choke the word, and it becomes unfruitful.<br><br>
+		<sup><b>23</b></sup> But the one sown on the good earth, this is he who hears the word and understands, who by all means bears fruit and produces, one a hundredfold, and one sixtyfold, and one thirtyfold.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

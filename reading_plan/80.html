@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-4"><a onclick="open_chapter('4', '../bible/42-luke.html')">Luke 4</a></h4>
+	<p><sup><b>1</b></sup> And Jesus, full of the Holy Spirit, returned from the Jordan and was led by the Spirit in the wilderness, while being tempted for forty days by the devil.<br><br>
+		<sup><b>2</b></sup> And He did not eat anything in those days, and when they were concluded, He became hungry.<br><br>
+		<sup><b>3</b></sup> And the devil said to Him, If You are the Son of God, speak to this stone that it become bread.<br><br>
+		<sup><b>4</b></sup> And Jesus answered him, It is written, “Man shall not live on bread alone.”<br><br>
+		<sup><b>5</b></sup> And he led Him up and showed Him all the kingdoms of the inhabited earth in a moment of time.<br><br>
+		<sup><b>6</b></sup> And the devil said to Him, To You I will give all this authority and their glory, because to me it has been delivered, and to whomever I want I give it.<br><br>
+		<sup><b>7</b></sup> If You therefore worship before me, it shall all be Yours.<br><br>
+		<sup><b>8</b></sup> And Jesus answered and said to him, It is written, “You shall worship the Lord your God, and Him only shall you serve.”<br><br>
+		<sup><b>9</b></sup> And he led Him into Jerusalem and set Him on the wing of the temple and said to Him, If You are the Son of God, cast Yourself down from here;<br><br>
+		<sup><b>10</b></sup> For it is written, “To His angels He shall give charge concerning You to protect You,<br><br>
+		<sup><b>11</b></sup> And on their hands they shall bear You up, lest You strike Your foot against a stone.”<br><br>
+		<sup><b>12</b></sup> And Jesus answered and said to him, It is said, “You shall not test the Lord your God.”<br><br>
+		<sup><b>13</b></sup> And when the devil had concluded every temptation, he went away from Him until an opportune time.<br><br>
+		<sup><b>14</b></sup> And Jesus returned in the power of the Spirit into Galilee. And reports about Him went out through all the surrounding region.<br><br>
+		<sup><b>15</b></sup> And He taught in their synagogues and was glorified by all.<br><br>
+		<sup><b>16</b></sup> And He came to Nazareth, where He had been brought up, and according to His custom He entered on the Sabbath day into the synagogue and stood up to read.<br><br>
+		<sup><b>17</b></sup> And the scroll of the prophet Isaiah was handed to Him. And He unrolled the scroll and found the place where it was written,<br><br>
+		<sup><b>18</b></sup> “The Spirit of the Lord is upon Me, because He has anointed Me to announce the gospel to the poor; He has sent Me to proclaim release to the captives, and recovery of sight to the blind, to send away in release those who are oppressed,<br><br>
+		<sup><b>19</b></sup> To proclaim the acceptable year of the Lord, the year of jubilee.”<br><br>
+		<sup><b>20</b></sup> And when He rolled up the scroll and gave it back to the attendant, He sat down. And the eyes of all in the synagogue were fixed on Him.<br><br>
+		<sup><b>21</b></sup> And He began to say to them, Today this Scripture has been fulfilled in your hearing.<br><br>
+		<sup><b>22</b></sup> And all bore witness to Him and marveled at the words of grace proceeding out of His mouth, and they said, Is not this Joseph’s son?<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

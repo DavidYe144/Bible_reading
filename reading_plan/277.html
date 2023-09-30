@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Colossians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="colossians-1"><a onclick="open_chapter('top', '../bible/51-Colossians.html')">Colossians 1</a></h4>
+	<p><sup><b>1</b></sup> Paul, an apostle of Christ Jesus through the will of God, and Timothy the brother,<br><br>
+		<sup><b>2</b></sup> To the saints in Colossae and faithful brothers in Christ: Grace to you and peace from God our Father.<br><br>
+		<sup><b>3</b></sup> We give thanks to God, the Father of our Lord Jesus Christ, praying always concerning you,<br><br>
+		<sup><b>4</b></sup> Because we have heard of your faith in Christ Jesus and the love which you have unto all the saints<br><br>
+		<sup><b>5</b></sup> Because of the hope laid up for you in the heavens, of which you heard before in the word of the truth of the gospel,<br><br>
+		<sup><b>6</b></sup> Which has come to you, even as it is also in all the world, bearing fruit and growing, as also in you, since the day you heard and knew the grace of God in truth;<br><br>
+		<sup><b>7</b></sup> Even as you learned from Epaphras, our beloved fellow slave, who is a faithful minister of Christ on your behalf,<br><br>
+		<sup><b>8</b></sup> Who also has made known to us your love in the Spirit.<br><br>
+		<sup><b>9</b></sup> Therefore we also, since the day we heard of it, do not cease praying and asking on your behalf that you may be filled with the full knowledge of His will in all spiritual wisdom and understanding,<br><br>
+		<sup><b>10</b></sup> To walk worthily of the Lord to please Him in all things, bearing fruit in every good work and growing by the full knowledge of God,<br><br>
+		<sup><b>11</b></sup> Being empowered with all power, according to the might of His glory, unto all endurance and long-suffering with joy,<br><br>
+		<sup><b>12</b></sup> Giving thanks to the Father, who has qualified you for a share of the allotted portion of the saints in the light;<br><br>
+		<sup><b>13</b></sup> Who delivered us out of the authority of darkness and transferred us into the kingdom of the Son of His love,<br><br>
+		<sup><b>14</b></sup> In whom we have redemption, the forgiveness of sins;<br><br>
+		<sup><b>15</b></sup> Who is the image of the invisible God, the Firstborn of all creation,<br><br>
+		<sup><b>16</b></sup> Because in Him all things were created, in the heavens and on the earth, the visible and the invisible, whether thrones or lordships or rulers or authorities; all things have been created through Him and unto Him.<br><br>
+		<sup><b>17</b></sup> And He is before all things, and all things cohere in Him;<br><br>
+		<sup><b>18</b></sup> And He is the Head of the Body, the church; He is the beginning, the Firstborn from the dead, that He Himself might have the first place in all things;<br><br>
+		<sup><b>19</b></sup> For in Him all the fullness was pleased to dwell<br><br>
+		<sup><b>20</b></sup> And through Him to reconcile all things to Himself, having made peace through the blood of His cross — through Him, whether the things on the earth or the things in the heavens.<br><br>
+		<sup><b>21</b></sup> And you, though once alienated and enemies in your mind because of your evil works,<br><br>
+		<sup><b>22</b></sup> He now has reconciled in the body of His flesh through death, to present you holy and without blemish and without reproach before Him;<br><br>
+		<sup><b>23</b></sup> If indeed you continue in the faith, grounded and steadfast and not being moved away from the hope of the gospel, which you heard, which was proclaimed in all creation under heaven, of which I Paul became a minister.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

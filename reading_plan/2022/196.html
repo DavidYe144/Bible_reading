@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-5"><a onclick="open_chapter(5, '../bible/2-exodus.html')">Exodus 5</a></h4>
+  <p><sup><b>1</b></sup> And afterward Moses and Aaron came and said to Pharaoh, Thus says Jehovah the God of Israel, Let My people go that they may hold a feast to Me in the wilderness.<br><br>
+    <sup><b>2</b></sup> But Pharaoh said, Who is Jehovah that I should listen to His voice to let Israel go? I do not know Jehovah, and I also will not let Israel go.<br><br>
+    <sup><b>3</b></sup> And they said, The God of the Hebrews has met with us. Let us go a three days’ journey into the wilderness that we may sacrifice to Jehovah our God; otherwise He will fall upon us with pestilence or sword.<br><br>
+    <sup><b>4</b></sup> Then the king of Egypt said to them, Moses and Aaron, why are you trying to release the people from their work? Get back to your burdens.<br><br>
+    <sup><b>5</b></sup> And Pharaoh said, Look, the people of the land are now many, yet you want them to cease from their burdens.<br><br>
+    <sup><b>6</b></sup> And the same day Pharaoh commanded the taskmasters of the people and their officers, saying,<br><br>
+    <sup><b>7</b></sup> You shall no longer give the people straw to make bricks as previously; let them go and gather straw for themselves.<br><br>
+    <sup><b>8</b></sup> And the quota of the bricks which they made previously, you shall <i>still</i> place upon them; you shall not diminish any of it, for they are idle; therefore they cry out, saying, Let us go <i>and</i> sacrifice to our God.<br><br>
+    <sup><b>9</b></sup> Let the work be laid <i>more</i> heavily upon such men, so that they do it and not pay attention to false words.<br><br>
+    <sup><b>10</b></sup> And the taskmasters of the people and their officers went out and spoke to the people, saying, Thus says Pharaoh, I will not give you straw.<br><br>
+    <sup><b>11</b></sup> You go <i>and</i> get your own straw wherever you can find <i>it,</i> for none of your work will be reduced.<br><br>
+    <sup><b>12</b></sup> So the people scattered throughout all the land of Egypt to gather stubble for straw.<br><br>
+    <sup><b>13</b></sup> And the taskmasters pressed <i>them</i> saying, Finish your work, the <i>same</i> daily assignment as when there was straw.<br><br>
+    <sup><b>14</b></sup> And the officers of the children of Israel, whom Pharaoh’s taskmasters had set over them, were beaten <i>and</i> told, Why have you not finished, both yesterday and today, the amount of bricks required of you previously?<br><br>
+    <sup><b>15</b></sup> Then the officers of the children of Israel came and cried out to Pharaoh, saying, Why do you treat your servants this way?<br><br>
+    <sup><b>16</b></sup> No straw is given to your servants, and they say to us, Make bricks. And now your servants are being beaten, but it is the fault of your own people.<br><br>
+    <sup><b>17</b></sup> But he said, Idle is what you are, idle; therefore you say, Let us go <i>and</i> sacrifice to Jehovah.<br><br>
+    <sup><b>18</b></sup> So go now <i>and</i> work; and no straw shall be given you, but you shall deliver the quota of bricks.<br><br>
+    <sup><b>19</b></sup> And the officers of the children of Israel saw that they were in trouble, <i>when</i> it was said, You shall not diminish any of the daily assignment of your bricks.<br><br>
+    <sup><b>20</b></sup> And they came upon Moses and Aaron, who were standing there to meet them when they came forth from Pharaoh.<br><br>
+    <sup><b>21</b></sup> And they said to them, Jehovah look upon you and judge, because you have made us odious in the sight of Pharaoh and in the sight of his servants so as to put a sword in their hand to kill us.<br><br>
+    <sup><b>22</b></sup> Then Moses went back to Jehovah and said, Lord, why have You mistreated this people? Why is it that You have sent me?<br><br>
+    <sup><b>23</b></sup> Ever since I came to Pharaoh to speak in Your name, he has mistreated this people, and You have not delivered Your people at all.<br><br>
+ </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

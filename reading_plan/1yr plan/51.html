@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-5"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Mark 5</a></h4>
+	<p>				 
+		<sup><b>21</b></sup> And when Jesus had crossed over again in the boat to the other side, a great crowd gathered to Him, and He was beside the sea.<br><br>
+		<sup><b>22</b></sup> And one of the rulers of the synagogue came, Jairus by name, and seeing Him, fell at His feet;<br><br>
+		<sup><b>23</b></sup> And he entreated Him much, saying, My little daughter is at the point of death. Please come and lay Your hands on her that she may be healed and live.<br><br>
+		<sup><b>24</b></sup> And He went with him, and a great crowd followed Him and pressed upon Him.<br><br>
+		<sup><b>25</b></sup> And a woman was there, who had a flow of blood for twelve years.<br><br>
+		<sup><b>26</b></sup> She had suffered much under many physicians and had spent everything she had and had not benefited at all, but rather became worse.<br><br>
+		<sup><b>27</b></sup> When she heard the things concerning Jesus, she came up in the crowd behind Him and touched His garment,<br><br>
+		<sup><b>28</b></sup> For she said, If I touch even His garments, I will be healed.<br><br>
+		<sup><b>29</b></sup> And immediately the fountain of her blood was dried up, and she knew in her body that she was cured of the affliction.<br><br>
+		<sup><b>30</b></sup> And immediately Jesus, realizing in Himself that power had gone out of Him, turned around in the crowd and said, Who touched My garments?<br><br>
+		<sup><b>31</b></sup> And His disciples said to Him, You see the crowd pressing upon You and You say, Who touched Me?<br><br>
+		<sup><b>32</b></sup> And He looked around to see her who had done this.<br><br>
+		<sup><b>33</b></sup> But the woman, frightened and trembling, knew what had happened to her, and she came and fell down before Him and told Him the whole truth.<br><br>
+		<sup><b>34</b></sup> And He said to her, Daughter, your faith has healed you. Go in peace and be well from your affliction.<br><br>
+		<sup><b>35</b></sup> While He was still speaking, some came from the house of the ruler of the synagogue, saying, Your daughter has died. Why bother the Teacher any longer?<br><br>
+		<sup><b>36</b></sup> But Jesus, overhearing the word spoken, said to the ruler of the synagogue, Do not be afraid — only believe.<br><br>
+		<sup><b>37</b></sup> And He did not allow anyone to accompany Him except Peter and James and John the brother of James.<br><br>
+		<sup><b>38</b></sup> And they came to the house of the ruler of the synagogue, and He saw a commotion and people weeping and wailing greatly.<br><br>
+		<sup><b>39</b></sup> And He entered in and said to them, Why do you make a commotion and weep? The child has not died but is sleeping.<br><br>
+		<sup><b>40</b></sup> And they laughed scornfully at Him. But He, putting them all out, took the father of the child and the mother and those with Him and went in to where the child was.<br><br>
+		<sup><b>41</b></sup> And He took hold of the child’s hand and said to her, Talitha koum! which being interpreted is, Little girl, to you I say, Arise!<br><br>
+		<sup><b>42</b></sup> And immediately the little girl rose up and walked about, for she was twelve years old. And immediately, they were amazed with great amazement.<br><br>
+		<sup><b>43</b></sup> And He strongly commanded them that no one should know about this, and told them to give her something to eat. <br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

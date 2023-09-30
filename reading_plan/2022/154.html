@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Genesis</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="genesis-13"><a onclick="open_chapter('top', '1-genesis.html')">Genesis 13</a></h4>
+  <p><sup><b>1</b></sup> And Abram went up out of Egypt, he and his wife and all that he had, and Lot with him, into the Negev.<br><br>
+     <sup><b>2</b></sup> And Abram was very rich in livestock, in silver and in gold.<br><br>
+     <sup><b>3</b></sup> And he continued on his journey from the Negev as far as Bethel, to the place where his tent had been at the beginning, between Bethel and Ai,<br><br>
+     <sup><b>4</b></sup> To the place of the altar, which he had made there formerly; and there Abram called on the name of Jehovah.<br><br>
+     <sup><b>5</b></sup> And Lot, who went with Abram, also had flocks and herds and tents.<br><br>
+     <sup><b>6</b></sup> And the land could not support them that they might dwell together, for their possessions were so great that they could not dwell together.<br><br>
+     <sup><b>7</b></sup> And there was strife between the herdsmen of Abram’s livestock and the herdsmen of Lot’s livestock. And at that time the Canaanites and the Perizzites dwelt in the land.<br><br>
+     <sup><b>8</b></sup> And Abram said to Lot, Let there please be no strife between me and you and between my herdsmen and your herdsmen, for we are brothers.<br><br>
+     <sup><b>9</b></sup> Is not the whole land before you? Please separate yourself from me. If <i>you go to</i> the left, then I will go to the right. Or if <i>you go to</i> the right, then I will go to the left.<br><br>
+     <sup><b>10</b></sup> And Lot lifted up his eyes and saw the entire plain of the Jordan, that it was well watered everywhere — <i>this was</i> before Jehovah had destroyed Sodom and Gomorrah — like the garden of Jehovah, like the land of Egypt, as you go to Zoar.<br><br>
+     <sup><b>11</b></sup> So Lot chose for himself the entire plain of the Jordan, and Lot journeyed east; and they separated themselves from each other.<br><br>
+     <sup><b>12</b></sup> Abram dwelt in the land of Canaan, and Lot dwelt in the cities of the plain and moved his tent as far as Sodom.<br><br>
+     <sup><b>13</b></sup> Now the men of Sodom were very wicked and sinful toward Jehovah.<br><br>
+     <sup><b>14</b></sup> And Jehovah said to Abram after Lot had separated from him, Now lift up your eyes, and look from the place where you are, northward and southward and eastward and westward;<br><br>
+     <sup><b>15</b></sup> For all the land that you see I will give to you and to your seed forever.<br><br>
+     <sup><b>16</b></sup> And I will make your seed as the dust of the earth, so that if a man can number the dust of the earth, then your seed can also be numbered.<br><br>
+     <sup><b>17</b></sup> Rise up; walk through the land according to its length and its breadth, for I will give it to you.<br><br>
+     <sup><b>18</b></sup> And Abram moved his tent and came and dwelt by the oaks of Mamre, which are in Hebron, and there he built an altar to Jehovah.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('genesis-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

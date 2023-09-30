@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-14"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 14</a></h4>
+	<p><sup><b>1</b></sup> And these are what the children of Israel received as inheritances in the land of Canaan, which Eleazar the priest and Joshua the son of Nun and the heads of the fathers’ <i>houses</i> of the tribes of the children of Israel gave to them as inheritances,<br><br>
+		<sup><b>2</b></sup> By the lot of their inheritance, as Jehovah commanded through Moses for the nine tribes and the half-tribe.<br><br>
+		<sup><b>3</b></sup> For Moses had given the inheritance of the two tribes and the half-tribe across the Jordan; but to the Levites he did not give an inheritance among them.<br><br>
+		<sup><b>4</b></sup> For the children of Joseph were two tribes, Manasseh and Ephraim; and they gave no portion to the Levites in the land, but only cities to dwell in with their pasture lands for their cattle and their substance.<br><br>
+		<sup><b>5</b></sup> As Jehovah had commanded Moses, so the children of Israel did; thus they divided the land.<br><br>
+		<sup><b>6</b></sup> Then the children of Judah approached Joshua in Gilgal; and Caleb the son of Jephunneh the Kenizzite said to him, You know the word that Jehovah spoke to Moses the man of God concerning me and concerning you in Kadesh-barnea.<br><br>
+		<sup><b>7</b></sup> I was forty years old when Moses the servant of Jehovah sent me out from Kadesh-barnea to spy out the land; and I returned such a word to him as was <i>genuinely</i> upon my heart.<br><br>
+		<sup><b>8</b></sup> However my brothers who went up with me made the people’s heart melt, but I fully followed Jehovah my God.<br><br>
+		<sup><b>9</b></sup> And Moses swore on that day, saying, Surely the land on which your foot has trodden will be an inheritance to you and to your children forever, for you have fully followed Jehovah my God.<br><br>
+		<sup><b>10</b></sup> And now, look, Jehovah has kept me alive, as He said, for these forty-five years, since the time Jehovah spoke this word to Moses while Israel walked through the wilderness. And now, look, today I am eighty-five years old.<br><br>
+		<sup><b>11</b></sup> Today I am still as strong as <i>I was</i> on the day Moses sent me out; as my strength was then, so my strength is now, for battle and for going out and coming in.<br><br>
+		<sup><b>12</b></sup> Now therefore give me this hill country, of which Jehovah spoke on that day, for you heard on that day that the Anakim were there with great fortified cities. It may be that Jehovah will be with me, and I will dispossess them, as Jehovah said.<br><br>
+		<sup><b>13</b></sup> So Joshua blessed him; and he gave Hebron to Caleb the son of Jephunneh as an inheritance.<br><br>
+		<sup><b>14</b></sup> Therefore Hebron has become the inheritance of Caleb the son of Jephunneh the Kenizzite to this day because he fully followed Jehovah the God of Israel.<br><br>
+		<sup><b>15</b></sup> And the name of Hebron was formerly Kiriath-arba. (This <i>Arba</i> was the greatest man among the Anakim.) And the land had rest from war.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

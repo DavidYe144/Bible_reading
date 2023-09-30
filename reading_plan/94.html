@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-9"><a onclick="open_chapter('9', '../bible/42-luke.html')">Luke 9:46-62</a></h4>
+	<p><sup><b>46</b></sup> And reasoning came in among them as to which of them was greatest.<br><br>
+		<sup><b>47</b></sup> And Jesus, seeing the reasoning of their heart, took hold of a little child and stood him beside Himself,<br><br>
+		<sup><b>48</b></sup> And He said to them, Whoever receives this little child because of My name receives Me; and whoever receives Me receives Him who sent Me; for he who is least among you all, this one is great.<br><br>
+		<sup><b>49</b></sup> And John answered and said, Master, we saw someone casting out demons in Your name, and we forbade him because he does not follow with us.<br><br>
+		<sup><b>50</b></sup> But Jesus said to him, Do not forbid him, for he who is not against you is for you.<br><br>
+		<sup><b>51</b></sup> And as the days were being fulfilled for Him to be taken up, He steadfastly set His face to go to Jerusalem.<br><br>
+		<sup><b>52</b></sup> And He sent messengers before His face. And they went and entered into a village of the Samaritans to prepare for Him.<br><br>
+		<sup><b>53</b></sup> And they did not receive Him, because His face was set to go to Jerusalem.<br><br>
+		<sup><b>54</b></sup> And seeing this, the disciples James and John said, Lord, do You want us to command fire to come down from heaven and consume them?<br><br>
+		<sup><b>55</b></sup> But turning, He rebuked them and said, You do not know of what kind of spirit you are.<br><br>
+		<sup><b>56</b></sup> The Son of Man has not come to destroy men’s lives but to save them. And they went into another village.<br><br>
+		<sup><b>57</b></sup> And as they went along the road, someone said to Him, I will follow You wherever You go.<br><br>
+		<sup><b>58</b></sup> And Jesus said to him, The foxes have holes, and the birds of heaven have roosts, but the Son of Man does not have a place where He may lay His head.<br><br>
+		<sup><b>59</b></sup> And He said to another, Follow Me. But he said, Lord, permit me to go first and bury my father.<br><br>
+		<sup><b>60</b></sup> But He said to him, Let the dead bury their own dead, but you go and announce the kingdom of God everywhere.<br><br>
+		<sup><b>61</b></sup> And another also said, I will follow You, Lord; but first permit me to say farewell to those in my house.<br><br>
+		<sup><b>62</b></sup> But Jesus said to him, No one who puts his hand on the plow and looks behind is fit for the kingdom of God. <br><br>
+   </p>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

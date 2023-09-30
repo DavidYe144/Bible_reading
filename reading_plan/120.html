@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('23', '../bible/42-luke.html')">Luke 23:13-43</a></h4>
+	<p>
+		<sup><b>13</b></sup> And Pilate, calling together the chief priests and the rulers and the people,<br><br>
+		<sup><b>14</b></sup> Said to them, You have brought this man to me as one who turns the people away, and behold, I have examined Him before you and found no fault in this man regarding the accusations you bring against Him.<br><br>
+		<sup><b>15</b></sup> No, neither has Herod, for he sent Him back to us, and behold, nothing worthy of death has been done by Him.<br><br>
+		<sup><b>16</b></sup> I will therefore discipline Him and release Him.<br><br>
+		<sup><b>17</b></sup> Now he was obliged to release to them one prisoner at the feast.<br><br>
+		<sup><b>18</b></sup> But they cried out all together, saying, Take this man away and release to us Barabbas.<br><br>
+		<sup><b>19</b></sup> He was one who, for a certain insurrection that occurred in the city and for murder, had been thrown into the prison.<br><br>
+		<sup><b>20</b></sup> But Pilate, wanting to release Jesus, addressed them again;<br><br>
+		<sup><b>21</b></sup> But they continued to shout, saying, Crucify, crucify Him!<br><br>
+		<sup><b>22</b></sup> But he said to them a third time, Why, what evil has this man done? I have found no cause of death in Him; I will therefore discipline Him and release Him.<br><br>
+		<sup><b>23</b></sup> But they pressed him with loud voices, asking that He be crucified, and their voices prevailed.<br><br>
+		<sup><b>24</b></sup> And Pilate gave sentence that their request be carried out,<br><br>
+		<sup><b>25</b></sup> And he released him who had been thrown into prison for insurrection and murder, whom they asked for; but Jesus he delivered up to their will.<br><br>
+		<sup><b>26</b></sup> And as they led Him away, they laid hold of Simon, a certain Cyrenian, coming from the country, and they placed the cross upon him to carry it behind Jesus.<br><br>
+		<sup><b>27</b></sup> And a great multitude of the people and of women who were mourning and lamenting Him followed Him.<br><br>
+		<sup><b>28</b></sup> But Jesus turned to them and said, Daughters of Jerusalem, do not weep over Me, but weep over yourselves and over your children.<br><br>
+		<sup><b>29</b></sup> For behold, the days are coming in which they will say, Blessed are the barren, and the wombs which have not borne, and the breasts which have not nourished.<br><br>
+		<sup><b>30</b></sup> Then they will begin to say to the mountains, Fall on us! and to the hills, Cover us!<br><br>
+		<sup><b>31</b></sup> For if they do these things with the tree full of sap, what will happen with the one that is dry?<br><br>
+		<sup><b>32</b></sup> And two others also, who were criminals, were led with Him to be executed.<br><br>
+		<sup><b>33</b></sup> And when they came to the place called The Skull, there they crucified Him and the criminals, one on the right and one on the left.<br><br>
+		<sup><b>34</b></sup> And Jesus said, Father, forgive them, for they do not know what they are doing. And dividing His garments, they cast lots.<br><br>
+		<sup><b>35</b></sup> And the people stood by, looking on. And the rulers also sneered, saying, He saved others; let Him save Himself if this is the Christ of God, the Chosen One!<br><br>
+		<sup><b>36</b></sup> And the soldiers also mocked Him, coming to Him and offering Him vinegar,<br><br>
+		<sup><b>37</b></sup> And saying, If You are the King of the Jews, save Yourself!<br><br>
+		<sup><b>38</b></sup> And there was also an inscription over Him: THIS IS THE KING OF THE JEWS.<br><br>
+		<sup><b>39</b></sup> And one of the criminals who were hanged there blasphemed Him, saying, Are You not the Christ? Save Yourself and us!<br><br>
+		<sup><b>40</b></sup> But the other, answering, rebuked him and said, Do you not even fear God, since you are in the same judgment?<br><br>
+		<sup><b>41</b></sup> And we justly, for we are receiving what we deserve for what we did, but this man has done nothing amiss.<br><br>
+		<sup><b>42</b></sup> And he said, Jesus, remember me when You come into Your kingdom.<br><br>
+		<sup><b>43</b></sup> And He said to him, Truly I say to you, Today you shall be with Me in Paradise.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('2', '../bible/44-Acts.html')">Acts 2</a></h4>
+	<p><sup><b>1</b></sup> And as the day of Pentecost was being fulfilled, they were all together in the same place.<br><br>
+		<sup><b>2</b></sup> And suddenly there was a sound out of heaven, as of a rushing violent wind, and it filled the whole house where they were sitting.<br><br>
+		<sup><b>3</b></sup> And there appeared to them tongues as of fire, which were distributed; and it sat on each one of them;<br><br>
+		<sup><b>4</b></sup> And they were all filled with the Holy Spirit and began to speak in different tongues, even as the Spirit gave to them to speak forth.<br><br>
+		<sup><b>5</b></sup> Now there were dwelling in Jerusalem Jews, devout men, from every nation under heaven.<br><br>
+		<sup><b>6</b></sup> And when this sound occurred, the multitude came together and was confounded because each one heard them speaking in his own dialect.<br><br>
+		<sup><b>7</b></sup> And they were amazed and marveled, saying, Behold, are not all these who are speaking Galileans?<br><br>
+		<sup><b>8</b></sup> And how is it that we each hear them in our own dialect in which we were born?<br><br>
+		<sup><b>9</b></sup> Parthians and Medes and Elamites and those dwelling in Mesopotamia, both in Judea and Cappadocia, in Pontus and Asia,<br><br>
+		<sup><b>10</b></sup> Both in Phrygia and Pamphylia, in Egypt and the parts of Libya around Cyrene, and the sojourning of Rome, both Jews and proselytes,<br><br>
+		<sup><b>11</b></sup> Cretans and Arabians, we hear them speaking in our tongues the magnificent works of God?<br><br>
+		<sup><b>12</b></sup> And they were all amazed and perplexed, saying to one another, What does this mean?<br><br>
+		<sup><b>13</b></sup> But others jeered and said, They are full of new wine!<br><br>
+		<sup><b>14</b></sup> But Peter, standing with the eleven, lifted up his voice and spoke forth to them: Men of Judea, and all who are dwelling in Jerusalem, let this be known to you, and give ear to my words.<br><br>
+		<sup><b>15</b></sup> For these men are not drunk, as you suppose, for it is the third hour of the day;<br><br>
+		<sup><b>16</b></sup> But this is what is spoken through the prophet Joel:<br><br>
+		<sup><b>17</b></sup> “And it shall be in the last days, says God, that I will pour out of My Spirit upon all flesh, and your sons and your daughters shall prophesy, and your young men shall see visions, and your old men shall dream things in dreams;<br><br>
+		<sup><b>18</b></sup> And indeed upon My slaves, both men and women, I will pour out of My Spirit in those days, and they shall prophesy.<br><br>
+		<sup><b>19</b></sup> And I will show wonders in heaven above and signs on the earth below, blood and fire and vapor of smoke.<br><br>
+		<sup><b>20</b></sup> The sun shall be turned into darkness, and the moon into blood, before the great and notable day of the Lord comes.<br><br>
+		<sup><b>21</b></sup> And it shall be that everyone who calls on the name of the Lord shall be saved.”<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

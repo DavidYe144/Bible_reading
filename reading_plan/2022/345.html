@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-17"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 17</a></h4>
+	<p><sup><b>1</b></sup> And <i>this</i> was the lot for the tribe of Manasseh, for he was Joseph’s firstborn. To Machir, the firstborn of Manasseh, the father of Gilead, Gilead and Bashan had been <i>given,</i> since he was a man of war.<br><br>
+		<sup><b>2</b></sup> Therefore <i>the lot</i> was for the rest of the children of Manasseh according to their families: for the children of Abiezer and for the children of Helek and for the children of Asriel and for the children of Shechem and for the children of Hepher and for the children of Shemida; these were the male children of Manasseh the son of Joseph according to their families.<br><br>
+		<sup><b>3</b></sup> But Zelophehad the son of Hepher, the son of Gilead, the son of Machir, the son of Manasseh, had no sons, but daughters. And these are the names of his daughters: Mahlah and Noah, Hoglah, Milcah, and Tirzah.<br><br>
+		<sup><b>4</b></sup> And they came before Eleazar the priest and before Joshua the son of Nun and before the leaders, saying, Jehovah commanded Moses to give us an inheritance among our brothers. Therefore he gave them an inheritance among their father’s brothers according to the commandment of Jehovah.<br><br>
+		<sup><b>5</b></sup> And ten portions fell to Manasseh, besides the land of Gilead and Bashan, which is across the Jordan,<br><br>
+		<sup><b>6</b></sup> Because the daughters of Manasseh received an inheritance among his sons. And the land of Gilead belonged to the rest of the children of Manasseh.<br><br>
+		<sup><b>7</b></sup> And the border of Manasseh was from Asher to Michmethath, which was opposite Shechem; and the border went south to the inhabitants of En-tappuah.<br><br>
+		<sup><b>8</b></sup> The land of Tappuah belonged to Manasseh, but Tappuah, on the border of Manasseh, belonged to the children of Ephraim.<br><br>
+		<sup><b>9</b></sup> And the border went down to the brook of Kanah. These cities to the south of the brook belonged to Ephraim, among the cities of Manasseh; and the border of Manasseh was to the north of the brook, and its end was the sea.<br><br>
+		<sup><b>10</b></sup> To the south was Ephraim’s, and to the north was Manasseh’s, and the sea was his border. And they touched Asher on the north and Issachar on the east.<br><br>
+		<sup><b>11</b></sup> And to Manasseh there belonged in Issachar and Asher, Beth-shean and its towns, and Ibleam and its towns, and the inhabitants of Dor and its towns, and the inhabitants of En-dor and its towns, and the inhabitants of Taanach and its towns, and the inhabitants of Megiddo and its towns (the third is Napheth).<br><br>
+		<sup><b>12</b></sup> Yet the children of Manasseh could not dispossess these cities, but the Canaanites persisted in dwelling in this land.<br><br>
+		<sup><b>13</b></sup> And when the children of Israel became strong, they made the Canaanites forced labor; but they did not utterly dispossess them.<br><br>
+		<sup><b>14</b></sup> Then the children of Joseph spoke to Joshua, saying, Why have you given me an inheritance of <i>only</i> one lot and one portion, although I am still a numerous people, whom Jehovah has thus far blessed?<br><br>
+		<sup><b>15</b></sup> And Joshua said to them, If you are a numerous people, go up to the forest, and cut out land there for yourself in the land of the Perizzites and the Rephaim; since the hill country of Ephraim is too narrow for you.<br><br>
+		<sup><b>16</b></sup> And the children of Joseph said, The hill country is not enough for us; and all the Canaanites who dwell in the land of the valley have chariots of iron, both those of Beth-shean and its towns and those in the valley of Jezreel.<br><br>
+		<sup><b>17</b></sup> And Joshua spoke to the house of Joseph, to Ephraim and Manasseh, saying, You are a numerous people, and you have great strength; you shall not have one lot <i>only,</i><br><br>
+		<sup><b>18</b></sup> But the hill country shall be yours. Though it is a forest, you shall cut it down, and its end will be yours; for you shall dispossess the Canaanites, though they have chariots of iron <i>and</i> though they are strong.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

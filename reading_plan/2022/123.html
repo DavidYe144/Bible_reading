@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/3-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-7"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 7</a></h4>
+  <p><sup><b>1</b></sup> After this I saw four angels standing at the four corners of the earth, holding the four winds of the earth, so that no wind would blow on the earth nor on the sea nor on any tree.<br><br>
+     <sup><b>2</b></sup> And I saw another Angel ascending from the rising of the sun, having the seal of the living God; and He cried with a loud voice to the four angels to whom authority was given to harm the earth and the sea,<br><br>
+     <sup><b>3</b></sup> Saying, Do not harm the earth or the sea or the trees until we seal the slaves of our God upon their foreheads.<br><br>
+     <sup><b>4</b></sup> And I heard the number of those who were sealed, a hundred and forty-four thousand, sealed out of every tribe of the sons of Israel:<br><br>
+     <sup><b>5</b></sup> Out of the tribe of Judah, twelve thousand sealed; out of the tribe of Reuben, twelve thousand; out of the tribe of Gad, twelve thousand;<br><br>
+     <sup><b>6</b></sup> Out of the tribe of Asher, twelve thousand; out of the tribe of Naphtali, twelve thousand; out of the tribe of Manasseh, twelve thousand;<br><br>
+     <sup><b>7</b></sup> Out of the tribe of Simeon, twelve thousand; out of the tribe of Levi, twelve thousand; out of the tribe of Issachar, twelve thousand;<br><br>
+     <sup><b>8</b></sup> Out of the tribe of Zebulun, twelve thousand; out of the tribe of Joseph, twelve thousand; out of the tribe of Benjamin, twelve thousand sealed.<br><br>
+     <sup><b>9</b></sup> After these things I saw, and behold, there was a great multitude which no one could number, out of every nation and all tribes and peoples and tongues, standing before the throne and before the Lamb, clothed in white robes and palm branches in their hands.<br><br>
+     <sup><b>10</b></sup> And they cry with a loud voice, saying, Salvation to our God who sits upon the throne and to the Lamb.<br><br>
+     <sup><b>11</b></sup> And all the angels stood around the throne and the elders and the four living creatures; and they fell on their faces before the throne and worshipped God,<br><br>
+     <sup><b>12</b></sup> Saying, Amen. The blessing and the glory and the wisdom and the thanks and the honor and the power and the strength be to our God forever and ever. Amen.<br><br>
+     <sup><b>13</b></sup> And one of the elders answered, saying to me, These who are clothed in the white robes, who are they, and where did they come from?<br><br>
+     <sup><b>14</b></sup> And I said to him, My lord, you know. And he said to me, These are those who come out of the great tribulation, and they have washed their robes and made them white in the blood of the Lamb.<br><br>
+     <sup><b>15</b></sup> Because of this they are before the throne of God and serve Him day and night in His temple; and He who sits upon the throne will tabernacle over them.<br><br>
+     <sup><b>16</b></sup> They will not hunger anymore, neither will they thirst anymore, neither will the sun beat upon them, nor any heat;<br><br>
+     <sup><b>17</b></sup> For the Lamb who is in the midst of the throne will shepherd them and guide them to springs of waters of life; and God will wipe away every tear from their eyes. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

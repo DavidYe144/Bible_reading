@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Mark</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="mark-10"><a onclick="open_chapter('10', '../bible/41-mark.html')">Mark 10</a></h4>
+	<p>				 
+		<sup><b>32</b></sup> Now they were on the road, going up to Jerusalem, and Jesus led the way before them. And they were amazed, and those who followed were afraid. And He took the twelve aside again and began to tell them the things that were about to happen to Him:<br><br>
+		<sup><b>33</b></sup> Behold, we are going up to Jerusalem, and the Son of Man will be delivered to the chief priests and to the scribes. And they will condemn Him to death and deliver Him to the Gentiles,<br><br>
+		<sup><b>34</b></sup> And they will mock Him and spit at Him and scourge Him, and they will kill Him. And after three days He will rise.<br><br>
+		<sup><b>35</b></sup> And James and John, the sons of Zebedee, came to Him, saying to Him, Teacher, we want You to do for us whatever we ask You.<br><br>
+		<sup><b>36</b></sup> And He said to them, What do you want Me to do for you?<br><br>
+		<sup><b>37</b></sup> And they said to Him, Grant to us to sit, one on Your right and one on Your left, in Your glory.<br><br>
+		<sup><b>38</b></sup> But Jesus said to them, You do not know what you are asking. Are you able to drink the cup which I drink, or to be baptized with the baptism with which I am baptized?<br><br>
+		<sup><b>39</b></sup> And they said to Him, We are able. And Jesus said to them, The cup which I drink you shall drink, and with the baptism with which I am baptized, you shall be baptized.<br><br>
+		<sup><b>40</b></sup> But to sit on My right or on My left is not Mine to give, but it is for those for whom it has been prepared.<br><br>
+		<sup><b>41</b></sup> And when the ten heard this, they began to be indignant concerning James and John.<br><br>
+		<sup><b>42</b></sup> And Jesus called them to Him and said to them, You know that those who are esteemed as rulers of the Gentiles lord it over them, and their great ones exercise authority over them.<br><br>
+		<sup><b>43</b></sup> But it is not so among you; but whoever wants to become great among you shall be your servant,<br><br>
+		<sup><b>44</b></sup> And whoever wants to be first among you shall be the slave of all.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

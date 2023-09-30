@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Thessalonians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="2thessalonians-1"><a onclick="open_chapter('top', '53-2thessalonians.html')">2 Thessalonians 1</a></h4>
+  <p><sup><b>1</b></sup> Paul and Silvanus and Timothy to the church of the Thessalonians in God our Father and the Lord Jesus Christ:<br><br>
+     <sup><b>2</b></sup> Grace to you and peace from God our Father and the Lord Jesus Christ.<br><br>
+     <sup><b>3</b></sup> We ought to thank God always concerning you, brothers, even as it is fitting, because your faith grows exceedingly and the love of each one of you all to one another is increasing,<br><br>
+     <sup><b>4</b></sup> So that we ourselves boast in you among the churches of God concerning your endurance and faith in all your persecutions and the afflictions which you bear,<br><br>
+     <sup><b>5</b></sup> A plain indication of the righteous judgment of God, that you may be accounted worthy of the kingdom of God, for which also you suffer;<br><br>
+     <sup><b>6</b></sup> Since it is just with God to repay with affliction those afflicting you,<br><br>
+     <sup><b>7</b></sup> And to you who are being afflicted, rest with us at the revelation of the Lord Jesus from heaven with the angels of His power, in flaming fire,<br><br>
+     <sup><b>8</b></sup> Rendering vengeance to those who do not know God and to those who do not obey the gospel of our Lord Jesus Christ.<br><br>
+     <sup><b>9</b></sup> They will pay the penalty of eternal destruction from the presence of the Lord and from the glory of His strength<br><br>
+     <sup><b>10</b></sup> When He comes to be glorified in His saints and to be marveled at in all those who have believed (because our testimony to you was believed) in that day.<br><br>
+     <sup><b>11</b></sup> For which also we pray always concerning you, that our God may count you worthy of your calling and may fulfill in power your every good intention for goodness and your work of faith,<br><br>
+     <sup><b>12</b></sup> So that the name of our Lord Jesus may be glorified in you, and you in Him, according to the grace of our God and the Lord Jesus Christ. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2thessalonians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

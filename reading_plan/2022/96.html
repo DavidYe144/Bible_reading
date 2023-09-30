@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">James</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="james-1"><a onclick="open_chapter('top', '59-james.html')">James 1</a></h4>
+  <p><sup><b>1</b></sup> James, a slave of God and of the Lord Jesus Christ, to the twelve tribes in the dispersion: Rejoice!<br><br>
+     <sup><b>2</b></sup> Count it all joy, my brothers, whenever you fall into various trials,<br><br>
+     <sup><b>3</b></sup> Knowing that the proving of your faith works out endurance.<br><br>
+     <sup><b>4</b></sup> And let endurance have its perfect work that you may be perfect and entire, lacking in nothing.<br><br>
+     <sup><b>5</b></sup> But if any one of you lacks wisdom, let him ask of God, who gives to all liberally and does not reproach, and it will be given to him.<br><br>
+     <sup><b>6</b></sup> But let him ask in faith, doubting nothing, for he who doubts is like the surge of the sea, driven by the wind and tossed about.<br><br>
+     <sup><b>7</b></sup> For that man must not suppose that he will receive anything from the Lord;<br><br>
+     <sup><b>8</b></sup> He is a double-souled man, unstable in all his ways.<br><br>
+     <sup><b>9</b></sup> And let the lowly brother boast in his exaltation,<br><br>
+     <sup><b>10</b></sup> And the rich in his being brought low, because like a flower of the grass he will pass away.<br><br>
+     <sup><b>11</b></sup> For the sun rises with its scorching heat and withers the grass, and its flower falls off, and the beauty of its appearance is destroyed; so also the rich man will fade away in his pursuits.<br><br>
+     <sup><b>12</b></sup> Blessed is the man who endures trial, because when he has become approved by testing, he will receive the crown of life, which He promised to those who love Him.<br><br>
+     <sup><b>13</b></sup> Let no one say when he is tempted, I am tempted of God; for God cannot be tempted of evil, and He Himself tempts no one.<br><br>
+     <sup><b>14</b></sup> But each one is tempted when he is drawn away and enticed by his own lusts;<br><br>
+     <sup><b>15</b></sup> Then the lust, having conceived, gives birth to sin; and the sin, when it is fully grown, brings forth death.<br><br>
+     <sup><b>16</b></sup> Do not be deceived, my beloved brothers.<br><br>
+     <sup><b>17</b></sup> All good giving and every perfect gift is from above, coming down from the Father of lights, with whom is no variation or shadow cast by turning.<br><br>
+     <sup><b>18</b></sup> He brought us forth by the word of truth, purposing that we might be a kind of firstfruits of His creatures.<br><br>
+     <sup><b>19</b></sup> You know this, my beloved brothers; but let every man be quick to hear, slow to speak, slow to wrath;<br><br>
+     <sup><b>20</b></sup> For the wrath of man does not accomplish the righteousness of God.<br><br>
+     <sup><b>21</b></sup> Therefore putting away all filthiness and the abundance of malice, receive in meekness the implanted word, which is able to save your souls.<br><br>
+     <sup><b>22</b></sup> And become doers of the word and not hearers only, who delude themselves.<br><br>
+     <sup><b>23</b></sup> Because if anyone is a hearer of the word and not a doer, this one is like a man considering in a mirror the face he was born with;<br><br>
+     <sup><b>24</b></sup> For he considers himself and goes away, and immediately forgets what kind of person he is.<br><br>
+     <sup><b>25</b></sup> But he who looks into the perfect law, the law of freedom, and continues in it, becoming not a forgetful hearer but a doer of the work, this one will be blessed in his doing.<br><br>
+     <sup><b>26</b></sup> If anyone thinks himself to be religious and yet does not bridle his tongue but deceives his heart, this one’s religion is vain.<br><br>
+     <sup><b>27</b></sup> This is pure and undefiled religion before our God and Father: to visit orphans and widows in their affliction and to keep oneself unspotted from the world. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('james-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

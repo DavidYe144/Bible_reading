@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/28-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('16', '../bible/44-Acts.html')">Acts 16</a></h4>
+	<p><sup><b>1</b></sup> And he came also to Derbe and to Lystra. And behold, a certain disciple named Timothy was there, the son of a Jewish woman who was a believer, but of a Greek father;<br><br>
+		<sup><b>2</b></sup> He was well attested to by the brothers in Lystra and Iconium.<br><br>
+		<sup><b>3</b></sup> Paul wanted this one to go forth with him; and he took him and circumcised him because of the Jews who were in those places, for they all knew that his father was a Greek.<br><br>
+		<sup><b>4</b></sup> And as they went through the cities, they delivered to them the decrees to keep which had been decided upon by the apostles and elders in Jerusalem.<br><br>
+		<sup><b>5</b></sup> And so the churches were strengthened in the faith and increased in number daily.<br><br>
+		<sup><b>6</b></sup> And they passed through the region of Phrygia and Galatia, having been forbidden by the Holy Spirit to speak the word in Asia.<br><br>
+		<sup><b>7</b></sup> And when they had come to Mysia, they tried to go into Bithynia, yet the Spirit of Jesus did not allow them.<br><br>
+		<sup><b>8</b></sup> And bypassing Mysia, they came down to Troas.<br><br>
+		<sup><b>9</b></sup> And a vision appeared to Paul during the night: A certain man, a Macedonian, was standing and entreating him and saying, Come over into Macedonia and help us.<br><br>
+		<sup><b>10</b></sup> And when he had seen the vision, we immediately endeavored to go forth into Macedonia, concluding that God had called us to announce the gospel to them.<br><br>
+		<sup><b>11</b></sup> And putting out to sea from Troas, we ran a straight course to Samothrace, and on the following day to Neapolis,<br><br>
+		<sup><b>12</b></sup> And from there to Philippi, which is the leading city of that part of Macedonia, a Roman colony; and we spent some days in this city.<br><br>
+		<sup><b>13</b></sup> And on the Sabbath day we went outside the gate by the river, where we supposed there would be a place of prayer; and we sat down and spoke to the women who had come together.<br><br>
+		<sup><b>14</b></sup> And a certain woman named Lydia, a seller of purple-dyed goods from the city of Thyatira who worshipped God, was listening, whose heart the Lord opened to give heed to the things being spoken by Paul.<br><br>
+		<sup><b>15</b></sup> And when she was baptized, as well as her household, she entreated us, saying, If you have judged me to be faithful to the Lord, come into my house and abide. And she constrained us.<br><br>
+		<sup><b>16</b></sup> And as we were going to the place of prayer, a certain slave girl having a spirit of Python met us, who brought her masters much profit by divining.<br><br>
+		<sup><b>17</b></sup> This woman followed after Paul and us and cried out, saying, These men are slaves of the Most High God, who announce to you a way of salvation.<br><br>
+		<sup><b>18</b></sup> And she did this for many days. But Paul was greatly disturbed; and turning, he said to the spirit, I charge you in the name of Jesus Christ to come out of her. And it came out that very hour.<br><br>
+		<sup><b>19</b></sup> But when her masters saw that their hope of profit had gone out, they laid hold of Paul and Silas and dragged them into the marketplace before the rulers.<br><br>
+		<sup><b>20</b></sup> And when they had brought them to the magistrates, they said, These men, being Jews, are throwing our city into confusion,<br><br>
+		<sup><b>21</b></sup> And they are announcing customs which are not lawful for us, being Romans, to accept or do.<br><br>
+		<sup><b>22</b></sup> And the crowd rose up together against them, and the magistrates tore off their garments and ordered some to beat them with rods.<br><br>
+		<sup><b>23</b></sup> And when they had laid many stripes upon them, they threw them into prison, charging the jailer to keep them securely,<br><br>
+		<sup><b>24</b></sup> Who, having received such a charge, threw them into the inner prison and secured their feet in the stocks.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

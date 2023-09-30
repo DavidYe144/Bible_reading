@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Judges</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="judges-1"><a onclick="open_chapter('top', '../bible/7-judges.html')">Judges 2</a></h4>
+	<p><sup><b>1</b></sup> Then the Angel of Jehovah went up from Gilgal to Bochim. And He said, I caused you to go up out from Egypt, and I brought you into the land that I swore to your fathers. And I said, I will never break My covenant with you,<br><br>
+		<sup><b>2</b></sup> And you shall not make a covenant with the inhabitants of this land; you shall tear down their altars. But you did not listen to My voice. What is this that you have done?<br><br>
+		<sup><b>3</b></sup> Therefore I also said, I will not drive them out from before you; but they will be <i>like</i> <i>thorns</i> in your sides, and their gods will be a snare to you.<br><br>
+		<sup><b>4</b></sup> And when the Angel of Jehovah had spoken these words to all the children of Israel, the people lifted up their voice and wept.<br><br>
+		<sup><b>5</b></sup> And they called the name of that place Bochim. And they offered to Jehovah there.<br><br>
+		<sup><b>6</b></sup> Now when Joshua sent the people away, each of the children of Israel went to his own inheritance to possess the land.<br><br>
+		<sup><b>7</b></sup> And the people served Jehovah throughout all the days of Joshua and throughout all the days of the elders whose days extended after Joshua’s <i>and</i> who saw all the great work of Jehovah that He had done for Israel.<br><br>
+		<sup><b>8</b></sup> And Joshua the son of Nun, the servant of Jehovah, died at the age of one hundred and ten years.<br><br>
+		<sup><b>9</b></sup> And they buried him in the territory of his inheritance, in Timnath-heres, in the hill country of Ephraim, north of Mount Gaash.<br><br>
+		<sup><b>10</b></sup> And all that generation as well were gathered to their fathers; and another generation, who did not know Jehovah or the work that He had done for Israel, rose up after them.<br><br>
+		<sup><b>11</b></sup> And the children of Israel did what was evil in the sight of Jehovah and served the Baals.<br><br>
+		<sup><b>12</b></sup> And they forsook Jehovah, the God of their fathers, who brought them out from the land of Egypt; and they followed after other gods from among the gods of the peoples who surrounded them; and they worshipped them and provoked Jehovah to anger.<br><br>
+		<sup><b>13</b></sup> And they forsook Jehovah and served Baal and the Ashtaroth.<br><br>
+		<sup><b>14</b></sup> Then the anger of Jehovah burned against Israel, and He delivered them into the hands of plunderers; and they plundered them. And He sold them into the hand of their enemies around <i>them,</i> and they were no longer able to stand before their enemies.<br><br>
+		<sup><b>15</b></sup> Whenever they went out, the hand of Jehovah was against them for evil, as Jehovah had spoken and as Jehovah had sworn to them; and they were greatly distressed.<br><br>
+		<sup><b>16</b></sup> And Jehovah raised up judges, and they saved them out of the hands of those who plundered them.<br><br>
+		<sup><b>17</b></sup> Yet they did not listen to their judges either, but they went about as harlots after other gods and worshipped them. They turned aside quickly from the way in which their fathers walked, <i>the way of</i> obeying the commandments of Jehovah; this they did not do.<br><br>
+		<sup><b>18</b></sup> And when Jehovah raised up judges for them, Jehovah was with the judge, and He saved them from the hand of their enemies throughout all the days of the judge; for Jehovah would be moved to pity by their groaning because of those who oppressed them and crushed them.<br><br>
+		<sup><b>19</b></sup> But when the judge died, they turned and acted more corruptly than their fathers by following after other gods in order to serve them and worship them; they did not cease from any of their practices or from their stubborn way.<br><br>
+		<sup><b>20</b></sup> And the anger of Jehovah burned against Israel; and He said, Because this nation has transgressed My covenant which I commanded their fathers and they do not listen to My voice,<br><br>
+		<sup><b>21</b></sup> I for My part will no longer dispossess from before them any of the nations that Joshua left when he died,<br><br>
+		<sup><b>22</b></sup> In order to test Israel through them as to whether or not they will keep the way of Jehovah by walking in it, as their fathers kept <i>it.</i><br><br>
+		<sup><b>23</b></sup> So Jehovah left these nations, not dispossessing them quickly, and did not deliver them into the hand of Joshua.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

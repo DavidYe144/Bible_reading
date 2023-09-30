@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-5"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 5</a></h4>
+	<p><sup><b>1</b></sup> Now when all the kings of the Amorites, who were beyond the Jordan westward, and all the kings of the Canaanites, who were by the sea, heard that Jehovah had dried up the waters of the Jordan before the children of Israel until they crossed over, their hearts melted, and there was no longer any spirit in them because of the children of Israel.<br><br>
+		<sup><b>2</b></sup> At that time Jehovah said to Joshua, Make knives of flint, and circumcise again the children of Israel a second time.<br><br>
+		<sup><b>3</b></sup> And Joshua made knives of flint and circumcised the children of Israel at Gibeath-haaraloth.<br><br>
+		<sup><b>4</b></sup> And this is the reason Joshua circumcised <i>them:</i> All the people who came out of Egypt who were males, all the men of war, died in the wilderness on the way, after they had come out of Egypt.<br><br>
+		<sup><b>5</b></sup> Although all the people who came out were circumcised, all the people who were born in the wilderness on the way, after the others had come out of Egypt, had not been circumcised.<br><br>
+		<sup><b>6</b></sup> For the children of Israel went for forty years through the wilderness until all the nation, the men of war who had come out of Egypt, were consumed, because they did not listen to the voice of Jehovah, <i>they</i> to whom Jehovah swore that they would not see the land that Jehovah had sworn to their fathers to give us, a land flowing with milk and honey.<br><br>
+		<sup><b>7</b></sup> And their children, whom He had raised up in place of them, these Joshua circumcised; for they were uncircumcised, because they had not circumcised them on the way.<br><br>
+		<sup><b>8</b></sup> And when they had finished circumcising the whole nation, they remained in their place at the camp until they recovered.<br><br>
+		<sup><b>9</b></sup> Then Jehovah said to Joshua, Today I have rolled away the reproach of Egypt from off you. So the name of that place has been called Gilgal to this day.<br><br>
+		<sup><b>10</b></sup> And the children of Israel camped in Gilgal; and they held the Passover on the fourteenth day of the month in the evening on the plains of Jericho.<br><br>
+		<sup><b>11</b></sup> And on the day after the Passover, on that very day, they ate of the produce of the land, unleavened cakes and parched grain.<br><br>
+		<sup><b>12</b></sup> And the manna ceased on that day, when they ate of the produce of the land; and there was no longer manna for the children of Israel, but they ate of the yield of the land of Canaan that year.<br><br>
+		<sup><b>13</b></sup> Now once, when Joshua was by Jericho, he lifted up his eyes and looked; and behold, there was a man standing opposite him, and His sword was drawn in His hand. And Joshua went to Him and said to Him, Are You for us or for our adversaries?<br><br>
+		<sup><b>14</b></sup> And He said, Neither, but <i>as</i> the Captain of Jehovah’s army have I now come. Then Joshua fell to the ground upon his face and worshipped. And he said to Him, What does my Lord speak to His servant?<br><br>
+		<sup><b>15</b></sup> And the Captain of Jehovah’s army said to Joshua, Remove your sandals from your feet, for the place on which you are standing is holy. And Joshua did so.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

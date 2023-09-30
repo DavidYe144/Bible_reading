@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/18-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-13"><a onclick="open_chapter(13, '40-matthew.html')">Matthew 13</a></h4>
+	<p>
+		<sup><b>24</b></sup> Another parable He set before them, saying, The kingdom of the heavens has become like a man sowing good seed in his field.<br><br>
+		<sup><b>25</b></sup> But while the men slept, his enemy came and sowed tares in the midst of the wheat and went away.<br><br>
+		<sup><b>26</b></sup> And when the blade sprouted and produced fruit, then the tares appeared also.<br><br>
+		<sup><b>27</b></sup> And the slaves of the master of the house came and said to him, Sir, did you not sow good seed in your field? Where then did the tares come from?<br><br>
+		<sup><b>28</b></sup> And he said to them, An enemy has done this. And the slaves said to him, Do you want us then to go and collect them?<br><br>
+		<sup><b>29</b></sup> But he said, No, lest while collecting the tares, you uproot the wheat along with them.<br><br>
+		<sup><b>30</b></sup> Let both grow together until the harvest, and at the time of the harvest I will say to the reapers, Collect first the tares and bind them into bundles to burn them up, but the wheat gather into my barn.<br><br>
+		<sup><b>31</b></sup> Another parable He set before them, saying, The kingdom of the heavens is like a mustard seed, which a man took and sowed in his field,<br><br>
+		<sup><b>32</b></sup> And which is smaller than all the seeds; but when it has grown, it is greater than the herbs and becomes a tree, so that the birds of heaven come and roost in its branches.<br><br>
+		<sup><b>33</b></sup> Another parable He spoke to them: The kingdom of the heavens is like leaven, which a woman took and hid in three measures of meal until the whole was leavened.<br><br>
+		<sup><b>34</b></sup> All these things Jesus spoke in parables to the crowds, and apart from a parable He spoke nothing to them,<br><br>
+		<sup><b>35</b></sup> So that what was spoken through the prophet might be fulfilled, saying, “I will open My mouth in parables; I will utter things hidden from the foundation of the world.”<br><br>
+		<sup><b>36</b></sup> Then, leaving the crowds, He went into the house. And His disciples came to Him, saying, Make the parable of the tares of the field clear to us.<br><br>
+		<sup><b>37</b></sup> And He answered and said, He who sows the good seed is the Son of Man;<br><br>
+		<sup><b>38</b></sup> And the field is the world; and the good seed, these are the sons of the kingdom; and the tares are the sons of the evil one;<br><br>
+		<sup><b>39</b></sup> And the enemy who sowed them is the devil; and the harvest is the consummation of the age; and the reapers are angels.<br><br>
+		<sup><b>40</b></sup> Therefore just as the tares are collected and burned up with fire, so will it be at the consummation of the age.<br><br>
+		<sup><b>41</b></sup> The Son of Man will send His angels, and they will collect out of His kingdom all the stumbling blocks and those who practice lawlessness,<br><br>
+		<sup><b>42</b></sup> And will cast them into the furnace of fire. In that place there will be the weeping and the gnashing of teeth.<br><br>
+		<sup><b>43</b></sup> Then the righteous will shine forth like the sun in the kingdom of their Father. He who has ears to hear, let him hear.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

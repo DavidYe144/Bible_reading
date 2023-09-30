@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('6', '../bible/43-John.html')">John 6</a></h4>
+	<p><sup><b>1</b></sup> After these things Jesus went away across the Sea of Galilee, which is the Sea of Tiberias.<br><br>
+		<sup><b>2</b></sup> And a great crowd followed Him, because they saw the signs which He did on those who were sick.<br><br>
+		<sup><b>3</b></sup> And Jesus went up to the mountain and sat there with His disciples.<br><br>
+		<sup><b>4</b></sup> Now the Passover, the feast of the Jews, was near.<br><br>
+		<sup><b>5</b></sup> Jesus then lifting up His eyes and seeing that a great crowd was coming toward Him, said to Philip, Where shall we buy bread that these may eat?<br><br>
+		<sup><b>6</b></sup> But this He said to test him, for He Himself knew what He was about to do.<br><br>
+		<sup><b>7</b></sup> Philip answered Him, Two hundred denarii worth of bread is not sufficient for them, that each one may take a little.<br><br>
+		<sup><b>8</b></sup> One of His disciples, Andrew, Simon Peter’s brother, said to Him,<br><br>
+		<sup><b>9</b></sup> There is a little boy here who has five barley loaves and two fish; but what are these for so many?<br><br>
+		<sup><b>10</b></sup> Jesus said, Have the people recline. Now there was much grass in the place. So the men reclined, in number about five thousand.<br><br>
+		<sup><b>11</b></sup> Jesus then took the loaves, and when He had given thanks, He distributed to those who were reclining; likewise also of the fish, as much as they wanted.<br><br>
+		<sup><b>12</b></sup> And when they were filled, He said to His disciples, Gather the broken pieces left over that nothing may be lost.<br><br>
+		<sup><b>13</b></sup> So they gathered them and filled twelve handbaskets with broken pieces from the five barley loaves which were left over among those who had eaten.<br><br>
+		<sup><b>14</b></sup> The people therefore, seeing the sign which He did, said, This is truly the Prophet who is to come into the world.<br><br>
+		<sup><b>15</b></sup> Then Jesus, knowing that they were about to come and take Him by force to make Him King, withdrew again to the mountain, Himself alone.<br><br>
+		<sup><b>16</b></sup> And when evening fell, His disciples went down to the sea,<br><br>
+		<sup><b>17</b></sup> And they got into a boat and began crossing the sea to Capernaum. And it had already become dark, and Jesus had not yet come to them.<br><br>
+		<sup><b>18</b></sup> And because a strong wind was blowing, the sea was churning.<br><br>
+		<sup><b>19</b></sup> Then, when they had rowed about twenty-five or thirty stadia, they saw Jesus walking on the sea and coming near the boat, and they became frightened.<br><br>
+		<sup><b>20</b></sup> But He said to them, It is I. Do not be afraid.<br><br>
+		<sup><b>21</b></sup> Then they were willing to take Him into the boat; and immediately the boat was at the land to which they were going.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

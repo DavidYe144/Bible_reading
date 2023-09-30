@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/15-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('top', '../bible/42-luke.html')">Luke 1:26-56</a></h4>
+	<p><sup><b>26</b></sup> And in the sixth month the angel Gabriel was sent from God to a city of Galilee named Nazareth,<br><br>
+		<sup><b>27</b></sup> To a virgin engaged to a man named Joseph, of the house of David; and the virgin’s name was Mary.<br><br>
+		<sup><b>28</b></sup> And he came to her and said, Rejoice, you who have been graced! The Lord is with you.<br><br>
+		<sup><b>29</b></sup> And she was greatly troubled at this saying and began reasoning what kind of greeting this might be.<br><br>
+		<sup><b>30</b></sup> And the angel said to her, Do not be afraid, Mary, for you have found grace with God.<br><br>
+		<sup><b>31</b></sup> And behold, you will conceive in your womb and bear a son, and you shall call His name Jesus.<br><br>
+		<sup><b>32</b></sup> He will be great and will be called Son of the Most High; and the Lord God will give to Him the throne of David His father,<br><br>
+		<sup><b>33</b></sup> And He will reign over the house of Jacob forever, and of His kingdom there will be no end.<br><br>
+		<sup><b>34</b></sup> But Mary said to the angel, How will this be, since I have not known a man?<br><br>
+		<sup><b>35</b></sup> And the angel answered and said to her, The Holy Spirit will come upon you, and the power of the Most High will overshadow you; therefore also the holy thing which is born will be called the Son of God.<br><br>
+		<sup><b>36</b></sup> And behold, Elizabeth your relative, she also has conceived a son in her old age, and this is the sixth month for her who is called barren,<br><br>
+		<sup><b>37</b></sup> Because no word will be impossible with God.<br><br>
+		<sup><b>38</b></sup> And Mary said, Behold, the slave of the Lord. May it happen to me according to your word. And the angel departed from her.<br><br>
+		<sup><b>39</b></sup> And Mary rose up in those days and went to the hill country with haste, to a city of Judah,<br><br>
+		<sup><b>40</b></sup> And entered into the house of Zachariah and greeted Elizabeth.<br><br>
+		<sup><b>41</b></sup> And when Elizabeth heard Mary’s greeting, the baby leaped in her womb, and Elizabeth was filled with the Holy Spirit.<br><br>
+		<sup><b>42</b></sup> And she lifted up her voice with a loud cry and said, Blessed are you among women, and blessed is the fruit of your womb!<br><br>
+		<sup><b>43</b></sup> And how has this happened to me, that the mother of my Lord should come to me?<br><br>
+		<sup><b>44</b></sup> For behold, when the sound of your greeting came to my ears, the baby leaped with exultation in my womb.<br><br>
+		<sup><b>45</b></sup> And blessed is she who has believed, because there will be a completion of the things spoken to her from the Lord.<br><br>
+		<sup><b>46</b></sup> And Mary said, My soul magnifies the Lord,<br><br>
+		<sup><b>47</b></sup> And my spirit has exulted in God my Savior;<br><br>
+		<sup><b>48</b></sup> Because He has looked upon the low estate of His slave. For behold, from now on all generations will count me blessed,<br><br>
+		<sup><b>49</b></sup> Because the Mighty One has done great things for me, and holy is His name.<br><br>
+		<sup><b>50</b></sup> And His mercy is unto generations and generations, unto those who fear Him.<br><br>
+		<sup><b>51</b></sup> He has exercised might with His arm; He has scattered those who are proud in the understanding of their heart.<br><br>
+		<sup><b>52</b></sup> He has brought down potentates from thrones and has exalted the humble;<br><br>
+		<sup><b>53</b></sup> The hungry He has filled with good things, and the rich He has sent away empty.<br><br>
+		<sup><b>54</b></sup> He has upheld Israel His servant to remember mercy,<br><br>
+		<sup><b>55</b></sup> Even as He spoke to our fathers, to Abraham and to his seed forever.<br><br>
+		<sup><b>56</b></sup> And Mary remained with her about three months, and returned to her home.<br><br>
+	<br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

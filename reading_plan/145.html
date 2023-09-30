@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('12', '../bible/43-John.html')">John 12</a></h4>
+	<p><sup><b>1</b></sup> Then Jesus, six days before the Passover, came to Bethany, where Lazarus was, whom Jesus had raised from the dead.<br><br>
+		<sup><b>2</b></sup> Therefore they made Him a supper there; and Martha served, but Lazarus was one of the ones reclining at table with Him.<br><br>
+		<sup><b>3</b></sup> Then Mary took a pound of ointment, of very valuable pure nard, and anointed the feet of Jesus, and wiped His feet with her hair; and the house was filled with the fragrance of the ointment.<br><br>
+		<sup><b>4</b></sup> But Judas Iscariot, one of His disciples, who was about to betray Him, said,<br><br>
+		<sup><b>5</b></sup> Why was this ointment not sold for three hundred denarii and given to the poor?<br><br>
+		<sup><b>6</b></sup> But he said this not because it mattered to him concerning the poor, but because he was a thief, and holding the purse, carried off what was put into it.<br><br>
+		<sup><b>7</b></sup> Then Jesus said, Leave her alone; she has reserved it for the day of My burial.<br><br>
+		<sup><b>8</b></sup> For the poor you always have with you, but you do not always have Me.<br><br>
+		<sup><b>9</b></sup> Then a great crowd of the Jews found out that He was there, and they came, not because of Jesus only, but that they might also see Lazarus, whom He had raised from the dead.<br><br>
+		<sup><b>10</b></sup> And the chief priests took counsel to kill Lazarus also,<br><br>
+		<sup><b>11</b></sup> Because on account of him many of the Jews went away and believed into Jesus.<br><br>
+		<sup><b>12</b></sup> On the next day, the great crowd who had come to the feast, when they heard that Jesus was coming into Jerusalem,<br><br>
+		<sup><b>13</b></sup> Took the branches of the palm trees and went out to meet Him, and cried out, Hosanna! Blessed is He who comes in the name of the Lord, even the King of Israel!<br><br>
+		<sup><b>14</b></sup> And Jesus, having found a young donkey, sat on it, as it is written,<br><br>
+		<sup><b>15</b></sup> “Fear not, daughter of Zion; behold, your King comes, sitting on a donkey’s colt.”<br><br>
+		<sup><b>16</b></sup> These things His disciples did not understand at first, but when Jesus was glorified, then they remembered that these things were written of Him and that they had done these things to Him.<br><br>
+		<sup><b>17</b></sup> The crowd therefore that was with Him when He called Lazarus out of the tomb and raised him from the dead testified.<br><br>
+		<sup><b>18</b></sup> For this reason the crowd also went and met Him, because they heard that He had done this sign.<br><br>
+		<sup><b>19</b></sup> The Pharisees then said to one another, You see that you are not doing anything worthwhile; behold, the world has gone after Him.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

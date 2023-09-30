@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Joshua</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="joshua-12"><a onclick="open_chapter('top', '../bible/6-joshua.html')">Joshua 12</a></h4>
+	<p><sup><b>1</b></sup> Now these are the kings of the land whom the children of Israel struck and whose land they possessed across the Jordan toward the rising of the sun from the river Arnon to Mount Hermon and all the eastern Arabah:<br><br>
+		<sup><b>2</b></sup> Sihon the king of the Amorites, who dwelt in Heshbon <i>and</i> ruled from Aroer, which is on the edge of the river Arnon, and <i>from the city in</i> the middle of the river valley, that is, half of Gilead even unto the river Jabbok, the border of the children of Ammon;<br><br>
+		<sup><b>3</b></sup> And the eastern Arabah unto the Sea of Chinneroth, even unto the eastern side of the sea of the Arabah, the Salt Sea, toward Beth-jeshimoth, that is, southward to the foot of the slopes of Pisgah;<br><br>
+		<sup><b>4</b></sup> And the territory of Og the king of Bashan, <i>one</i> of the remnant of the Rephaim, who dwelt in Ashtaroth and Edrei,<br><br>
+		<sup><b>5</b></sup> And ruled over Mount Hermon and Salecah and all Bashan to the border of the Geshurites and the Maacathites, that is, half of Gilead, <i>to</i> the border of Sihon the king of Heshbon.<br><br>
+		<sup><b>6</b></sup> Moses the servant of Jehovah and the children of Israel struck them. And Moses the servant of Jehovah gave this land as a possession to the Reubenites and the Gadites and the half-tribe of Manasseh.<br><br>
+		<sup><b>7</b></sup> And these are the kings of the land whom Joshua and the children of Israel struck across the Jordan on the west, from Baal-gad in the valley of Lebanon unto Mount Halak, which goes up to Seir; and Joshua gave this land to the tribes of Israel as a possession according to their divisions,<br><br>
+		<sup><b>8</b></sup> <i>The land that is</i> in the hill country and in the lowland and in the Arabah and on the slopes and in the wilderness and in the Negev — the Hittites, the Amorites, and the Canaanites; the Perizzites, the Hivites, and the Jebusites.<br><br>
+		<sup><b>9</b></sup> The king of Jericho, one; / The king of Ai, which is by Bethel, one;<br><br>
+		<sup><b>10</b></sup> The king of Jerusalem, one; / The king of Hebron, one;<br><br>
+		<sup><b>11</b></sup> The king of Jarmuth, one; / The king of Lachish, one;<br><br>
+		<sup><b>12</b></sup> The king of Eglon, one; / The king of Gezer, one;<br><br>
+		<sup><b>13</b></sup> The king of Debir, one; / The king of Geder, one;<br><br>
+		<sup><b>14</b></sup> The king of Hormah, one; / The king of Arad, one;<br><br>
+		<sup><b>15</b></sup> The king of Libnah, one; / The king of Adullam, one;<br><br>
+		<sup><b>16</b></sup> The king of Makkedah, one; / The king of Bethel, one;<br><br>
+		<sup><b>17</b></sup> The king of Tappuah, one; / The king of Hepher, one;<br><br>
+		<sup><b>18</b></sup> The king of Aphek, one; / The king of Lasharon, one;<br><br>
+		<sup><b>19</b></sup> The king of Madon, one; / The king of Hazor, one;<br><br>
+		<sup><b>20</b></sup> The king of Shimron-meron, one; / The king of Achshaph, one;<br><br>
+		<sup><b>21</b></sup> The king of Taanach, one; / The king of Megiddo, one;<br><br>
+		<sup><b>22</b></sup> The king of Kedesh, one; / The king of Jokneam in Carmel, one;<br><br>
+		<sup><b>23</b></sup> The king of Dor in the highland of Dor, one; / The king of Goiim of Gilgal, one;<br><br>
+		<sup><b>24</b></sup> The king of Tirzah, one. / Thirty-one kings in all.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

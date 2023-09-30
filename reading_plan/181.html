@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Acts</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="Acts-1"><a onclick="open_chapter('15', '../bible/44-Acts.html')">Acts 15</a></h4>
+	<p><sup><b>22</b></sup> It then seemed good to the apostles and the elders with the whole church to choose men from among them to send to Antioch together with Paul and Barnabas: Judas, who is called Barsabbas, and Silas, leading men among the brothers,<br><br>
+		<sup><b>23</b></sup> Writing to them and sending by their hand the following: The apostles and the elder brothers, to the brothers throughout Antioch and Syria and Cilicia who are of the Gentiles, rejoice.<br><br>
+		<sup><b>24</b></sup> Since we have heard that certain ones who went out from among us have troubled you with their words, unsettling your souls, to whom we gave no instruction,<br><br>
+		<sup><b>25</b></sup> It seemed good to us, having become of one accord, to choose men to send to you together with our beloved Barnabas and Paul,<br><br>
+		<sup><b>26</b></sup> Men who have risked their lives for the name of our Lord Jesus Christ.<br><br>
+		<sup><b>27</b></sup> Therefore we have sent Judas and Silas, who themselves will report the same things by word of mouth.<br><br>
+		<sup><b>28</b></sup> For it seemed good to the Holy Spirit and to us to lay upon you no greater burden than these necessary things:<br><br>
+		<sup><b>29</b></sup> To abstain from things that have been sacrificed to idols and blood and things strangled and fornication, from which if you carefully keep yourselves, you will do well. May you be strong.<br><br>
+		<sup><b>30</b></sup> So when they had been sent away, they went down to Antioch; and when they had gathered the multitude together, they handed them the letter.<br><br>
+		<sup><b>31</b></sup> And when they read it, they rejoiced at the encouragement.<br><br>
+		<sup><b>32</b></sup> And Judas and Silas, also being prophets themselves, exhorted the brothers through much speaking and confirmed them.<br><br>
+		<sup><b>33</b></sup> And when they had spent some time there, they were sent away with peace from the brothers to those who had sent them.<br><br>
+		<sup><b>34</b></sup> But it seemed good to Silas to remain there.<br><br>
+		<sup><b>35</b></sup> And Paul and Barnabas stayed in Antioch, teaching and announcing the word of the Lord as the gospel with many others also.<br><br>
+		<sup><b>36</b></sup> Now after some days Paul said to Barnabas, Let us return now and visit the brothers in every city in which we announced the word of the Lord, and see how they are doing.<br><br>
+		<sup><b>37</b></sup> And Barnabas intended to take John, who is called Mark, along with them also;<br><br>
+		<sup><b>38</b></sup> But Paul did not consider it suitable to take with them this one who withdrew from them in Pamphylia and did not go with them to the work.<br><br>
+		<sup><b>39</b></sup> And there was a sharp contention, so that they separated from each other; and Barnabas, taking Mark along, sailed away to Cyprus.<br><br>
+		<sup><b>40</b></sup> But Paul chose Silas and went out, having been commended to the grace of the Lord by the brothers.<br><br>
+		<sup><b>41</b></sup> And he passed through Syria and Cilicia, confirming the churches. <br><br>
+   
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

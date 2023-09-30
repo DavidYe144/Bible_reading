@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('15', '../bible/45-romans.html')">Romans 15</a></h4>
+	<p><sup><b>1</b></sup> But we who are strong ought to bear the weaknesses of those who are weak and not to please ourselves.<br><br>
+		<sup><b>2</b></sup> Let each of us please his neighbor with a view to what is good for building up.<br><br>
+		<sup><b>3</b></sup> For Christ also did not please Himself, but as it is written, “The reproaches of those who reproached You fell upon Me.”<br><br>
+		<sup><b>4</b></sup> For the things that were written previously were written for our instruction, in order that through endurance and through the encouragement of the Scriptures we might have hope.<br><br>
+		<sup><b>5</b></sup> Now the God of endurance and encouragement grant you to be of the same mind toward one another according to Christ Jesus,<br><br>
+		<sup><b>6</b></sup> That with one accord you may with one mouth glorify the God and Father of our Lord Jesus Christ.<br><br>
+		<sup><b>7</b></sup> Therefore receive one another, as Christ also received you to the glory of God.<br><br>
+		<sup><b>8</b></sup> For I say that Christ has become a servant of the circumcision for the sake of God’s truthfulness, to confirm the promises given to the fathers,<br><br>
+		<sup><b>9</b></sup> And that the Gentiles should glorify God for His mercy, as it is written, “Therefore I will extol You among the Gentiles, and I will sing praise to Your name.”<br><br>
+		<sup><b>10</b></sup> And again he says, “Rejoice, Gentiles, with His people.”<br><br>
+		<sup><b>11</b></sup> And again, “Praise the Lord, all you Gentiles, and let all the peoples speak praise to Him.”<br><br>
+		<sup><b>12</b></sup> And again, Isaiah says, “There shall be the root of Jesse, even He who rises to rule the Gentiles; on Him will the Gentiles hope.”<br><br>
+		<sup><b>13</b></sup> Now the God of hope fill you with all joy and peace in believing, that you may abound in hope in the power of the Holy Spirit.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

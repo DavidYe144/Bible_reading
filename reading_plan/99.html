@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-7"><a onclick="open_chapter('7', '../bible/42-luke.html')">Luke 11:33-54</a></h4>
+	<p>				 
+		<sup><b>33</b></sup> No one, after lighting a lamp, puts it in the cellar or under the bushel, but on the lampstand, in order that those who enter in may see the light.<br><br>
+		<sup><b>34</b></sup> The lamp of the body is your eye. When your eye is single, your whole body also is full of light; but when it is evil, your body also is dark.<br><br>
+		<sup><b>35</b></sup> Watch out therefore that the light which is in you is not darkness.<br><br>
+		<sup><b>36</b></sup> If therefore your whole body is full of light and does not have any dark part, the whole will be full of light as when the lamp with its rays illuminates you.<br><br>
+		<sup><b>37</b></sup> Now as He spoke, a Pharisee asked Him to have the morning meal with him; and He went in and reclined at table.<br><br>
+		<sup><b>38</b></sup> But the Pharisee, seeing it, marveled that He had not first washed before the meal.<br><br>
+		<sup><b>39</b></sup> But the Lord said to him, Again, you Pharisees cleanse the outside of the cup and of the platter, but your inside is full of extortion and wickedness.<br><br>
+		<sup><b>40</b></sup> Foolish ones! Did not He who made the outside make the inside also?<br><br>
+		<sup><b>41</b></sup> But give the things which are within as alms, and behold, all things are clean to you.<br><br>
+		<sup><b>42</b></sup> But woe to you, Pharisees! For you give a tenth of the mint and the rue and every herb, and pass by justice and love for God. But these you should have done and not passed by the others.<br><br>
+		<sup><b>43</b></sup> Woe to you, Pharisees! For you love the chief seat in the synagogues and the greetings in the marketplaces.<br><br>
+		<sup><b>44</b></sup> Woe to you! For you are like the unseen tombs, and the men who walk over them do not know it.<br><br>
+		<sup><b>45</b></sup> And one of the lawyers answered and said to Him, Teacher, by saying these things, you insult us also.<br><br>
+		<sup><b>46</b></sup> And He said, Woe to you lawyers also! For you burden men with burdens hard to bear, yet you yourselves do not touch the burdens with one of your fingers.<br><br>
+		<sup><b>47</b></sup> Woe to you! For you build up the tombs of the prophets, and your fathers killed them.<br><br>
+		<sup><b>48</b></sup> You are witnesses then and fully approve of the works of your fathers, because they killed them, and you build up their tombs.<br><br>
+		<sup><b>49</b></sup> Therefore the wisdom of God also has said, I will send to them prophets and apostles, and some of them they will kill and persecute,<br><br>
+		<sup><b>50</b></sup> In order that the blood of all the prophets which has been poured out from the foundation of the world may be required of this generation,<br><br>
+		<sup><b>51</b></sup> From the blood of Abel to the blood of Zachariah, who perished between the altar and the house. Yes, I tell you, it will be required of this generation.<br><br>
+		<sup><b>52</b></sup> Woe to you lawyers! For you have taken away the key of knowledge; you yourselves did not enter, and those who were entering, you hindered.<br><br>
+		<sup><b>53</b></sup> And when He went out from there, the scribes and the Pharisees began to be very hostile and to provoke Him to speak concerning many things,<br><br>
+		<sup><b>54</b></sup> Lying in wait for Him in order to catch something out of His mouth. <br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/2-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-6"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 6</a></h4>
+  <p><sup><b>1</b></sup> And I saw when the Lamb opened one of the seven seals, and I heard one of the four living creatures saying like the sound of thunder, Come.<br><br>
+     <sup><b>2</b></sup> And I saw, and behold, a white horse, and he who sits on it had a bow; and a crown was given to him, and he went forth conquering and to conquer.<br><br>
+     <sup><b>3</b></sup> And when He opened the second seal, I heard the second living creature saying, Come.<br><br>
+     <sup><b>4</b></sup> And I saw, and behold, another horse, a red one, went forth; and to him who sits on it, to him authority was given to take peace from the earth, and that men should slay one another; and to him a great sword was given.<br><br>
+     <sup><b>5</b></sup> And when He opened the third seal, I heard the third living creature saying, Come. And I saw, and behold, a black horse; and he who sits on it had a balance in his hand.<br><br>
+     <sup><b>6</b></sup> And I heard as it were a voice in the midst of the four living creatures saying: A choenix of wheat for a denarius and three choenixes of barley for a denarius; and do not harm the oil and the wine.<br><br>
+     <sup><b>7</b></sup> And when He opened the fourth seal, I heard the voice of the fourth living creature saying, Come.<br><br>
+     <sup><b>8</b></sup> And I saw, and behold, a pale horse, and he who sits upon it, his name is Death; and Hades followed with him. And authority was given to them over the fourth part of the earth to kill with the sword and with famine and with death and by the beasts of the earth.<br><br>
+     <sup><b>9</b></sup> And when He opened the fifth seal, I saw underneath the altar the souls of those who had been slain because of the word of God and because of the testimony which they had.<br><br>
+     <sup><b>10</b></sup> And they cried with a loud voice, saying, How long, O Master, holy and true, will You not judge and avenge our blood on those who dwell on the earth?<br><br>
+     <sup><b>11</b></sup> And to each of them was given a white robe; and it was said to them that they should rest yet a little while, until also the number of their fellow slaves and their brothers who were about to be killed, even as they were, is completed.<br><br>
+     <sup><b>12</b></sup> And I saw when He opened the sixth seal, and there was a great earthquake, and the sun became black like sackcloth made of hair, and the whole moon became like blood;<br><br>
+     <sup><b>13</b></sup> And the stars of heaven fell to the earth as a fig tree casts its unripe figs when shaken by a great wind.<br><br>
+     <sup><b>14</b></sup> And heaven was removed like a scroll being rolled up, and every mountain and island were moved out of their places.<br><br>
+     <sup><b>15</b></sup> And the kings of the earth and the great men and the generals and the rich and the strong and every slave and free man hid themselves in the caves and in the rocks of the mountains;<br><br>
+     <sup><b>16</b></sup> And they say to the mountains and to the rocks, Fall on us and hide us from the face of Him who sits upon the throne and from the wrath of the Lamb;<br><br>
+     <sup><b>17</b></sup> For the great day of Their wrath has come, and who is able to stand? <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

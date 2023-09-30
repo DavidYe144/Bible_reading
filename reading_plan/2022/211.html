@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-20"><a onclick="open_chapter(1, '../bible/2-exodus.html')">Exodus 20</a></h4>
+  <p><sup><b>1</b></sup> And God spoke all these words, saying,<br><br>
+	<sup><b>2</b></sup> I am Jehovah your God, who brought you out of the land of Egypt, out of the slave house;<br><br>
+	<sup><b>3</b></sup> You shall have no other gods before Me.<br><br>
+	<sup><b>4</b></sup> You shall not make for yourself an idol, nor the form of anything that is in heaven above or on the earth beneath or in the water beneath the earth.<br><br>
+	<sup><b>5</b></sup> You shall not bow down to them, and you shall not serve them; for I, Jehovah your God, am a jealous God, visiting the iniquity of the fathers upon the children, to the third and fourth <i>generations</i> of those who hate Me,<br><br>
+	<sup><b>6</b></sup> Yet showing lovingkindness to thousands <i>of generations</i> of those who love Me and keep My commandments.<br><br>
+	<sup><b>7</b></sup> You shall not take the name of Jehovah your God in vain, for Jehovah will not hold guiltless him who takes His name in vain.<br><br>
+	<sup><b>8</b></sup> Remember the Sabbath day so as to sanctify it.<br><br>
+	<sup><b>9</b></sup> Six days you shall labor and do all your work,<br><br>
+	<sup><b>10</b></sup> But the seventh day is a Sabbath to Jehovah your God; you shall not do any work, you nor your son nor your daughter, your male servant nor your female servant, nor your cattle nor the sojourner with you, who is within your gates.<br><br>
+	<sup><b>11</b></sup> For in six days Jehovah made heaven and earth, the sea and all that is in them, and rested on the seventh day; therefore Jehovah blessed the Sabbath day and sanctified it.<br><br>
+	<sup><b>12</b></sup> Honor your father and your mother, that your days may be extended upon the land which Jehovah your God is giving you.<br><br>
+	<sup><b>13</b></sup> You shall not kill.<br><br>
+	<sup><b>14</b></sup> You shall not commit adultery.<br><br>
+	<sup><b>15</b></sup> You shall not steal.<br><br>
+	<sup><b>16</b></sup> You shall not testify with false testimony against your neighbor.<br><br>
+	<sup><b>17</b></sup> You shall not covet your neighbor’s house; you shall not covet your neighbor’s wife, nor his male servant, nor his female servant, nor his ox, nor his donkey, nor anything that belongs to your neighbor.<br><br>
+	<sup><b>18</b></sup> And all the people witnessed the thunder and the flashes of lightning and the sound of the trumpet and the mountain smoking; and when the people witnessed <i>it,</i> they trembled and stood at a distance.<br><br>
+	<sup><b>19</b></sup> And they said to Moses, You speak with us, and we will listen; but do not let God speak with us, so we do not die.<br><br>
+	<sup><b>20</b></sup> And Moses said to the people, Do not be afraid; for God has come in order to test you and in order that the fear of Him may be before you, so that you do not sin.<br><br>
+	<sup><b>21</b></sup> And the people stood at a distance, and Moses drew near to the deep darkness where God was.<br><br>
+	<sup><b>22</b></sup> And Jehovah said to Moses, Thus shall you say to the children of Israel, You yourselves have seen that I have spoken to you from heaven.<br><br>
+	<sup><b>23</b></sup> You shall not make <i>other gods</i> besides Me; gods of silver or gods of gold, you shall not make for yourselves.<br><br>
+	<sup><b>24</b></sup> An altar of earth you shall make for Me, and you shall sacrifice on it your burnt offerings and your peace offerings, your sheep and your oxen; in every place where I cause My name to be remembered, I will come to you and bless you.<br><br>
+	<sup><b>25</b></sup> And if you make Me an altar of stone, you shall not build it of hewn stones; for if you lift up your tool upon them, you have polluted them.<br><br>
+	<sup><b>26</b></sup> Neither shall you go up by steps to My altar, so that your nakedness may not be uncovered on it.<br><br>
+</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Deuteronomy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="deuteronomy-14"><a onclick="open_chapter('top', '../bible/5-deuteronomy.html')">Deuteronomy 23</a></h4>
+	<p><sup><b>1</b></sup> He who has been wounded in the testicles or has the male organ cut off shall not enter the congregation of Jehovah.<br><br>
+		<sup><b>2</b></sup> An illegitimate child shall not enter the congregation of Jehovah; even to the tenth generation, no <i>descendant</i> of his shall enter the congregation of Jehovah.<br><br>
+		<sup><b>3</b></sup> An Ammonite or a Moabite shall not enter the congregation of Jehovah; even to the tenth generation, no <i>descendant</i> of theirs shall enter the congregation of Jehovah forever;<br><br>
+		<sup><b>4</b></sup> Because they did not come to meet you with bread and water in the way when you were coming out of Egypt, and because they hired Balaam the son of Beor from Pethor of Mesopotamia against you, to curse you.<br><br>
+		<sup><b>5</b></sup> But Jehovah your God would not listen to Balaam, and Jehovah your God turned the curse into a blessing for you, for Jehovah your God loved you.<br><br>
+		<sup><b>6</b></sup> You shall not seek peace with them nor prosperity with them all your days forever.<br><br>
+		<sup><b>7</b></sup> You shall not abhor an Edomite, for he is your brother. You shall not abhor an Egyptian, for you were a sojourner in his land.<br><br>
+		<sup><b>8</b></sup> The children of the third generation who have been begotten of them may enter the congregation of Jehovah.<br><br>
+		<sup><b>9</b></sup> When you as a camp go forth against your enemies, you shall keep yourself from every evil thing.<br><br>
+		<sup><b>10</b></sup> If there is among you a man who becomes unclean because of an accident in the night, he shall go outside the camp; he shall not enter into the midst of the camp.<br><br>
+		<sup><b>11</b></sup> But when evening approaches, he shall bathe in water; and when the sun goes down, he shall enter into the midst of the camp.<br><br>
+		<sup><b>12</b></sup> And you shall have an assigned place outside the camp, and there you shall go out;<br><br>
+		<sup><b>13</b></sup> And you shall have a spade among your tools, and when you relieve yourself outside <i>the camp,</i> you shall dig with it and turn to cover your excrement.<br><br>
+		<sup><b>14</b></sup> For Jehovah your God walks in the midst of your camp to rescue you and deliver up your enemies before you; therefore your camp shall be holy, and He must not see any indecent thing among you, lest He turn back from <i>going</i> after you.<br><br>
+		<sup><b>15</b></sup> You shall not deliver to his master the slave who has escaped from his master to you;<br><br>
+		<sup><b>16</b></sup> He shall dwell with you, <i>even</i> in your midst, in the place which he chooses among your towns, wherever he pleases; you shall not oppress him.<br><br>
+		<sup><b>17</b></sup> There shall not be a cult prostitute among the daughters of Israel, nor shall there be a cult prostitute among the sons of Israel.<br><br>
+		<sup><b>18</b></sup> You shall not bring the payment for a harlot or the price for a dog into the house of Jehovah your God for any vow, for both of them are an abomination to Jehovah your God.<br><br>
+		<sup><b>19</b></sup> You shall not make your brother pay interest, interest on money, interest on food, interest on anything on which one pays interest.<br><br>
+		<sup><b>20</b></sup> You may make a foreigner pay interest; but you shall not make your brother pay interest, in order that Jehovah your God may bless you in all your undertakings upon the land which you are entering to possess.<br><br>
+		<sup><b>21</b></sup> When you vow a vow to Jehovah your God, you shall not delay in paying it; for Jehovah your God would certainly require it of you, and it will become sin in you.<br><br>
+		<sup><b>22</b></sup> But if you refrain from vowing, it will not become sin in you.<br><br>
+		<sup><b>23</b></sup> What proceeds out of your lips you shall keep and do, as you have vowed to Jehovah your God voluntarily, which you have promised with your mouth.<br><br>
+		<sup><b>24</b></sup> When you enter your neighbor’s vineyard, you may eat grapes as your soul <i>desires, until</i> you are satisfied; but you shall not put <i>any</i> into a vessel of yours.<br><br>
+		<sup><b>25</b></sup> When you go into your neighbor’s standing grain, you may pluck some ears with your hand; but you shall not wield a sickle upon your neighbor’s standing grain.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

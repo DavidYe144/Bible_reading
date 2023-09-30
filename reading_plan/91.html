@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-8"><a onclick="open_chapter('8', '../bible/42-luke.html')">Luke 8:40-56</a></h4>
+	<p><sup><b>40</b></sup> Now as Jesus was returning, the crowd welcomed Him, for they were all waiting for Him.<br><br>
+		<sup><b>41</b></sup> And behold, a man came whose name was Jairus, and this man was a ruler of the synagogue. And he fell at Jesus’ feet and entreated Him to enter into his house,<br><br>
+		<sup><b>42</b></sup> Because he had an only daughter, about twelve years old, and she was dying. And as He went, the crowds pressed against Him.<br><br>
+		<sup><b>43</b></sup> And a woman who had a flow of blood for twelve years and who had spent all her livelihood on physicians and yet could not be healed by anyone,<br><br>
+		<sup><b>44</b></sup> Approached Him from behind and touched the fringe of His garment, and instantly her flow of blood stopped.<br><br>
+		<sup><b>45</b></sup> And Jesus said, Who is the one who touched Me? And when all denied it, Peter said, Master, the crowds are pressing and crushing You.<br><br>
+		<sup><b>46</b></sup> But Jesus said, Someone touched Me, for I perceived that power had gone out from Me.<br><br>
+		<sup><b>47</b></sup> And when the woman saw that she had not escaped notice, she came trembling and fell down before Him and declared before all the people the reason why she had touched Him and how she had been instantly healed.<br><br>
+		<sup><b>48</b></sup> And He said to her, Daughter, your faith has healed you. Go in peace.<br><br>
+		<sup><b>49</b></sup> While He was still speaking, someone came from the house of the ruler of the synagogue, saying, Your daughter has died; do not trouble the Teacher any longer.<br><br>
+		<sup><b>50</b></sup> But Jesus, hearing it, answered him, Do not be afraid — only believe, and she will be healed.<br><br>
+		<sup><b>51</b></sup> And He came to the house and did not allow anyone to enter with Him, except Peter and John and James and the father of the child and the mother.<br><br>
+		<sup><b>52</b></sup> And all were weeping and mourning for her; but He said, Do not weep, for she has not died but is sleeping.<br><br>
+		<sup><b>53</b></sup> And they laughed scornfully at Him, knowing that she had died.<br><br>
+		<sup><b>54</b></sup> But He took hold of her hand and called out, saying, Child, arise!<br><br>
+		<sup><b>55</b></sup> And her spirit returned and she rose up instantly; and He directed that something be given to her to eat.<br><br>
+		<sup><b>56</b></sup> And her parents were amazed, but He charged them to tell no one what had happened. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="luke-9"><a onclick="open_chapter('9', '../bible/42-luke.html')">Luke 9</a></h4>
+   <p><sup><b>1</b></sup> And He called together the twelve and gave them power and authority over all the demons and to heal diseases.<br><br>
+		<sup><b>2</b></sup> And He sent them to proclaim the kingdom of God and to heal the sick.<br><br>
+		<sup><b>3</b></sup> And He said to them, Take nothing for the journey, neither a staff nor a bag nor bread nor money, nor have two tunics apiece.<br><br>
+		<sup><b>4</b></sup> And into whatever house you enter, remain there and from there go out.<br><br>
+		<sup><b>5</b></sup> And as many as do not receive you, as you go out from that city, shake off the dust from your feet for a testimony against them.<br><br>
+		<sup><b>6</b></sup> And they went out and passed through village after village, announcing the gospel and healing everywhere.<br><br>
+		<sup><b>7</b></sup> And Herod the tetrarch heard of all that was happening and was utterly perplexed, because it was said by some that John had been raised from the dead,<br><br>
+		<sup><b>8</b></sup> And by some that Elijah had appeared, and by others that a certain prophet of the ancients had risen up.<br><br>
+		<sup><b>9</b></sup> And Herod said, John I beheaded, but who is this concerning whom I hear such things? And he sought to see Him.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

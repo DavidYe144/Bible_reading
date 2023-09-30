@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Thessalonians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="2thessalonians-3"><a onclick="open_chapter('top', '53-2thessalonians.html')">2 Thessalonians 3</a></h4>
+  <p><sup><b>1</b></sup> Finally, brothers, pray concerning us, that the word of the Lord may run and be glorified, even as it is also with you;<br><br>
+     <sup><b>2</b></sup> And that we may be delivered from unreasonable and evil men, for the faith does not belong to all.<br><br>
+     <sup><b>3</b></sup> But the Lord is faithful, who will establish you and guard you from the evil one.<br><br>
+     <sup><b>4</b></sup> And we have confidence in the Lord concerning you that what we charge, you both are doing and will do.<br><br>
+     <sup><b>5</b></sup> And the Lord direct your hearts into the love of God and into the endurance of Christ.<br><br>
+     <sup><b>6</b></sup> Now we charge you, brothers, in the name of our Lord Jesus Christ, that you keep away from every brother walking disorderly and not according to the things which were handed down to you and which you received from us.<br><br>
+     <sup><b>7</b></sup> For you yourselves know how you ought to imitate us, because we were not disorderly among you;<br><br>
+     <sup><b>8</b></sup> Nor did we eat bread as a gift from anyone, but in labor and hardship we worked night and day so that we would not be burdensome to any of you;<br><br>
+     <sup><b>9</b></sup> Not because we do not have the right, but in order that we might give ourselves to you as a pattern that you might imitate us.<br><br>
+     <sup><b>10</b></sup> For even when we were with you, we gave you this charge, that if anyone does not want to work, neither should he eat.<br><br>
+     <sup><b>11</b></sup> For we hear of some walking among you disorderly, doing no work at all, but being busybodies.<br><br>
+     <sup><b>12</b></sup> Now such ones we charge and exhort in the Lord Jesus Christ to work with quietness and eat their own bread.<br><br>
+     <sup><b>13</b></sup> But you, brothers, do not lose heart in doing good.<br><br>
+     <sup><b>14</b></sup> And if anyone does not obey our word through this letter, mark this one so as not to mingle with him, in order that he may be ashamed.<br><br>
+     <sup><b>15</b></sup> Yet do not regard him as an enemy, but admonish him as a brother.<br><br>
+     <sup><b>16</b></sup> Now the Lord of peace Himself give you peace continually in every way. The Lord be with you all.<br><br>
+     <sup><b>17</b></sup> The greeting in my own hand — Paul — which is the mark in every letter; so I write.<br><br>
+     <sup><b>18</b></sup> The grace of our Lord Jesus Christ be with you all. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2thessalonians-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

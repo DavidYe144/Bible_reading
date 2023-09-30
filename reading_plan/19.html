@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-13"><a onclick="open_chapter('13', '../bible/40-matthew.html')">Matthew 13</a></h4>
+	<p>
+		<sup><b>44</b></sup> The kingdom of the heavens is like a treasure hidden in the field, which a man found and hid, and in his joy goes and sells all that he has, and buys that field.<br><br>
+		<sup><b>45</b></sup> Again, the kingdom of the heavens is like a merchant seeking fine pearls;<br><br>
+		<sup><b>46</b></sup> And finding one pearl of great value, he went and sold all that he had and bought it.<br><br>
+		<sup><b>47</b></sup> Again, the kingdom of the heavens is like a net cast into the sea and gathering from every species,<br><br>
+		<sup><b>48</b></sup> Which, when it was filled, they brought onto the shore, and sat down and collected the good into vessels; but the foul they cast out.<br><br>
+		<sup><b>49</b></sup> So it will be at the consummation of the age: the angels will go forth and separate the evil from the midst of the righteous,<br><br>
+		<sup><b>50</b></sup> And will cast them into the furnace of fire. In that place there will be the weeping and the gnashing of teeth.<br><br>
+		<sup><b>51</b></sup> Have you understood all these things? They said to Him, Yes.<br><br>
+		<sup><b>52</b></sup> And He said to them, For this reason every scribe discipled to the kingdom of the heavens is like a householder who brings forth out of his treasure things new and old.<br><br>
+		<sup><b>53</b></sup> And when Jesus had finished these parables, He departed from there.<br><br>
+		<sup><b>54</b></sup> And He came into His own country and taught them in their synagogue, so that they were astounded and said, Where did this man get this wisdom and these works of power?<br><br>
+		<sup><b>55</b></sup> Is not this the carpenter’s son? Is not His mother called Mary, and His brothers James and Joseph and Simon and Judas?<br><br>
+		<sup><b>56</b></sup> And His sisters, are they not all with us? Where then did this man get all these things?<br><br>
+		<sup><b>57</b></sup> And they were stumbled because of Him. But Jesus said to them, A prophet is not without honor except in his own country and in his own house.<br><br>
+		<sup><b>58</b></sup> And He did not do many works of power there because of their unbelief.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-19"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 19</a></h4>
+	<p>				 
+		<sup><b>27</b></sup> Then Peter answered and said to Him, Behold, we have left all and followed You. What then will there be for us?<br><br>
+		<sup><b>28</b></sup> And Jesus said to them, Truly I say to you that you who have followed Me, in the restoration, when the Son of Man sits on the throne of His glory, you also shall sit on twelve thrones, judging the twelve tribes of Israel.<br><br>
+		<sup><b>29</b></sup> And everyone who has left houses or brothers or sisters or father or mother or children or fields for My name’s sake shall receive a hundred times as much and shall inherit eternal life.<br><br>
+		<sup><b>30</b></sup> But many first will be last, and many last first.<br><br>
+	</p>
+	<h4 id="matthew-20"><a onclick="open_chapter('top', '../bible/40-matthew.html')">Matthew 20</a></h4>
+	<p><sup><b>1</b></sup> For the kingdom of the heavens is like a man, who is a householder, who went out early in the morning to hire workmen for his vineyard.<br><br>
+		<sup><b>2</b></sup> And having agreed with the workmen for a denarius a day, he sent them into his vineyard.<br><br>
+		<sup><b>3</b></sup> And he went out about the third hour and saw others standing idle in the marketplace,<br><br>
+		<sup><b>4</b></sup> And to those he said, You also go into the vineyard, and whatever is right I will give you. And they went.<br><br>
+		<sup><b>5</b></sup> And again he went out about the sixth and the ninth hour and did likewise.<br><br>
+		<sup><b>6</b></sup> And about the eleventh hour he went out and found others standing, and said to them, Why have you been standing here all the day idle?<br><br>
+		<sup><b>7</b></sup> They said to him, Because no one has hired us. He said to them, You also go into the vineyard.<br><br>
+		<sup><b>8</b></sup> And when evening fell, the master of the vineyard said to his steward, Call the workmen and pay them their wages, beginning from the last ones to the first.<br><br>
+		<sup><b>9</b></sup> And when those hired about the eleventh hour came, they received each a denarius.<br><br>
+		<sup><b>10</b></sup> And when the first ones came, they supposed that they would receive more. And they themselves also received each a denarius.<br><br>
+		<sup><b>11</b></sup> And when they received it, they murmured against the householder,<br><br>
+		<sup><b>12</b></sup> Saying, These last ones worked one hour, and you have made them equal to us who bore the burden of the day and the scorching heat.<br><br>
+		<sup><b>13</b></sup> But he answered one of them and said, Friend, I am doing nothing unrighteous to you. Did you not agree with me for a denarius?<br><br>
+		<sup><b>14</b></sup> Take what is yours and go. I want to give to this last one even as I have given to you.<br><br>
+		<sup><b>15</b></sup> Is it not lawful for me to do what I wish with what is mine? Or is your eye evil because I am good?<br><br>
+		<sup><b>16</b></sup> Thus shall the last be first and the first last.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

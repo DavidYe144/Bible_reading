@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-21"><a onclick="open_chapter('21', '../bible/40-matthew.html')">Matthew 21</a></h4>
+	<p><sup><b>1</b></sup> And when they drew near to Jerusalem and came to Bethphage at the Mount of Olives, then Jesus sent two disciples,<br><br>
+		<sup><b>2</b></sup> Saying to them, Go into the village opposite you, and immediately you will find a donkey tied and a colt with her; untie them and lead them to Me.<br><br>
+		<sup><b>3</b></sup> And if anyone says anything to you, you shall say, The Lord has need of them; and immediately he will send them.<br><br>
+		<sup><b>4</b></sup> Now this took place in order that what was spoken through the prophet might be fulfilled, saying,<br><br>
+		<sup><b>5</b></sup> “Say to the daughter of Zion, Behold, your King is coming to you, meek and mounted on a donkey, and on a colt, a foal of a beast of burden.”<br><br>
+		<sup><b>6</b></sup> And the disciples went and did as Jesus directed them,<br><br>
+		<sup><b>7</b></sup> And led the donkey and the colt. And they put their garments on them, and He sat upon them.<br><br>
+		<sup><b>8</b></sup> And most of the crowd spread their own garments in the road, and others cut branches from the trees and spread them in the road.<br><br>
+		<sup><b>9</b></sup> And the crowds who went before Him and those who followed cried out, saying, Hosanna to the Son of David! Blessed is He who comes in the name of the Lord! Hosanna in the highest!<br><br>
+		<sup><b>10</b></sup> And when He entered into Jerusalem, all the city was stirred, saying, Who is this?<br><br>
+		<sup><b>11</b></sup> And the crowds said, This is the prophet Jesus from Nazareth of Galilee.<br><br>
+		<sup><b>12</b></sup> And Jesus entered into the temple and cast out all those who were selling and buying in the temple. And He overturned the tables of the money changers and the seats of those who were selling the doves,<br><br>
+		<sup><b>13</b></sup> And He said to them, It is written, “My house shall be called a house of prayer,” but you are making it a den of robbers.<br><br>
+		<sup><b>14</b></sup> And the blind and the lame came to Him in the temple, and He healed them.<br><br>
+		<sup><b>15</b></sup> But when the chief priests and the scribes saw the wonders that He did and the children who were crying out in the temple and saying, Hosanna to the Son of David, they were indignant.<br><br>
+		<sup><b>16</b></sup> And they said to Him, Do You hear what these are saying? And Jesus said to them, Yes. Have you never read, “Out of the mouth of infants and sucklings You have perfected praise”?<br><br>
+		<sup><b>17</b></sup> And leaving them, He went out of the city to Bethany and lodged there.<br><br>
+		<sup><b>18</b></sup> Now in the morning as He returned to the city, He became hungry.<br><br>
+		<sup><b>19</b></sup> And seeing a fig tree on the way, He came to it and found nothing on it except leaves only. And He said to it, May there no longer be fruit from you forever! And the fig tree was instantly dried up.<br><br>
+		<sup><b>20</b></sup> And when the disciples saw this, they marveled, saying, How did the fig tree instantly dry up?<br><br>
+		<sup><b>21</b></sup> And Jesus answered and said to them, Truly I say to you, If you have faith and do not doubt, you will not only do what was done to the fig tree, but even if you say to this mountain, Be taken up and cast into the sea, it will happen.<br><br>
+		<sup><b>22</b></sup> And all that you ask in prayer, if you believe, you will receive.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

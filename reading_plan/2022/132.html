@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="revelation-16"><a onclick="open_chapter('top', '66-revelation.html')">Revelation 16</a></h4>
+  <p><sup><b>1</b></sup> And I heard a loud voice out of the temple, saying to the seven angels, Go and pour out the seven bowls of the fury of God into the earth.<br><br>
+     <sup><b>2</b></sup> And the first went and poured out his bowl into the earth; and there came to be an evil and malignant sore upon the men who have the mark of the beast and worship his image.<br><br>
+     <sup><b>3</b></sup> And the second poured out his bowl into the sea, and it became blood like that of a dead man; and every living soul that was in the sea died.<br><br>
+     <sup><b>4</b></sup> And the third poured out his bowl into the rivers and the springs of waters; and they became blood.<br><br>
+     <sup><b>5</b></sup> And I heard the angel who had power over the waters saying, You are righteous, who is and who was, the Holy One, because You have judged these things;<br><br>
+     <sup><b>6</b></sup> For they poured out the blood of saints and prophets, and You have given them blood to drink; they are worthy of it.<br><br>
+     <sup><b>7</b></sup> And I heard the altar saying, Yes, Lord God the Almighty, true and righteous are Your judgments.<br><br>
+     <sup><b>8</b></sup> And the fourth poured out his bowl upon the sun; and it was given to it to burn men with fire.<br><br>
+     <sup><b>9</b></sup> And men were burned with great heat, and they blasphemed the name of God, who has the authority over these plagues, and they did not repent so as to give Him glory.<br><br>
+     <sup><b>10</b></sup> And the fifth poured out his bowl upon the throne of the beast; and his kingdom became darkened; and they gnawed their tongues for pain<br><br>
+     <sup><b>11</b></sup> And blasphemed the God of heaven for their pains and for their sores; and they did not repent of their works.<br><br>
+     <sup><b>12</b></sup> And the sixth poured out his bowl upon the great river Euphrates; and its water was dried up that the way of the kings from the rising of the sun might be prepared.<br><br>
+     <sup><b>13</b></sup> And I saw, out of the mouth of the dragon and out of the mouth of the beast and out of the mouth of the false prophet, three unclean spirits as frogs;<br><br>
+     <sup><b>14</b></sup> For they are spirits of demons doing signs, which go forth to the kings of the whole inhabited earth to gather them to the war of the great day of God the Almighty.<br><br>
+     <sup><b>15</b></sup> (Behold, I come as a thief. Blessed is he who watches and keeps his garments that he may not walk naked and they see his shame.)<br><br>
+     <sup><b>16</b></sup> And they gathered them to the place which in Hebrew is called, Armageddon.<br><br>
+     <sup><b>17</b></sup> And the seventh poured out his bowl upon the air; and a loud voice came out of the temple from the throne, saying, It is done.<br><br>
+     <sup><b>18</b></sup> And there were lightnings and voices and thunders; and there was a great earthquake, such as had not been since man appeared on the earth, such an earthquake, so great.<br><br>
+     <sup><b>19</b></sup> And the great city was divided into three parts, and the cities of the nations fell. And Babylon the Great was remembered before God to give her the cup of the wine of the fury of His wrath.<br><br>
+     <sup><b>20</b></sup> And every island fled, and the mountains were not found.<br><br>
+     <sup><b>21</b></sup> And great hail, every stone about the weight of a talent, came down out of heaven upon men; and men blasphemed God for the plague of the hail, because the plague of it is exceedingly great. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('revelation-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

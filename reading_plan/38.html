@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 2/7-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-26"><a onclick="open_chapter('26', '../bible/40-matthew.html')">Matthew 26</a></h4>
+	<p><sup><b>1</b></sup> And when Jesus finished all these words, He said to His disciples,<br><br>
+		<sup><b>2</b></sup> You know that after two days the Passover takes place, and the Son of Man is being delivered up to be crucified.<br><br>
+		<sup><b>3</b></sup> Then the chief priests and the elders of the people were gathered together in the courtyard of the high priest, who was called Caiaphas,<br><br>
+		<sup><b>4</b></sup> And they took counsel together to seize Jesus by craftiness and kill Him.<br><br>
+		<sup><b>5</b></sup> But they said, Not at the feast, lest there be an uproar among the people.<br><br>
+		<sup><b>6</b></sup> Now when Jesus was in Bethany, in the house of Simon the leper,<br><br>
+		<sup><b>7</b></sup> A woman came to Him, having an alabaster flask of ointment of great value, and she poured it on His head as He reclined at table.<br><br>
+		<sup><b>8</b></sup> But when the disciples saw it, they were indignant, saying, Why this waste?<br><br>
+		<sup><b>9</b></sup> For this could have been sold for much and given to the poor.<br><br>
+		<sup><b>10</b></sup> But Jesus, knowing it, said to them, Why do you trouble the woman? She has done a noble deed to Me.<br><br>
+		<sup><b>11</b></sup> For the poor you have with you always, but you do not always have Me.<br><br>
+		<sup><b>12</b></sup> For in pouring out this ointment on My body, she has done it for My burial.<br><br>
+		<sup><b>13</b></sup> Truly I say to you, Wherever this gospel is proclaimed in the whole world, what this woman has done shall also be told as a memorial of her.<br><br>
+		<sup><b>14</b></sup> At that time one of the twelve, the one called Judas Iscariot, went to the chief priests<br><br>
+		<sup><b>15</b></sup> And said, What are you willing to give me, and I will deliver Him to you? And they weighed out to him thirty pieces of silver.<br><br>
+		<sup><b>16</b></sup> And from then on he sought opportunity to deliver Him up.<br><br>
+		<sup><b>17</b></sup> Now on the first day of the Feast of Unleavened Bread, the disciples came to Jesus, saying, Where do You want us to prepare for You to eat the passover?<br><br>
+		<sup><b>18</b></sup> And He said, Go into the city to a certain man and say to him, The Teacher says, My time is near. I am keeping the passover at your house with My disciples.<br><br>
+		<sup><b>19</b></sup> And the disciples did as Jesus directed them, and they prepared the passover.<br><br>
+		<sup><b>20</b></sup> And when evening fell, He reclined at table with the twelve.<br><br>
+		<sup><b>21</b></sup> And as they were eating, He said, Truly I say to you that one of you will betray Me.<br><br>
+		<sup><b>22</b></sup> And being greatly grieved, each one of them began to say to Him, I am not the one, am I, Lord?<br><br>
+		<sup><b>23</b></sup> And He answered and said, The one who dips his hand with Me in the dish, this one will betray Me.<br><br>
+		<sup><b>24</b></sup> The Son of Man is going away, even as it is written concerning Him, but woe to that man through whom the Son of Man is betrayed! It would have been good for that man if he had not been born.<br><br>
+		<sup><b>25</b></sup> And Judas, who was betraying Him, answered and said, I am not the one, am I, Rabbi? He said to him, You have said it yourself.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

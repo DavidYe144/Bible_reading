@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="hebrews-13"><a onclick="open_chapter('top', '58-hebrews.html')">Hebrews 13</a></h4>
+  <p><sup><b>1</b></sup> Let brotherly love continue.<br><br>
+     <sup><b>2</b></sup> Do not forget hospitality, for through this some, without knowing it, have entertained angels.<br><br>
+     <sup><b>3</b></sup> Remember those who are imprisoned as bound with them, those who are ill-treated as being yourselves also likewise treated in body.<br><br>
+     <sup><b>4</b></sup> Let marriage be held in honor among all, and the bed undefiled; for fornicators and adulterers God will judge.<br><br>
+     <sup><b>5</b></sup> Let your way of life be without the love of money, being satisfied with the things which are at hand; for He Himself has said, “I shall by no means give you up, neither by any means shall I abandon you”;<br><br>
+     <sup><b>6</b></sup> So that being of good courage, we say, “The Lord is my Helper, and I will not fear. What shall man do to me?”<br><br>
+     <sup><b>7</b></sup> Remember the ones leading you, who have spoken to you the word of God; and considering the issue of their manner of life, imitate their faith.<br><br>
+     <sup><b>8</b></sup> Jesus Christ is the same yesterday and today, yes, even forever.<br><br>
+     <sup><b>9</b></sup> Do not be carried away by various strange teachings, for it is good for the heart to be confirmed by grace, not by the food of sacrifices, by which those who walk were not profited.<br><br>
+     <sup><b>10</b></sup> We have an altar from which they who are serving the tabernacle have no right to eat.<br><br>
+     <sup><b>11</b></sup> For the bodies of those animals whose blood is brought into the Holy of Holies for sin by the high priest are burned up outside the camp.<br><br>
+     <sup><b>12</b></sup> Therefore also Jesus, that He might sanctify the people through His own blood, suffered outside the gate.<br><br>
+     <sup><b>13</b></sup> Let us therefore go forth unto Him outside the camp, bearing His reproach.<br><br>
+     <sup><b>14</b></sup> For we do not have here a remaining city, but we seek after the one to come.<br><br>
+     <sup><b>15</b></sup> Through Him then let us offer up a sacrifice of praise continually to God, that is, the fruit of lips confessing His name.<br><br>
+     <sup><b>16</b></sup> But do not forget doing good and sharing with others, for with such sacrifices God is well pleased.<br><br>
+     <sup><b>17</b></sup> Obey the ones leading you and submit to them, for they watch over your souls as those who will render an account, that they may do this with joy and not groaning; for this would be unprofitable to you.<br><br>
+     <sup><b>18</b></sup> Pray for us, for we are persuaded that we have a good conscience, desiring in all things to conduct ourselves honorably.<br><br>
+     <sup><b>19</b></sup> And I exhort you much more to do this that I may be restored to you more quickly.<br><br>
+     <sup><b>20</b></sup> Now the God of peace, He who brought up from the dead our Lord Jesus, the great Shepherd of the sheep, in the blood of an eternal covenant,<br><br>
+     <sup><b>21</b></sup> Perfect you in every good work for the doing of His will, doing in us that which is well pleasing in His sight through Jesus Christ; to Him be the glory forever and ever. Amen.<br><br>
+     <sup><b>22</b></sup> Now I beseech you, brothers, bear with the word of this exhortation, for indeed I have written to you in few words.<br><br>
+     <sup><b>23</b></sup> Know that our brother Timothy has been released, with whom, if he comes soon, I will see you.<br><br>
+     <sup><b>24</b></sup> Greet all the ones leading you and all the saints. Those from Italy greet you.<br><br>
+     <sup><b>25</b></sup> Grace be with you all. Amen. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('hebrews-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

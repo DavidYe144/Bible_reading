@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('6', '../bible/43-John.html')">John 6:41</a></h4>
+	<p><sup><b>41</b></sup> The Jews therefore murmured concerning Him because He said, I am the bread that came down out of heaven.<br><br>
+		<sup><b>42</b></sup> And they said, Is not this Jesus, the son of Joseph, whose father and mother we know? How does He now say, I have come down out of heaven?<br><br>
+		<sup><b>43</b></sup> Jesus answered and said to them, Do not murmur among yourselves.<br><br>
+		<sup><b>44</b></sup> No one can come to Me unless the Father who sent Me draws him; and I will raise him up in the last day.<br><br>
+		<sup><b>45</b></sup> It is written in the prophets, “And they shall all be taught of God.” Everyone who has heard and learned from the Father comes to Me.<br><br>
+		<sup><b>46</b></sup> Not that anyone has seen the Father, except Him who is from God, He has seen the Father.<br><br>
+		<sup><b>47</b></sup> Truly, truly, I say to you, He who believes has eternal life.<br><br>
+		<sup><b>48</b></sup> I am the bread of life.<br><br>
+		<sup><b>49</b></sup> Your fathers ate the manna in the wilderness, and they died.<br><br>
+		<sup><b>50</b></sup> This is the bread which comes down out of heaven, that anyone may eat of it and not die.<br><br>
+		<sup><b>51</b></sup> I am the living bread which came down out of heaven; if anyone eats of this bread, he shall live forever; and the bread which I will give is My flesh, given for the life of the world.<br><br>
+		<sup><b>52</b></sup> The Jews then contended with one another, saying, How can this man give us His flesh to eat?<br><br>
+		<sup><b>53</b></sup> Jesus therefore said to them, Truly, truly, I say to you, Unless you eat the flesh of the Son of Man and drink His blood, you do not have life within yourselves.<br><br>
+		<sup><b>54</b></sup> He who eats My flesh and drinks My blood has eternal life, and I will raise him up in the last day.<br><br>
+		<sup><b>55</b></sup> For My flesh is true food, and My blood is true drink.<br><br>
+		<sup><b>56</b></sup> He who eats My flesh and drinks My blood abides in Me and I in him.<br><br>
+		<sup><b>57</b></sup> As the living Father has sent Me and I live because of the Father, so he who eats Me, he also shall live because of Me.<br><br>
+		<sup><b>58</b></sup> This is the bread which came down out of heaven, not as the fathers ate and died; he who eats this bread shall live forever.<br><br>
+		<sup><b>59</b></sup> He said these things in a synagogue as He taught in Capernaum.<br><br>
+		<sup><b>60</b></sup> Many therefore of His disciples, when they heard this, said, This word is hard; who can hear it?<br><br>
+		<sup><b>61</b></sup> But Jesus, knowing in Himself that His disciples were murmuring about this, said to them, Does this stumble you?<br><br>
+		<sup><b>62</b></sup> Then what if you saw the Son of Man ascending to where He was before?<br><br>
+		<sup><b>63</b></sup> It is the Spirit who gives life; the flesh profits nothing; the words which I have spoken to you are spirit and are life.<br><br>
+		<sup><b>64</b></sup> But there are some of you who do not believe. For Jesus knew from the beginning who were the ones who did not believe and who was the one who would betray Him.<br><br>
+		<sup><b>65</b></sup> And He said, For this reason I have told you that no one can come to Me unless it has been given to him from the Father.<br><br>
+		<sup><b>66</b></sup> From that time many of His disciples went back to what they left behind and no longer walked with Him.<br><br>
+		<sup><b>67</b></sup> Jesus therefore said to the twelve, Do you also want to go away?<br><br>
+		<sup><b>68</b></sup> Simon Peter answered Him, Lord, to whom shall we go? You have words of eternal life,<br><br>
+		<sup><b>69</b></sup> And we have believed and have come to know that You are the Holy One of God.<br><br>
+		<sup><b>70</b></sup> Jesus answered them, Was it not I who chose you, the twelve? Yet one of you is a devil.<br><br>
+		<sup><b>71</b></sup> Now He spoke of Judas, the son of Simon Iscariot, for he, one of the twelve, would betray Him.<br><br>
+   
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

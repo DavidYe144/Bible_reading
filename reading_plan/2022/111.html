@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/21-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1john-3"><a onclick="open_chapter('top', '62-1john.html')">1 John 3</a></h4>
+  <p><sup><b>1</b></sup> Behold what manner of love the Father has given to us, that we should be called children of God; and we are. Because of this the world does not know us, because it did not know Him.<br><br>
+     <sup><b>2</b></sup> Beloved, now we are children of God, and it has not yet been manifested what we will be. We know that if He is manifested, we will be like Him because we will see Him even as He is.<br><br>
+     <sup><b>3</b></sup> And everyone who has this hope set on Him purifies himself, even as He is pure.<br><br>
+     <sup><b>4</b></sup> Everyone who practices sin practices lawlessness also, and sin is lawlessness.<br><br>
+     <sup><b>5</b></sup> And you know that He was manifested that He might take away sins; and sin is not in Him.<br><br>
+     <sup><b>6</b></sup> Everyone who abides in Him does not sin; everyone who sins has not seen Him or known Him.<br><br>
+     <sup><b>7</b></sup> Little children, let no one lead you astray; he who practices righteousness is righteous, even as He is righteous;<br><br>
+     <sup><b>8</b></sup> He who practices sin is of the devil, because the devil has sinned from the beginning. For this purpose the Son of God was manifested, that He might destroy the works of the devil.<br><br>
+     <sup><b>9</b></sup> Everyone who has been begotten of God does not practice sin, because His seed abides in him; and he cannot sin, because he has been begotten of God.<br><br>
+     <sup><b>10</b></sup> In this the children of God and the children of the devil are manifest. Everyone who does not practice righteousness is not of God, neither he who does not love his brother.<br><br>
+     <sup><b>11</b></sup> For this is the message which you heard from the beginning, that we should love one another,<br><br>
+     <sup><b>12</b></sup> Not as Cain was of the evil one and slew his brother. And for what reason did he slay him? Because his works were evil, and his brother’s, righteous.<br><br>
+     <sup><b>13</b></sup> Do not marvel, brothers, if the world hates you.<br><br>
+     <sup><b>14</b></sup> We know that we have passed out of death into life because we love the brothers. He who does not love abides in death.<br><br>
+     <sup><b>15</b></sup> Everyone who hates his brother is a murderer, and you know that no murderer has eternal life abiding in him.<br><br>
+     <sup><b>16</b></sup> In this we know love, that He laid down His life on our behalf, and we ought to lay down our lives on behalf of the brothers.<br><br>
+     <sup><b>17</b></sup> But whoever has the livelihood of the world and sees that his brother has need and shuts up his affections from him, how does the love of God abide in him?<br><br>
+     <sup><b>18</b></sup> Little children, let us not love in word nor in tongue but in deed and truthfulness.<br><br>
+     <sup><b>19</b></sup> And in this we will know that we are of the truth, and we will persuade our heart before Him,<br><br>
+     <sup><b>20</b></sup> Because if our heart blames us, it is because God is greater than our heart and knows all things.<br><br>
+     <sup><b>21</b></sup> Beloved, if our heart does not blame us, we have boldness toward God;<br><br>
+     <sup><b>22</b></sup> And whatever we ask we receive from Him because we keep His commandments and do the things that are pleasing in His sight.<br><br>
+     <sup><b>23</b></sup> And this is His commandment, that we believe in the name of His Son Jesus Christ and love one another, even as He gave a commandment to us.<br><br>
+     <sup><b>24</b></sup> And he who keeps His commandments abides in Him, and He in him. And in this we know that He abides in us, by the Spirit whom He gave to us. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1john-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

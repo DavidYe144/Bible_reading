@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-7"><a onclick="open_chapter('7', '../bible/42-luke.html')">Luke 7:44-50</a></h4>
+	<p><sup><b>44</b></sup> And turning to the woman, He said to Simon, Do you see this woman? I entered into your house; you did not give Me water for My feet, but she, with her tears, has wet My feet and with her hair has wiped them.<br><br>
+		<sup><b>45</b></sup> You did not give Me a kiss, but she, from the time I entered, has not stopped kissing My feet affectionately.<br><br>
+		<sup><b>46</b></sup> You did not anoint My head with oil, but she has anointed My feet with ointment.<br><br>
+		<sup><b>47</b></sup> For this reason I say to you, Her sins which are many are forgiven, because she loved much; but to whom little is forgiven, he loves little.<br><br>
+		<sup><b>48</b></sup> And He said to her, Your sins are forgiven.<br><br>
+		<sup><b>49</b></sup> And those who were reclining at table with Him began to say within themselves, Who is this who even forgives sins?<br><br>
+		<sup><b>50</b></sup> But He said to the woman, Your faith has saved you. Go in peace. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="luke-8"><a onclick="open_chapter('8', '../bible/42-luke.html')">Luke 8</a></h4>
+   <p><sup><b>1</b></sup> And soon afterward He journeyed from city to city and village to village, preaching and announcing the gospel of the kingdom of God; and the twelve were with Him,<br><br>
+		<sup><b>2</b></sup> As well as certain women who were healed of evil spirits and infirmities: Mary, who was called Magdalene, from whom seven demons had gone out,<br><br>
+		<sup><b>3</b></sup> And Joanna, the wife of Chuza, Herod’s steward, and Susanna, and many other women, who ministered to them out of their possessions.<br><br>
+		<sup><b>4</b></sup> And while a great crowd was coming together and those from city to city were journeying to Him, He spoke by way of a parable:<br><br>
+		<sup><b>5</b></sup> The sower went out to sow his seed. And as he sowed, some seed fell beside the way, and it was trampled underfoot, and the birds of heaven devoured it.<br><br>
+		<sup><b>6</b></sup> And other seed fell on the rock, and as it grew, it withered because it had no moisture.<br><br>
+		<sup><b>7</b></sup> And other seed fell in the midst of the thorns, and the thorns grew with it and choked it off.<br><br>
+		<sup><b>8</b></sup> And other seed fell into the good earth, and when it grew, it produced fruit a hundredfold. When He had said these things, He called out, He who has ears to hear, let him hear.<br><br>
+		<sup><b>9</b></sup> And His disciples questioned Him as to what this parable might be.<br><br>
+		<sup><b>10</b></sup> And He said, To you it has been given to know the mysteries of the kingdom of God, but to the rest they are in parables, in order that seeing they may not see, and hearing they may not understand.<br><br>
+		<sup><b>11</b></sup> Now the parable is this: The seed is the word of God.<br><br>
+		<sup><b>12</b></sup> And those beside the way are those who heard; then the devil comes and takes away the word from their heart, so that they would not believe and be saved.<br><br>
+		<sup><b>13</b></sup> And those on the rock are those who, when they hear, receive the word with joy; yet these have no root, who believe only for a while, and in time of trial they draw back.<br><br>
+		<sup><b>14</b></sup> And that which fell into the thorns, these are those who heard and, going away, are utterly choked by anxieties and riches and pleasures of this life, and do not bring any fruit to maturity.<br><br>
+		<sup><b>15</b></sup> But that which is in the good earth, these are those who in a noble and good heart hear the word and hold it fast and bear fruit with endurance.<br><br>
+		<sup><b>16</b></sup> Now no one who has lit a lamp covers it with a vessel or puts it underneath a bed, but he puts it on a lampstand in order that those who come in may see the light.<br><br>
+		<sup><b>17</b></sup> For nothing is hidden which shall not become manifest, nor concealed which shall not by all means be made known and come into the open.<br><br>
+		<sup><b>18</b></sup> Take heed therefore how you hear, for whoever has, it shall be given to him, and whoever does not have, even what he thinks he has shall be taken away from him.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

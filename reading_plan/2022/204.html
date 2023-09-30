@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/23-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-13"><a onclick="open_chapter(1, '../bible/2-exodus.html')">Exodus 13</a></h4>
+  <p><sup><b>1</b></sup> Then Jehovah spoke to Moses, saying,<br><br>
+	<sup><b>2</b></sup> Sanctify to Me all the firstborn: Whatever opens the womb among the children of Israel, both of man and of beast, it is Mine.<br><br>
+	<sup><b>3</b></sup> And Moses said to the people, Remember this day on which you came out from Egypt, from the slave house, for by strength of hand Jehovah brought you out from this place; and nothing leavened shall be eaten.<br><br>
+	<sup><b>4</b></sup> On this day in the month of Abib you are going out.<br><br>
+	<sup><b>5</b></sup> And when Jehovah brings you into the land of the Canaanites and the Hittites and the Amorites and the Hivites and the Jebusites, which He swore to your fathers to give you, a land flowing with milk and honey, you shall observe this service in this month:<br><br>
+	<sup><b>6</b></sup> Seven days you shall eat unleavened bread, and on the seventh day there shall be a feast to Jehovah.<br><br>
+	<sup><b>7</b></sup> Unleavened bread shall be eaten throughout the seven days, and nothing leavened shall be seen with you, nor shall any leaven be seen with you in all your territory.<br><br>
+	<sup><b>8</b></sup> And you shall tell your son in that day, saying, It is because of what Jehovah did for me when I came out of Egypt.<br><br>
+	<sup><b>9</b></sup> And it shall be for a sign to you upon your hand and for a memorial between your eyes, that the law of Jehovah may be in your mouth; for with a mighty hand Jehovah brought you out of Egypt.<br><br>
+	<sup><b>10</b></sup> You shall therefore keep this statute at its appointed time from year to year.<br><br>
+	<sup><b>11</b></sup> And when Jehovah brings you into the land of the Canaanites, as He swore to you and to your fathers, and gives it to you,<br><br>
+	<sup><b>12</b></sup> You shall set apart to Jehovah everything that opens the womb and the first offspring of every beast which is yours; the males shall be Jehovah’s.<br><br>
+	<sup><b>13</b></sup> And every first <i>offspring</i> of a donkey you shall redeem with a lamb; and if you do not redeem <i>it,</i> you shall break its neck. And every firstborn male among your sons you shall redeem.<br><br>
+	<sup><b>14</b></sup> And when your son asks you in time to come, saying, What is this? you shall say to him, By strength of hand Jehovah brought us out from Egypt, from the slave house.<br><br>
+	<sup><b>15</b></sup> And when Pharaoh hardened himself against letting us go, Jehovah slew all the firstborn in the land of Egypt, both the firstborn of man and the firstborn of beast. Therefore I am one who sacrifices to Jehovah every male that opens the womb; and all the firstborn of my sons I redeem.<br><br>
+	<sup><b>16</b></sup> So it will be as a sign upon your hand and as frontlets between your eyes, for by strength of hand Jehovah brought us out of Egypt.<br><br>
+	<sup><b>17</b></sup> Now when Pharaoh let the people go, God did not lead them by the way of the land of the Philistines, although that was near; for God said, Perhaps the people will change their minds when they see war and will return to Egypt.<br><br>
+	<sup><b>18</b></sup> Thus God led the people around by the way of the wilderness to the Red Sea. And the children of Israel went up arrayed for battle out of the land of Egypt.<br><br>
+	<sup><b>19</b></sup> And Moses took the bones of Joseph with him, for <i>Joseph</i> had made the children of Israel solemnly swear, saying, God will surely visit you, and you shall bring my bones up from here with you.<br><br>
+	<sup><b>20</b></sup> And they journeyed from Succoth and encamped in Etham on the edge of the wilderness.<br><br>
+	<sup><b>21</b></sup> And Jehovah went before them by day in a pillar of cloud to lead them on the way and by night in a pillar of fire to give them light, that they might go by day and by night.<br><br>
+	<sup><b>22</b></sup> Neither the pillar of cloud by day nor the pillar of fire by night departed from before the people.<br><br>
+</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

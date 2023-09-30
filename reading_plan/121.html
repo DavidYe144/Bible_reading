@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('23', '../bible/42-luke.html')">Luke 23:44-56</a></h4>
+	<p>
+		<sup><b>44</b></sup> And it was now about the sixth hour, and darkness fell over the whole land until the ninth hour,<br><br>
+		<sup><b>45</b></sup> The sun’s light failing; and the veil of the temple was split down the middle.<br><br>
+		<sup><b>46</b></sup> And crying with a loud voice, Jesus said, Father, into Your hands I commit My spirit. And saying this, He expired.<br><br>
+		<sup><b>47</b></sup> Now when the centurion saw what had happened, he glorified God, saying, Certainly this man was righteous.<br><br>
+		<sup><b>48</b></sup> And all the crowds who came together at this spectacle, when they beheld the things that happened, returned, beating their breasts.<br><br>
+		<sup><b>49</b></sup> And all those who knew Him, and the women who accompanied Him from Galilee, stood at a distance, observing these things.<br><br>
+		<sup><b>50</b></sup> And behold, there was a man named Joseph, who was a member of the Council, and a good and righteous man<br><br>
+		<sup><b>51</b></sup> (This man had not consented to their counsel and action), from Arimathea, a city of the Jews, who was expecting the kingdom of God.<br><br>
+		<sup><b>52</b></sup> This man came to Pilate and asked for the body of Jesus.<br><br>
+		<sup><b>53</b></sup> And he took it down and wrapped it in a fine linen cloth, and laid Him in a tomb hewn in the rock, where no one had ever lain.<br><br>
+		<sup><b>54</b></sup> And it was the day of preparation, and the Sabbath was coming on.<br><br>
+		<sup><b>55</b></sup> And the women who had come together with Him out of Galilee followed after and beheld the tomb and how His body was laid.<br><br>
+		<sup><b>56</b></sup> And they returned and prepared spices and ointment. And on the Sabbath they rested according to the commandment. <br><br>
+	</p>
+</div>
+<div class="bible-text">
+	<h4 id="luke-24"><a onclick="open_chapter('24', '../bible/42-luke.html')">Luke 24</a></h4>
+	<p><sup><b>1</b></sup> Now on the first day of the week, at early dawn, they came to the tomb, bringing the spices which they had prepared.<br><br>
+		<sup><b>2</b></sup> And they found the stone rolled away from the tomb;<br><br>
+		<sup><b>3</b></sup> But when they entered, they did not find the body of the Lord Jesus.<br><br>
+		<sup><b>4</b></sup> And while they stood perplexed about this, behold, two men stood by them in dazzling clothing.<br><br>
+		<sup><b>5</b></sup> And they became frightened and bowed their faces to the ground, and the men said to them, Why are you seeking the living One among the dead?<br><br>
+		<sup><b>6</b></sup> He is not here but has been raised. Remember how He spoke to you while He was still in Galilee,<br><br>
+		<sup><b>7</b></sup> Saying that the Son of Man must be delivered into the hands of sinful men and be crucified and on the third day rise up.<br><br>
+		<sup><b>8</b></sup> And they remembered His words.<br><br>
+		<sup><b>9</b></sup> And returning from the tomb, they reported all these things to the eleven and to all the rest.<br><br>
+		<sup><b>10</b></sup> Now they were Mary the Magdalene and Joanna and Mary the mother of James and the rest of the women with them, who told these things to the apostles.<br><br>
+		<sup><b>11</b></sup> And these words appeared to them as nonsense, and they did not believe them.<br><br>
+		<sup><b>12</b></sup> But Peter rose up and ran to the tomb; and stooping to look in, he saw the linen cloths alone, and he went away to his own home, marveling at what had happened.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

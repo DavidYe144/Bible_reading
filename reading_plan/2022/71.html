@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Timothy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1timothy-3"><a onclick="open_chapter('top', '54-1timothy.html')">1 Timothy 3</a></h4>
+  <p><sup><b>1</b></sup> Faithful is the word: If anyone aspires to the overseership, he desires a good work.<br><br>
+     <sup><b>2</b></sup> The overseer then must be without reproach, the husband of one wife, temperate, of a sober mind, orderly, hospitable, apt to teach;<br><br>
+     <sup><b>3</b></sup> Not an excessive drinker; not a striker, but forbearing; not contentious; not fond of money;<br><br>
+     <sup><b>4</b></sup> One who manages well his own house, having his children in subjection with all gravity<br><br>
+     <sup><b>5</b></sup> (But if one does not know how to manage his own house, how will he care for the church of God?);<br><br>
+     <sup><b>6</b></sup> Not a new convert, lest being blinded with pride he fall into the judgment suffered by the devil.<br><br>
+     <sup><b>7</b></sup> And he also must have a good testimony from those outside, that he may not fall into reproach and the snare of the devil.<br><br>
+     <sup><b>8</b></sup> Deacons must similarly be grave, not double-tongued, not addicted to much wine, not greedy for base gain;<br><br>
+     <sup><b>9</b></sup> Holding the mystery of the faith in a pure conscience.<br><br>
+     <sup><b>10</b></sup> And these also must first be proved; then let them minister if they are unreprovable.<br><br>
+     <sup><b>11</b></sup> Women similarly must be grave, not slanderers, temperate, faithful in all things.<br><br>
+     <sup><b>12</b></sup> Deacons must be husbands of one wife, managing their children and their own houses well.<br><br>
+     <sup><b>13</b></sup> For those who have ministered well obtain for themselves a good standing and much boldness in faith, which is in Christ Jesus.<br><br>
+     <sup><b>14</b></sup> These things I write to you, hoping to come to you shortly.<br><br>
+     <sup><b>15</b></sup> But if I delay, I write that you may know how one ought to conduct himself in the house of God, which is the church of the living God, the pillar and base of the truth.<br><br>
+     <sup><b>16</b></sup> And confessedly, great is the mystery of godliness: / He who was manifested in the flesh, / Justified in the Spirit, / Seen by angels, / Preached among the nations, / Believed on in the world, / Taken up in glory. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1timothy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

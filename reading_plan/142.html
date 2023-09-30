@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('10', '../bible/43-John.html')">John 10:22</a></h4>
+	<p>				 
+		<sup><b>22</b></sup> At that time the Feast of the Dedication occurred in Jerusalem, and it was winter.<br><br>
+		<sup><b>23</b></sup> And Jesus was walking in the temple in the portico of Solomon.<br><br>
+		<sup><b>24</b></sup> The Jews therefore surrounded Him and said to Him, How long will You hold our soul in suspense? If You are the Christ, tell us plainly.<br><br>
+		<sup><b>25</b></sup> Jesus answered them, I told you, and you do not believe. The works which I do in My Father’s name, these testify concerning Me;<br><br>
+		<sup><b>26</b></sup> But you do not believe, because you are not of My sheep.<br><br>
+		<sup><b>27</b></sup> My sheep hear My voice, and I know them, and they follow Me;<br><br>
+		<sup><b>28</b></sup> And I give to them eternal life, and they shall by no means perish forever, and no one shall snatch them out of My hand.<br><br>
+		<sup><b>29</b></sup> My Father, who has given them to Me, is greater than all, and no one can snatch them out of My Father’s hand.<br><br>
+		<sup><b>30</b></sup> I and the Father are one.<br><br>
+		<sup><b>31</b></sup> The Jews again took up stones that they might stone Him.<br><br>
+		<sup><b>32</b></sup> Jesus answered them, I have shown you many good works from the Father; for which of these works are you stoning Me?<br><br>
+		<sup><b>33</b></sup> The Jews answered Him, We are not stoning You for a good work, but for blasphemy, and because You, being a man, are making Yourself God.<br><br>
+		<sup><b>34</b></sup> Jesus answered them, Is it not written in your law, “I said, You are gods”?<br><br>
+		<sup><b>35</b></sup> If He said they were gods, to whom the word of God came, and the Scripture cannot be broken,<br><br>
+		<sup><b>36</b></sup> Do you say of Him whom the Father has sanctified and sent into the world, You are blaspheming, because I said, I am the Son of God?<br><br>
+		<sup><b>37</b></sup> If I do not do the works of My Father, do not believe Me;<br><br>
+		<sup><b>38</b></sup> But if I do them, even if you do not believe Me, believe the works so that you may come to know and continue to know that the Father is in Me and I am in the Father.<br><br>
+		<sup><b>39</b></sup> Then they sought again to seize Him, yet He went forth out of their hand.<br><br>
+		<sup><b>40</b></sup> And He went away again across the Jordan, to the place where John was baptizing at first, and He remained there.<br><br>
+		<sup><b>41</b></sup> And many came to Him and said, John did no sign, but all the things John said concerning this man were true.<br><br>
+		<sup><b>42</b></sup> And many believed into Him there.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

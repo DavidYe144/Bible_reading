@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('18', '../bible/43-John.html')">John 18:12</a></h4>
+	<p><sup><b>12</b></sup> Then the cohort and the commander and the attendants of the Jews seized Jesus and bound Him<br><br>
+		<sup><b>13</b></sup> And led Him away to Annas first; for he was the father-in-law of Caiaphas, who was high priest that year.<br><br>
+		<sup><b>14</b></sup> Now it was Caiaphas who had advised the Jews that it was expedient for one man to die for the people.<br><br>
+		<sup><b>15</b></sup> And Simon Peter followed Jesus, as well as another disciple. And that disciple was known to the high priest, and he entered with Jesus into the court of the high priest;<br><br>
+		<sup><b>16</b></sup> But Peter stood at the door outside. Then the other disciple, the one known to the high priest, went out and spoke to the maid who kept the door and brought Peter in.<br><br>
+		<sup><b>17</b></sup> Then the maid who kept the door said to Peter, Are you not also one of this man’s disciples? He said, I am not.<br><br>
+		<sup><b>18</b></sup> Now the slaves and the attendants were standing there, having made a fire of coals, for it was cold, and they were warming themselves; and Peter also was with them, standing and warming himself.<br><br>
+		<sup><b>19</b></sup> The high priest then questioned Jesus concerning His disciples and concerning His teaching.<br><br>
+		<sup><b>20</b></sup> Jesus answered him, I have spoken openly to the world; I always taught in the synagogue and in the temple, where all the Jews come together, and I spoke nothing in secret.<br><br>
+		<sup><b>21</b></sup> Why do you question Me? Question those who have heard Me, concerning what I spoke to them; behold, these know what I said.<br><br>
+		<sup><b>22</b></sup> And when He said these things, one of the attendants standing by slapped Jesus, saying, Is that how You answer the high priest?<br><br>
+		<sup><b>23</b></sup> Jesus answered him, If I have spoken wrongly, testify concerning the wrong; but if rightly, why do you strike Me?<br><br>
+		<sup><b>24</b></sup> Annas then sent Him bound to Caiaphas the high priest.<br><br>
+		<sup><b>25</b></sup> Now Simon Peter was standing and warming himself. Then they said to him, Are you not also one of His disciples? He denied and said, I am not.<br><br>
+		<sup><b>26</b></sup> One of the slaves of the high priest, who was a relative of him whose ear Peter had cut off, said, Did I not see you in the garden with Him?<br><br>
+		<sup><b>27</b></sup> Then Peter denied again, and immediately a rooster crowed.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

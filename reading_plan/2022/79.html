@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/20-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Titus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="titus-1"><a onclick="open_chapter('top', '56-titus.html')">Titus 1</a></h4>
+  <p><sup><b>1</b></sup> Paul, a slave of God and an apostle of Jesus Christ according to the faith of God’s chosen ones and the full knowledge of the truth, which is according to godliness,<br><br>
+     <sup><b>2</b></sup> In the hope of eternal life, which God, who cannot lie, promised before the times of the ages,<br><br>
+     <sup><b>3</b></sup> But in its own times He manifested it as His word in the proclamation with which I was entrusted according to the command of our Savior God;<br><br>
+     <sup><b>4</b></sup> To Titus, genuine child according to the common faith: Grace and peace from God the Father and Christ Jesus our Savior.<br><br>
+     <sup><b>5</b></sup> For this cause I left you in Crete, that you might set in order the things which I have begun that remain and appoint elders in every city, as I directed you:<br><br>
+     <sup><b>6</b></sup> If anyone is unreprovable, the husband of one wife, having believing children not accused of dissoluteness or unruly.<br><br>
+     <sup><b>7</b></sup> For the overseer must be unreprovable as a steward of God, not self-willed, not quick tempered, not an excessive drinker, not a striker, not greedy for base gain;<br><br>
+     <sup><b>8</b></sup> But hospitable, a lover of good, of a sober mind, righteous, holy, self-controlled;<br><br>
+     <sup><b>9</b></sup> Holding to the faithful word, which is according to the teaching of the apostles, that he may be able both to exhort by the healthy teaching and to convict those who oppose.<br><br>
+     <sup><b>10</b></sup> For there are many unruly men, vain talkers and deceivers, especially those of the circumcision,<br><br>
+     <sup><b>11</b></sup> Whose mouths must be stopped, who overthrow whole households, teaching things for the sake of base gain, which they ought not to do.<br><br>
+     <sup><b>12</b></sup> One from among themselves, a prophet of their own, said, Cretans are always liars, evil beasts, idle gluttons.<br><br>
+     <sup><b>13</b></sup> This testimony is true; for which cause reprove them severely that they may be healthy in the faith,<br><br>
+     <sup><b>14</b></sup> Not paying attention to Jewish myths and the commandments of men who turn away from the truth.<br><br>
+     <sup><b>15</b></sup> All things are pure to the pure; yet to those who are defiled and unbelieving nothing is pure, but both their mind and their conscience are defiled.<br><br>
+     <sup><b>16</b></sup> They profess to know God, but by their works they deny Him, being abominable and disobedient and, as to every good work, disapproved. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('titus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

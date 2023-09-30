@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">1 Peter</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="1peter-2"><a onclick="open_chapter('top', '60-1peter.html')">1 Peter 2</a></h4>
+  <p><sup><b>1</b></sup> Therefore putting away all malice and all guile and hypocrisies and envyings and all evil speakings,<br><br>
+     <sup><b>2</b></sup> As newborn babes, long for the guileless milk of the word in order that by it you may grow unto salvation,<br><br>
+     <sup><b>3</b></sup> If you have tasted that the Lord is good.<br><br>
+     <sup><b>4</b></sup> Coming to Him, a living stone, rejected by men but with God chosen and precious,<br><br>
+     <sup><b>5</b></sup> You yourselves also, as living stones, are being built up as a spiritual house into a holy priesthood to offer up spiritual sacrifices acceptable to God through Jesus Christ.<br><br>
+     <sup><b>6</b></sup> For it is contained in Scripture: “Behold, I lay in Zion a cornerstone, chosen and precious; and he who believes on Him shall by no means be put to shame.”<br><br>
+     <sup><b>7</b></sup> To you therefore who believe is the preciousness; but to the unbelieving, “The stone which the builders rejected, this has become the head of the corner,”<br><br>
+     <sup><b>8</b></sup> And, “A stone of stumbling and a rock of offense”; who stumble at the word, being disobedient, to which also they were appointed.<br><br>
+     <sup><b>9</b></sup> But you are a chosen race, a royal priesthood, a holy nation, a people acquired for a possession, so that you may tell out the virtues of Him who has called you out of darkness into His marvelous light;<br><br>
+     <sup><b>10</b></sup> Who once were not a people but now are the people of God; who had not previously been shown mercy but have now been shown mercy.<br><br>
+     <sup><b>11</b></sup> Beloved, I entreat you as strangers and sojourners to abstain from fleshly lusts, which war against the soul,<br><br>
+     <sup><b>12</b></sup> Having your manner of life excellent among the Gentiles, so that in the matter concerning which they speak against you as evildoers they may, by your good works, as they see them with their own eyes, glorify God in the day of His visitation.<br><br>
+     <sup><b>13</b></sup> Be subject to every human institution for the Lord’s sake, whether to a king as being supreme,<br><br>
+     <sup><b>14</b></sup> Or to governors as being sent by him for vengeance on evildoers and praise of those who do good.<br><br>
+     <sup><b>15</b></sup> For so is the will of God, that by doing good you would muzzle the ignorance of foolish men;<br><br>
+     <sup><b>16</b></sup> As free, and yet not having freedom as a covering for evil, but as slaves of God.<br><br>
+     <sup><b>17</b></sup> Honor all men. Love the brotherhood. Fear God. Honor the king.<br><br>
+     <sup><b>18</b></sup> Household servants, be subject in all fear to your masters, not only to the good and forbearing but also to the crooked.<br><br>
+     <sup><b>19</b></sup> For this is grace, if anyone, because of a consciousness of God, bears sorrows by suffering unjustly.<br><br>
+     <sup><b>20</b></sup> For what glory is it if, while sinning and being buffeted, you endure? But if, while doing good and suffering, you endure, this is grace with God.<br><br>
+     <sup><b>21</b></sup> For to this you were called, because Christ also suffered on your behalf, leaving you a model so that you may follow in His steps;<br><br>
+     <sup><b>22</b></sup> Who committed no sin, nor was guile found in His mouth;<br><br>
+     <sup><b>23</b></sup> Who being reviled did not revile in return; suffering, He did not threaten but kept committing all to Him who judges righteously;<br><br>
+     <sup><b>24</b></sup> Who Himself bore up our sins in His body on the tree, in order that we, having died to sins, might live to righteousness; by whose bruise you were healed.<br><br>
+     <sup><b>25</b></sup> For you were like sheep being led astray, but you have now returned to the Shepherd and Overseer of your souls. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('1peter-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

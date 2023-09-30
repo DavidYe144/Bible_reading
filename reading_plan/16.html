@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 1/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Matthew</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="matthew-12"><a onclick="open_chapter('12', '../bible/40-matthew.html')">Matthew 12</a></h4>
+	<p>
+		<sup><b>38</b></sup> Then some of the scribes and Pharisees answered Him, saying, Teacher, we want to see a sign from You.<br><br>
+		<sup><b>39</b></sup> But He answered and said to them, An evil and adulterous generation seeks after a sign, and a sign shall not be given to it except the sign of Jonah the prophet.<br><br>
+		<sup><b>40</b></sup> For just as Jonah was in the belly of the great fish three days and three nights, so will the Son of Man be in the heart of the earth three days and three nights.<br><br>
+		<sup><b>41</b></sup> Ninevite men will stand up in the judgment with this generation and will condemn it, because they repented at the preaching of Jonah, and behold, something more than Jonah is here.<br><br>
+		<sup><b>42</b></sup> The queen of the south will rise up in the judgment with this generation and will condemn it, because she came from the ends of the earth to hear the wisdom of Solomon, and behold, something more than Solomon is here.<br><br>
+		<sup><b>43</b></sup> When the unclean spirit goes out from the man, it roams through waterless places, seeking rest, and does not find it.<br><br>
+		<sup><b>44</b></sup> Then it says, I will return to my house from which I came out. And it comes and finds it unoccupied, swept, and decorated.<br><br>
+		<sup><b>45</b></sup> Then it goes and takes along with itself seven other spirits more evil than itself, and they enter in and settle down there. And the last state of that man becomes worse than the first. Thus shall it be also with this evil generation.<br><br>
+		<sup><b>46</b></sup> While He was still speaking to the crowds, behold, His mother and His brothers stood outside seeking to speak to Him.<br><br>
+		<sup><b>47</b></sup> And someone said to Him, Behold, Your mother and Your brothers are standing outside seeking to speak to You.<br><br>
+		<sup><b>48</b></sup> But He answered and said to him who spoke to Him, Who is My mother, and who are My brothers?<br><br>
+		<sup><b>49</b></sup> And stretching out His hand toward His disciples, He said, Behold, My mother and My brothers!<br><br>
+		<sup><b>50</b></sup> For whoever does the will of My Father who is in the heavens, he is My brother and sister and mother.<br><br>	
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/29-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Genesis</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+
+<div class="bible-text">
+  <h4 id="genesis-9"><a onclick="open_chapter('top', '1-genesis.html')">Genesis 9</a></h4>
+  <p><sup><b>1</b></sup> And God blessed Noah and his sons and said to them, Be fruitful and multiply and fill the earth.<br><br>
+     <sup><b>2</b></sup> And the fear of you and the terror of you shall be upon every animal of the earth and upon every bird of heaven, on everything that creeps on the ground and on all the fish of the sea; into your hand they are delivered.<br><br>
+     <sup><b>3</b></sup> Every moving thing that lives shall be food for you; just as <i>I gave you</i> the green herb, <i>so</i> I have given you everything.<br><br>
+     <sup><b>4</b></sup> But flesh with its life, <i>that is,</i> its blood, you shall not eat.<br><br>
+     <sup><b>5</b></sup> And indeed your lifeblood I will require; from every animal I will require it. And from <i>every</i> man, from every man’s brother, I will require the life of man.<br><br>
+     <sup><b>6</b></sup> Whoever sheds man’s blood, / By man shall his blood be shed, / For in the image of God / He made man.<br><br>
+     <sup><b>7</b></sup> And you, be fruitful and multiply; / Abound on the earth and multiply in it.<br><br>
+     <sup><b>8</b></sup> Then God spoke to Noah and to his sons with him, saying,<br><br>
+     <sup><b>9</b></sup> And I Myself now establish My covenant with you and with your seed after you<br><br>
+     <sup><b>10</b></sup> And with every living animal that is with you: the birds, the cattle, and every animal of the earth with you, of all that came out of the ark, every animal of the earth.<br><br>
+     <sup><b>11</b></sup> And I establish My covenant with you, that never again will all flesh be cut off by the waters of the flood, and never again will there be a flood to destroy the earth.<br><br>
+     <sup><b>12</b></sup> And God said, This is the sign of the covenant which I am making between Me and you and every living animal that is with you, for perpetual generations:<br><br>
+     <sup><b>13</b></sup> I set My bow in the clouds, and it shall be for a sign of a covenant between Me and the earth.<br><br>
+     <sup><b>14</b></sup> And when I bring clouds over the earth, and the bow is seen in the clouds,<br><br>
+     <sup><b>15</b></sup> I will remember My covenant which is between Me and you and every living animal of all flesh, and never again will the waters become a flood to destroy all flesh.<br><br>
+     <sup><b>16</b></sup> And the bow will be in the clouds, and I will look upon it to remember the everlasting covenant between God and every living animal of all flesh that is upon the earth.<br><br>
+     <sup><b>17</b></sup> And God said to Noah, This is the sign of the covenant which I have established between Me and all flesh that is upon the earth.<br><br>
+     <sup><b>18</b></sup> Now the sons of Noah who came forth from the ark were Shem and Ham and Japheth. And Ham was the father of Canaan.<br><br>
+     <sup><b>19</b></sup> These three were the sons of Noah, and from these the whole earth was spread over.<br><br>
+     <sup><b>20</b></sup> And Noah began to be a farmer, and he planted a vineyard.<br><br>
+     <sup><b>21</b></sup> And he drank of the wine and became drunk. And he uncovered himself inside his tent.<br><br>
+     <sup><b>22</b></sup> And Ham, the father of Canaan, saw the nakedness of his father and told his two brothers outside.<br><br>
+     <sup><b>23</b></sup> And Shem and Japheth took a garment and laid <i>it</i> upon both their shoulders, and they walked backward and covered the nakedness of their father. And their faces were <i>turned</i> backward, so that they did not see their father’s nakedness.<br><br>
+     <sup><b>24</b></sup> And Noah awoke from his wine and learned what his younger son had done to him.<br><br>
+     <sup><b>25</b></sup> And he said, / Cursed be Canaan: / A servant of servants / Shall he be to his brothers.<br><br>
+     <sup><b>26</b></sup> And he said, / Blessed be Jehovah, / The God of Shem; / And let Canaan be his servant.<br><br>
+     <sup><b>27</b></sup> May God enlarge Japheth, / And let him dwell in the tents of Shem, / And let Canaan be his servant.<br><br>
+     <sup><b>28</b></sup> And Noah lived after the flood three hundred fifty years.<br><br>
+     <sup><b>29</b></sup> And all the days of Noah were nine hundred fifty years, and he died.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('genesis-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

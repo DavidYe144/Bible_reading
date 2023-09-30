@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 8/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Corinthians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('14', '../bible/46-1corinthians.html')">1 Corinthians 14:26</a></h4>
+	<p><sup><b>26</b></sup> What then, brothers? Whenever you come together, each one has a psalm, has a teaching, has a revelation, has a tongue, has an interpretation. Let all things be done for building up.<br><br>
+		<sup><b>27</b></sup> If anyone speaks in a tongue, it should be by two, or at the most three, and in turn, and one should interpret;<br><br>
+		<sup><b>28</b></sup> But if there is no interpreter, he should be silent in the church, and speak to himself and to God.<br><br>
+		<sup><b>29</b></sup> And as to prophets, two or three should speak, and the others discern.<br><br>
+		<sup><b>30</b></sup> But if something is revealed to another sitting by, the first should be silent.<br><br>
+		<sup><b>31</b></sup> For you can all prophesy one by one that all may learn and all may be encouraged.<br><br>
+		<sup><b>32</b></sup> And the spirits of prophets are subject to prophets;<br><br>
+		<sup><b>33</b></sup> For God is not a God of confusion but of peace.        As in all the churches of the saints,<br><br>
+		<sup><b>34</b></sup> The women should be silent in the churches, for they are not permitted to speak; but they should be subject, even as the law also says.<br><br>
+		<sup><b>35</b></sup> But if they desire to learn anything, they should ask their own husbands at home; for it is a shame for a woman to speak in the church.<br><br>
+		<sup><b>36</b></sup> Or was it from you that the word of God went forth? Or did it reach only to you?<br><br>
+		<sup><b>37</b></sup> If anyone thinks he is a prophet or spiritual, let him fully know the things which I write to you, that they are the commandment of the Lord.<br><br>
+		<sup><b>38</b></sup> But if anyone ignores this, let him ignore it.<br><br>
+		<sup><b>39</b></sup> So then, my brothers, desire earnestly the prophesying, and do not forbid the speaking in tongues.<br><br>
+		<sup><b>40</b></sup> But all things must be done becomingly and in order. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="1corinthians-15"><a onclick="open_chapter('15', '46-1corinthians.html')">1 Corinthians 15</a></h4>
+   <p><sup><b>1</b></sup> Now I make known to you, brothers, the gospel which I announced to you, which also you received, in which also you stand,<br><br>
+		<sup><b>2</b></sup> Through which also you are being saved, if you hold fast the word which I announced to you as the gospel, unless you have believed in vain.<br><br>
+		<sup><b>3</b></sup> For I delivered to you, first of all, that which also I received, that Christ died for our sins according to the Scriptures;<br><br>
+		<sup><b>4</b></sup> And that He was buried, and that He has been raised on the third day according to the Scriptures;<br><br>
+		<sup><b>5</b></sup> And that He appeared to Cephas, then to the twelve;<br><br>
+		<sup><b>6</b></sup> Then He appeared to over five hundred brothers at one time, of whom the majority remain until now, but some have fallen asleep;<br><br>
+		<sup><b>7</b></sup> Then He appeared to James, then to all the apostles;<br><br>
+		<sup><b>8</b></sup> And last of all He appeared to me also, as it were to one born prematurely.<br><br>
+		<sup><b>9</b></sup> For I am the least of the apostles, who am not fit to be called an apostle, because I persecuted the church of God.<br><br>
+		<sup><b>10</b></sup> But by the grace of God I am what I am; and His grace unto me did not turn out to be in vain, but, on the contrary, I labored more abundantly than all of them, yet not I but the grace of God which is with me.<br><br>
+		<sup><b>11</b></sup> Therefore whether it is I or they, so we preach and so you have believed.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

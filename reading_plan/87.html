@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-6"><a onclick="open_chapter('6', '../bible/42-luke.html')">Luke 6:43-49</a></h4>
+	<p><sup><b>43</b></sup> For there is no good tree that produces corrupt fruit, nor again a corrupt tree that produces good fruit.<br><br>
+		<sup><b>44</b></sup> For each tree is known by its own fruit. For men do not collect figs from thorns, nor do they pick grapes from a thornbush.<br><br>
+		<sup><b>45</b></sup> The good man, out of the good treasure of his heart, brings forth that which is good, and the evil man, out of the evil treasure of his heart, brings forth that which is evil; for out of the abundance of his heart his mouth speaks.<br><br>
+		<sup><b>46</b></sup> And why do you call Me, Lord, Lord, and do not do the things that I say?<br><br>
+		<sup><b>47</b></sup> Everyone who comes to Me and hears My words and does them, I will show you whom he is like.<br><br>
+		<sup><b>48</b></sup> He is like a man building a house, who dug and went deep and laid a foundation on the rock. And when a flood came, the river broke out against that house, yet it was not strong enough to shake it, because it had been built well.<br><br>
+		<sup><b>49</b></sup> But he who hears and does not do is like a man who built a house upon the earth without a foundation, against which the river broke out, and immediately it collapsed, and the crash of that house was great. <br><br>
+	</p>
+	<h4 id="luke-7"><a onclick="open_chapter('7', '../bible/42-luke.html')">Luke 7</a></h4>
+			<p><sup><b>1</b></sup> After He completed all His words in the hearing of the people, He entered into Capernaum.<br><br>
+				 <sup><b>2</b></sup> And a certain centurion’s slave, who was highly valued by him, was ill and about to die.<br><br>
+				 <sup><b>3</b></sup> And when he heard about Jesus, he sent to Him some elders of the Jews, requesting that He would come and completely heal his slave.<br><br>
+				 <sup><b>4</b></sup> And when they came to Jesus, they entreated Him earnestly, saying, He is worthy of Your granting this to him,<br><br>
+				 <sup><b>5</b></sup> For he loves our nation, and he himself built the synagogue for us.<br><br>
+				 <sup><b>6</b></sup> And Jesus went with them. But already, when He was not far from the house, the centurion sent friends, saying to Him, Lord, do not trouble Yourself, for I am not fit for You to enter under my roof;<br><br>
+				 <sup><b>7</b></sup> Therefore, I did not count even myself worthy to come to You. But speak a word, and let my servant be healed.<br><br>
+				 <sup><b>8</b></sup> For I also am a man set under authority, having soldiers under me. And I say to this one, Go, and he goes; and to another, Come, and he comes; and to my slave, Do this, and he does it.<br><br>
+				 <sup><b>9</b></sup> And when Jesus heard these things, He marveled at him, and turning to the crowd following Him, He said, I say to you, Not even in Israel have I found such great faith.<br><br>
+				 <sup><b>10</b></sup> And when those who had been sent returned to the house, they found the slave in good health.<br><br>
+				 <sup><b>11</b></sup> And soon afterward He went into a city called Nain, and His disciples went with Him, as well as a large crowd.<br><br>
+				 <sup><b>12</b></sup> And as He came near the gate of the city, behold, one who had died was being carried out, an only son of his mother, and she was a widow; and a considerable crowd from the city was with her.<br><br>
+				 <sup><b>13</b></sup> And when the Lord saw her, He was moved with compassion for her and said to her, Do not weep.<br><br>
+				 <sup><b>14</b></sup> And He came near and touched the bier, and those carrying it stood still. And He said, Young man, to you I say, Arise.<br><br>
+				 <sup><b>15</b></sup> And the dead man sat up and began to speak. And He gave him to his mother.<br><br>
+				 <sup><b>16</b></sup> And fear took hold of all, and they glorified God, saying, A great prophet has been raised up among us, and, God has visited His people!<br><br>
+				 <sup><b>17</b></sup> And this report concerning Him went out in the whole of Judea and in all the surrounding region.<br><br>
+			</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

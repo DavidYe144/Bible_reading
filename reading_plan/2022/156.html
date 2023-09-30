@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/5-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Genesis</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="genesis-15"><a onclick="open_chapter('top', '1-genesis.html')">Genesis 15</a></h4>
+  <p><sup><b>1</b></sup> After these things the word of Jehovah came to Abram in a vision, saying, Do not be afraid, Abram; I am your shield <i>and</i> your exceedingly great reward.<br><br>
+     <sup><b>2</b></sup> And Abram said, O Lord Jehovah, what will You give me, for I go childless, and the heir of my house is Eliezer of Damascus?<br><br>
+     <sup><b>3</b></sup> And Abram said, Since You have given me no seed, therefore, a servant in my house is my heir.<br><br>
+     <sup><b>4</b></sup> But then the word of Jehovah came to him, saying, This man shall not be your heir, but he who will come out from your own body shall be your heir.<br><br>
+     <sup><b>5</b></sup> And He brought him outside and said, Look now toward the heavens, and count the stars, if you are able to count them. And He said to him, So shall your seed be.<br><br>
+     <sup><b>6</b></sup> And he believed Jehovah, and He accounted it to him as righteousness.<br><br>
+     <sup><b>7</b></sup> Then He said to him, I am Jehovah who brought you out of Ur of the Chaldeans to give you this land to inherit it.<br><br>
+     <sup><b>8</b></sup> And he said, O Lord Jehovah, how will I know that I will inherit it?<br><br>
+     <sup><b>9</b></sup> And He said to him, Bring Me a three-year-old heifer and a three-year-old female goat and a three-year-old ram and a turtledove and a young pigeon.<br><br>
+     <sup><b>10</b></sup> And he brought Him all these and cut them in two in the middle and laid the half of each opposite the other, but the birds he did not cut in two.<br><br>
+     <sup><b>11</b></sup> And the birds of prey came down upon the carcasses, and Abram drove them away.<br><br>
+     <sup><b>12</b></sup> And when the sun was going down, a deep sleep fell upon Abram; and, behold, a terror <i>and</i> great darkness fell upon him.<br><br>
+     <sup><b>13</b></sup> And He said to Abram, Know assuredly that your seed will be sojourners in a land that is not theirs, and they will serve them; and they will afflict them four hundred years.<br><br>
+     <sup><b>14</b></sup> But I will also judge that nation, whom they will serve, and afterward they will come out with great possessions.<br><br>
+     <sup><b>15</b></sup> But as for you, you will go to your fathers in peace; you will be buried in a good old age.<br><br>
+     <sup><b>16</b></sup> And in the fourth generation they will come here again, for the iniquity of the Amorites is not yet complete.<br><br>
+     <sup><b>17</b></sup> And when the sun went down and it was dark, there came a smoking furnace and a torch of fire which passed between these pieces.<br><br>
+     <sup><b>18</b></sup> On that day Jehovah made a covenant with Abram, saying,To your seed do I give this land, / From the river of Egypt to the great river, the river Euphrates:<br><br>
+     <sup><b>19</b></sup> <i>The land of</i> the Kenites and the Kenizzites and the Kadmonites<br><br>
+     <sup><b>20</b></sup> And the Hittites and the Perizzites and the Rephaim<br><br>
+     <sup><b>21</b></sup> And the Amorites and the Canaanites and the Girgashites and the Jebusites.<br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('genesis-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

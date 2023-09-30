@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 5/1-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">John</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('top', '../bible/43-John.html')">John 1</a></h4>
+	<p><sup><b>1</b></sup> In the beginning was the Word, and the Word was with God, and the Word was God.<br><br>
+		 <sup><b>2</b></sup> He was in the beginning with God.<br><br>
+		 <sup><b>3</b></sup> All things came into being through Him, and apart from Him not one thing came into being which has come into being.<br><br>
+		 <sup><b>4</b></sup> In Him was life, and the life was the light of men.<br><br>
+		 <sup><b>5</b></sup> And the light shines in the darkness, and the darkness did not overcome it.<br><br>
+		 <sup><b>6</b></sup> There came a man sent from God, whose name was John.<br><br>
+		 <sup><b>7</b></sup> He came for a testimony that he might testify concerning the light, that all might believe through him.<br><br>
+		 <sup><b>8</b></sup> He was not the light, but came that he might testify concerning the light.<br><br>
+		 <sup><b>9</b></sup> This was the true light which, coming into the world, enlightens every man.<br><br>
+		 <sup><b>10</b></sup> He was in the world, and the world came into being through Him, yet the world did not know Him.<br><br>
+		 <sup><b>11</b></sup> He came to His own, yet those who were His own did not receive Him.<br><br>
+		 <sup><b>12</b></sup> But as many as received Him, to them He gave the authority to become children of God, to those who believe into His name,<br><br>
+		 <sup><b>13</b></sup> Who were begotten not of blood, nor of the will of the flesh, nor of the will of man, but of God.<br><br>
+		 <sup><b>14</b></sup> And the Word became flesh and tabernacled among us (and we beheld His glory, glory as of the only Begotten from the Father), full of grace and reality.<br><br>
+		 <sup><b>15</b></sup> John testified concerning Him and cried out, saying, This was He of whom I said, He who is coming after me has become ahead of me, because He was before me.<br><br>
+		 <sup><b>16</b></sup> For of His fullness we have all received, and grace upon grace.<br><br>
+		 <sup><b>17</b></sup> For the law was given through Moses; grace and reality came through Jesus Christ.<br><br>
+		 <sup><b>18</b></sup> No one has ever seen God; the only begotten Son, who is in the bosom of the Father, He has declared Him.<br><br>
+		 <sup><b>19</b></sup> And this is the testimony of John, when the Jews sent to him priests and Levites from Jerusalem to ask him, Who are you?<br><br>
+		 <sup><b>20</b></sup> And he confessed and did not deny, and he confessed, I am not the Christ.<br><br>
+		 <sup><b>21</b></sup> And they asked him, What then? Are you Elijah? And he said, I am not. Are you the Prophet? And he answered, No.<br><br>
+		 <sup><b>22</b></sup> They said then to him, Who are you, that we may give an answer to those who sent us? What do you say about yourself?<br><br>
+		 <sup><b>23</b></sup> He said, I am a voice of one crying in the wilderness, “Make straight the way of the Lord!” as Isaiah the prophet said.<br><br>
+		 <sup><b>24</b></sup> And those who had been sent were of the Pharisees.<br><br>
+		 <sup><b>25</b></sup> And they asked him and said to him, Why then are you baptizing if you are not the Christ nor Elijah nor the Prophet?<br><br>
+		 <sup><b>26</b></sup> John answered them, saying, I baptize in water; but among you stands One whom you do not know,<br><br>
+		 <sup><b>27</b></sup> He who is coming after me, the thong of whose sandal I am not worthy to untie.<br><br>
+		 <sup><b>28</b></sup> These things took place in Bethany across the Jordan, where John was baptizing.<br><br>
+		</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

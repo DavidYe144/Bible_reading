@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/31-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Deuteronomy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="deuteronomy-14"><a onclick="open_chapter('top', '../bible/5-deuteronomy.html')">Deuteronomy 20</a></h4>
+	<p><sup><b>1</b></sup> When you go forth into battle against your enemies, and you see horse and chariot, a people more numerous than you, you shall not fear them; for Jehovah your God is with you, He who brought you up out of the land of Egypt.<br><br>
+		<sup><b>2</b></sup> And when you draw near to the battle, the priest shall approach and speak to the people,<br><br>
+		<sup><b>3</b></sup> And he shall say to them, Hear, O Israel! You are drawing near to the battle against your enemies today. Do not let your heart fail; do not be afraid or alarmed or terrified of them.<br><br>
+		<sup><b>4</b></sup> For <i>it is</i> Jehovah your God <i>who</i> goes with you to fight for you against your enemies, to save you.<br><br>
+		<sup><b>5</b></sup> And the officers shall speak to the people, saying, Is there any man who has built a new house and has not dedicated it? Let him go and return to his house, lest he die in the battle and another man dedicate it.<br><br>
+		<sup><b>6</b></sup> Is there any man who has planted a vineyard and has not partaken of it? Let him go and return to his house, lest he die in the battle and another man partake of it.<br><br>
+		<sup><b>7</b></sup> Is there any man who has gotten engaged to a woman and has not taken her <i>to himself?</i> Let him go and return to his house, lest he die in the battle and another man take her <i>to himself.</i><br><br>
+		<sup><b>8</b></sup> And the officers shall speak further to the people and say, Is there any man who is afraid and whose heart fails? Let him go and return to his house, so that the heart of his brothers does not melt like his heart.<br><br>
+		<sup><b>9</b></sup> And when the officers have finished speaking to the people, they shall appoint commanders of the armies at the head of the people.<br><br>
+		<sup><b>10</b></sup> When you draw near to a city to fight against it, you shall proclaim peace to it.<br><br>
+		<sup><b>11</b></sup> And if it responds with peace to you and opens <i>its gates</i> to you, all the people found within it shall become your forced labor; and they shall serve you.<br><br>
+		<sup><b>12</b></sup> But if it does not make peace with you, but rather engages in battle with you, you shall besiege it.<br><br>
+		<sup><b>13</b></sup> And when Jehovah your God delivers it into your hand, you shall slay every male in it with the edge of the sword.<br><br>
+		<sup><b>14</b></sup> But the women and the little ones and the beasts and all that is in the city, <i>that is,</i> all its spoil, you shall take as your plunder; and you shall enjoy the spoil of your enemies, which Jehovah your God has given you.<br><br>
+		<sup><b>15</b></sup> Thus shall you do to all the cities that are very far from you, which are not among the cities of these nations.<br><br>
+		<sup><b>16</b></sup> But of the cities of these peoples which Jehovah your God is giving you as an inheritance, you shall not allow anything that breathes to live;<br><br>
+		<sup><b>17</b></sup> But you must utterly destroy them: the Hittites and the Amorites, the Canaanites and the Perizzites, the Hivites and the Jebusites, just as Jehovah your God has commanded you,<br><br>
+		<sup><b>18</b></sup> So that they do not teach you to do according to all their abominations which they do for their gods and you sin against Jehovah your God.<br><br>
+		<sup><b>19</b></sup> When you besiege a city for many days, battling against it to capture it, you shall not destroy its trees by putting an axe to them; for you may eat of them, and you shall not cut them down. For is the tree of the field a man, that it should be besieged by you?<br><br>
+		<sup><b>20</b></sup> However, a tree that you know is not a tree for food, you shall destroy and cut down, so that you may build a siegework against the city, which engages you in battle, until it falls.<br><br>
+   </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

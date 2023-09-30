@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/27-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-17"><a onclick="open_chapter(1, '../bible/2-exodus.html')">Exodus 17</a></h4>
+  <p><sup><b>1</b></sup> And all the assembly of the children of Israel journeyed from the wilderness of Sin by their stages according to the command of Jehovah and encamped in Rephidim, and there was no water for the people to drink.<br><br>
+	<sup><b>2</b></sup> Therefore the people contended with Moses and said, Give us water that we may drink. And Moses said to them, Why are you contending with me? Why do you test Jehovah?<br><br>
+	<sup><b>3</b></sup> So the people thirsted there for water, and the people murmured against Moses and said, For what reason did you bring us up out of Egypt; to kill us and our children and our livestock with thirst?<br><br>
+	<sup><b>4</b></sup> So Moses cried out to Jehovah, saying, What shall I do with this people? A little more, and they will stone me.<br><br>
+	<sup><b>5</b></sup> And Jehovah said to Moses, Pass on before the people, and take with you some of the elders of Israel; and take in your hand your staff with which you struck the River, and go.<br><br>
+	<sup><b>6</b></sup> I will be standing before you there upon the rock in Horeb; and you shall strike the rock, and water will come out of it so that the people may drink. And Moses did so in the sight of the elders of Israel.<br><br>
+	<sup><b>7</b></sup> And he called the name of the place Massah and Meribah, because of the contention of the children of Israel and because they tested Jehovah, saying, Is Jehovah among us or not?<br><br>
+	<sup><b>8</b></sup> Then Amalek came and fought with Israel in Rephidim.<br><br>
+	<sup><b>9</b></sup> And Moses said to Joshua, Choose men for us, and go out; fight with Amalek. Tomorrow I will stand on the top of the hill with the staff of God in my hand.<br><br>
+	<sup><b>10</b></sup> So Joshua did as Moses had said to him and fought with Amalek; and Moses, Aaron, and Hur went up to the top of the hill.<br><br>
+	<sup><b>11</b></sup> And when Moses lifted his hand up, Israel prevailed; and when he let his hand down, Amalek prevailed.<br><br>
+	<sup><b>12</b></sup> But Moses’ hands were heavy, so they took a stone and put <i>it</i> under him, and he sat on it; and Aaron and Hur supported his hands, one on one side and one on the other side. So his hands were steady until the going down of the sun.<br><br>
+	<sup><b>13</b></sup> And Joshua defeated Amalek and his people with the edge of the sword.<br><br>
+	<sup><b>14</b></sup> And Jehovah said to Moses, Write this as a memorial in a book and recite <i>it</i> to Joshua, that I will utterly blot out the memory of Amalek from under heaven.<br><br>
+	<sup><b>15</b></sup> And Moses built an altar and called the name of it Jehovah-nissi;<br><br>
+	<sup><b>16</b></sup> For he said, For there is a hand against the throne of Jah! Jehovah will have war with Amalek from generation to generation.<br><br>
+</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 4/13-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="luke-1"><a onclick="open_chapter('14', '../bible/42-luke.html')">Luke 14</a></h4>
+	<p>
+		<sup><b>25</b></sup> And there were great crowds going along with Him, and He turned and said to them,<br><br>
+		<sup><b>26</b></sup> If anyone comes to Me and does not hate his own father and mother and wife and children and brothers and sisters, and moreover, even his own soul-life, he cannot be My disciple.<br><br>
+		<sup><b>27</b></sup> Whoever does not carry his own cross and come after Me cannot be My disciple.<br><br>
+		<sup><b>28</b></sup> For which of you, wanting to build a tower, does not first sit down and calculate the cost, whether he has enough to complete it?<br><br>
+		<sup><b>29</b></sup> Lest perhaps, once he has laid a foundation and is not able to finish, all those looking on will begin to mock him,<br><br>
+		<sup><b>30</b></sup> Saying, This man began to build and was not able to finish.<br><br>
+		<sup><b>31</b></sup> Or what king, going to engage another king in war, will not first sit down and deliberate whether he is able with ten thousand to meet the one coming against him with twenty thousand?<br><br>
+		<sup><b>32</b></sup> Otherwise, while he is yet at a distance, he sends an envoy and asks for the terms of peace.<br><br>
+		<sup><b>33</b></sup> In the same way therefore everyone of you who does not forsake all his own possessions cannot be My disciple.<br><br>
+		<sup><b>34</b></sup> Therefore salt is good; but if even the salt becomes tasteless, with what will its saltiness be restored?<br><br>
+		<sup><b>35</b></sup> It is fit neither for the land nor for the manure pile; they will throw it out. He who has ears to hear, let him hear. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="luke-15"><a onclick="open_chapter('15', '../bible/42-luke.html')">Luke 15</a></h4>
+   <p><sup><b>1</b></sup> Now all the tax collectors and sinners were drawing near to Him to hear Him.<br><br>
+		<sup><b>2</b></sup> And both the Pharisees and the scribes murmured among themselves, saying, This man welcomes sinners and eats with them.<br><br>
+		<sup><b>3</b></sup> And He told them this parable, saying,<br><br>
+		<sup><b>4</b></sup> Which man of you, who has a hundred sheep and has lost one of them, does not leave the ninety-nine in the wilderness and go after the one which is lost until he finds it?<br><br>
+		<sup><b>5</b></sup> And when he finds it, he lays it on his shoulders, rejoicing.<br><br>
+		<sup><b>6</b></sup> And when he comes into his house, he calls together his friends and his neighbors, saying to them, Rejoice with me, for I have found my sheep that was lost.<br><br>
+		<sup><b>7</b></sup> I tell you that in the same way there will be more joy in heaven over one sinner repenting than over ninety-nine righteous persons who have no need of repentance.<br><br>
+		<sup><b>8</b></sup> Or what woman having ten silver coins, if she loses one silver coin, does not light a lamp and sweep the house and seek carefully until she finds it?<br><br>
+		<sup><b>9</b></sup> And when she finds it, she calls together her friends and neighbors, saying, Rejoice with me, for I have found the coin which I lost.<br><br>
+		<sup><b>10</b></sup> In the same way, I tell you, there is joy in the presence of the angels of God over one sinner repenting.<br><br>
+
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

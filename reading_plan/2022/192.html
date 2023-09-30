@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">Exodus</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+  <h4 id="exodus-1"><a onclick="open_chapter(1, '../bible/2-exodus.html')">Exodus 1</a></div>
+   <p><sup><b>1</b></sup> Now these are the names of the sons of Israel who came to Egypt with Jacob; each man came with his household:<br><br>
+      <sup><b>2</b></sup> Reuben, Simeon, Levi, and Judah,<br><br>
+      <sup><b>3</b></sup> Issachar, Zebulun, and Benjamin,<br><br>
+      <sup><b>4</b></sup> Dan and Naphtali, Gad and Asher.<br><br>
+      <sup><b>5</b></sup> And all the persons who came forth from the loins of Jacob were seventy persons, but Joseph was <i>already</i> in Egypt.<br><br>
+      <sup><b>6</b></sup> And Joseph died, and all his brothers, and all that generation.<br><br>
+      <sup><b>7</b></sup> But the children of Israel were fruitful and increased abundantly and multiplied and grew exceedingly strong, and the land was filled with them.<br><br>
+      <sup><b>8</b></sup> And a new king rose up over Egypt, who did not know of Joseph.<br><br>
+      <sup><b>9</b></sup> And he said to his people, The people of the children of Israel are now more numerous and stronger than we.<br><br>
+      <sup><b>10</b></sup> Come, let us deal wisely with them, lest they multiply and, when some war occurs, they also join themselves to those who hate us and fight against us and go up from the land.<br><br>
+      <sup><b>11</b></sup> So they set taskmasters over them to afflict them with their burdens. And they built storage cities for Pharaoh, Pithom and Raamses.<br><br>
+      <sup><b>12</b></sup> But the more they afflicted them, the more they multiplied and the more they spread out so that they came to dread the children of Israel.<br><br>
+      <sup><b>13</b></sup> And the Egyptians made the children of Israel serve with harshness,<br><br>
+      <sup><b>14</b></sup> And they made their lives bitter with hard labor in mortar and in brick and in all <i>kinds of</i> labor in the field; all their labor with which they made them serve was with harshness.<br><br>
+      <sup><b>15</b></sup> And the king of Egypt spoke to the Hebrew midwives, one whose name was Shiphrah and the other whose name was Puah;<br><br>
+      <sup><b>16</b></sup> And he said, When you act as midwives for the Hebrew women and see <i>them</i> on the birthstool, if it is a son, then you shall put him to death; but if it is a daughter, then she shall live.<br><br>
+      <sup><b>17</b></sup> But the midwives feared God and did not do as the king of Egypt had commanded them but let the male children live.<br><br>
+      <sup><b>18</b></sup> So the king of Egypt called for the midwives and said to them, Why have you done this thing and let the male children live?<br><br>
+      <sup><b>19</b></sup> And the midwives said to Pharaoh, Because the Hebrew women are not like the Egyptian women; for they are vigorous: before the midwife comes to them, they give birth.<br><br>
+      <sup><b>20</b></sup> And God dealt well with the midwives, and the people multiplied and grew very strong.<br><br>
+      <sup><b>21</b></sup> And because the midwives feared God, He established households for them.<br><br>
+      <sup><b>22</b></sup> And Pharaoh commanded all his people, saying, Every son who is born you shall cast into the River, but every daughter you shall let live.<br><br>
+    </p>
+</div>
+
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

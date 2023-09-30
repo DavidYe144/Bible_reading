@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 7/19-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Romans</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="romans-1"><a onclick="open_chapter('top', '../bible/45-romans.html')">Romans 1</a></h4>
+	<p><sup><b>1</b></sup> Paul, a slave of Christ Jesus, a called apostle, separated unto the gospel of God,<br><br>
+		<sup><b>2</b></sup> Which He promised beforehand through His prophets in the holy Scriptures,<br><br>
+		<sup><b>3</b></sup> Concerning His Son, who came out of the seed of David according to the flesh,<br><br>
+		<sup><b>4</b></sup> Who was designated the Son of God in power according to the Spirit of holiness out of the resurrection of the dead, Jesus Christ our Lord;<br><br>
+		<sup><b>5</b></sup> Through whom we have received grace and apostleship unto the obedience of faith among all the Gentiles on behalf of His name,<br><br>
+		<sup><b>6</b></sup> Among whom you also are the called ones of Jesus Christ;<br><br>
+		<sup><b>7</b></sup> To all who are in Rome, beloved of God, the called saints: Grace to you and peace from God our Father and the Lord Jesus Christ.<br><br>
+		<sup><b>8</b></sup> First, I thank my God through Jesus Christ for you all because your faith is proclaimed throughout the whole world.<br><br>
+		<sup><b>9</b></sup> For God is my witness, whom I serve in my spirit in the gospel of His Son, how unceasingly I make mention of you always in my prayers,<br><br>
+		<sup><b>10</b></sup> Beseeching if by any means now at last I may be prospered in the will of God to come to you.<br><br>
+		<sup><b>11</b></sup> For I long to see you that I may impart to you some spiritual gift so that you may be established;<br><br>
+		<sup><b>12</b></sup> That is, that I with you may be encouraged among you through the faith which is in one another, both yours and mine.<br><br>
+		<sup><b>13</b></sup> And I do not want you to be ignorant, brothers, that often I purposed to come to you (yet was hindered until the present), that I might have some fruit among you also, even as among the rest of the Gentiles.<br><br>
+		<sup><b>14</b></sup> I am debtor both to Greeks and to barbarians, both to wise and to foolish;<br><br>
+		<sup><b>15</b></sup> So, for my part, I am ready to announce the gospel to you also who are in Rome.<br><br>
+		<sup><b>16</b></sup> For I am not ashamed of the gospel, for it is the power of God unto salvation to everyone who believes, both to Jew first and to Greek.<br><br>
+		<sup><b>17</b></sup> For the righteousness of God is revealed in it out of faith to faith, as it is written, “But the righteous shall have life and live by faith.”<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

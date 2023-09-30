@@ -1,0 +1,91 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 6/4-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Luke</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="John-1"><a onclick="open_chapter('19', '../bible/43-John.html')">John 19</a></h4>
+	<p>
+		<sup><b>31</b></sup> Then the Jews, since it was the day of preparation and so that the bodies might not remain on the cross on the Sabbath (for that Sabbath day was a great Sabbath), requested of Pilate that their legs might be broken and that they might be taken away.<br><br>
+		<sup><b>32</b></sup> The soldiers therefore came and broke the legs of the first man and of the other man who had been crucified with Him.<br><br>
+		<sup><b>33</b></sup> But coming to Jesus, when they saw that He had already died, they did not break His legs;<br><br>
+		<sup><b>34</b></sup> But one of the soldiers pierced His side with a spear, and immediately there came out blood and water.<br><br>
+		<sup><b>35</b></sup> And he who has seen this has testified, and his testimony is true; and he knows that he says what is true, that you also may believe.<br><br>
+		<sup><b>36</b></sup> For these things happened that the Scripture might be fulfilled: “No bone of His shall be broken.”<br><br>
+		<sup><b>37</b></sup> And again another Scripture says, “They shall look on Him whom they pierced.”<br><br>
+		<sup><b>38</b></sup> And after these things Joseph from Arimathea, being a disciple of Jesus, but a hidden one for fear of the Jews, requested of Pilate that he might take the body of Jesus away; and Pilate allowed it. He came therefore and took His body away.<br><br>
+		<sup><b>39</b></sup> And Nicodemus, he who had come to Him the first time by night, came also, bringing a mixture of myrrh and aloes of about a hundred pounds.<br><br>
+		<sup><b>40</b></sup> Therefore they took the body of Jesus and bound it in linen cloths with the spices, as is the custom of the Jews for burying.<br><br>
+		<sup><b>41</b></sup> Now in the place where He was crucified there was a garden, and in the garden a new tomb, in which no one had ever yet been laid.<br><br>
+		<sup><b>42</b></sup> Therefore because of the day of preparation for the Jews and because the tomb was near, they laid Jesus there.<br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="john-20"><a onclick="open_chapter('20', '../bible/43-john.html')">John 20</a></h4>
+   <p><sup><b>1</b></sup> Now on the first day of the week, Mary the Magdalene came early to the tomb while it was yet dark and saw the stone taken away from the tomb.<br><br>
+		<sup><b>2</b></sup> She ran therefore and came to Simon Peter and to the other disciple whom Jesus loved and said to them, They have taken away the Lord out of the tomb, and we do not know where they have laid Him.<br><br>
+		<sup><b>3</b></sup> Peter therefore went forth, as well as the other disciple, and came to the tomb.<br><br>
+		<sup><b>4</b></sup> And the two ran together, yet the other disciple ran ahead faster than Peter and came first to the tomb.<br><br>
+		<sup><b>5</b></sup> And stooping to look in, he saw the linen cloths lying there; however, he did not enter.<br><br>
+		<sup><b>6</b></sup> Then Simon Peter also came, following him, and entered into the tomb; and he beheld the linen cloths lying there<br><br>
+		<sup><b>7</b></sup> And the handkerchief which had been over His head, not lying with the linen cloths, but folded up in one place apart.<br><br>
+		<sup><b>8</b></sup> At that time therefore the other disciple also, who came first to the tomb, entered, and he saw and believed;<br><br>
+		<sup><b>9</b></sup> For as yet they did not understand the Scripture, that He had to rise from the dead.<br><br>
+		<sup><b>10</b></sup> The disciples therefore went away again to their own home.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

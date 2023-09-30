@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 9/30-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Philippians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="philippians-1"><a onclick="open_chapter('1', '../bible/50-philippians.html')">Philippians 1</a></h4>
+	<p>				 
+		<sup><b>19</b></sup> For I know that for me this will turn out to salvation through your petition and the bountiful supply of the Spirit of Jesus Christ,<br><br>
+		<sup><b>20</b></sup> According to my earnest expectation and hope that in nothing I will be put to shame, but with all boldness, as always, even now Christ will be magnified in my body, whether through life or through death.<br><br>
+		<sup><b>21</b></sup> For to me, to live is Christ and to die is gain.<br><br>
+		<sup><b>22</b></sup> But if I am to live in the flesh, if this to me is fruit for my work, then I do not know what I will choose.<br><br>
+		<sup><b>23</b></sup> But I am constrained between the two, having the desire to depart and be with Christ, for this is far better;<br><br>
+		<sup><b>24</b></sup> But to remain in the flesh is more necessary for your sake.<br><br>
+		<sup><b>25</b></sup> And being confident of this, I know that I will remain and continue with you all for your progress and joy of the faith,<br><br>
+		<sup><b>26</b></sup> That your boast may abound in Christ Jesus in me through my coming again to you.<br><br>
+		<sup><b>27</b></sup> Only, conduct yourselves in a manner worthy of the gospel of Christ, that whether coming and seeing you or being absent, I may hear of the things concerning you, that you stand firm in one spirit, with one soul striving together along with the faith of the gospel,<br><br>
+		<sup><b>28</b></sup> And in nothing being frightened by the opposers, which is to them a proof of their destruction, but of your salvation, and that from God;<br><br>
+		<sup><b>29</b></sup> Because to you it has been graciously granted on behalf of Christ not only to believe into Him but also to suffer on His behalf,<br><br>
+		<sup><b>30</b></sup> Having the same struggle which you saw in me and now hear to be in me. <br><br>
+   </p>
+</div>
+<div class="bible-text">
+   <h4 id="philippians-2"><a onclick="open_chapter('2', '../bible/50-philippians.html')">Philippians 2</a></h4>
+   <p><sup><b>1</b></sup> If there is therefore any encouragement in Christ, if any consolation of love, if any fellowship of spirit, if any tenderheartedness and compassions,<br><br>
+		<sup><b>2</b></sup> Make my joy full, that you think the same thing, having the same love, joined in soul, thinking the one thing,<br><br>
+		<sup><b>3</b></sup> Doing nothing by way of selfish ambition nor by way of vainglory, but in lowliness of mind considering one another more excellent than yourselves;<br><br>
+		<sup><b>4</b></sup> Not regarding each his own virtues, but each the virtues of others also.<br><br>
+		<sup><b>5</b></sup> Let this mind be in you, which was also in Christ Jesus,<br><br>
+		<sup><b>6</b></sup> Who, existing in the form of God, did not consider being equal with God a treasure to be grasped,<br><br>
+		<sup><b>7</b></sup> But emptied Himself, taking the form of a slave, becoming in the likeness of men;<br><br>
+		<sup><b>8</b></sup> And being found in fashion as a man, He humbled Himself, becoming obedient even unto death, and that the death of a cross.<br><br>
+		<sup><b>9</b></sup> Therefore also God highly exalted Him and bestowed on Him the name which is above every name,<br><br>
+		<sup><b>10</b></sup> That in the name of Jesus every knee should bow, of those who are in heaven and on earth and under the earth,<br><br>
+		<sup><b>11</b></sup> And every tongue should openly confess that Jesus Christ is Lord to the glory of God the Father.<br><br>
+
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

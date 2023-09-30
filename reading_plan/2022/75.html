@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 3/16-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+								<li><a onclick="go_back_page()">2 Timothy</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+
+
+  <h4 id="2timothy-1"><a onclick="open_chapter('top', '55-2timothy.html')">2 Timothy 1</a></h4>
+  <p><sup><b>1</b></sup> Paul, an apostle of Christ Jesus through the will of God according to the promise of life, which is in Christ Jesus,<br><br>
+     <sup><b>2</b></sup> To Timothy, beloved child: Grace, mercy, peace from God the Father and Christ Jesus our Lord.<br><br>
+     <sup><b>3</b></sup> I thank God, whom I serve from my forefathers in a pure conscience, while unceasingly I have remembrance concerning you in my petitions night and day,<br><br>
+     <sup><b>4</b></sup> Longing to see you, remembering your tears, that I may be filled with joy;<br><br>
+     <sup><b>5</b></sup> Having been reminded of the unfeigned faith in you, which dwelt first in your grandmother Lois and your mother Eunice, and I am persuaded dwells also in you.<br><br>
+     <sup><b>6</b></sup> For which cause I remind you to fan into flame the gift of God, which is in you through the laying on of my hands.<br><br>
+     <sup><b>7</b></sup> For God has not given us a spirit of cowardice, but of power and of love and of sobermindedness.<br><br>
+     <sup><b>8</b></sup> Therefore do not be ashamed of the testimony of our Lord nor of me His prisoner; but suffer evil with the gospel according to the power of God;<br><br>
+     <sup><b>9</b></sup> Who has saved us and called us with a holy calling, not according to our works but according to His own purpose and grace, which was given to us in Christ Jesus before the times of the ages<br><br>
+     <sup><b>10</b></sup> But now has been manifested through the appearing of our Savior Christ Jesus, who nullified death and brought life and incorruption to light through the gospel,<br><br>
+     <sup><b>11</b></sup> For which I was appointed a herald and an apostle and a teacher.<br><br>
+     <sup><b>12</b></sup> For which cause also I suffer these things; but I am not ashamed, for I know whom I have believed, and I am persuaded that He is able to guard my deposit unto that day.<br><br>
+     <sup><b>13</b></sup> Hold a pattern of the healthy words that you have heard from me, in the faith and love which are in Christ Jesus.<br><br>
+     <sup><b>14</b></sup> Guard the good deposit through the Holy Spirit who dwells in us.<br><br>
+     <sup><b>15</b></sup> This you know, that all who are in Asia turned away from me, of whom are Phygelus and Hermogenes.<br><br>
+     <sup><b>16</b></sup> May the Lord grant mercy to the house of Onesiphorus, for he often refreshed me and was not ashamed of my chain;<br><br>
+     <sup><b>17</b></sup> But being in Rome, he sought me out diligently and found me.<br><br>
+     <sup><b>18</b></sup> May the Lord grant him to find mercy from the Lord in that day. And in how many things he served me in Ephesus, you know best. <br><br>
+  </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('2timothy-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
