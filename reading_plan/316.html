@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/12-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('11', '../bible/58-hebrews.html')">Hebrews 11:8</a></h4>
+	<p>
+	<sup><b>8</b></sup> By faith Abraham, being called, obeyed to go out unto a place which he was to receive as an inheritance; and he went out, not knowing where he was going.<br><br>
+	<sup><b>9</b></sup> By faith he dwelt as a foreigner in the land of promise as in a foreign land, making his home in tents with Isaac and Jacob, the fellow heirs of the same promise;<br><br>
+	<sup><b>10</b></sup> For he eagerly waited for the city which has the foundations, whose Architect and Builder is God.<br><br>
+	<sup><b>11</b></sup> By faith also Sarah herself received power to conceive seed, even beyond the season of age, since she considered Him faithful who promised.<br><br>
+	<sup><b>12</b></sup> Therefore also there were born of one, and that of him who had become dead, as many as even the stars of heaven in multitude and as the sand by the seashore innumerable.<br><br>
+	<sup><b>13</b></sup> All these died in faith, not receiving the promises but seeing them from afar and joyfully greeting them and confessing that they were strangers and sojourners on the earth.<br><br>
+	<sup><b>14</b></sup> For those who say such things make it manifest that they seek after a country of their own.<br><br>
+	<sup><b>15</b></sup> And if indeed they continued to remember that country from which they went out, they would have had opportunity to return;<br><br>
+	<sup><b>16</b></sup> But as it is, they long after a better country, that is, a heavenly one. Therefore God is not ashamed of them, to be called their God, for He has prepared a city for them.<br><br>
+	<sup><b>17</b></sup> By faith Abraham, being tested, offered up Isaac; indeed he who gladly received the promises was offering up his only begotten,<br><br>
+	<sup><b>18</b></sup> Of whom it was said, “In Isaac shall your seed be called”;<br><br>
+	<sup><b>19</b></sup> Counting that God was able to raise men even from the dead, from which he also received him back in figure.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

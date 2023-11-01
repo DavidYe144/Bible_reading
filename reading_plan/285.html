@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/12-->
+<!--CHANGE ME (END)--> 
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Thessalonians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="1thessalonians-1"><a onclick="open_chapter('top', '../bible/52-1thessalonians.html')">1 Thessalonians 4</a></h4>
+	<p><sup><b>1</b></sup> Furthermore, brothers, we ask and exhort you in the Lord Jesus that even as you received from us how you ought to walk and please God, even as indeed you do walk, that you abound still more.<br><br>
+		<sup><b>2</b></sup> For you know what charges we gave you through the Lord Jesus.<br><br>
+		<sup><b>3</b></sup> For this is the will of God, your sanctification: that you abstain from fornication;<br><br>
+		<sup><b>4</b></sup> That each one of you know how to possess his own vessel in sanctification and honor,<br><br>
+		<sup><b>5</b></sup> Not in the passion of lust, like the Gentiles who do not know God;<br><br>
+		<sup><b>6</b></sup> That no one overstep and take advantage of his brother in the matter, because the Lord is the avenger concerning all these things, even as we also said before to you and solemnly charged.<br><br>
+		<sup><b>7</b></sup> For God has not called us for uncleanness but in sanctification.<br><br>
+		<sup><b>8</b></sup> Consequently, he who rejects, rejects not man but God, who also gives His Holy Spirit to you.<br><br>
+		<sup><b>9</b></sup> Now concerning brotherly love, you have no need for me to write to you, for you yourselves are taught of God to love one another;<br><br>
+		<sup><b>10</b></sup> For you also do this unto all the brothers in the whole of Macedonia. But we exhort you, brothers, to abound still more<br><br>
+		<sup><b>11</b></sup> And to aspire to be quiet and attend to your own affairs and work with your hands, even as we charged you,<br><br>
+		<sup><b>12</b></sup> That you may walk becomingly toward those outside and may have need of nothing.<br><br>
+		<sup><b>13</b></sup> But we do not want you to be ignorant, brothers, concerning those who are sleeping, that you would not grieve even as also the rest who have no hope.<br><br>
+		<sup><b>14</b></sup> For if we believe that Jesus died and rose, so also those who have fallen asleep through Jesus, God will bring with Him.<br><br>
+		<sup><b>15</b></sup> For this we say to you by the word of the Lord, that we who are living, who are left remaining unto the coming of the Lord, shall by no means precede those who have fallen asleep;<br><br>
+		<sup><b>16</b></sup> Because the Lord Himself, with a shout of command, with the voice of the archangel and with the trumpet of God, will descend from heaven, and the dead in Christ will rise first.<br><br>
+		<sup><b>17</b></sup> Then we who are living, who are left remaining, will be caught up together with them in the clouds to meet the Lord in the air; and thus we will be always with the Lord.<br><br>
+		<sup><b>18</b></sup> Therefore comfort one another with these words. <br><br>
+    </p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

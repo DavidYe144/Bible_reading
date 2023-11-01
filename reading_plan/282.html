@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 10/9-->
+<!--CHANGE ME (END)-->
+ 
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head> 
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">1 Thessalonians</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="1thessalonians-1"><a onclick="open_chapter('top', '../bible/52-1thessalonians.html')">1 Thessalonians 1</a></h4>
+	<p><sup><b>1</b></sup> Paul and Silvanus and Timothy to the church of the Thessalonians in God the Father and the Lord Jesus Christ: Grace to you and peace.<br><br>
+		<sup><b>2</b></sup> We thank God always concerning all of you, making mention of you in our prayers,<br><br>
+		<sup><b>3</b></sup> Remembering unceasingly your work of faith and labor of love and endurance of hope in our Lord Jesus Christ, before our God and Father;<br><br>
+		<sup><b>4</b></sup> Knowing, brothers, beloved of God, your selection;<br><br>
+		<sup><b>5</b></sup> For our gospel did not come to you in word only, but also in power and in the Holy Spirit and in much assurance, even as you know what kind of men we were among you for your sake.<br><br>
+		<sup><b>6</b></sup> And you became imitators of us and of the Lord, having received the word in much affliction with joy of the Holy Spirit,<br><br>
+		<sup><b>7</b></sup> So that you became a pattern to all those who believe in Macedonia and in Achaia.<br><br>
+		<sup><b>8</b></sup> For from you the word of the Lord has sounded out; not only in Macedonia and in Achaia, but in every place, your faith toward God has gone out, so that we have no need of saying anything.<br><br>
+		<sup><b>9</b></sup> For they themselves report concerning us what kind of entrance we had toward you and how you turned to God from the idols to serve a living and true God<br><br>
+		<sup><b>10</b></sup> And await His Son from the heavens, whom He raised from the dead, Jesus, who delivers us from the wrath which is coming. <br><br>
+   	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/6-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('7', '../bible/58-hebrews.html')">Hebrews 7:20</a></h4>
+	<p>
+		<sup><b>20</b></sup> And inasmuch as He was not made a Priest without the taking of an oath<br><br>
+		<sup><b>21</b></sup> (For they are appointed priests without the taking of an oath, but He, with the taking of an oath by Him who said to Him, “The Lord has sworn and will not regret it, You are a Priest forever”),<br><br>
+		<sup><b>22</b></sup> By so much Jesus has also become the surety of a better covenant.<br><br>
+		<sup><b>23</b></sup> And they are appointed priests many in number because death prevents them from continuing;<br><br>
+		<sup><b>24</b></sup> But He, because He abides forever, has His priesthood unalterable.<br><br>
+		<sup><b>25</b></sup> Hence also He is able to save to the uttermost those who come forward to God through Him, since He lives always to intercede for them.<br><br>
+		<sup><b>26</b></sup> For such a High Priest was also fitting to us, holy, guileless, undefiled, separated from sinners and having become higher than the heavens,<br><br>
+		<sup><b>27</b></sup> Who does not have daily need, as the high priests do, to offer up sacrifices first for his own sins and then for those of the people; for this He did once for all when He offered up Himself.<br><br>
+		<sup><b>28</b></sup> For the law establishes men as high priests who have weakness, but the word of the oath, which was after the law, establishes the Son, perfected forever. <br><br>
+	</p>
+</div>
+<div class="bible-text">
+	<h4 id="hebrews-8"><a onclick="open_chapter('8', '../bible/58-hebrews.html')">Hebrews 8</a></h4>
+	<p><sup><b>1</b></sup> Now in the things which are being said the chief point is this: We have such a High Priest, who sat down on the right hand of the throne of the Majesty in the heavens,<br><br>
+		 <sup><b>2</b></sup> A Minister of the holy places, even of the true tabernacle, which the Lord pitched, not man.<br><br>
+		 <sup><b>3</b></sup> For every high priest is established for the offering of both gifts and sacrifices; hence it is necessary that this One also have something which He may offer.<br><br>
+		 <sup><b>4</b></sup> Now then if He were on earth, He would not be a Priest at all, there being those who offer the gifts according to the law,<br><br>
+		 <sup><b>5</b></sup> Who serve the example and shadow of the heavenly things, even as Moses was divinely instructed when he was about to complete the tabernacle; for, “See,” He said, “that you make all things according to the pattern that was shown to you in the mountain.”<br><br>
+		 <sup><b>6</b></sup> But now He has obtained a more excellent ministry inasmuch as He is also the Mediator of a better covenant, which has been enacted upon better promises.<br><br>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
