@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/9-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('9', '../bible/58-hebrews.html')">Hebrews 9:23</a></h4>
+	<sup><b>23</b></sup> It was necessary therefore for the examples of the things in the heavens to be purified by these, but the heavenly things themselves, by better sacrifices than these.<br><br>
+	<sup><b>24</b></sup> For Christ did not enter into a holy place made by hands, a figure of the true, but into heaven itself, to appear now before the face of God for us;<br><br>
+	<sup><b>25</b></sup> Nor in order that He might offer Himself often, just as the high priest enters into the Holy of Holies year by year by the blood of other creatures;<br><br>
+	<sup><b>26</b></sup> Since then He would have had to suffer often since the foundation of the world. But now once at the consummation of the ages He has been manifested for the putting away of sin through the sacrifice of Himself.<br><br>
+	<sup><b>27</b></sup> And inasmuch as it is reserved for men to die once, and after this comes judgment,<br><br>
+	<sup><b>28</b></sup> So Christ also, having been offered once to bear the sins of many, will appear a second time to those who eagerly await Him, apart from sin, unto salvation. <br><br>
+</p>
+</div>
+<div class="bible-text">
+<h4 id="hebrews-10"><a onclick="open_chapter('10', '../bible/58-hebrews.html')">Hebrews 10</a></h4>
+<p><sup><b>1</b></sup> For the law, having a shadow of the good things to come, not the image itself of the things, can never by the same sacrifices year by year, which they offer continually, perfect those who draw near.<br><br>
+	<sup><b>2</b></sup> Otherwise would they not have ceased to be offered, because those worshipping, having once been purified, would have no longer had the consciousness of sins?<br><br>
+	<sup><b>3</b></sup> But in those sacrifices there is a bringing to mind of sins year by year;<br><br>
+	<sup><b>4</b></sup> For it is impossible for the blood of bulls and goats to take away sins.<br><br>
+	<sup><b>5</b></sup> Therefore, coming into the world, He says, “Sacrifice and offering You did not desire, but a body You have prepared for Me.<br><br>
+	<sup><b>6</b></sup> In burnt offerings and sacrifices for sin You did not delight.<br><br>
+	<sup><b>7</b></sup> Then I said, Behold, I have come (in the roll of the book it is written concerning Me) to do Your will, O God.”<br><br>
+	<sup><b>8</b></sup> Saying above, “Sacrifices and offerings and burnt offerings and sacrifices for sin You did not desire nor delight in” (which are offered according to the law),<br><br>
+	<sup><b>9</b></sup> He then has said, “Behold, I have come to do Your will.” He takes away the first that He may establish the second,<br><br>
+	<sup><b>10</b></sup> By which will we have been sanctified through the offering of the body of Jesus Christ once for all.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

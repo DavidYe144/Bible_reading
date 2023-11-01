@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/14-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('12', '../bible/58-hebrews.html')">Hebrews 12</a></h4>
+		<p><sup><b>1</b></sup> Therefore let us also, having so great a cloud of witnesses surrounding us, put away every encumbrance and the sin which so easily entangles us and run with endurance the race which is set before us,<br><br>
+			<sup><b>2</b></sup> Looking away unto Jesus, the Author and Perfecter of our faith, who for the joy set before Him endured the cross, despising the shame, and has sat down on the right hand of the throne of God.<br><br>
+			<sup><b>3</b></sup> For compare Him who has endured such contradiction by sinners against Himself, so that you may not grow weary, fainting in your souls.<br><br>
+			<sup><b>4</b></sup> You have not yet resisted unto blood, struggling against sin,<br><br>
+			<sup><b>5</b></sup> And you have completely forgotten the exhortation which reasons with you as with sons, “My son, do not regard lightly the discipline of the Lord, nor faint when reproved by Him;<br><br>
+			<sup><b>6</b></sup> For whom the Lord loves He disciplines, and He scourges every son whom He receives.”<br><br>
+			<sup><b>7</b></sup> It is for discipline that you endure; God deals with you as with sons. For what son is there whom the father does not discipline?<br><br>
+			<sup><b>8</b></sup> But if you are without discipline, of which all sons have become partakers, then you are illegitimate and not sons.<br><br>
+			<sup><b>9</b></sup> Furthermore we have had the fathers of our flesh as discipliners and we respected them; shall we not much more be in subjection to the Father of spirits and live?<br><br>
+			<sup><b>10</b></sup> For they disciplined for a few days as it seemed good to them; but He, for what is profitable that we might partake of His holiness.<br><br>
+			<sup><b>11</b></sup> Now no discipline at the present time seems to be a matter of joy, but of grief; but afterward it yields the peaceable fruit of righteousness to those who have been exercised by it.<br><br>
+			<sup><b>12</b></sup> Therefore set straight the hands which hang down and the paralyzed knees,<br><br>
+			<sup><b>13</b></sup> And make straight paths for your feet, that what is lame may not be put out of joint but rather may be healed.<br><br>
+		</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

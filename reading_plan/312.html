@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/8-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('9', '../bible/58-hebrews.html')">Hebrews 9:8</a></h4>
+		<sup><b>8</b></sup> The Holy Spirit thus making this clear, that the way of the Holy of Holies has not yet been manifested while the first tabernacle still has its standing,<br><br>
+		<sup><b>9</b></sup> Which is a figure for the present time. According to this tabernacle both gifts and sacrifices are offered, which are unable to perfect, according to conscience, him who worships,<br><br>
+		<sup><b>10</b></sup> Consisting only of foods and drinks and various washings, being ordinances of the flesh, imposed until the time of setting things right.<br><br>
+		<sup><b>11</b></sup> But Christ, having come as a High Priest of the good things that have come into being, through the greater and more perfect tabernacle not made by hands, that is, not of this creation,<br><br>
+		<sup><b>12</b></sup> And not through the blood of goats and calves but through His own blood, entered once for all into the Holy of Holies, obtaining an eternal redemption.<br><br>
+		<sup><b>13</b></sup> For if the blood of goats and bulls and the ashes of a heifer sprinkling those who are defiled sanctify to the purity of the flesh,<br><br>
+		<sup><b>14</b></sup> How much more will the blood of Christ, who through the eternal Spirit offered Himself without blemish to God, purify our conscience from dead works to serve the living God?<br><br>
+		<sup><b>15</b></sup> And because of this He is the Mediator of a new covenant, so that, death having taken place for redemption of the transgressions under the first covenant, those who have been called might receive the promise of the eternal inheritance.<br><br>
+		<sup><b>16</b></sup> For where there is a testament, the death of him who made the testament must of necessity be established.<br><br>
+		<sup><b>17</b></sup> For a testament is confirmed in the case of the dead, since it never has force when he who made the testament is living.<br><br>
+		<sup><b>18</b></sup> Hence neither was the first covenant initiated without blood;<br><br>
+		<sup><b>19</b></sup> For when every commandment according to the law had been spoken by Moses to all the people, he took the blood of the calves and the goats, with water and scarlet wool and hyssop, and sprinkled both the scroll of the covenant itself and all the people,<br><br>
+		<sup><b>20</b></sup> Saying, “This is the blood of the covenant which God has commanded to you.”<br><br>
+		<sup><b>21</b></sup> And both the tabernacle and all the vessels of the service he sprinkled in like manner with the blood.<br><br>
+		<sup><b>22</b></sup> And almost all things are purified by blood according to the law, and without shedding of blood there is no forgiveness.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

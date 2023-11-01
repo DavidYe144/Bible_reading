@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/11-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('10', '../bible/58-hebrews.html')">Hebrews 10:32</a></h4>
+	<sup><b>32</b></sup> But call to mind the former days, in which, having been enlightened, you endured a great conflict of sufferings;<br><br>
+	<sup><b>33</b></sup> On one hand, being made a spectacle both in reproaches and in afflictions, and on the other, having become partakers with those who are treated the same.<br><br>
+	<sup><b>34</b></sup> For you both sympathized with those in bonds and accepted with joy the plundering of your possessions, knowing that you yourselves have a better possession and one that abides.<br><br>
+	<sup><b>35</b></sup> Do not cast away therefore your boldness, which has great reward.<br><br>
+	<sup><b>36</b></sup> For you have need of endurance in order that, having done the will of God, you may obtain the promise.<br><br>
+	<sup><b>37</b></sup> “For in yet a very little while the Coming One will come and will not delay.<br><br>
+	<sup><b>38</b></sup> But My righteous one shall live by faith; and if he shrinks back, My soul does not delight in him.”<br><br>
+	<sup><b>39</b></sup> But we are not of those who shrink back to ruin but of those who have faith to the gaining of the soul. <br><br>
+</p>
+</div>
+<div class="bible-text">
+<h4 id="hebrews-11"><a onclick="open_chapter('11', '../bible/58-hebrews.html')">Hebrews 11</a></h4>
+<p>
+	<sup><b>1</b></sup> Now faith is the substantiation of things hoped for, the conviction of things not seen.<br><br>
+	<sup><b>2</b></sup> For in this the elders have obtained a good testimony.<br><br>
+	<sup><b>3</b></sup> By faith we understand that the universe has been framed by the word of God, so that what is seen has not come into being out of things which appear.<br><br>
+	<sup><b>4</b></sup> By faith Abel offered to God a more excellent sacrifice than Cain, through which he obtained the testimony that he was righteous, God testifying to his gifts; and through faith, though he has died, he still speaks.<br><br>
+	<sup><b>5</b></sup> By faith Enoch was translated so that he should not see death; and he was not found, because God had translated him. For before his translation he obtained the testimony that he had been well pleasing to God.<br><br>
+	<sup><b>6</b></sup> But without faith it is impossible to be well pleasing to Him, for he who comes forward to God must believe that He is and that He is a rewarder of those who diligently seek Him.<br><br>
+	<sup><b>7</b></sup> By faith Noah, having been divinely instructed concerning things not yet seen and being moved by pious fear, prepared an ark for the salvation of his house, through which he condemned the world, and became heir of the righteousness which is according to faith.<br><br>
+</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

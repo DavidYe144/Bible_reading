@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 11/10-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Hebrews</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text">
+	<h4 id="hebrews-1"><a onclick="open_chapter('10', '../bible/58-hebrews.html')">Hebrews 10</a></h4>
+	<p>
+	<sup><b>11</b></sup> And every priest stands daily, ministering and offering often the same sacrifices, which can never remove sins;<br><br>
+	<sup><b>12</b></sup> But this One, having offered one sacrifice for sins, sat down forever on the right hand of God,<br><br>
+	<sup><b>13</b></sup> Henceforth waiting until His enemies are made the footstool for His feet.<br><br>
+	<sup><b>14</b></sup> For by one offering He has perfected forever those who are being sanctified.<br><br>
+	<sup><b>15</b></sup> And the Holy Spirit also testifies to us, for after having said,<br><br>
+	<sup><b>16</b></sup> “This is the covenant which I will covenant with them after those days, says the Lord: I will impart My laws upon their hearts, and upon their mind I will inscribe them,”<br><br>
+	<sup><b>17</b></sup> He then says, “And their sins and their lawlessnesses I shall by no means remember anymore.”<br><br>
+	<sup><b>18</b></sup> Now where forgiveness of these is, there is no longer an offering for sin.<br><br>
+	<sup><b>19</b></sup> Having therefore, brothers, boldness for entering the Holy of Holies in the blood of Jesus,<br><br>
+	<sup><b>20</b></sup> Which entrance He initiated for us as a new and living way through the veil, that is, His flesh,<br><br>
+	<sup><b>21</b></sup> And having a great Priest over the house of God,<br><br>
+	<sup><b>22</b></sup> Let us come forward to the Holy of Holies with a true heart in full assurance of faith, having our hearts sprinkled from an evil conscience and having our bodies washed with pure water.<br><br>
+	<sup><b>23</b></sup> Let us hold fast the confession of our hope unwavering, for He who has promised is faithful;<br><br>
+	<sup><b>24</b></sup> And let us consider one another so as to incite one another to love and good works,<br><br>
+	<sup><b>25</b></sup> Not abandoning our own assembling together, as the custom with some is, but exhorting one another; and so much the more as you see the day drawing near.<br><br>
+	<sup><b>26</b></sup> For when we sin willfully after receiving the knowledge of the truth, there no longer remains a sacrifice of bulls and goats for sins,<br><br>
+	<sup><b>27</b></sup> But a certain fearful expectation of judgment and fervor of fire, which is to consume the adversaries.<br><br>
+	<sup><b>28</b></sup> Anyone who has set aside the law of Moses dies without compassion on the testimony of two or three witnesses.<br><br>
+	<sup><b>29</b></sup> By how much do you think he will be thought worthy of worse punishment who has trampled underfoot the Son of God and has considered the blood of the covenant by which he was sanctified a common thing and has insulted the Spirit of grace?<br><br>
+	<sup><b>30</b></sup> For we know Him who said, “Vengeance is Mine; I will repay”; and again, “The Lord will judge His people.”<br><br>
+	<sup><b>31</b></sup> It is a fearful thing to fall into the hands of the living God.<br><br>
+	</p>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
