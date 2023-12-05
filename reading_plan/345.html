@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text"></div>
+	<h4 id="revelation-1"><a onclick="open_chapter('2', '../bible/66-revelation.html')">Revelation 2:18</a></h4>
+	<sup><b>18</b></sup> And to the messenger of the church in Thyatira write: These things says the Son of God, He who has eyes like a flame of fire, and His feet are like shining bronze:<br><br>
+	<sup><b>19</b></sup> I know your works and love and faith and service and your endurance and that your last works are more than the first.<br><br>
+	<sup><b>20</b></sup> But I have something against you, that you tolerate the woman Jezebel, she who calls herself a prophetess and teaches and leads My slaves astray to commit fornication and to eat idol sacrifices.<br><br>
+	<sup><b>21</b></sup> And I gave her time that she might repent, and she is not willing to repent of her fornication.<br><br>
+	<sup><b>22</b></sup> Behold, I cast her into a bed, and those who commit adultery with her, into great tribulation, unless they repent of her works;<br><br>
+	<sup><b>23</b></sup> And her children I will kill with death; and all the churches will know that I am He who searches the inward parts and the hearts; and I will give to each one of you according to your works.<br><br>
+	<sup><b>24</b></sup> But I say to you — the rest in Thyatira, as many as do not have this teaching, who have not known the deep things of Satan, as they say — I put no other burden upon you;<br><br>
+	<sup><b>25</b></sup> Nevertheless what you have hold fast until I come.<br><br>
+	<sup><b>26</b></sup> And he who overcomes and he who keeps My works until the end, to him I will give authority over the nations;<br><br>
+	<sup><b>27</b></sup> And he will shepherd them with an iron rod, as vessels of pottery are broken in pieces, as I also have received from My Father;<br><br>
+	<sup><b>28</b></sup> And to him I will give the morning star.<br><br>
+	<sup><b>29</b></sup> He who has an ear, let him hear what the Spirit says to the churches. <br><br>
+</p>
+</div>
+<div class="bible-text">
+<h4 id="revelation-3"><a onclick="open_chapter('3', '../bible/66-revelation.html')">Revelation 3</a></h4>
+<p><sup><b>1</b></sup> And to the messenger of the church in Sardis write: These things says He who has the seven Spirits of God and the seven stars:        I know your works, that you have a name that you are living, and yet you are dead.<br><br>
+	<sup><b>2</b></sup> Become watchful and establish the things which remain, which were about to die; for I have found none of your works completed before My God.<br><br>
+	<sup><b>3</b></sup> Remember therefore how you have received and heard, and keep it and repent. If therefore you will not watch, I will come as a thief, and you shall by no means know at what hour I will come upon you.<br><br>
+	<sup><b>4</b></sup> But you have a few names in Sardis who have not defiled their garments, and they will walk with Me in white because they are worthy.<br><br>
+	<sup><b>5</b></sup> He who overcomes will be clothed thus, in white garments, and I shall by no means erase his name out of the book of life, and I will confess his name before My Father and before His angels.<br><br>
+	<sup><b>6</b></sup> He who has an ear, let him hear what the Spirit says to the churches.<br><br>
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>

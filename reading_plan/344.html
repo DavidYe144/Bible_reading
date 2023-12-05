@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+
+<!--CHANGE ME-->
+<!--Date: 12/-->
+<!--CHANGE ME (END)-->
+
+
+<html>
+	<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			<!-- UIkit & Custom CSS -->
+			<link rel="stylesheet" type="text/css" href="../styles/style.css">
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/css/uikit.min.css" />
+
+			<!-- UIkit & Custom JS -->
+			<script type="text/javascript" src="../scripts/script.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js"></script>
+			<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js"></script>
+
+		  <title>Bible</title>
+	</head>
+	<body>
+		<!-- Nav Bar -->
+		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
+			<nav class="uk-navbar-container" uk-navbar>
+				<div class="uk-navbar-left" >
+						<ul class="uk-navbar-nav">
+								<li onclick="go_back_page()"><a><img src="https://img.icons8.com/android/48/000000/back.png"/></a></li>
+						</ul>
+				</div>
+
+
+				<div class="uk-navbar-center">
+						<ul class="uk-navbar-nav">
+
+                <!--CHANGE ME (whenever the book changes)-->
+				<li><a onclick="go_back_page()">Revelation</a></li>
+                <!--CHANGE ME (END)-->
+
+						</ul>
+				</div>
+			</nav>
+		</div>
+
+<!--CHANGE ME-->
+<div class="bible-text"></div>
+	<h4 id="revelation-1"><a onclick="open_chapter('2', '../bible/66-revelation.html')">Revelation 2</a></h4>
+	<p><sup><b>1</b></sup> To the messenger of the church in Ephesus write: These things says He who holds the seven stars in His right hand, He who walks in the midst of the seven golden lampstands:<br><br>
+		<sup><b>2</b></sup> I know your works and your labor and your endurance and that you cannot bear evil men; and you have tried those who call themselves apostles and are not, and have found them to be false;<br><br>
+		<sup><b>3</b></sup> And you have endurance and have borne all things because of My name and have not grown weary.<br><br>
+		<sup><b>4</b></sup> But I have one thing against you, that you have left your first love.<br><br>
+		<sup><b>5</b></sup> Remember therefore where you have fallen from and repent and do the first works; but if not, I am coming to you and will remove your lampstand out of its place, unless you repent.<br><br>
+		<sup><b>6</b></sup> But this you have, that you hate the works of the Nicolaitans, which I also hate.<br><br>
+		<sup><b>7</b></sup> He who has an ear, let him hear what the Spirit says to the churches. To him who overcomes, to him I will give to eat of the tree of life, which is in the Paradise of God.<br><br>
+		<sup><b>8</b></sup> And to the messenger of the church in Smyrna write: These things says the First and the Last, who became dead and lived again:<br><br>
+		<sup><b>9</b></sup> I know your tribulation and poverty (but you are rich) and the slander from those who call themselves Jews and are not, but are a synagogue of Satan.<br><br>
+		<sup><b>10</b></sup> Do not fear the things that you are about to suffer. Behold, the devil is about to cast some of you into prison that you may be tried, and you will have tribulation for ten days. Be faithful unto death, and I will give you the crown of life.<br><br>
+		<sup><b>11</b></sup> He who has an ear, let him hear what the Spirit says to the churches. He who overcomes shall by no means be hurt of the second death.<br><br>
+		<sup><b>12</b></sup> And to the messenger of the church in Pergamos write: These things says He who has the sharp two-edged sword:<br><br>
+		<sup><b>13</b></sup> I know where you dwell, where Satan’s throne is; and you hold fast My name and have not denied My faith, even in the days of Antipas, My witness, My faithful one, who was killed among you, where Satan dwells.<br><br>
+		<sup><b>14</b></sup> But I have a few things against you, that you have some there who hold the teaching of Balaam, who taught Balak to put a stumbling block before the sons of Israel, to eat idol sacrifices and to commit fornication.<br><br>
+		<sup><b>15</b></sup> In the same way you also have some who hold in like manner the teaching of the Nicolaitans.<br><br>
+		<sup><b>16</b></sup> Repent therefore; but if not, I am coming to you quickly, and I will make war with them with the sword of My mouth.<br><br>
+		<sup><b>17</b></sup> He who has an ear, let him hear what the Spirit says to the churches. To him who overcomes, to him I will give of the hidden manna, and to him I will give a white stone, and upon the stone a new name written, which no one knows except him who receives it.<br><br>
+	</p>	
+</div>
+    <!--CHANGE ME (END)-->
+
+    <!--CHANGE ME (whenever the book changes)-->
+  <script>
+    document.getElementById('exodus-' + sessionStorage.getItem('chapter_number')).scrollIntoView();
+  </script>
+  <!--CHANGE ME (END)-->
+
+  <div id="copyright">
+    <copyright>Verses accessed from the Holy Bible Recovery Version (text-only edition) © 2020 Living Stream Ministry www.lsm.org</copyright>
+  </div>
+</body>
+</html>
